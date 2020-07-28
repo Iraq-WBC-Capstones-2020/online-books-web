@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import PaymentForm from './componenets/paymentForm/PaymentForm';
 
 function App() {
   return (
-    <div>
-      <PaymentForm />
-    </div>
+    <Suspense>
+      <div>
+        <PaymentForm />
+      </div>
+    </Suspense>
   );
 }
 
