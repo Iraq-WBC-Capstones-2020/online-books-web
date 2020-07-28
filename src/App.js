@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import Spinner from './componenets/Spinner';
+import Spinner from './componenets/Spinner/Spinner';
 
 function App() {
   return (
