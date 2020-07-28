@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Spinner from './../Spinner';
 
-test('renders learn react link', () => {
+test('renders spinner', () => {
   const div = document.createElement('div');
   ReactDOM.render(<Spinner />, div);
 });
