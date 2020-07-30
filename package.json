@@ -15,7 +15,8 @@
     "react-dom": "^16.13.1",
     "react-i18next": "^11.7.0",
     "react-scripts": "3.4.1",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "tailwindcss": "^1.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,7 +25,8 @@
     "test:nowatch": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "fix": "prettier --write src/. public/.",
-    "lint": "eslint src/**/*.js --max-warnings 5"
+    "lint": "eslint src/**/*.js --max-warnings 5",
+    "build:css": "tailwind build src/style.css -o src/index.css"
   },
   "eslintConfig": {
     "extends": "react-app"
