@@ -7,9 +7,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "mdbreact": "^4.27.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "tailwindcss": "^1.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +21,8 @@
     "test:nowatch": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "fix": "prettier --write src/. public/.",
-    "lint": "eslint src/**/*.js --max-warnings 5"
+    "lint": "eslint src/**/*.js --max-warnings 5",
+    "build:css": "tailwind build src/index.css -o src/components/carsoulSection/carsoulSection.css"
   },
   "eslintConfig": {
     "extends": "react-app"

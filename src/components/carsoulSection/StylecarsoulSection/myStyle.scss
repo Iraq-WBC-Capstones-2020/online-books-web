@@ -1,0 +1,45 @@
+@import './carsoulSection.css';
+
+$gray-color: #979797;
+$font-roboto: 'Roboto';
+
+.mycolorPink {
+  background: #fee4cb;
+  
+}
+%fontType {
+  font-family: 'Saira';
+}
+.fontHeader1 {
+  @extend %fontType;
+  color: #8bb4ea;
+  size: 40;
+}
+.fontHeader2 {
+  @extend %fontType;
+  color: $gray-color;
+  size: 24;
+}
+
+.parg1 {
+  color: $gray-color;
+  font: $font-roboto;
+}
+
+.buttomText {
+  font: $font-roboto;
+  font-size: 12px;
+}
+
+.highlight {
+  font: $font-roboto;
+  size: 16;
+  width: 14rem;
+}
+.imgSmall {
+  width: 6rem;
+}
+.bgGray {
+  background: #f6f6f6;
+}
+
