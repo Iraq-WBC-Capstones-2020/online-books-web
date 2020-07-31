@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Main from './components/main'
+
 
 function App() {
   return (
     <div>
-      <Main></Main>
+      <h1>Online Books</h1>
     </div>
   );
 }

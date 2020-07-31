@@ -8,16 +8,16 @@ import 'mdbreact/dist/css/mdb.css';
 //style file for tailwind
 import './carsoulSection/StylecarsoulSection/carsoulSection.css';
 //main component
-import Paragraph from './paragraph'
-import CarsoulSection from './carsoulSection/carsoulSection'
+import Paragraph from './paragraph';
+import CarsoulSection from './carsoulSection/carsoulSection';
 
 function Main() {
-    return (
-     <>
-     <Paragraph/>
-     <CarsoulSection/>
-      </>
-    );
-  }
-   
-  export default Main;
+  return (
+    <>
+      <Paragraph />
+      <CarsoulSection />
+    </>
+  );
+}
+
+export default Main;

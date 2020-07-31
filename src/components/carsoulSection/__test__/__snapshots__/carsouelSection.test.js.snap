@@ -1,0 +1,604 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarsoulSection snapshot 1`] = `
+<div
+  className="d-flex sm:mx-0 md:mx-2 lg:mx-10 xl:mx-40 justify-content-center"
+>
+  <div
+    className=" md:w-full lg:w-3/4 xl:w-3/4"
+  >
+    <div
+      className="buttomText mycolorPink  text-black font-bold py-3/4 text-center  leading-loose font-black-300 highlight "
+    >
+      best sellers in books
+    </div>
+    <div
+      className=" bgGray  d-flex flex-col sm:flex-row  justify-content-around "
+    >
+      <div
+        aria-label="carousel"
+        className="carousel carousel-fade py-2 pl-1"
+        data-test="carousel"
+        length={4}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="carousel-inner"
+          data-test="carousel-inner"
+        >
+          <div
+            className="carousel-item active carousel-slide-item mt-md-1 mb-md-"
+            data-test="carousel-item"
+            style={
+              Object {
+                "left": "0",
+              }
+            }
+          >
+            <div
+              className="card-cascade card-cascade wider card md:w-40 lg:w-56 d-flex flex-row mt-md-3 mb-md-3 shadow-none"
+              data-test="card"
+            >
+              <div
+                className="view view-cascade"
+                data-test="view"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={Object {}}
+              >
+                <div
+                  className="view"
+                  data-test="view"
+                  onMouseDown={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                >
+                  <div
+                    className="Ripple-parent"
+                    onMouseDown={[Function]}
+                    style={
+                      Object {
+                        "touchAction": "unset",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Card cap"
+                      className="img-fluid w-48"
+                      data-test="card-image"
+                      src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+                    />
+                    <div
+                      className="mask rgba-white-slight"
+                      data-test="mask"
+                    />
+                    <div
+                      className="Ripple "
+                      data-test="waves"
+                      style={
+                        Object {
+                          "height": "0px",
+                          "left": "0px",
+                          "top": "0px",
+                          "width": "0px",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="card-body card-body-cascade text-left p-5"
+                data-test="card-body"
+              >
+                <h4
+                  className="card-title fontHeader1 mb-0 font-weight-bold "
+                  data-test="card-title"
+                >
+                  Alice Mayer
+                </h4>
+                <p
+                  className="card-text"
+                  data-test="card-text"
+                >
+                  <p
+                    className="mb-0 fontHeader2"
+                  >
+                    The Shadows: A Novel
+                  </p>
+                  <p
+                    className="mb-1 parg1 "
+                  >
+                    formate:Hardback
+                  </p>
+                  <p
+                    className="font-black mb-2"
+                  >
+                    $31.75
+                  </p>
+                  <div
+                    className="mb-4"
+                  >
+                    <div
+                      className="inline-block mr-2"
+                    >
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 font-light"
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 font-light"
+                      />
+                       (12,999)
+                       
+                    </div>
+                  </div>
+                </p>
+                <button
+                  className="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className="carousel-item active carousel-slide-item mt-md-1 mb-md-"
+            data-test="carousel-item"
+            style={
+              Object {
+                "left": "100%",
+                "position": "absolute",
+              }
+            }
+          >
+            <div
+              className="card-cascade card-cascade wider card md:w-40 lg:w-56 d-flex flex-row mt-md-3 mb-md-3 shadow-none"
+              data-test="card"
+            >
+              <div
+                className="view view-cascade"
+                data-test="view"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={Object {}}
+              >
+                <div
+                  className="view"
+                  data-test="view"
+                  onMouseDown={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                >
+                  <div
+                    className="Ripple-parent"
+                    onMouseDown={[Function]}
+                    style={
+                      Object {
+                        "touchAction": "unset",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Card cap"
+                      className="img-fluid w-48"
+                      data-test="card-image"
+                      src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+                    />
+                    <div
+                      className="mask rgba-white-slight"
+                      data-test="mask"
+                    />
+                    <div
+                      className="Ripple "
+                      data-test="waves"
+                      style={
+                        Object {
+                          "height": "0px",
+                          "left": "0px",
+                          "top": "0px",
+                          "width": "0px",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="card-body card-body-cascade text-left p-5"
+                data-test="card-body"
+              >
+                <h4
+                  className="card-title fontHeader1 mb-0 font-weight-bold "
+                  data-test="card-title"
+                >
+                  Alice Mayer
+                </h4>
+                <p
+                  className="card-text"
+                  data-test="card-text"
+                >
+                  <p
+                    className="mb-0 fontHeader2"
+                  >
+                    The Shadows: A Novel
+                  </p>
+                  <p
+                    className="mb-1 parg1 "
+                  >
+                    formate:Hardback
+                  </p>
+                  <p
+                    className="font-black mb-2"
+                  >
+                    $31.75
+                  </p>
+                  <div
+                    className="mb-4"
+                  >
+                    <div
+                      className="inline-block mr-2"
+                    >
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 font-light"
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 font-light"
+                      />
+                       (12,999)
+                       
+                    </div>
+                  </div>
+                </p>
+                <button
+                  className="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className="carousel-item active carousel-slide-item mt-md-1 mb-md-"
+            data-test="carousel-item"
+            style={
+              Object {
+                "left": "100%",
+                "position": "absolute",
+              }
+            }
+          >
+            <div
+              className="card-cascade card-cascade wider card md:w-40 lg:w-56 d-flex flex-row mt-md-3 mb-md-3 shadow-none"
+              data-test="card"
+            >
+              <div
+                className="view view-cascade"
+                data-test="view"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={Object {}}
+              >
+                <div
+                  className="view"
+                  data-test="view"
+                  onMouseDown={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                >
+                  <div
+                    className="Ripple-parent"
+                    onMouseDown={[Function]}
+                    style={
+                      Object {
+                        "touchAction": "unset",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Card cap"
+                      className="img-fluid w-48"
+                      data-test="card-image"
+                      src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+                    />
+                    <div
+                      className="mask rgba-white-slight"
+                      data-test="mask"
+                    />
+                    <div
+                      className="Ripple "
+                      data-test="waves"
+                      style={
+                        Object {
+                          "height": "0px",
+                          "left": "0px",
+                          "top": "0px",
+                          "width": "0px",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="card-body card-body-cascade text-left p-5"
+                data-test="card-body"
+              >
+                <h4
+                  className="card-title fontHeader1 mb-0 font-weight-bold "
+                  data-test="card-title"
+                >
+                  Alice Mayer
+                </h4>
+                <p
+                  className="card-text"
+                  data-test="card-text"
+                >
+                  <p
+                    className="mb-0 fontHeader2"
+                  >
+                    The Shadows: A Novel
+                  </p>
+                  <p
+                    className="mb-1 parg1 "
+                  >
+                    formate:Hardback
+                  </p>
+                  <p
+                    className="font-black mb-2"
+                  >
+                    $31.75
+                  </p>
+                  <div
+                    className="mb-4"
+                  >
+                    <div
+                      className="inline-block mr-2"
+                    >
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 font-light"
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 font-light"
+                      />
+                       (12,999)
+                       
+                    </div>
+                  </div>
+                </p>
+                <button
+                  className="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className="carousel-item active carousel-slide-item mt-md-1 mb-md-"
+            data-test="carousel-item"
+            style={
+              Object {
+                "left": "100%",
+                "position": "absolute",
+              }
+            }
+          >
+            <div
+              className="card-cascade card-cascade wider card md:w-40 lg:w-56 d-flex flex-row mt-md-3 mb-md-3 shadow-none"
+              data-test="card"
+            >
+              <div
+                className="view view-cascade"
+                data-test="view"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={Object {}}
+              >
+                <div
+                  className="view"
+                  data-test="view"
+                  onMouseDown={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                >
+                  <div
+                    className="Ripple-parent"
+                    onMouseDown={[Function]}
+                    style={
+                      Object {
+                        "touchAction": "unset",
+                      }
+                    }
+                  >
+                    <img
+                      alt="Card cap"
+                      className="img-fluid w-48"
+                      data-test="card-image"
+                      src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+                    />
+                    <div
+                      className="mask rgba-white-slight"
+                      data-test="mask"
+                    />
+                    <div
+                      className="Ripple "
+                      data-test="waves"
+                      style={
+                        Object {
+                          "height": "0px",
+                          "left": "0px",
+                          "top": "0px",
+                          "width": "0px",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="card-body card-body-cascade text-left p-5"
+                data-test="card-body"
+              >
+                <h4
+                  className="card-title fontHeader1 mb-0 font-weight-bold "
+                  data-test="card-title"
+                >
+                  Alice Mayer
+                </h4>
+                <p
+                  className="card-text"
+                  data-test="card-text"
+                >
+                  <p
+                    className="mb-0 fontHeader2"
+                  >
+                    The Shadows: A Novel
+                  </p>
+                  <p
+                    className="mb-1 parg1 "
+                  >
+                    formate:Hardback
+                  </p>
+                  <p
+                    className="font-black mb-2"
+                  >
+                    $31.75
+                  </p>
+                  <div
+                    className="mb-4"
+                  >
+                    <div
+                      className="inline-block mr-2"
+                    >
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 "
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 font-light"
+                      />
+                      <icon
+                        className="fa fa-star text-yellow-300 mr-1 font-light"
+                      />
+                       (12,999)
+                       
+                    </div>
+                  </div>
+                </p>
+                <button
+                  className="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          className="carousel-control-prev"
+          data-slide="prev"
+          data-test="carousel-control"
+          onClick={[Function]}
+        >
+          <div>
+            <span
+              aria-hidden="true"
+              className="carousel-control-prev-icon"
+            />
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </div>
+        </a>
+        <a
+          className="carousel-control-next"
+          data-slide="next"
+          data-test="carousel-control"
+          onClick={[Function]}
+        >
+          <div>
+            <span
+              aria-hidden="true"
+              className="carousel-control-next-icon"
+            />
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </div>
+        </a>
+      </div>
+      <div
+        className="row full-width lg:w-1/3 my-0 my-sm-4 my-md-4 my-lg-4 my-xl-4"
+        data-test="row"
+      >
+        <div
+          className="col pl-2  d-flex flex-lg-column flex-md-column col-6 "
+          data-test="col"
+        >
+          <img
+            className="imgLarg pb-2 "
+            src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+          />
+          <img
+            className="imgLarg"
+            src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+          />
+        </div>
+        <div
+          className="col  pl-1 d-flex flex-lg-column flex-md-column col-6"
+          data-test="col"
+        >
+          <img
+            className="imgLarg pb-2 "
+            src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+          />
+          <img
+            className="imgLarg"
+            src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

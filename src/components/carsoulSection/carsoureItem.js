@@ -19,10 +19,9 @@ function CarouselItems() {
       cards.push(
         <MDBCarouselItem itemId={`${i}`} className="mt-md-1 mb-md-">
           <MDBCard
-            className="md:w-40 lg:w-56 "
+            className="md:w-40 lg:w-56 d-flex flex-row mt-md-3 mb-md-3 shadow-none"
             wide
             cascade
-            className="d-flex flex-row mt-md-3 mb-md-3 shadow-none"
           >
             <MDBView cascade>
               <MDBCardImage
@@ -50,7 +49,7 @@ function CarouselItems() {
                 </div>
               </MDBCardText>
 
-              <button class="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full">
+              <button className="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full">
                 Add To Cart
               </button>
             </MDBCardBody>
