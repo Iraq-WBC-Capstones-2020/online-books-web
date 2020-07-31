@@ -19,7 +19,7 @@ function CarouselItems() {
       cards.push(
         <MDBCarouselItem itemId={`${i}`} className="mt-md-1 mb-md-">
           <MDBCard
-            className="w-56"
+            className="md:w-40 lg:w-56 "
             wide
             cascade
             className="d-flex flex-row mt-md-3 mb-md-3 shadow-none"
@@ -39,7 +39,7 @@ function CarouselItems() {
 
               <MDBCardText>
                 <p className="mb-0 fontHeader2">The Shadows: A Novel</p>
-                <p className="mb-1 parg1 font-smaller">formate:Hardback</p>
+                <p className="mb-1 parg1 ">formate:Hardback</p>
                 <p className="font-black mb-2">$31.75</p>
 
                 {/* create stars */}
@@ -50,7 +50,7 @@ function CarouselItems() {
                 </div>
               </MDBCardText>
 
-              <button class="buttomText mycolorPink  parg1  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full">
+              <button class="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full">
                 Add To Cart
               </button>
             </MDBCardBody>

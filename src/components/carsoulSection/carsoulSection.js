@@ -5,15 +5,13 @@ import GrideCarousel from './gridCarousel';
 function CarsoulSection() {
   return (
     <>
-      {/* check the width with response */}
-
-      <div className="d-flex md:mx-40 justify-content-center">
-        <div className="w-3/4">
-          <div className="mycolorPink  text-center font-medium leading-loose font-black-100 highlight ">
+      <div className="d-flex sm:mx-0 md:mx-2 lg:mx-10 xl:mx-40 justify-content-center">
+        <div className=" md:w-full lg:w-3/4 xl:w-3/4">
+          <div className="buttomText mycolorPink  text-black font-bold py-3/4 text-center  leading-loose font-black-300 highlight ">
             best sellers in books
           </div>
 
-          <div className=" bgGray d-flex  justify-content-around ">
+          <div className=" bgGray  d-flex flex-col sm:flex-row  justify-content-around ">
             <MDBCarousel
               className="py-2 pl-1"
               activeItem={1}
