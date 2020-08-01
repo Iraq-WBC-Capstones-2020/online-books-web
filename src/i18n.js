@@ -3,7 +3,6 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
-const fallbackLng = ['en'];
 const availableLanguages = ['en', 'ar', 'ku'];
 
 i18n
@@ -18,7 +17,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    fallbackLng,
+    fallbackLng:'en',
     debug: true,
     whitelist: availableLanguages,
 
