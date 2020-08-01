@@ -5,7 +5,7 @@ function GrideCarousel() {
   return (
     <>
       {/*make the row with the same hight with carsoule section */}
-      <MDBRow className="full-width lg:w-1/3 my-0 my-sm-4 my-md-4 my-lg-4 my-xl-4">
+      <MDBRow className="full-width">
         {/*display the grid as row with small devices(make the grid under carsouel section) and column with the others (make the grid beside the cursouel section) */}
         <MDBCol className="pl-2  d-flex flex-lg-column flex-md-column col-6 ">
           <img

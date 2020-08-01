@@ -7,56 +7,129 @@ import {
   MDBCardText,
   MDBView,
   MDBCarouselItem,
+  MDBCol,
+  MDBRow,
+  MDBContainer,
 } from 'mdbreact';
+//import {ButtomText} from './../statmentOfWebsite'
+//console.log(ButtomText.addToCart)
 
 // create 4 items for carsouel movement
 function CarouselItems() {
   let cards = [];
+  let booksArray = [
+    {
+      cover:
+        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
+      authorName: 'Alice Mayer',
+      bookName: 'The Shadows: A Novel',
+      type: 'formate:Hardback',
+      price: '$31.5',
+      rate: 3,
+      views: '22,333',
+    },
+    {
+      cover:
+        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
+      authorName: 'Alice Mayer',
+      bookName: 'The Shadows: A Novel',
+      type: 'formate:Hardback',
+      price: '$31.5',
+      rate: 3,
+      views: '22k',
+    },
+    {
+      cover:
+        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
+      authorName: 'Alice Mayer',
+      bookName: 'The Shadows: A Novel',
+      type: 'formate:Hardback',
+      price: '$31.5',
+      rate: 3,
+      views: '22k',
+    },
+    {
+      cover:
+        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
+      authorName: 'Alice Mayer',
+      bookName: 'The Shadows: A Novel',
+      type: 'formate:Hardback',
+      price: '$31.5',
+      rate: 3,
+      views: '22k',
+    },
+    {
+      cover:
+        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
+      authorName: 'Alice Mayer',
+      bookName: 'The Shadows: A Novel',
+      type: 'formate:Hardback',
+      price: '$31.5',
+      rate: 3,
+      views: '22k',
+    },
+    {
+      cover:
+        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
+      authorName: 'Alice Mayer',
+      bookName: 'The Shadows: A Novel',
+      type: 'formate:Hardback',
+      price: '$31.5',
+      rate: 3,
+      views: '22k',
+    },
+  ];
 
   let createCards = () => {
-    cards = [];
-    for (let i = 1; i <= 4; i++) {
-      cards.push(
-        <MDBCarouselItem itemId={`${i}`} className="mt-md-1 mb-md-">
-          <MDBCard
-            className="md:w-40 lg:w-56 d-flex flex-row mt-md-3 mb-md-3 shadow-none"
-            wide
-            cascade
-          >
-            <MDBView cascade>
-              <MDBCardImage
-                className="img-fluid w-48"
-                src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
-                alt="Card cap"
-              />
-            </MDBView>
+    let specialBooks = [];
+    let i = 0;
+    specialBooks = booksArray.slice(0, 4);
 
-            <MDBCardBody cascade className="text-left p-5">
-              <MDBCardTitle className="fontHeader1 mb-0 font-weight-bold ">
-                Alice Mayer
-              </MDBCardTitle>
+    cards = specialBooks.map((book) => {
+      i++;
 
-              <MDBCardText>
-                <p className="mb-0 fontHeader2">The Shadows: A Novel</p>
-                <p className="mb-1 parg1 ">formate:Hardback</p>
-                <p className="font-black mb-2">$31.75</p>
+      return (
+        <MDBCarouselItem itemId={`${i}`} className="mt-md-1 mb-md-1">
+          {/*src={`${book.cover}`} */}
 
-                {/* create stars */}
-                <div className="mb-4">
-                  <div className="inline-block mr-2">
-                    {createStars(3)} (12,999){' '}
-                  </div>
-                </div>
-              </MDBCardText>
+          <MDBContainer className="bg-white mt-3 mb-3">
+            <MDBRow className="p-0">
+              <MDBCol size="5" className="p-0">
+                <img
+                  className="img-fluid"
+                  src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+                  alt="cover book"
+                />
+              </MDBCol>
+              <MDBCol size="7" className="d-flex justify-content-around">
+                <MDBCardBody className="p-0 text-left">
+                  <MDBCardTitle className="fontHeader1 mb-0 font-weight-bold ">
+                    {`${book.authorName}`}
+                  </MDBCardTitle>
 
-              <button className="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full">
-                Add To Cart
-              </button>
-            </MDBCardBody>
-          </MDBCard>
+                  <MDBCardText>
+                    <p className="mb-0 fontHeader2">{`${book.bookName}`}</p>
+                    <p className="mb-1 parg1 ">{`${book.type}`}</p>
+                    <p className="font-black mb-2">{`${book.price}`}</p>
+
+                    {/* create stars */}
+                    <div className="mb-4">
+                      <div className="inline-block mr-2">
+                        {createStars(book.rate)} ({book.views}) views
+                      </div>
+                    </div>
+                  </MDBCardText>
+
+                  <button className="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full">
+                    {/*`${ButtonText.addToCart}`*/}Add To Cart
+                  </button>
+                </MDBCardBody>
+              </MDBCol>
+            </MDBRow>
+          </MDBContainer>
         </MDBCarouselItem>
       );
-    }
+    });
     return cards;
   };
   let createStars = (rate) => {
