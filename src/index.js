@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import React, { Suspense } from 'react';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
-import './index.css';
+import './assets/main.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Spinner from './components/Spinner/Spinner';
