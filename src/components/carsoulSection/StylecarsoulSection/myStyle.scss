@@ -2,8 +2,9 @@
 
 $gray-color: #979797;
 $font-roboto: 'Roboto';
-$pink-color:#fee4cb;
+$pink-color:#eec197;
 $light-blue: #8bb4ea;
+$dark-blue:#7aa2d6;
 $light-gray:#f6f6f6;
 
 .mycolorPink {
@@ -11,41 +12,54 @@ $light-gray:#f6f6f6;
 }
 
 %fontType {
-  font-family: 'Saira';
+  font: 'Saira';
 }
 
 .fontHeader1 {
   @extend %fontType;
-  color: $light-blue;
-  size: 40;
+  color: $dark-blue;
 }
 
 .fontHeader2 {
   @extend %fontType;
   color: $gray-color;
-  size: 24;
+  font-size:1.1rem;
 }
 
 .parg1 {
   color: $gray-color;
   font: $font-roboto;
+  font-size:0.9rem ;
+}
+.fontPrice{
+font:$font-roboto;
+color:#333333;
+font-size:0.3in;
 }
 
 .buttomText {
   font: $font-roboto;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .highlight {
   font: $font-roboto;
   size:16;
-  width: 14rem;
+  height:0.4in;
 }
 
 .imgLarg {
-  width: 6rem;
+  width:1.1in;
+  height:1.6in;
 }
 
 .bgGray {
   background:$light-gray;
+}
+.bgLightblue{
+  background: #F9F9F9;
+}
+
+.lightblue{
+  background: $light-blue;
 }

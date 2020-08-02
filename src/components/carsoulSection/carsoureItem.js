@@ -11,11 +11,11 @@ import {
   MDBRow,
   MDBContainer,
 } from 'mdbreact';
-//import {ButtomText} from './../statmentOfWebsite'
-//console.log(ButtomText.addToCart)
+import { useTranslation } from 'react-i18next';
 
 // create 4 items for carsouel movement
 function CarouselItems() {
+  const { t } = useTranslation();
   let cards = [];
   let booksArray = [
     {
@@ -89,44 +89,54 @@ function CarouselItems() {
       i++;
 
       return (
-        <MDBCarouselItem itemId={`${i}`} className="mt-md-1 mb-md-1">
+        <MDBCarouselItem itemId={`${i}`} className="mt-md-4 mb-md-4 pl-lg-3 pl-md-5">
           {/*src={`${book.cover}`} */}
 
-          <MDBContainer className="bg-white mt-3 mb-3">
-            <MDBRow className="p-0">
-              <MDBCol size="5" className="p-0">
-                <img
-                  className="img-fluid"
-                  src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
-                  alt="cover book"
-                />
-              </MDBCol>
-              <MDBCol size="7" className="d-flex justify-content-around">
-                <MDBCardBody className="p-0 text-left">
-                  <MDBCardTitle className="fontHeader1 mb-0 font-weight-bold ">
-                    {`${book.authorName}`}
-                  </MDBCardTitle>
-
-                  <MDBCardText>
-                    <p className="mb-0 fontHeader2">{`${book.bookName}`}</p>
-                    <p className="mb-1 parg1 ">{`${book.type}`}</p>
-                    <p className="font-black mb-2">{`${book.price}`}</p>
-
-                    {/* create stars */}
-                    <div className="mb-4">
-                      <div className="inline-block mr-2">
-                        {createStars(book.rate)} ({book.views}) views
-                      </div>
+          <MDBCard className="w-30 shadow-none" wide>
+            <MDBContainer className="w-full">
+              <MDBRow className="p-0">
+                {/*size="5" */}
+                <MDBCol xs="5"  sm="6" md="4" lg="5" className="p-0">
+                  <img
+                    className="img-fluid"
+                    src="https://th.bing.com/th/id/OIP.Zf2SkeIiSI4ymvT2cc4u2AHaKd?pid=Api&rs=1"
+                    alt="cover book"
+                  />
+                </MDBCol>
+{/*size="1" */}
+                <MDBCol md="1"  lg="1"></MDBCol>
+{/*size="6" */}
+                <MDBCol md="7" lg="6" className="my-auto">
+                  <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto">
+                    {/*   <MDBCardTitle className=""> */}
+                    <div>
+                      <h1 className="fontHeader1 mb-0 font-weight-normal  text-2xl">
+                        {' '}
+                        {`${book.authorName}`}{' '}
+                      </h1>
                     </div>
-                  </MDBCardText>
 
-                  <button className="buttomText mycolorPink  parg1 hover:shadow-lg  h-8 text-black font-bold leading-3 w-40 py-2 px-4 rounded-full">
-                    {/*`${ButtonText.addToCart}`*/}Add To Cart
-                  </button>
-                </MDBCardBody>
-              </MDBCol>
-            </MDBRow>
-          </MDBContainer>
+                    <MDBCardText>
+                      <p className="mb-1 fontHeader2 font-normal font-weight-normal ">{`${book.bookName}`}</p>
+                      <p className="mb-1 parg1 font-weight-normal">{`${book.type}`}</p>
+                      <p className="font-black fontPrice font-weight-normal ">{`${book.price}`}</p>
+
+                      {/* create stars */}
+                      <div className="mb-4">
+                        <div className="inline-block mr-2">
+                          {createStars(book.rate)} ({book.views}) views
+                        </div>
+                      </div>
+                    </MDBCardText>
+
+                    <button className="buttomText text-center mycolorPink w-5/6 shadow-md parg1 hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full">
+                      {t('addtocart')}
+                    </button>
+                  </MDBCardBody>
+                </MDBCol>
+              </MDBRow>
+            </MDBContainer>
+          </MDBCard>
         </MDBCarouselItem>
       );
     });

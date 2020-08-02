@@ -6,30 +6,31 @@ function GrideCarousel() {
     <>
       {/*make the row with the same hight with carsoule section */}
       <MDBRow className="full-width">
-        {/*display the grid as row with small devices(make the grid under carsouel section) and column with the others (make the grid beside the cursouel section) */}
-        <MDBCol className="pl-2  d-flex flex-lg-column flex-md-column col-6 ">
+        
+        <MDBCol size="auto">
           <img
             className="imgLarg pb-2 "
-            src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+            src="http://www.snugglyoranges.com/wp-content/uploads/2014/09/Unspoken.jpg"
           />
 
           <img
-            className="imgLarg"
+            className="imgLarg "
+            src="http://1.bp.blogspot.com/-yQklGusIOBE/Ul-oQ0_9vOI/AAAAAAAAfI4/XQTmNLaJZLQ/s1600/book-cover-poster-27.jpg"
+          />
+        </MDBCol>
+
+        <MDBCol size="auto">
+          <img
+            className="imgLarg pb-md-2 d-md-block "
+            src="https://th.bing.com/th/id/OIP.SJzxAFc1eRZzl-R5YJmIXAHaLL?pid=Api&rs=1"
+          />
+
+          <img
+            className="imgLarg d-md-block  "
             src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
           />
         </MDBCol>
 
-        <MDBCol className=" pl-1 d-flex flex-lg-column flex-md-column col-6">
-          <img
-            className="imgLarg pb-2 "
-            src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
-          />
-
-          <img
-            className="imgLarg"
-            src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
-          />
-        </MDBCol>
       </MDBRow>
     </>
   );

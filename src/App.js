@@ -1,15 +1,13 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import Spinner from './componenets/Spinner/Spinner';
-
-
-
+import Main from './components/main';
+import './i18n';
 function App() {
   return (
-    <Suspense fallback={<Spinner />}>
-      <div>
-        <h1>Online Books</h1>
-      </div>
-    </Suspense>
+    <div>
+      <h1>Online Books</h1>
+      <Main />
+    </div>
   );
 }
 
