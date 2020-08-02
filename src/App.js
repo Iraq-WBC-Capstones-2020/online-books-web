@@ -1,7 +1,7 @@
 import React from 'react';
-import Spinner from './componenets/Spinner/Spinner';
 import Main from './components/main';
 import './i18n';
+
 function App() {
   return (
     <div>
