@@ -9,7 +9,7 @@ import {
 } from 'mdbreact';
 import GrideCarousel from './gridCarousel';
 import HighLight from './highlightSection';
-
+import './StylecarsoulSection/myStyle.scss';
 function CarsoulSection() {
   return (
     <>
@@ -17,9 +17,8 @@ function CarsoulSection() {
       <MDBRow center>
        <MDBCol  xs="10"	sm="10"	md="11" lg="10"	xl="8">
           <HighLight className="" text="best sellers in books"/>
-          <MDBContainer fluid className="bgGray h-auto">
-            <MDBRow>
-
+          <MDBContainer fluid className="bgGray " >
+            <MDBRow >
              <MDBCol  xs="12" sm="12" md="11" lg="8" xl="8">
              <MDBCarousel
                   activeItem={1}
@@ -34,7 +33,7 @@ function CarsoulSection() {
                 </MDBCarousel> 
               </MDBCol>
              
-              <MDBCol  xs="12" sm="12"	md="12"	lg="4"	xl="4" className="mb-md-4 mt-md-4 mt-sm-1">
+              <MDBCol  xs="12" sm="12"	md="12"	lg="4"	xl="4" className="mb-md-4 mt-md-4 mt-sm-1" >
                 {/* gride for the new release and best sellers  */}
                 <GrideCarousel />
               </MDBCol>

@@ -1,4 +1,4 @@
-@import './carsoulSection.css';
+@import '../../../assets/main.css';
 
 $gray-color: #979797;
 $font-roboto: 'Roboto';
@@ -63,3 +63,41 @@ font-size:0.3in;
 .lightblue{
   background: $light-blue;
 }
+
+
+img {
+  display: block;
+  width: auto;
+  margin:0 auto 0 auto;
+  height: 9rem;
+}
+
+// @media (min-width: 1024px) {
+//   .lg\:container {
+//     width: 100%;
+//   }
+
+//   @media (min-width: 640px) {
+//     .lg\:container {
+//       max-width: 640px;
+//     }
+//   }
+
+//   @media (min-width: 768px) {
+//     .lg\:container {
+//       max-width: 768px;
+//     }
+//   }
+
+//   @media (min-width: 1024px) {
+//     .lg\:container {
+//       max-width: 1024px;
+//     }
+//   }
+
+//   @media (min-width: 1280px) {
+//     .lg\:container {
+//       max-width: 1280px;
+//     }
+//   }
+// }

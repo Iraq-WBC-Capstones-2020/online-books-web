@@ -1,40 +1,38 @@
 import React from 'react';
-import { MDBCol, MDBRow,MDBContainer } from 'mdbreact';
+import { MDBCol, MDBRow, MDBContainer } from 'mdbreact';
 
 function GrideCarousel() {
   return (
-    <>
+    <MDBContainer>
       {/*make the row with the same hight with carsoule section */}
-      <MDBContainer >
-        <MDBRow>
-        <MDBCol md="6" size="3" className="p-0 " >
-          <img
-            className="sm:h-24 md:h-32"
-            src="http://www.snugglyoranges.com/wp-content/uploads/2014/09/Unspoken.jpg"
-          />
-        </MDBCol>
-        <MDBCol md="6" size="3" className="p-0">
-          <img
-           className="sm:h-24 md:h-32 "
-            src="http://1.bp.blogspot.com/-yQklGusIOBE/Ul-oQ0_9vOI/AAAAAAAAfI4/XQTmNLaJZLQ/s1600/book-cover-poster-27.jpg"
-          />
-        </MDBCol>
-        <MDBCol md="6" size="3" className="p-0">
-          <img
-            className="md:h-32 "
-            src="http://www.snugglyoranges.com/wp-content/uploads/2014/09/Unspoken.jpg"
-          />
-        </MDBCol>
+      <MDBRow>
 
-        <MDBCol md="6" size="3" className="p-0">
+        <MDBCol  lg="6" md="3" sm="3" size="3" className="p-1" >
           <img
-           className="md:h-32"
+            className=""
+            src="http://www.snugglyoranges.com/wp-content/uploads/2014/09/Unspoken.jpg"
+          />
+        </MDBCol>
+        <MDBCol lg="6" md="3"  sm="3" size="3" className="p-1">
+          <img
+            className=""
             src="http://1.bp.blogspot.com/-yQklGusIOBE/Ul-oQ0_9vOI/AAAAAAAAfI4/XQTmNLaJZLQ/s1600/book-cover-poster-27.jpg"
           />
         </MDBCol>
-        </MDBRow>
-        </MDBContainer >
-    </>
+        <MDBCol lg="6" md="3"  sm="3" size="3" className="p-1">
+          <img
+            className=""
+            src="http://www.snugglyoranges.com/wp-content/uploads/2014/09/Unspoken.jpg"
+          />
+        </MDBCol>
+        <MDBCol lg="6" md="3"  sm="3" size="3" className="p-1">
+          <img
+            className=""
+            src="http://1.bp.blogspot.com/-yQklGusIOBE/Ul-oQ0_9vOI/AAAAAAAAfI4/XQTmNLaJZLQ/s1600/book-cover-poster-27.jpg"
+          />
+        </MDBCol> 
+       </MDBRow>
+    </MDBContainer >
   );
 }
 
