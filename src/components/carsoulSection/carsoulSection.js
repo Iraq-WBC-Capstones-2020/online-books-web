@@ -11,18 +11,17 @@ import CarouselItems from './carsoureItem';
 import GrideCarousel from './gridCarousel';
 import HighLight from './highlightSection';
 
-
 function CarsoulSection() {
   return (
     <>
       <MDBContainer>
         <MDBRow center>
-          <MDBCol  md="11" lg="10" xl="8">
+          <MDBCol md="11" lg="10" xl="8">
             <HighLight className="" text="best sellers in books" />
 
             <MDBContainer fluid className="bgGray">
               <MDBRow>
-                <MDBCol  md="12" lg="8" xl="8">
+                <MDBCol md="12" lg="8" xl="8">
                   <MDBCarousel
                     activeItem={1}
                     length={4}
@@ -47,7 +46,6 @@ function CarsoulSection() {
                   {/* gride for the new release and best sellers  */}
                   <GrideCarousel />
                 </MDBCol>
-                
               </MDBRow>
             </MDBContainer>
           </MDBCol>
