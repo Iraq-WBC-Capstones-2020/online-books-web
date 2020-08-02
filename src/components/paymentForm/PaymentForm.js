@@ -1,6 +1,5 @@
 import React from 'react';
 import './PaymentForm.scss';
-import './styles/style.css';
 import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBInput } from 'mdbreact';
 
 export default function PaymentForm() {
