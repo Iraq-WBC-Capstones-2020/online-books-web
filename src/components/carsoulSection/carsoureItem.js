@@ -2,10 +2,7 @@ import React from 'react';
 import {
   MDBCard,
   MDBCardBody,
-  MDBCardImage,
-  MDBCardTitle,
   MDBCardText,
-  MDBView,
   MDBCarouselItem,
   MDBCol,
   MDBRow,
@@ -13,14 +10,15 @@ import {
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 
-// create 4 items for carsouel movement
+// create 4 items for the carsouel movement
 function CarouselItems() {
   const { t } = useTranslation();
   let cards = [];
+
   let booksArray = [
     {
       cover:
-        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
+        'http://1.bp.blogspot.com/-yQklGusIOBE/Ul-oQ0_9vOI/AAAAAAAAfI4/XQTmNLaJZLQ/s1600/book-cover-poster-27.jpg',
       authorName: 'Alice Mayer',
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
@@ -30,7 +28,7 @@ function CarouselItems() {
     },
     {
       cover:
-        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
+        'http://www.snugglyoranges.com/wp-content/uploads/2014/09/Unspoken.jpg',
       authorName: 'Alice Mayer',
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
@@ -50,7 +48,7 @@ function CarouselItems() {
     },
     {
       cover:
-        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
+        'https://th.bing.com/th/id/OIP.Zf2SkeIiSI4ymvT2cc4u2AHaKd?pid=Api&rs=1',
       authorName: 'Alice Mayer',
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
@@ -89,26 +87,25 @@ function CarouselItems() {
       i++;
 
       return (
-        <MDBCarouselItem itemId={`${i}`} className="mt-md-4 mb-md-4 pl-lg-3 pl-md-5">
-          {/*src={`${book.cover}`} */}
-
+        <MDBCarouselItem
+          itemId={`${i}`}
+          className="mt-md-4 mb-md-4 pl-lg-3 "
+        >
           <MDBCard className="w-30 shadow-none" wide>
             <MDBContainer className="w-full">
               <MDBRow className="p-0">
-                {/*size="5" */}
-                <MDBCol xs="5"  sm="6" md="4" lg="5" className="p-0">
+                <MDBCol size="12" md="4" lg="5" className="p-0">
                   <img
-                    className="img-fluid"
-                    src="https://th.bing.com/th/id/OIP.Zf2SkeIiSI4ymvT2cc4u2AHaKd?pid=Api&rs=1"
+                    className="imageCardCarsouel"
+                    src={`${book.cover}`}
                     alt="cover book"
                   />
                 </MDBCol>
-{/*size="1" */}
-                <MDBCol md="1"  lg="1"></MDBCol>
-{/*size="6" */}
-                <MDBCol md="7" lg="6" className="my-auto">
+
+                <MDBCol md="1" lg="1"></MDBCol>
+
+                <MDBCol md="7" lg="6" size="12" className="my-auto">
                   <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto">
-                    {/*   <MDBCardTitle className=""> */}
                     <div>
                       <h1 className="fontHeader1 mb-0 font-weight-normal  text-2xl">
                         {' '}
@@ -129,7 +126,7 @@ function CarouselItems() {
                       </div>
                     </MDBCardText>
 
-                    <button className="buttomText text-center mycolorPink w-5/6 shadow-md parg1 hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full">
+                    <button className="buttomText text-center mycolorPink w-5/6 shadow-md  hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full">
                       {t('addtocart')}
                     </button>
                   </MDBCardBody>
