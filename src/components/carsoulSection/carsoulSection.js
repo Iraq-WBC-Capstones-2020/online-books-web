@@ -13,11 +13,11 @@ import HighLight from './highlightSection';
 function CarsoulSection() {
   return (
     <>
-      <div className="d-flex justify-content-center">
+      <MDBContainer >
+      <MDBRow center>
        <MDBCol  xs="10"	sm="10"	md="11" lg="10"	xl="8">
           <HighLight className="" text="best sellers in books"/>
-
-          <MDBContainer fluid className="bgGray">
+          <MDBContainer fluid className="bgGray h-auto">
             <MDBRow>
 
              <MDBCol  xs="12" sm="12" md="11" lg="8" xl="8">
@@ -34,7 +34,7 @@ function CarsoulSection() {
                 </MDBCarousel> 
               </MDBCol>
              
-              <MDBCol  xs="12" sm="12"	md="12"	lg="4"	xl="4" className="mb-4 mt-4">
+              <MDBCol  xs="12" sm="12"	md="12"	lg="4"	xl="4" className="mb-md-4 mt-md-4 mt-sm-1">
                 {/* gride for the new release and best sellers  */}
                 <GrideCarousel />
               </MDBCol>
@@ -42,7 +42,8 @@ function CarsoulSection() {
             </MDBRow>
           </MDBContainer>
           </MDBCol>
-      </div>
+          </MDBRow>
+        </MDBContainer>
     </>
   );
 }
