@@ -14,7 +14,7 @@ import { useTranslation } from 'react-i18next';
 function CarouselItems() {
   const { t } = useTranslation();
   let cards = [];
-
+  
   let booksArray = [
     {
       cover:
