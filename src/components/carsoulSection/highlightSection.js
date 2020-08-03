@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function HighLight(props) {
   return (
@@ -7,5 +8,7 @@ function HighLight(props) {
     </div>
   );
 }
-
+HighLight.propTypes = {
+  text: PropTypes.string
+};
 export default HighLight;
