@@ -55,7 +55,7 @@ export default function PaymentTable() {
             <MDBTableBody>
               {books.map((book) => {
                 return (
-                  <tr>
+                  <tr key="index">
                     <td>
                       <input type="checkbox" />
                     </td>
