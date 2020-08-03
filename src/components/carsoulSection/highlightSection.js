@@ -9,6 +9,6 @@ function HighLight(props) {
   );
 }
 HighLight.propTypes = {
-  text: PropTypes.string
+  text: PropTypes.string,
 };
 export default HighLight;

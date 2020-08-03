@@ -25,6 +25,7 @@ function CarouselItems() {
       price: '$31.5',
       rate: 3,
       views: '22,333',
+      id: 1,
     },
     {
       cover:
@@ -35,6 +36,7 @@ function CarouselItems() {
       price: '$31.5',
       rate: 3,
       views: '22k',
+      id: 2,
     },
     {
       cover:
@@ -45,6 +47,7 @@ function CarouselItems() {
       price: '$31.5',
       rate: 3,
       views: '22k',
+      id: 3,
     },
     {
       cover:
@@ -55,6 +58,7 @@ function CarouselItems() {
       price: '$31.5',
       rate: 3,
       views: '22k',
+      id: 4,
     },
     {
       cover:
@@ -65,6 +69,7 @@ function CarouselItems() {
       price: '$31.5',
       rate: 3,
       views: '22k',
+      id: 5,
     },
     {
       cover:
@@ -75,24 +80,22 @@ function CarouselItems() {
       price: '$31.5',
       rate: 3,
       views: '22k',
+      id: 6,
     },
   ];
 
   let createCards = () => {
     let specialBooks = [];
-    let i = 0;
     specialBooks = booksArray.slice(0, 4);
 
-    cards = specialBooks.map((book) => {
-      i++;
-
+    cards = specialBooks.map((book,index) => {
       return (
         <MDBCarouselItem
-          itemId={`${i}`}
-          key={`${i}`}
+          itemId={index}
+          key={book.id}
           className="mt-md-4 mb-md-4 pl-lg-3"
         >
-          <MDBCard className="w-30 shadow-none" key={`${i}`} wide>
+          <MDBCard className="w-30 shadow-none" wide>
             <MDBContainer className="w-full">
               <MDBRow className="p-0">
                 <MDBCol size="12" md="4" lg="5" className="p-0">
@@ -138,6 +141,7 @@ function CarouselItems() {
         </MDBCarouselItem>
       );
     });
+
     return cards;
   };
   let createStars = (rate) => {
