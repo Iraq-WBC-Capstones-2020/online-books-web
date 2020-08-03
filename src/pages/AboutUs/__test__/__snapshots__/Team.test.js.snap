@@ -23,7 +23,7 @@ Array [
         className="flex justify-center"
       >
         <hr
-          className=" w-48"
+          className="w-48"
         />
       </div>
     </div>
@@ -37,7 +37,7 @@ Array [
     >
       <img
         alt="saraAltaee"
-        className=" rounded-circle  img-fluid z-depth-1 mx-auto"
+        className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
         style={
           Object {
@@ -63,7 +63,7 @@ Array [
           </span>
         </h4>
         <p
-          className=" text-gray-700 font-sans"
+          className="text-gray-700 font-sans"
         >
           saraBio
         </p>
@@ -115,7 +115,7 @@ Array [
     >
       <img
         alt="neven"
-        className=" rounded-circle  img-fluid z-depth-1 mx-auto"
+        className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic1.jpg"
         style={
           Object {
@@ -141,7 +141,7 @@ Array [
           </span>
         </h4>
         <p
-          className=" text-gray-700 font-sans"
+          className="text-gray-700 font-sans"
         >
           nevenBio
         </p>
@@ -193,7 +193,7 @@ Array [
     >
       <img
         alt="dunia"
-        className=" rounded-circle  img-fluid z-depth-1 mx-auto"
+        className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic2.jpg"
         style={
           Object {
@@ -219,7 +219,7 @@ Array [
           </span>
         </h4>
         <p
-          className=" text-gray-700 font-sans"
+          className="text-gray-700 font-sans"
         >
           duniaBio
         </p>
@@ -271,7 +271,7 @@ Array [
     >
       <img
         alt="qays"
-        className=" rounded-circle  img-fluid z-depth-1 mx-auto"
+        className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic3.jpg"
         style={
           Object {
@@ -297,7 +297,7 @@ Array [
           </span>
         </h4>
         <p
-          className=" text-gray-700 font-sans"
+          className="text-gray-700 font-sans"
         >
           qaysBio
         </p>
@@ -349,7 +349,7 @@ Array [
     >
       <img
         alt="zeena"
-        className=" rounded-circle  img-fluid z-depth-1 mx-auto"
+        className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic4.jpg"
         style={
           Object {
@@ -375,7 +375,7 @@ Array [
           </span>
         </h4>
         <p
-          className=" text-gray-700 font-sans"
+          className="text-gray-700 font-sans"
         >
           zeenaBio
         </p>
@@ -427,7 +427,7 @@ Array [
     >
       <img
         alt="zainab"
-        className=" rounded-circle  img-fluid z-depth-1 mx-auto"
+        className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic5.jpg"
         style={
           Object {
@@ -453,7 +453,7 @@ Array [
           </span>
         </h4>
         <p
-          className=" text-gray-700 font-sans"
+          className="text-gray-700 font-sans"
         >
           zainabBio
         </p>

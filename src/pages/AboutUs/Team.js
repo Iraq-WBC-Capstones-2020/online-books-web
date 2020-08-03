@@ -69,7 +69,7 @@ function TeamMembersInformation() {
           </h1>
           <br />
           <div className="flex justify-center">
-            <hr className=" w-48" />
+            <hr className="w-48" />
           </div>
         </div>
       </MDBCol>
@@ -81,7 +81,7 @@ function TeamMembersInformation() {
           >
             <img
               style={{ width: '9rem', marginTop: '-25%' }}
-              className=" rounded-circle  img-fluid z-depth-1 mx-auto"
+              className=" rounded-circle img-fluid z-depth-1 mx-auto"
               src={memeber.memeber.pic}
               alt={memeber.memeber.name}
               wave
@@ -93,7 +93,7 @@ function TeamMembersInformation() {
                   &nbsp; | {memeber.memeber.specailty}
                 </span>
               </h4>
-              <p className=" text-gray-700 font-sans">{memeber.memeber.bio}</p>
+              <p className="text-gray-700 font-sans">{memeber.memeber.bio}</p>
               <div className="flex justify-center m-2">
                 <MDBIcon>
                   <a
