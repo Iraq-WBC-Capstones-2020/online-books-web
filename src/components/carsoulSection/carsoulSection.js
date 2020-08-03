@@ -17,7 +17,7 @@ function CarsoulSection() {
       <MDBContainer>
         <MDBRow center>
           <MDBCol md="11" lg="10" xl="8">
-            <HighLight text="best sellers in books" />
+            <HighLight />
 
             <MDBContainer fluid className="bgGray">
               <MDBRow>
