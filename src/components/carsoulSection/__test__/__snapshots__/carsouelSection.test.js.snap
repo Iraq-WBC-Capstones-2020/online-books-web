@@ -50,7 +50,8 @@ exports[`CarsoulSection snapshot 1`] = `
                   data-test="carousel-item"
                   style={
                     Object {
-                      "left": "0",
+                      "left": "-100%",
+                      "position": "absolute",
                     }
                   }
                 >
@@ -159,8 +160,7 @@ exports[`CarsoulSection snapshot 1`] = `
                   data-test="carousel-item"
                   style={
                     Object {
-                      "left": "100%",
-                      "position": "absolute",
+                      "left": "0",
                     }
                   }
                 >

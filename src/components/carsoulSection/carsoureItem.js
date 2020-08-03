@@ -88,7 +88,7 @@ function CarouselItems() {
     let specialBooks = [];
     specialBooks = booksArray.slice(0, 4);
 
-    cards = specialBooks.map((book,index) => {
+    cards = specialBooks.map((book, index) => {
       return (
         <MDBCarouselItem
           itemId={index}
