@@ -2,13 +2,16 @@ import React from 'react';
 import './style.scss';
 import bookCover from './bookCover.jpg';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
+import { useTranslation } from 'react-i18next';
 const BlogPage = () => {
+  const { t } = useTranslation();
+  const bookName = 'Mind Without Body';
   return (
     <MDBContainer className="mt-5">
       <MDBRow>
         <MDBCol sm="6" size="12">
           <div className="mt-5">
-            <h1 className="blue-text"> Mind without body</h1>
+            <h1 className="blue-text">{bookName}</h1>
             <span className="gray-text">Ahmed khaled tofeq</span>
             <br />
             <div className="mt-2 yellow-star">
@@ -25,7 +28,7 @@ const BlogPage = () => {
               scrambled it to make a type specimen book.galley of type and
               scrambled it to make a type specimen book.
             </p>
-            <span className="gray-text">Language:Arabic</span>
+            <span className="gray-text">{`${t('language')}:Arabic`}</span>
             <br />
           </div>
           <div className="mt-3">
