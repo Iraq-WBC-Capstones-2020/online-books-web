@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import bookCover from './bookCover.jpg';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 const BlogPage = () => {
@@ -36,19 +36,19 @@ const BlogPage = () => {
             <MDBBtn color="info" className="mr-3 px-3 py-0">
               Fantasy
             </MDBBtn>
-            <MDBBtn color="info" className=" px-3 py-0">
+            <MDBBtn color="info" className="px-3 py-0">
               2017
             </MDBBtn>
           </div>
           <div className="mt-4">
-            <MDBBtn color="primary " className=" px-4 rounded-pill">
+            <MDBBtn color="primary" className="px-4 rounded-pill">
               Add to cart
             </MDBBtn>
           </div>
         </MDBCol>
 
         <MDBCol sm="6" size="12">
-          <div className="mt-5 d-flex justify-content-center align-self-center ">
+          <div className="mt-5 d-flex justify-content-center align-self-center">
             <img src={bookCover} alt="Book cover" width="353" height="498" />
           </div>
         </MDBCol>
