@@ -1,10 +1,16 @@
 import React from 'react';
 import './i18n';
-import BookPage from './components/bookPage';
+import BookPagewithLogin from './components/bookPageWithLogin.js';
+import BookPageWithOutLogin from './components/bookPageWithoutLogin';
+import AudioPage from './pages/BookPage/AudioSectionParagraph';
+import Footer from './components/footer';
 function App() {
   return (
     <div>
-      <BookPage />
+      <BookPageWithOutLogin />
+      <BookPagewithLogin />
+      <AudioPage />
+      <Footer />
     </div>
   );
 }
