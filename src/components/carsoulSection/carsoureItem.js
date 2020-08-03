@@ -87,8 +87,8 @@ function CarouselItems() {
       i++;
 
       return (
-        <MDBCarouselItem itemId={`${i}`} key={`${i}`}  className="mt-md-4 mb-md-4 pl-lg-3 ">
-          <MDBCard className="w-30 shadow-none" wide>
+        <MDBCarouselItem itemId={`${i}`} className="mt-md-4 mb-md-4 pl-lg-3 ">
+          <MDBCard className="w-30 shadow-none" wide  key={`${i}`}  >
             <MDBContainer className="w-full">
               <MDBRow className="p-0">
                 <MDBCol size="12" md="4" lg="5" className="p-0">
