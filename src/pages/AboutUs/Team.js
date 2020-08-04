@@ -1,12 +1,12 @@
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBCol, MDBIcon } from 'mdbreact';
+import { MDBCol, MDBIcon } from 'mdbreact';
 import pic1 from './pic1.jpg';
 import pic2 from './pic2.jpg';
 import pic3 from './pic3.jpg';
 import pic4 from './pic4.jpg';
 import pic5 from './pic5.jpg';
 import { useTranslation } from 'react-i18next';
-import TeamMemberCards from './TeamMemeberCards';
+import TeamMemberCards from './TeamMemberCards';
 
 function TeamMembersInformation() {
   const { t } = useTranslation();
@@ -28,7 +28,7 @@ function TeamMembersInformation() {
       },
     },
     {
-      memeber: {
+      member: {
         name: t('aboutPage.dunia'),
         bio: t('aboutPage.duniaBio'),
         specailty: t('aboutPage.specailty'),
@@ -75,7 +75,7 @@ function TeamMembersInformation() {
         </div>
       </MDBCol>
       <div className=" row m-10 flex justify-center mt-20">
-        {team.map((memeber) => (
+        {team.map((member) => (
           <TeamMemberCards member={member}></TeamMemberCards>
         ))}
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBCol, MDBIcon } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 
-function TeamMemeberCards({ member }) {
+function TeamMemberCards({ member }) {
   return (
     <MDBCard
       className=" animate transition duration-500 ease-in-out  
@@ -10,7 +10,7 @@ function TeamMemeberCards({ member }) {
       <img
         style={{ width: '9rem', marginTop: '-25%' }}
         className=" rounded-circle img-fluid z-depth-1 mx-auto"
-        src={member.member.pic}
+        src={member.pic}
         alt={member.member.name}
         wave
       ></img>
@@ -56,4 +56,4 @@ function TeamMemeberCards({ member }) {
     </MDBCard>
   );
 }
-export default TeamMemeberCards;
+export default TeamMemberCards;
