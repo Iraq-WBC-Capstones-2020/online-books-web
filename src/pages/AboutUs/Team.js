@@ -12,7 +12,7 @@ function TeamMembersInformation() {
   const { t } = useTranslation();
   let team = [
     {
-      memeber: {
+      member: {
         name: t('aboutPage.saraAltaee'),
         bio: t('aboutPage.saraBio'),
         specailty: t('aboutPage.specailty'),
@@ -20,7 +20,7 @@ function TeamMembersInformation() {
       },
     },
     {
-      memeber: {
+      member: {
         name: t('aboutPage.neven'),
         bio: t('aboutPage.nevenBio'),
         specailty: t('aboutPage.specailty'),
@@ -36,7 +36,7 @@ function TeamMembersInformation() {
       },
     },
     {
-      memeber: {
+      member: {
         name: t('aboutPage.qays'),
         bio: t('aboutPage.qaysBio'),
         specailty: t('aboutPage.specailty'),
@@ -44,7 +44,7 @@ function TeamMembersInformation() {
       },
     },
     {
-      memeber: {
+      member: {
         name: t('aboutPage.zeena'),
         bio: t('aboutPage.zeenaBio'),
         specailty: t('aboutPage.specailty'),
@@ -52,7 +52,7 @@ function TeamMembersInformation() {
       },
     },
     {
-      memeber: {
+      member: {
         name: t('aboutPage.zainab'),
         bio: t('aboutPage.zainabBio'),
         specailty: t('aboutPage.specailty'),
@@ -76,7 +76,7 @@ function TeamMembersInformation() {
       </MDBCol>
       <div className=" row m-10 flex justify-center mt-20">
         {team.map((memeber) => (
-          <TeamMemberCards memeber={memeber}></TeamMemberCards>
+          <TeamMemberCards member={member}></TeamMemberCards>
         ))}
       </div>
       ;
