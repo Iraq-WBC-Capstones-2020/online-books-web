@@ -1,19 +1,21 @@
 {
-  "saraAltaee": "Sarah Al-Taee",
-  "saraBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
-  "specailty": "designer",
-  "neven": "Neven Bedr",
-  "nevenBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+  "aboutPage": {
+    "saraAltaee": "Sarah Al-Taee",
+    "saraBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+    "specailty": "designer",
+    "neven": "Neven Bedr",
+    "nevenBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
 
-  "dunia": "Dunia Nasr",
-  "duniaBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+    "dunia": "Dunia Nasr",
+    "duniaBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
 
-  "qays": "Qays Ayad",
-  "qaysBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+    "qays": "Qays Ayad",
+    "qaysBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
 
-  "zeena": "Zeena Kareem",
-  "zeenaBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+    "zeena": "Zeena Kareem",
+    "zeenaBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
 
-  "zainab": "Zainab Saud",
-  "zainabBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem."
+    "zainab": "Zainab Saud",
+    "zainabBio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem."
+  }
 }

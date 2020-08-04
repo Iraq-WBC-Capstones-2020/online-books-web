@@ -13,49 +13,49 @@ function TeamMembersInformation() {
   let team = [
     {
       memeber: {
-        name: t('saraAltaee'),
-        bio: t('saraBio'),
-        specailty: t('specailty'),
+        name: t('aboutPage.saraAltaee'),
+        bio: t('aboutPage.saraBio'),
+        specailty: t('aboutPage.specailty'),
         pic: 'https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg',
       },
     },
     {
       memeber: {
-        name: t('neven'),
-        bio: t('nevenBio'),
-        specailty: t('specailty'),
+        name: t('aboutPage.neven'),
+        bio: t('aboutPage.nevenBio'),
+        specailty: t('aboutPage.specailty'),
         pic: pic1,
       },
     },
     {
       memeber: {
-        name: t('dunia'),
-        bio: t('duniaBio'),
-        specailty: t('specailty'),
+        name: t('aboutPage.dunia'),
+        bio: t('aboutPage.duniaBio'),
+        specailty: t('aboutPage.specailty'),
         pic: pic2,
       },
     },
     {
       memeber: {
-        name: t('qays'),
-        bio: t('qaysBio'),
-        specailty: t('specailty'),
+        name: t('aboutPage.qays'),
+        bio: t('aboutPage.qaysBio'),
+        specailty: t('aboutPage.specailty'),
         pic: pic3,
       },
     },
     {
       memeber: {
-        name: t('zeena'),
-        bio: t('zeenaBio'),
-        specailty: t('specailty'),
+        name: t('aboutPage.zeena'),
+        bio: t('aboutPage.zeenaBio'),
+        specailty: t('aboutPage.specailty'),
         pic: pic4,
       },
     },
     {
       memeber: {
-        name: t('zainab'),
-        bio: t('zainabBio'),
-        specailty: t('specailty'),
+        name: t('aboutPage.zainab'),
+        bio: t('aboutPage.zainabBio'),
+        specailty: t('aboutPage.specailty'),
         pic: pic5,
       },
     },
