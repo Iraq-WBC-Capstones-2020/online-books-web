@@ -1,6 +1,10 @@
+$dark-blue: #7aa2d6;
+$font-roboto: 'Roboto';
+
 .blue-text {
-  color: #2f80ed;
+  color: $dark-blue;
   font-size: 2rem;
+  font-family: $font-roboto;
 }
 
 .paragraph {
