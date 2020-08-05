@@ -41,10 +41,11 @@ function CatergrayList(props) {
     //make the other Bubble items unactive
     const otherDomItems = arrayOfIndex.filter((item) => item !== ActiveBubble);
     otherDomItems.forEach((itemDom) => {
+      if(refs.current[itemDom]!==undefined){
       const classItem = refs.current[itemDom].classList.value;
       if (classItem == 'textPink') {
         refs.current[itemDom].classList.remove('textPink');
-      }
+      }}
     });
   };
 
