@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.scss';
-import bookCover from './bookCover.jpg';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 const BookPage = () => {
@@ -8,6 +7,12 @@ const BookPage = () => {
 
   const bookPage = {
     bookName: 'Mind Without Body',
+    bookCover: 'https://via.placeholder.com/353x498',
+    description: `is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since
+    the 1500s, when an unknown printer took a galley of type and
+    scrambled it to make a type specimen book.galley of type and
+    scrambled it to make a type specimen book`,
     authortName: 'Ahmed khaled tofeq',
     bookType: 'Fantasy',
     publishDate: '2017',
@@ -30,14 +35,10 @@ const BookPage = () => {
               <MDBIcon icon="star"></MDBIcon>
               <MDBIcon icon="star"></MDBIcon>
             </div>
-            <p className="mt-3 paragraph">
-              {`is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.galley of type and
-              scrambled it to make a type specimen book.`}
-            </p>
-            <span className="gray-text">{t('language')}:Arabic</span>
+            <p className="mt-3 paragraph">{description}</p>
+            <span className="gray-text text-2xl leading-7 text-justify">
+              {t('language')}:Arabic
+            </span>
           </div>
           <br />
           {isLoggedIn ? (
