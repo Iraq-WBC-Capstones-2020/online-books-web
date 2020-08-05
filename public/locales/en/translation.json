@@ -1,4 +1,6 @@
 {
-  "language": "Language",
-  "addToCart": "add to cart"
+  "bookPage": {
+    "language": "Language",
+    "addToCart": "add to cart"
+  }
 }

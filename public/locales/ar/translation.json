@@ -1,4 +1,6 @@
 {
-  "language": "اللغة",
-  "addToCart": "أضف إلى السلة"
+  "bookPage": {
+    "language": "اللغة",
+    "addToCart": "أضف إلى السلة"
+  }
 }
