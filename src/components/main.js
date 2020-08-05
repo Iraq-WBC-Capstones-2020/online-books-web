@@ -16,7 +16,7 @@ function Main() {
             <SearchSection />
           </MDBCol>
 
-          <MDBCol md="8" lg="8" className=" bg-gray-200">
+          <MDBCol md="8" lg="8">
             <MDBContainer>GRIDE BOOKS </MDBContainer>
           </MDBCol>
         </MDBRow>

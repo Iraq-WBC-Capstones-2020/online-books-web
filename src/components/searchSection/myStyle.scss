@@ -6,20 +6,21 @@ $light-gray: #f6f6f6;
 $light-blue2: #f9f9f9;
 $font-roboto: 'Roboto';
 $light-black: #0e0e0e;
-
+$light-pink: #fee4cb;
 .lightBlack {
   background: $light-black;
 }
+
 .mycolorPink {
   // background: $pink-color;
-  background: #fee4cb;
+  background: $light-pink;
 }
 .textPink {
-  color: #fee4cb;
+  color: $light-pink;
 }
 
 %fontType {
-  font: 'Saira';
+  font-family: 'Saira';
 }
 
 .fontHeader1 {
@@ -35,7 +36,7 @@ $light-black: #0e0e0e;
 
 .parg1 {
   color: $gray-color;
-  font: $font-roboto;
+  font-family: $font-roboto;
   font-size: 0.9rem;
 }
 
@@ -57,24 +58,15 @@ $light-black: #0e0e0e;
   position: relative;
   top: -1.4rem;
   border-radius: 0.2rem;
-  // box-shadow:#636060;
 }
 
 .buttomText {
-  font: $font-roboto;
+  font-family: $font-roboto;
   font-size: 1rem;
 }
 
-//.buttomSearch {
-//  width: 2.5rem;
-//  height: 2.5rem;
-//  border-radius: 2rem;
-//  position: relative;
-//  top: -4.2rem;
-//  right: -15rem;
-//}
 .buttomSearch {
-  width: 4rem;
+  width: 2.6rem;
   height: 2.5rem;
   border-radius: 5rem;
 }
@@ -95,14 +87,14 @@ $light-black: #0e0e0e;
 .borderActive {
   border-bottom: 1px solid $pink-color;
   box-shadow: 0 1px 0 0 $pink-color;
+  z-index: 2;
 }
 .active-pink input {
-  border-bottom: 1px solid #33af39 !important;
-  box-shadow: 0 1px 0 0 #33af39 !important ;
+  border-bottom: none !important;
+  box-shadow: none !important ;
 }
+
 .active-pink input:focus {
-  border-bottom: 1px solid #da1f1f !important;
-  box-shadow: 0 1px 0 0 #da1f1f !important;
-}
-@media (max-width: 640px) {
+  border-bottom: none !important;
+  box-shadow: none !important ;
 }

@@ -1,5 +1,15 @@
 {
-  "addtocart": "Add to cart",
-  "bestSellers": "best sellers in books",
-  "newRelease": "new releases in Books"
+  "highlight": {
+    "addtocart": "Add to cart",
+    "bestSellers": "best sellers in books",
+    "newRelease": "new releases in Books"
+  },
+
+  "catogry": {
+    "Popular": "Popular",
+    "Biographies &Memoirs": "Biographies &Memoirs",
+    "Literature & Fiction": "Literature & Fiction",
+    "Business&Investing": "Business&Investing",
+    "History": "History"
+  }
 }

@@ -1,5 +1,15 @@
 {
-  "best selling books": "أفضل الكتب المباعة",
-  "add to cart": "أضف الى العربة ",
-  "newRelease": "أحدث اصدارات الكتب"
+  "highlight": {
+    "best selling books": "أفضل الكتب المباعة",
+    "add to cart": "أضف الى العربة ",
+    "newRelease": "أحدث اصدارات الكتب"
+  },
+
+  "catogry": {
+    "Popular": "الشائع",
+    "Biographies &Memoirs": "السير الذاتية",
+    "Literature & Fiction": "الادب والخيال",
+    "Business&Investing": "العمل",
+    "History": "التاريخ"
+  }
 }
