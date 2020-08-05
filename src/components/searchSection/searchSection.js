@@ -26,22 +26,16 @@ function SearchSection() {
     { name: 'dunia tarq' },
   ];
   let [inputValue, setInputValue] = useState('');
-  let [Authorcolor, setAuthorColor] = useState('text-gray-300');
-  let [Bookcolor, setBookColor] = useState('textPink');
+  let [activeItem, setActiveItem] = useState(2);
   let [data, setData] = useState(catograysBook);
 
-  let handelAuthorColor = () => {
-    setAuthorColor('textPink');
-    setBookColor('text-gray-300');
-    setData(AuthorNames);
-  };
-  let handelBookColor = () => {
-    setBookColor('textPink');
-    setAuthorColor('text-gray-300');
-    setData(catograysBook);
-  };
-  let getValue = () => {};
-
+ 
+let handelColor = (index) => {
+  if( activeItem===index){
+  return 'textPink'
+  }
+ 
+};
   return (
     <>
       <MDBContainer className=" bg-black p-0 ">
@@ -49,28 +43,29 @@ function SearchSection() {
           {/*SEARCH BOX PART */}
 
           <MDBCol
-            md="12"
-            lg="12"
+            md="10"
+            lg="10"
             className="mycolorPink columnSearchBooks  p-0 h-12 z-depth-4 "
           >
             <MDBFormInline className="searchBox">
               <MDBInput
-                className="form-control "
+               
                 hint="Find Your Book"
                 type="text"
-                className="text-black mr-5 pl-2"
+                className="text-black pl-2 mr-3 form-control"
                 //getValue={this.getValue}
-                containerClass="active-pink "
+                containerClass="active-pink  "
+               
               />
               <MDBBtn
                 color=""
-                className="shadow buttomSearch px-1 mb-3 mt-0  "
+                className="shadow buttomSearch px-1 pb-3 mb-3 mt-0 "
                 onClick={() => {}}
               >
                 <MDBIcon
                   icon="search"
                   size="lg"
-                  className="text-black fa-w-2 "
+                  className="text-black "
                 />
               </MDBBtn>
             </MDBFormInline>
@@ -83,32 +78,44 @@ function SearchSection() {
             SEARCH BY
           </MDBCol>
 
-          <MDBCol md="6" className="text-center  px-3 pb-2">
-            {/*border does not work */}
+          <MDBCol md="6" className="  text-center  px-3 pb-2">
             <div
-              class="lightBlack h-16 pt-2 border-orange-500"
-              onClick={handelAuthorColor}
+              key={1}
+              class="lightBlack h-16 pt-2 text-gray-300 border-orange-500"
+              onClick={()=> {setActiveItem(1);
+                             setData(AuthorNames);}}
             >
               <MDBIcon
                 icon="user-tie"
                 size="lg"
-                className={`pb-2 ${Authorcolor}`}
+                className={`pb-2 ${handelColor(1)}`}
               />
-              <p class={`pb-2 textParg ${Authorcolor}`}> Authors</p>
+              <p class={`pb-2 textParg ${handelColor(1)}`}> Authors</p>
             </div>
+
           </MDBCol>
 
           <MDBCol md="6" className="text-center px-3 pb-2">
-            <div class="lightBlack h-16 pt-2" onClick={handelBookColor}>
-              <MDBIcon icon="book" size="lg" className={`pb-2 ${Bookcolor}`} />
-              <p className={`pb-2 textParg ${Bookcolor}`}>Books</p>
+
+            <div
+            key={2}
+             class="lightBlack text-gray-300 h-16  pt-2"
+             onClick={()=> {setActiveItem(2)
+              setData(catograysBook)
+              }}>
+              <MDBIcon icon="book" size="lg" className={`pb-2 ${handelColor(2)}`} />
+              <p className={`pb-2 textParg ${handelColor(2)}`}>Books</p>
             </div>
           </MDBCol>
         </MDBRow>
 
         {/*itemList for book catogray and authors names*/}
         <MDBRow center className="mt-2 mb-0">
+        <MDBCol md="12" >
+
           <CatergrayList items={data} />
+
+        </MDBCol>
         </MDBRow>
       </MDBContainer>
     </>

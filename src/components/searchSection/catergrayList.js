@@ -4,7 +4,7 @@ import './myStyle.scss';
 import { range } from 'mathjs';
 
 function CatergrayList(props) {
-  let data = props.items;
+  /*  let data = props.items;
   let itemsTags = [];
   let numberOfItems = data.length;
   let arrayOfIndex = range(0, numberOfItems)._data;
@@ -26,7 +26,7 @@ function CatergrayList(props) {
       );
     }
   };
-
+ 
   //light the bubble for the popular in first time when open the webapp
   useEffect(() => lightBubble(), []);
 
@@ -90,7 +90,51 @@ function CatergrayList(props) {
 
   typeItems();
   emptyItems();
+*/
 
+  let data = props.items;
+  let itemsTags = [];
+  let numberOfItems = data.length;
+  let [ActiveBubble, setActiveBubble] = useState(0);
+  let [catogray, setCatogray] = useState('');
+  console.log(catogray);
+
+  let handelBubble = (index) => {
+    if (ActiveBubble == index) {
+      return 'textPink';
+    }
+  };
+
+  let emptyItems = () => {
+    for (let i = 1; i <= 9 - numberOfItems; i++) {
+      itemsTags.push(<div md="12" className="lightBlack h-10 mb-1 "></div>);
+    }
+  };
+
+  let typeItems = () => {
+    itemsTags = data.map((item, index) => {
+      return (
+        <div
+          className="text-left lightBlack h-10 mb-1"
+          key={index}
+          //turn the light to pink for the item that choose and the other to unactive
+          onClick={(e) => {
+            setActiveBubble(index);
+            console.log(e.target.children[1].innerHTML);
+          }}
+        >
+          <MDBIcon
+            icon="circle"
+            className={`p-3 sizeBubble ${handelBubble(index)};`}
+          />
+          <p className="parg1 d-inline hoverCursor">{item.name}</p>
+        </div>
+      );
+    });
+  };
+
+  typeItems();
+  emptyItems();
   return itemsTags;
 }
 export default CatergrayList;
