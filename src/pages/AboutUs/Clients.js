@@ -23,45 +23,26 @@ function Detailsclient() {
   return (
     <>
       <MDBCol>
-        <div className="text-center">
-          <h1 className=" text-3xl mt-10 font-weight-bold ">Our Clients</h1>
-          <br />
-          <div className="flex justify-center">
-            <hr className="w-48" />
-          </div>
+        <div className="text-center mt-5">
+          <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
+            Our Clients
+          </h1>
         </div>
       </MDBCol>
-      <MDBContainer className="col-2 w-9/12 mt-5">
-        <div className="flex flex-warp ">
-          {clientsLogo.slice(0, 4).map((clientbox) => (
-            <div
-              className="border border-solid border-4 border-gray-200 flex justify-center"
-              key={clientbox.client.id}
-            >
-              <img
-                src={clientbox.client.logo}
-                alt={clientbox.client.name}
-                className="animate transition duration-500 ease-in-out  
+      <MDBContainer className=" w-9/12 mt-5 grid grid-cols-4 gab-5">
+        {clientsLogo.map((clientbox) => (
+          <div
+            className="border border-solid border-4 border-gray-200 flex justify-center"
+            key={clientbox.client.id}
+          >
+            <img
+              src={clientbox.client.logo}
+              alt={clientbox.client.name}
+              className="animate transition duration-500 ease-in-out  
                         transform hover:-translate-y-1 hover:scale-110  w-1/3 m-4"
-              />
-            </div>
-          ))}
-        </div>
-        <div className="flex flex-warp justify-center ">
-          {clientsLogo.slice(4, 8, 4).map((clientbox) => (
-            <div
-              className="border border-solid border-4 border-gray-200 flex justify-center "
-              key={clientbox.client.id}
-            >
-              <img
-                src={clientbox.client.logo}
-                alt={clientbox.client.name}
-                className="animate transition duration-500 ease-in-out  
-                        transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
-              />
-            </div>
-          ))}
-        </div>
+            />
+          </div>
+        ))}
       </MDBContainer>
     </>
   );
