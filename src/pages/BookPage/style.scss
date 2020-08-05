@@ -1,11 +1,17 @@
 @import '../../assets/main.css';
+
+$gray-color: #979797;
+$dark-blue: #7aa2d6;
+
+$font-roboto: 'Roboto';
 .blue-text {
-  color: #2f80ed;
+  color: $dark-blue;
   font-size: 2rem;
+  font-family: $font-roboto;
 }
 
 .gray-text {
-  color: #727272;
+  color: $gray-color;
   font-size: 1.3rem;
 }
 
@@ -13,6 +19,7 @@
   line-height: 150%;
   font-size: 1.5rem;
   text-align: justify;
+  font-family: $font-roboto;
 }
 
 .yellow-star {
