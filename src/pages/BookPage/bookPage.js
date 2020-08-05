@@ -5,18 +5,23 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 const BookPage = () => {
   const { t } = useTranslation();
-  const bookName = 'Mind Without Body';
-  const authortName = 'Ahmed khaled tofeq';
-  const bookType = 'Fantasy';
-  const publishDate = '2017';
+
+  const bookPage = {
+    bookName: 'Mind Without Body',
+    authortName: 'Ahmed khaled tofeq',
+    bookType: 'Fantasy',
+    publishDate: '2017',
+    price: '15$',
+  };
+
   const isLoggedIn = false;
   return (
     <MDBContainer className="mt-5">
       <MDBRow>
         <MDBCol sm="6" size="12">
           <div className="mt-5">
-            <h1 className="blue-text"> {bookName}</h1>
-            <span className="gray-text">{authortName}</span>
+            <h1 className="blue-text"> {bookPage.bookName}</h1>
+            <span className="gray-text">{bookPage.authortName}</span>
             <br />
             <div className="mt-2 yellow-star">
               <MDBIcon icon="star"></MDBIcon>
@@ -39,10 +44,10 @@ const BookPage = () => {
             <>
               <div className="mt-3">
                 <MDBBtn color="info" className="mr-3 px-3 py-0">
-                  {bookType}
+                  {bookPage.bookType}
                 </MDBBtn>
                 <MDBBtn color="info" className="px-3 py-0">
-                  {publishDate}
+                  {bookPage.publishDate}
                 </MDBBtn>
               </div>
               <div className="mt-4">
@@ -59,15 +64,15 @@ const BookPage = () => {
           ) : (
             <>
               <span className="gray-text">
-                Price: <strong>15$</strong>
+                Price: <strong>{bookPage.price}</strong>
               </span>
 
               <div className="mt-3">
                 <MDBBtn color="info" className="mr-3 px-3 py-0">
-                  {bookType}
+                  {bookPage.bookType}
                 </MDBBtn>
                 <MDBBtn color="info" className="px-3 py-0">
-                  {publishDate}
+                  {bookPage.publishDate}
                 </MDBBtn>
               </div>
               <div className="mt-4">
