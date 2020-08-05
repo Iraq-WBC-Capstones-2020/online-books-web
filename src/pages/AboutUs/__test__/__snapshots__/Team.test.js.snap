@@ -36,7 +36,7 @@ Array [
       data-test="card"
     >
       <img
-        alt="saraAltaee"
+        alt="aboutPage.saraAltaee"
         className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
         style={
@@ -54,18 +54,18 @@ Array [
         <h4
           className="card-title text-center font-sans"
         >
-          saraAltaee
+          aboutPage.saraAltaee
           <span
             className="text-blue-700"
           >
               | 
-            specailty
+            aboutPage.specailty
           </span>
         </h4>
         <p
           className="text-gray-700 font-sans"
         >
-          saraBio
+          aboutPage.saraBio
         </p>
         <div
           className="flex justify-center m-2"
@@ -114,7 +114,7 @@ Array [
       data-test="card"
     >
       <img
-        alt="neven"
+        alt="aboutPage.neven"
         className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic1.jpg"
         style={
@@ -132,18 +132,18 @@ Array [
         <h4
           className="card-title text-center font-sans"
         >
-          neven
+          aboutPage.neven
           <span
             className="text-blue-700"
           >
               | 
-            specailty
+            aboutPage.specailty
           </span>
         </h4>
         <p
           className="text-gray-700 font-sans"
         >
-          nevenBio
+          aboutPage.nevenBio
         </p>
         <div
           className="flex justify-center m-2"
@@ -192,7 +192,7 @@ Array [
       data-test="card"
     >
       <img
-        alt="dunia"
+        alt="aboutPage.dunia"
         className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic2.jpg"
         style={
@@ -210,18 +210,18 @@ Array [
         <h4
           className="card-title text-center font-sans"
         >
-          dunia
+          aboutPage.dunia
           <span
             className="text-blue-700"
           >
               | 
-            specailty
+            aboutPage.specailty
           </span>
         </h4>
         <p
           className="text-gray-700 font-sans"
         >
-          duniaBio
+          aboutPage.duniaBio
         </p>
         <div
           className="flex justify-center m-2"
@@ -270,7 +270,7 @@ Array [
       data-test="card"
     >
       <img
-        alt="qays"
+        alt="aboutPage.qays"
         className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic3.jpg"
         style={
@@ -288,18 +288,18 @@ Array [
         <h4
           className="card-title text-center font-sans"
         >
-          qays
+          aboutPage.qays
           <span
             className="text-blue-700"
           >
               | 
-            specailty
+            aboutPage.specailty
           </span>
         </h4>
         <p
           className="text-gray-700 font-sans"
         >
-          qaysBio
+          aboutPage.qaysBio
         </p>
         <div
           className="flex justify-center m-2"
@@ -348,7 +348,7 @@ Array [
       data-test="card"
     >
       <img
-        alt="zeena"
+        alt="aboutPage.zeena"
         className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic4.jpg"
         style={
@@ -366,18 +366,18 @@ Array [
         <h4
           className="card-title text-center font-sans"
         >
-          zeena
+          aboutPage.zeena
           <span
             className="text-blue-700"
           >
               | 
-            specailty
+            aboutPage.specailty
           </span>
         </h4>
         <p
           className="text-gray-700 font-sans"
         >
-          zeenaBio
+          aboutPage.zeenaBio
         </p>
         <div
           className="flex justify-center m-2"
@@ -426,7 +426,7 @@ Array [
       data-test="card"
     >
       <img
-        alt="zainab"
+        alt="aboutPage.zainab"
         className=" rounded-circle img-fluid z-depth-1 mx-auto"
         src="pic5.jpg"
         style={
@@ -444,18 +444,18 @@ Array [
         <h4
           className="card-title text-center font-sans"
         >
-          zainab
+          aboutPage.zainab
           <span
             className="text-blue-700"
           >
               | 
-            specailty
+            aboutPage.specailty
           </span>
         </h4>
         <p
           className="text-gray-700 font-sans"
         >
-          zainabBio
+          aboutPage.zainabBio
         </p>
         <div
           className="flex justify-center m-2"

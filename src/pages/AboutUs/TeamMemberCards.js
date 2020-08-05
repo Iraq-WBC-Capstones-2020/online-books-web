@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
+import PropTypes from 'prop-types';
 
 function TeamMemberCards({ member }) {
   return (
@@ -10,7 +11,7 @@ function TeamMemberCards({ member }) {
       <img
         style={{ width: '9rem', marginTop: '-25%' }}
         className=" rounded-circle img-fluid z-depth-1 mx-auto"
-        src={member.pic}
+        src={member.member.pic}
         alt={member.member.name}
         wave
       ></img>
@@ -56,4 +57,7 @@ function TeamMemberCards({ member }) {
     </MDBCard>
   );
 }
+TeamMemberCards.propTypes = {
+  member: PropTypes.object,
+};
 export default TeamMemberCards;
