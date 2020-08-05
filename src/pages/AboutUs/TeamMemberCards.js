@@ -3,6 +3,7 @@ import { MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 import PropTypes from 'prop-types';
 
 function TeamMemberCards({ member }) {
+  const { pic, name, specailty, bio } = member.member;
   return (
     <MDBCard
       className=" animate transition duration-500 ease-in-out  
@@ -11,18 +12,16 @@ function TeamMemberCards({ member }) {
       <img
         style={{ width: '9rem', marginTop: '-25%' }}
         className=" rounded-circle img-fluid z-depth-1 mx-auto"
-        src={member.member.pic}
-        alt={member.member.name}
+        src={pic}
+        alt={name}
         wave
       ></img>
       <MDBCardBody className="m-1">
         <h4 className="card-title text-center font-sans">
-          {member.member.name}
-          <span className="text-blue-700">
-            &nbsp; | {member.member.specailty}
-          </span>
+          {name}
+          <span className="text-blue-700">&nbsp; | {specailty}</span>
         </h4>
-        <p className="text-gray-700 font-sans">{member.member.bio}</p>
+        <p className="text-gray-700 font-sans">{bio}</p>
         <div className="flex justify-center m-2">
           <MDBIcon>
             <a
