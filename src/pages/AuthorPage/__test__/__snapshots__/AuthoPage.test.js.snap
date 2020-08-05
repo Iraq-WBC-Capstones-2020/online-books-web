@@ -114,24 +114,13 @@ Array [
     </div>
   </div>,
   <div
-    className="container"
-    data-test="container"
+    className="text-center mt-5"
   >
-    <div
-      className="row"
-      data-test="row"
+    <h1
+      className="text-3xl font-medium inline border-b border-gray-400 px-5"
     >
-      <div
-        className="col text-center mt-5"
-        data-test="col"
-      >
-        <p
-          className="text-3xl font-medium inline border-b border-gray-400 px-5"
-        >
-          Ann's authorPage.books
-        </p>
-      </div>
-    </div>
+      Ann's authorPage.books
+    </h1>
   </div>,
 ]
 `;

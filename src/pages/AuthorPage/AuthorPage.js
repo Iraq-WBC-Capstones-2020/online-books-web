@@ -98,7 +98,6 @@ export default function AuthorPage() {
           {authorBookText}
         </h1>
       </div>
-
     </>
   );
 }
