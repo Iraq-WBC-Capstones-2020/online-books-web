@@ -35,10 +35,10 @@ const BookPage = () => {
               <MDBIcon icon="star"></MDBIcon>
               <MDBIcon icon="star"></MDBIcon>
             </div>
-            <p className="mt-3 paragraph">{description}</p>
-            <span className="gray-text text-2xl leading-7 text-justify">
-              {t('language')}:Arabic
-            </span>
+            <p className="mt-3 text-2xl leading-7 text-justify">
+              {description}
+            </p>
+            <span className="gray-text">{t('language')}:Arabic</span>
           </div>
           <br />
           {isLoggedIn ? (
