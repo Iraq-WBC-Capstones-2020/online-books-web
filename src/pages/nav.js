@@ -1,5 +1,5 @@
-import React from 'react';
-import './nav.scss';
+import React, { useState } from 'react';
+
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -15,11 +15,18 @@ import {
   MDBContainer,
   MDBBtn,
 } from 'mdbreact';
-import { BrowserRouter as Router } from 'react-router-dom';
 
-function NavbarPage() {
+const NavbarPage = () => {
+  const [state, setState] = useState({
+    isOpen: false,
+  });
+
+  const toggleCollapse = () =>
+    setState((oldState) => {
+      return { isOpen: !oldState.isOpen };
+    });
   return (
-    <Router>
+    <>
       <MDBContainer>
         <MDBNavbar
           className="shadow-none
@@ -30,8 +37,8 @@ function NavbarPage() {
           <MDBNavbarBrand>
             <strong className="black-text">Navbar</strong>
           </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={this.toggleCollapse} />
-          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+          <MDBNavbarToggler onClick={toggleCollapse} />
+          <MDBCollapse id="navbarCollapse3" isOpen={state.isOpen} navbar>
             <MDBNavbarNav right>
               <MDBNavItem>
                 <MDBNavLink to="#!">Home</MDBNavLink>
@@ -72,8 +79,8 @@ function NavbarPage() {
         </MDBNavbar>
       </MDBContainer>
       <hr className="mt-0" />
-    </Router>
+    </>
   );
-}
+};
 
 export default NavbarPage;
