@@ -11,7 +11,6 @@ import {
 import './myStyle.scss';
 import CatergrayList from './catergrayList';
 
-
 function SearchSection() {
   let catograysBook = [
     { name: 'Popular' },
@@ -79,7 +78,7 @@ function SearchSection() {
           <MDBCol md="6" className="  text-center  px-3 pb-2">
             <div
               key={1}
-              class="lightBlack h-16 pt-2 text-gray-300 border-orange-500"
+              className="lightBlack h-16 pt-2 text-gray-300 border-orange-500"
               onClick={() => {
                 setActiveItem(1);
                 setData(AuthorNames);
@@ -90,14 +89,14 @@ function SearchSection() {
                 size="lg"
                 className={`pb-2 ${handelColor(1)}`}
               />
-              <p class={`pb-2 textParg ${handelColor(1)}`}> Authors</p>
+              <p className={`pb-2 textParg ${handelColor(1)}`}> Authors</p>
             </div>
           </MDBCol>
 
           <MDBCol md="6" className="text-center px-3 pb-2">
             <div
               key={2}
-              class="lightBlack text-gray-300 h-16  pt-2"
+              className="lightBlack text-gray-300 h-16  pt-2"
               onClick={() => {
                 setActiveItem(2);
                 setData(catograysBook);

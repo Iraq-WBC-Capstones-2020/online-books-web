@@ -6,11 +6,11 @@ function CatergrayList({ items }) {
   let itemsTags = [];
   let numberOfItems = items.length;
   let [ActiveBubble, setActiveBubble] = useState(0);
-  let [catogray, setCatogray] = useState('');
+  let [setCatogray] = useState('');
 
   //light the bubble by pink color
   const handelBubble = (index) => {
-    if (ActiveBubble == index) {
+    if (ActiveBubble === index) {
       return 'textPink';
     }
   };
