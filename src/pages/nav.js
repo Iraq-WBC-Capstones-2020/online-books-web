@@ -28,12 +28,7 @@ const NavbarPage = () => {
   return (
     <>
       <MDBContainer>
-        <MDBNavbar
-          className="shadow-none
-        "
-          light
-          expand="md"
-        >
+        <MDBNavbar className="shadow-none" light expand="md">
           <MDBNavbarBrand>
             <strong className="black-text">Navbar</strong>
           </MDBNavbarBrand>
