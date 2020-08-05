@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`searchSection snapshot 1`] = `
+<div
+  className="container  bg-black p-0 "
+  data-test="container"
+>
+  <div
+    className="row justify-content-around"
+    data-test="row"
+  >
+    <div
+      className="col-md-10 col-lg-10 mycolorPink columnSearchBooks p-0 h-12 z-depth-4 "
+      data-test="col"
+    >
+      <form
+        className="form-inline searchBox"
+        data-test="form-inline"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div>
+          <div
+            className="md-form active-pink"
+          >
+            
+            <input
+              aria-disabled={false}
+              className="form-control text-black pl-2 mr-3 form-control"
+              data-test="input"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onInput={[Function]}
+              placeholder="Find Your Book"
+              type="text"
+              value=""
+            />
+            <label
+              aria-labelledby=""
+              className="active"
+              data-error=""
+              data-success=""
+              id=""
+              onClick={[Function]}
+            >
+               
+            </label>
+          </div>
+        </div>
+        <button
+          className="btn Ripple-parent shadow buttomSearch px-1 pb-3 mb-3 mt-0 "
+          data-test="button"
+          onClick={[Function]}
+          onMouseUp={[Function]}
+          onTouchStart={[Function]}
+          type="button"
+        >
+          <i
+            className="fa fa-search fa-lg text-black "
+            data-test="fa"
+          />
+          <div
+            className="Ripple "
+            data-test="waves"
+            style={
+              Object {
+                "height": "0px",
+                "left": "0px",
+                "top": "0px",
+                "width": "0px",
+              }
+            }
+          />
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-md-12  text-center pb-3 text-white font-bold "
+      data-test="col"
+    >
+      SEARCH BY
+    </div>
+    <div
+      className="col-md-6   text-center  px-3 pb-2"
+      data-test="col"
+    >
+      <div
+        className="lightBlack h-16 pt-2 text-gray-300 border-orange-500"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-user-tie fa-lg pb-2 undefined"
+          data-test="fa"
+        />
+        <p
+          className="pb-2 textParg undefined"
+        >
+           Authors
+        </p>
+      </div>
+    </div>
+    <div
+      className="col-md-6 text-center px-3 pb-2"
+      data-test="col"
+    >
+      <div
+        className="lightBlack text-gray-300 h-16  pt-2"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-book fa-lg pb-2 textPink"
+          data-test="fa"
+        />
+        <p
+          className="pb-2 textParg textPink"
+        >
+          Books
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row mt-2 mb-0"
+    data-test="row"
+  >
+    <div
+      className="col-md-12"
+      data-test="col"
+    >
+      <div
+        className="text-left lightBlack h-10 mb-1 "
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble textPink"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+        >
+          Popular
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1 "
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble undefined"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+        >
+          Biographies &Memoirs
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1 "
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble undefined"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+        >
+          Literature & Fiction
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1 "
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble undefined"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+        >
+          Business&Investing
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1 "
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble undefined"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+        >
+          History
+        </p>
+      </div>
+      <div
+        className="lightBlack h-10 mb-1"
+        md="12"
+      />
+      <div
+        className="lightBlack h-10 mb-1"
+        md="12"
+      />
+      <div
+        className="lightBlack h-10 mb-1"
+        md="12"
+      />
+      <div
+        className="lightBlack h-10 mb-1"
+        md="12"
+      />
+    </div>
+  </div>
+</div>
+`;
