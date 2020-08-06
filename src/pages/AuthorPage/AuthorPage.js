@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 
-export default function AuthorPage() {
+function AuthorPage() {
   const { t } = useTranslation();
   const name = 'Ann Druyan';
   const firstName = name.split(' ')[0];
@@ -101,3 +101,4 @@ export default function AuthorPage() {
     </>
   );
 }
+export default AuthorPage;
