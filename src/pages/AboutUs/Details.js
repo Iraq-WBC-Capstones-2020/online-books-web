@@ -7,9 +7,9 @@ function Details() {
   const { t } = useTranslation();
 
   const aboutPageTranslation = {
-    headerTitle: t('aboutUs'),
-    text: t('aboutUsText'),
-    ReadMore: t('ReadMoreButton'),
+    headerTitle: t('aboutPage.aboutSection.aboutUs'),
+    text: t('aboutPage.aboutSection.aboutUsText'),
+    ReadMore: t('aboutPage.aboutSection.ReadMoreButton'),
   };
   return (
     <div className="bg-gray-100 col">

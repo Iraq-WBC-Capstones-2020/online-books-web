@@ -27,7 +27,7 @@ exports[`Details snapshot 1`] = `
         <h3
           className="font-weight-bold text-3xl ml-1"
         >
-          aboutUs
+          aboutPage.aboutSection.aboutUs
            :
         </h3>
         <hr
@@ -36,7 +36,7 @@ exports[`Details snapshot 1`] = `
         <p
           className="mt-2 mr-5 text-lg text-justify"
         >
-          aboutUsText
+          aboutPage.aboutSection.aboutUsText
         </p>
         <button
           className="rounded-full h-8 w-1/9 mt-3 transition duration-500 ease-in-out bg-blue-500 hover:bg-blue-700 transform hover:-translate-y-1 hover:scale-110"
@@ -44,7 +44,7 @@ exports[`Details snapshot 1`] = `
           <span
             className="text-white"
           >
-            ReadMoreButton
+            aboutPage.aboutSection.ReadMoreButton
           </span>
         </button>
       </div>
