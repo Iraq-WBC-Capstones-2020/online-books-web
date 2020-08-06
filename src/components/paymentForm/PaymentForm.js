@@ -1,43 +1,35 @@
 import React from 'react';
-import './PaymentForm.scss';
+import '../../assets/main.css';
+import {useTranslation} from 'react-i18next';
 import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBInput } from 'mdbreact';
 
-export default function PaymentForm() {
-  const paymentForm = {
-    paymentMethod: 'Payment Method',
-    creditCard: 'Credit Card',
-    paypal: 'Paypal',
-    name: 'Name',
-    cardNumber: 'Card Number',
-    MMYYYY: 'MM/YYYY',
-    CVC: 'CVC',
-    purchase: 'Purchase',
-  };
+export default function PaymentForm(){
+  const { t } = useTranslation()
   return (
     <MDBContainer>
       <MDBRow>
         <MDBCol md="4">
           <form>
-            <p className="h5 mx-5 my-5 gray-text">
-              {paymentForm.paymentMethod}
+            <p className="h5 mx-5 my-5 text-gray-800">
+              {t('PaymentPage.paymentMethod')}
             </p>
             <MDBRow>
               <MDBCol md="6">
-                <p className="h6 text-center mx-3 gray-text mb-4">
+                <p className="h6 text-center mx-3 text-gray-800 mb-4">
                   <MDBIcon className="mx-2 my-1" icon="dot-circle" />
-                  {paymentForm.creditCard}
+                  {t('PaymentPage.creditCard')}
                 </p>
               </MDBCol>
               <MDBCol md="6">
-                <p className="h6 text-center mx-3 gray-text mb-4">
+                <p className="h6 text-center mx-3 text-gray-800 mb-4">
                   <MDBIcon className="mx-2 my-1" far icon="circle" />
-                  {paymentForm.paypal}
+                  {t('PaymentPage.paypal')}
                 </p>
               </MDBCol>
             </MDBRow>
-            <div className="grey-text">
+            <div className="text-gray-600">
               <MDBInput
-                label={paymentForm.name}
+                label={t('PaymentPage.name')}
                 icon="user"
                 containerClass="d-flex flex-row-reverse"
                 className="ml-0 mr-1"
@@ -50,7 +42,7 @@ export default function PaymentForm() {
               />
 
               <MDBInput
-                label={paymentForm.cardNumber}
+                label={t('PaymentPage.cardNumber')}
                 icon="credit-card"
                 containerClass="d-flex flex-row-reverse"
                 className="ml-0 mr-1"
@@ -64,7 +56,7 @@ export default function PaymentForm() {
               <MDBRow>
                 <MDBCol md="6">
                   <MDBInput
-                    label={paymentForm.MMYYYY}
+                    label={t('PaymentPage.MMYYYY')}
                     icon="calendar"
                     containerClass="d-flex flex-row-reverse"
                     className="ml-0 mr-1"
@@ -78,7 +70,7 @@ export default function PaymentForm() {
                 </MDBCol>
                 <MDBCol md="6">
                   <MDBInput
-                    label={paymentForm.CVC}
+                    label={t('PaymentPage.CVC')}
                     icon="lock"
                     containerClass="d-flex flex-row-reverse"
                     className="ml-0 mr-1"
@@ -92,7 +84,7 @@ export default function PaymentForm() {
             </div>
             <div className="text-center">
               <button class="bg-primary hover:bg-blue-700 text-white  py-2 px-4 rounded-full">
-                {paymentForm.purchase}
+                {t('PaymentPage.purchase')}
               </button>
             </div>
           </form>
