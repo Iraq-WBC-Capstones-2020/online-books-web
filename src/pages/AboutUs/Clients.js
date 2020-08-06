@@ -29,7 +29,7 @@ function Detailsclient() {
           </h1>
         </div>
       </MDBCol>
-      <MDBContainer className=" w-9/12 mt-5 grid grid-cols-4 gab-5">
+      <MDBContainer className="w-9/12 mt-5 grid grid-cols-4 gab-5">
         {clientsLogo.map((client) => (
           <div
             className="border border-solid border-4 border-gray-200 flex justify-center"
@@ -39,7 +39,7 @@ function Detailsclient() {
               src={client.logo}
               alt={client.name}
               className="animate transition duration-500 ease-in-out  
-                        transform hover:-translate-y-1 hover:scale-110  w-1/3 m-4"
+                        transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
             />
           </div>
         ))}
