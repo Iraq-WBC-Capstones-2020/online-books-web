@@ -11,9 +11,11 @@
     "i18next-browser-languagedetector": "^5.0.0",
     "i18next-http-backend": "^1.0.17",
     "mdbreact": "^4.27.0",
+    "path-to-regexp": "^6.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.7.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-test-renderer": "^16.13.1"
   },
@@ -25,7 +27,7 @@
     "eject": "react-scripts eject",
     "fix": "prettier --write src/. public/.",
     "lint": "eslint src/**/*.js --max-warnings 5",
-    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css", 
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "eslintConfig": {
