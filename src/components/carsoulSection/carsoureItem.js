@@ -9,12 +9,13 @@ import {
   MDBContainer,
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
+import CreateStars from './createStars';
 
 // create 4 items for the carsouel movement
 function CarouselItems() {
   const { t } = useTranslation();
   let cards = [];
-  
+
   let booksArray = [
     {
       cover:
@@ -23,7 +24,7 @@ function CarouselItems() {
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
       price: '$31.5',
-      rate: 3,
+      rate: 3.5,
       views: '22,333',
       id: 1,
     },
@@ -34,7 +35,7 @@ function CarouselItems() {
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
       price: '$31.5',
-      rate: 3,
+      rate: 3.5,
       views: '22k',
       id: 2,
     },
@@ -67,7 +68,7 @@ function CarouselItems() {
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
       price: '$31.5',
-      rate: 3,
+      rate: 3.5,
       views: '22k',
       id: 5,
     },
@@ -121,11 +122,13 @@ function CarouselItems() {
                       <p className="mb-1 fontHeader2 font-normal font-weight-normal ">{`${book.bookName}`}</p>
                       <p className="mb-1 parg1 font-weight-normal">{`${book.type}`}</p>
                       <p className="font-black fontPrice font-weight-normal ">{`${book.price}`}</p>
-
-                      {/* create stars */}
+                     
                       <div className="mb-4">
                         <div className="inline-block mr-2">
-                          {createStars(book.rate)} ({book.views}) views
+                          <CreateStars rate={book.rate}/>
+                          {'  '}
+                          {book.views} views
+                          
                         </div>
                       </div>
                     </MDBCardText>
@@ -144,19 +147,8 @@ function CarouselItems() {
 
     return cards;
   };
-  let createStars = (rate) => {
-    let stars = [];
-    for (let i = 1; i <= 5; i++) {
-      i <= rate
-        ? stars.push(<icon className="fa fa-star text-yellow-300 mr-1 "></icon>)
-        : stars.push(
-            <icon className="fa fa-star text-yellow-300 mr-1 font-light"></icon>
-          );
-    }
-    return stars;
-  };
 
-  return <>{createCards()}</>;
+  return createCards();
 }
 
 export default CarouselItems;
