@@ -2,7 +2,7 @@
 
 exports[`Clients snapshot 1`] = `
 Array [
-  <div
+  <div 
     className="col"
     data-test="col"
   >
