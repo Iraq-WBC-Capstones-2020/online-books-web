@@ -3,7 +3,7 @@ import './style.scss';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 const BookPage = () => {
-  const { t } = useTranslation();
+  const { bookPageTranslate } = useTranslation();
 
   const bookPage = {
     bookName: 'Mind Without Body',
@@ -36,9 +36,11 @@ const BookPage = () => {
               <MDBIcon icon="star"></MDBIcon>
             </div>
             <p className="mt-3 text-2xl leading-7 text-justify">
-              {description}
+              {bookPage.description}
             </p>
-            <span className="gray-text">{t('language')}:Arabic</span>
+            <span className="gray-text">
+              {bookPageTranslate('language')}:Arabic
+            </span>
           </div>
           <br />
           {isLoggedIn ? (
@@ -78,7 +80,7 @@ const BookPage = () => {
               </div>
               <div className="mt-4">
                 <MDBBtn color="primary" className="px-4 rounded-pill">
-                  {t('addToCart')}
+                  {bookPageTranslate('addToCart')}
                 </MDBBtn>
               </div>
             </>
@@ -87,7 +89,12 @@ const BookPage = () => {
 
         <MDBCol sm="6" size="12">
           <div className="mt-5 d-flex justify-content-center align-self-center">
-            <img src={bookCover} alt="Book cover" width="353" height="498" />
+            <img
+              src={bookPage.bookCover}
+              alt="Book cover"
+              width="353"
+              height="498"
+            />
           </div>
         </MDBCol>
       </MDBRow>
