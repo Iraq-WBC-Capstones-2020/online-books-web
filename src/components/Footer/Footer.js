@@ -1,14 +1,15 @@
 import React from 'react';
 import { MDBContainer, MDBCol, MDBRow, MDBIcon } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 const Footer = () => {
   const { t } = useTranslation();
   const tags = t('footer.tagsList', { returnObjects: true });
   const logoUrl = 'https://via.placeholder.com/150x100';
   const socialMediaAccounts = [
-    { name: 'LinkedIn', icon: 'linkedin',link:"https://www.linkedin.com" },
-    { name: 'Facebook', icon: 'facebook-f' ,link:"https://www.facebook.com"},
-    { name: 'Twitter', icon: 'twitter',link:"https://www.twitter.com" },
+    { name: 'LinkedIn', icon: 'linkedin', link: 'https://www.linkedin.com' },
+    { name: 'Facebook', icon: 'facebook-f', link: 'https://www.facebook.com' },
+    { name: 'Twitter', icon: 'twitter', link: 'https://www.twitter.com' },
   ];
 
   return (
@@ -37,7 +38,11 @@ const Footer = () => {
                 {t('footer.description')}
               </p>
               <div className="d-sm-none my-5 text-center">
-              {socialMediaAccounts.map(account=><a href={account.link}><MDBIcon fab icon={account.icon} className="w-5" /></a>)}
+                {socialMediaAccounts.map((account) => (
+                  <a key={account.name} href={account.link}>
+                    <MDBIcon fab icon={account.icon} className="w-5" />
+                  </a>
+                ))}
               </div>
               <div className="mt-5 text-sm font-bold text-center text-sm-left">
                 {t('footer.copyright')}
@@ -49,7 +54,14 @@ const Footer = () => {
                   {t('footer.followUs')}
                 </h4>
                 <ul className="text-xl leading-8">
-                {socialMediaAccounts.map(account=><li><a href={account.link}><MDBIcon fab icon={account.icon} className="w-8"/>{account.name}</a></li>)}
+                  {socialMediaAccounts.map((account) => (
+                    <li key={account.name}>
+                      <a href={account.link}>
+                        <MDBIcon fab icon={account.icon} className="w-8" />
+                        {account.name}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </MDBCol>
@@ -59,7 +71,10 @@ const Footer = () => {
                   {t('footer.tags')}
                 </h4>
                 {tags.map((tag) => (
-                  <h4 className="inline-block capitalize font-semibold mr-2 mb-2 py-2 px-4 border border-black rounded-full">
+                  <h4
+                    key={tag.name}
+                    className="inline-block capitalize font-semibold mr-2 mb-2 py-2 px-4 border border-black rounded-full"
+                  >
                     {tag}
                   </h4>
                 ))}
@@ -70,6 +85,12 @@ const Footer = () => {
       </div>
     </footer>
   );
+};
+
+Footer.propTypes = {
+  tags: PropTypes.array,
+  logoUrl: PropTypes.string,
+  socialMediaAccounts: PropTypes.array,
 };
 
 export default Footer;
