@@ -5,8 +5,14 @@ const Footer = () => {
   const { t } = useTranslation();
   const tags = t('footer.tagsList', { returnObjects: true });
   const logoUrl = 'https://via.placeholder.com/150x100';
+  const socialMediaAccounts = [
+    { name: 'LinkedIn', icon: 'linkedin',link:"https://www.linkedin.com" },
+    { name: 'Facebook', icon: 'facebook-f' ,link:"https://www.facebook.com"},
+    { name: 'Twitter', icon: 'twitter',link:"https://www.twitter.com" },
+  ];
+
   return (
-    <footer className="w-full ">
+    <footer className="w-full -mt-10 md:-mt-20 lg:-mt-32">
       <svg
         className="h-auto"
         viewBox="0 0 1440 403"
@@ -30,7 +36,9 @@ const Footer = () => {
               <p className="mt-2 text-base leading-6 text-center text-sm-left">
                 {t('footer.description')}
               </p>
-              <div className="d-sm-none my-5 text-center"><MDBIcon fab icon="linkedin" className="w-5" />  <MDBIcon fab icon="facebook-square" className="w-5" />  <MDBIcon fab icon="twitter-square" className="w-5" /></div>
+              <div className="d-sm-none my-5 text-center">
+              {socialMediaAccounts.map(account=><a href={account.link}><MDBIcon fab icon={account.icon} className="w-5" /></a>)}
+              </div>
               <div className="mt-5 text-sm font-bold text-center text-sm-left">
                 {t('footer.copyright')}
               </div>
@@ -40,15 +48,9 @@ const Footer = () => {
                 <h4 className="text-blue-500 font-bold mb-3 uppercase">
                   {t('footer.followUs')}
                 </h4>
-                <p>
-                  <MDBIcon fab icon="linkedin-in" className="w-5" /> LinkedIn
-                </p>
-                <p>
-                  <MDBIcon fab icon="facebook-f" className="w-5" /> Facebook
-                </p>
-                <p>
-                  <MDBIcon fab icon="twitter" className="w-5" /> Twitter
-                </p>
+                <ul className="text-xl leading-8">
+                {socialMediaAccounts.map(account=><li><a href={account.link}><MDBIcon fab icon={account.icon} className="w-8"/>{account.name}</a></li>)}
+                </ul>
               </div>
             </MDBCol>
             <MDBCol lg="4" md="4" size="0">
