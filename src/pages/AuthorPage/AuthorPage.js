@@ -2,6 +2,7 @@ import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import Paragraph from '../../components/Paragraph/Paragraph';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 function AuthorPage() {
   const { t } = useTranslation();
@@ -10,9 +11,19 @@ function AuthorPage() {
   const paragraph =
     'Ann Druyan is an Emmy and Peabody Award-winning writer and producer who has dedicated her life to science. In 1980, Ann, alongside late husband Carl Sagan, wrote the 1980 original COSMOS: A Personal Voyage — which was a 13-part television event on PBS. COSMOS is still one of the most-watched programs in the history of PBS and its airing was a major moment for science-themed television.';
   const authorPageImg = 'https://via.placeholder.com/300x600';
-  const facebookLink = 'https://www.facebook.com/';
-  const twitterLink = 'https://www.twitter.com/';
-  const linkedinLink = 'https://www.linkedin.com/';
+  const socialMediaAccounts = [
+    { name: 'LinkedIn', icon: 'linkedin', link: 'https://www.linkedin.com' },
+    {
+      name: 'Facebook',
+      icon: 'facebook-square',
+      link: 'https://www.facebook.com',
+    },
+    {
+      name: 'Twitter',
+      icon: 'twitter-square',
+      link: 'https://www.twitter.com',
+    },
+  ];
   const followText = `${t('authorPage.follow')} ${firstName}`;
   const authorBookText = `${firstName}'s ${t('authorPage.books')}`;
   return (
@@ -25,21 +36,11 @@ function AuthorPage() {
               <div className="pb-4 text-xl">
                 <p className="mt-8 font-medium">{followText}</p>
                 <p className="text-2xl">
-                  {facebookLink && (
-                    <a className="mr-3" href={facebookLink}>
-                      <MDBIcon fab icon="facebook-square" />
+                  {socialMediaAccounts.map((account) => (
+                    <a key={account.name} href={account.link}>
+                      <MDBIcon fab icon={account.icon} className="mr-3" />
                     </a>
-                  )}
-                  {twitterLink && (
-                    <a className="mr-3" href={twitterLink}>
-                      <MDBIcon fab icon="twitter-square" />
-                    </a>
-                  )}
-                  {linkedinLink && (
-                    <a className="mr-3" href={linkedinLink}>
-                      <MDBIcon fab icon="linkedin" />
-                    </a>
-                  )}
+                  ))}
                 </p>
               </div>
             </MDBCol>
