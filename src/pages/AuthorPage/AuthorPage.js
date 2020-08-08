@@ -53,11 +53,7 @@ function AuthorPage() {
           </MDBRow>
         </MDBContainer>
       </div>
-      <div className="text-center mt-5">
-        <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
-          {authorBookText}
-        </h1>
-      </div>
+      <SectionTitle>{authorBookText}</SectionTitle>
     </>
   );
 }
