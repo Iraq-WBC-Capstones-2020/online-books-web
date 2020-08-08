@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import CreateStars from './starRate';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 const BookPage = () => {
@@ -29,17 +30,13 @@ const BookPage = () => {
             <span className="gray-text">{bookPage.authortName}</span>
             <br />
             <div className="mt-2 yellow-star">
-              <MDBIcon icon="star"></MDBIcon>
-              <MDBIcon icon="star"></MDBIcon>
-              <MDBIcon icon="star"></MDBIcon>
-              <MDBIcon icon="star"></MDBIcon>
-              <MDBIcon icon="star"></MDBIcon>
+              <CreateStars />
             </div>
             <p className="mt-3 text-2xl leading-7 text-justify">
               {bookPage.description}
             </p>
             <span className="gray-text">
-              {bookPageTranslate('language')}:Arabic
+              {bookPageTranslate('bookPage.language')}:Arabic
             </span>
           </div>
           <br />
@@ -80,7 +77,7 @@ const BookPage = () => {
               </div>
               <div className="mt-4">
                 <MDBBtn color="primary" className="px-4 rounded-pill">
-                  {bookPageTranslate('addToCart')}
+                  {bookPageTranslate('bookPage.addToCart')}
                 </MDBBtn>
               </div>
             </>
