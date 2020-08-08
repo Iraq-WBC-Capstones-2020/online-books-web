@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
+import Paragraph from '../../components/Paragraph/Paragraph';
 
 function AuthorPage() {
   const { t } = useTranslation();
@@ -20,12 +21,7 @@ function AuthorPage() {
         <MDBContainer>
           <MDBRow className="h-auto">
             <MDBCol lg="7" md="8" sm="9" size="12" className="py-4">
-              <p className="text-3xl font-medium border-b-4 inline border-blue-500">
-                {name}:
-              </p>
-              <p className="text-base leading-loose text-justify">
-                {paragraph}
-              </p>
+              <Paragraph title={name + ':'} paragraph={paragraph} />
               <div className="pb-4 text-xl">
                 <p className="mt-8 font-medium">{followText}</p>
                 <p className="text-2xl">
