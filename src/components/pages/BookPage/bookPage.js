@@ -2,10 +2,7 @@ import React from 'react';
 import './style.scss';
 import CreateStars from './starRate';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
-import { useTranslation } from 'react-i18next';
 const BookPage = () => {
-  const { bookPageTranslate } = useTranslation();
-
   const bookPage = {
     bookName: 'Mind Without Body',
     bookCover: 'https://via.placeholder.com/353x498',
@@ -35,9 +32,7 @@ const BookPage = () => {
             <p className="mt-3 text-2xl leading-7 text-justify">
               {bookPage.description}
             </p>
-            <span className="gray-text">
-              {bookPageTranslate('bookPage.language')}:Arabic
-            </span>
+            <span className="gray-text">language:Arabic</span>
           </div>
           <br />
           {isLoggedIn ? (
@@ -77,7 +72,7 @@ const BookPage = () => {
               </div>
               <div className="mt-4">
                 <MDBBtn color="primary" className="px-4 rounded-pill">
-                  {bookPageTranslate('bookPage.addToCart')}
+                  addToCart
                 </MDBBtn>
               </div>
             </>
