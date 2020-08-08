@@ -11,7 +11,6 @@ const Footer = () => {
     { name: 'Facebook', icon: 'facebook-f', link: 'https://www.facebook.com' },
     { name: 'Twitter', icon: 'twitter', link: 'https://www.twitter.com' },
   ];
-
   return (
     <footer className="w-full -mt-10 md:-mt-20 lg:-mt-32">
       <svg
@@ -72,7 +71,7 @@ const Footer = () => {
                 </h4>
                 {tags.map((tag) => (
                   <h4
-                    key={tag.name}
+                    key={tag}
                     className="inline-block capitalize font-semibold mr-2 mb-2 py-2 px-4 border border-black rounded-full"
                   >
                     {tag}
