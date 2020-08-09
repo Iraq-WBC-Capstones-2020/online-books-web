@@ -1,1 +1,17 @@
-{}
+{
+  "PaymentPage": {
+    "booksOrder": "Your Books Order",
+    "books": "Books",
+    "copies": "Copies",
+    "price": "Price",
+    "total": "Total",
+    "paymentMethod": "Payment Method",
+    "creditCard": "Credit Card",
+    "paypal": "Paypal",
+    "name": "Name",
+    "cardNumber": "Card Number",
+    "MMYYYY": "MM/YYYY",
+    "CVC": "CVC",
+    "purchase": "Purchase"
+  }
+}
