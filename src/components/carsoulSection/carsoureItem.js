@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   MDBCard,
   MDBCardBody,
@@ -172,5 +173,8 @@ function CarouselItems({ activeCard, handelChangeCard }) {
     </div>
   );
 }
-
+CarouselItems.propTypes = {
+  activeCard: PropTypes.number,
+  handelChangeCard: PropTypes.func,
+};
 export default CarouselItems;

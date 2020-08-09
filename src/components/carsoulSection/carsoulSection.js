@@ -5,8 +5,6 @@ import {
   MDBCol,
   MDBRow,
   MDBContainer,
-  MDBIcon,
-  MDBBtn,
 } from 'mdbreact';
 import './StylecarsoulSection/myStyle.scss';
 import CarouselItems from './CarsoureItem';

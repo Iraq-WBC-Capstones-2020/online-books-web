@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function CreateStars({ rate }) {
   let stars = [];
@@ -27,8 +28,7 @@ function CreateStars({ rate }) {
   };
   return <>{createStars()}</>;
 }
-
+CreateStars.propTypes = {
+  rate: PropTypes.number,
+};
 export default CreateStars;
-
-
-
