@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   MDBCarousel,
   MDBCarouselInner,
   MDBCol,
   MDBRow,
   MDBContainer,
+  MDBIcon,
+  MDBBtn,
 } from 'mdbreact';
 import './StylecarsoulSection/myStyle.scss';
 import CarouselItems from './carsoureItem';
@@ -12,6 +14,27 @@ import GrideCarousel from './gridCarousel';
 import HighLight from './highlightSection';
 
 function CarsoulSection() {
+  const [activeCardItem, setActiveCardItemState] = useState(0);
+  const timerId = useRef();
+  useEffect(() => (timerId.current = resetTimer()), []);
+  function resetTimer() {
+    return setTimeout(() => handelChangeCard(true, 'unClicked'), 5000);
+  }
+  function handelChangeCard(increase, buttom) {
+    if (increase) {
+      buttom == 'unClicked'
+        ? setActiveCardItemState((oldCard) => (oldCard == 3 ? 0 : oldCard + 1))
+        : setActiveCardItemState((oldCard) =>
+            oldCard == 3 ? oldCard : oldCard + 1
+          );
+    } else {
+      setActiveCardItemState((oldCard) =>
+        oldCard == 0 ? oldCard : oldCard - 1
+      );
+    }
+    clearTimeout(timerId.current);
+    timerId.current = resetTimer();
+  }
   return (
     <>
       <MDBContainer>
@@ -19,18 +42,21 @@ function CarsoulSection() {
           <MDBCol md="11" lg="10" xl="8">
             <HighLight text="best sellers in books" />
 
-            <MDBContainer fluid className="bgGray">
+            <MDBContainer fluid className="bgGray ">
               <MDBRow>
                 <MDBCol md="12" lg="8" xl="8">
                   <MDBCarousel
-                    activeItem={1}
+                    activeItem={activeCardItem}
                     length={4}
                     showControls={false}
                     showIndicators={false}
                     slide
                   >
                     <MDBCarouselInner>
-                      <CarouselItems />
+                      <CarouselItems
+                        handelChangeCard={handelChangeCard}
+                        activeCard={activeCardItem}
+                      />
                     </MDBCarouselInner>
                   </MDBCarousel>
                 </MDBCol>

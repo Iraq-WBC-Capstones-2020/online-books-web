@@ -84,3 +84,13 @@ $font-roboto: 'Roboto';
     height: 2rem;
   }
 }
+
+.active-card {
+  left: 0px !important;
+  position: relative !important;
+}
+
+.unactive-card {
+  left: +100% !important;
+  position: absolute !important;
+}

@@ -7,14 +7,15 @@ import {
   MDBCol,
   MDBRow,
   MDBContainer,
+  MDBIcon,
+  MDBBtn,
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import CreateStars from './createStars';
 
 // create 4 items for the carsouel movement
-function CarouselItems() {
+function CarouselItems({ activeCard, handelChangeCard }) {
   const { t } = useTranslation();
-  let cards = [];
 
   let booksArray = [
     {
@@ -85,16 +86,17 @@ function CarouselItems() {
     },
   ];
 
-  let createCards = () => {
-    let specialBooks = [];
-    specialBooks = booksArray.slice(0, 4);
-
-    cards = specialBooks.map((book, index) => {
-      return (
+  return (
+    <div>
+      {booksArray.slice(0, 4).map((book, index) => (
         <MDBCarouselItem
           itemId={index}
           key={book.id}
-          className="mt-md-4 mb-md-4 pl-lg-3"
+          className={
+            (activeCard === index ? 'active-card' : 'unactive-card') +
+            ' ' +
+            'mt-md-4 mb-md-4 pl-lg-3'
+          }
         >
           <MDBCard className="w-30 shadow-none" wide>
             <MDBContainer className="w-full">
@@ -110,25 +112,24 @@ function CarouselItems() {
                 <MDBCol md="1" lg="1"></MDBCol>
 
                 <MDBCol md="7" lg="6" size="12" className="my-auto">
-                  <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto">
+                  <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto mt-md-2">
                     <div>
                       <h1 className="fontHeader1 mb-0 font-weight-normal  text-2xl">
-                        {' '}
-                        {`${book.authorName}`}{' '}
+                        {book.authorName}
                       </h1>
                     </div>
-
                     <MDBCardText>
                       <p className="mb-1 fontHeader2 font-normal font-weight-normal ">{`${book.bookName}`}</p>
-                      <p className="mb-1 parg1 font-weight-normal">{`${book.type}`}</p>
+                      <p className="mb-1 parg1 font-weight-normal">
+                        {book.type}
+                      </p>
                       <p className="font-black fontPrice font-weight-normal ">{`${book.price}`}</p>
-                     
-                      <div className="mb-4">
+
+                      <div className="mb-3">
                         <div className="inline-block mr-2">
-                          <CreateStars rate={book.rate}/>
+                          <CreateStars rate={book.rate} />
                           {'  '}
                           {book.views} views
-                          
                         </div>
                       </div>
                     </MDBCardText>
@@ -137,18 +138,39 @@ function CarouselItems() {
                       {t('addtocart')}
                     </button>
                   </MDBCardBody>
+                  {/*arrow button */}
+                  <div className="h-10 mt-md-4 d-flex justify-content-end">
+                    <MDBBtn
+                      color=""
+                      className="shadow p-0"
+                      onClick={() => handelChangeCard(true)}
+                    >
+                      <MDBIcon
+                        icon="chevron-left "
+                        size="lg"
+                        className="px-2 py-1"
+                      />
+                    </MDBBtn>
+                    <MDBBtn
+                      color=""
+                      className="shadow p-0"
+                      onClick={() => handelChangeCard(false)}
+                    >
+                      <MDBIcon
+                        icon="chevron-right"
+                        size="lg"
+                        className="px-2 py-1"
+                      />
+                    </MDBBtn>
+                  </div>
                 </MDBCol>
               </MDBRow>
             </MDBContainer>
           </MDBCard>
         </MDBCarouselItem>
-      );
-    });
-
-    return cards;
-  };
-
-  return createCards();
+      ))}
+    </div>
+  );
 }
 
 export default CarouselItems;
