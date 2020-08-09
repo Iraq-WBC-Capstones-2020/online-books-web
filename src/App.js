@@ -1,6 +1,6 @@
 import React from 'react';
 import './i18n';
-
+import FormPage from './pages/login';
 function App() {
   return (
     <div>
