@@ -7,6 +7,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import Paragraph from '../../components/Paragraph/Paragraph';
 import Pills from '../../components/Pills/Pills';
+import ProfileInfo from './components/ProfileInfo/ProfileInfo';
 
 function ProfilePage() {
   const { t } = useTranslation();
@@ -33,8 +34,7 @@ function ProfilePage() {
   )}${profileInfo.address.country}\n
   ${profileInfo.email}`;
   const tabs = [
-    { title: t('profilePage.about'), content: <div>about</div> },
-    { title: t('profilePage.purchaseHistory'), content: <div>about2</div> },
+    { title: t('profilePage.about'), content:<ProfileInfo profileInfo={profileInfo} /> },
   ];
   return (
     <>
