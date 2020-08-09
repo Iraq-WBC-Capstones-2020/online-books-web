@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Paragraph from '../../components/Paragraph/Paragraph';
 
 function ProfilePage() {
+  const { t } = useTranslation();
   const profileInfo = {
     id: '120147514545',
     name: 'Sara Ahmed',
@@ -19,27 +20,43 @@ function ProfilePage() {
       country: 'Iraq',
     },
   };
-
+  const userParagraph = `${t('profilePage.memberSince')} ${new Date(
+    profileInfo.joined
+  ).toDateString()}\n
+  ${t('profilePage.livesIn')} ${profileInfo.address.city}${t(
+    'profilePage.addressSpread'
+  )}${profileInfo.address.country}\n
+  ${profileInfo.email}`;
   return (
-    <div className="bg-gray-200">
-      <MDBContainer>
-        <MDBRow className="h-auto">
-          <MDBCol lg="3" md="6" sm="12" size="12" className="py-4">
-            <img
-              src={profileInfo.img}
-              alt={profileInfo.name}
-              className="rounded-lg mx-auto h-auto max-w-full"
-            />
-          </MDBCol>
-          <MDBCol lg="8" md="6" sm="12" size="12" className="pt-4 pb-4">
-            <h4 className="text-3xl font-medium text-blue-500">
-              {profileInfo.name}
-            </h4>
-            <Paragraph></Paragraph>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-    </div>
+      <div className="bg-gray-200">
+        <MDBContainer>
+          <MDBRow className="h-auto">
+            <MDBCol lg="3" md="6" sm="12" size="12" className="py-4">
+              <img
+                src={profileInfo.img}
+                alt={profileInfo.name}
+                className="rounded-lg mx-auto h-auto max-w-full"
+              />
+            </MDBCol>
+            <MDBCol
+              lg="8"
+              md="6"
+              sm="12"
+              size="12"
+              className="pt-4 pb-4 text-center text-md-left"
+            >
+              <h4 className="text-3xl font-medium text-blue-500 pb-3">
+                {profileInfo.name}
+              </h4>
+              {userParagraph.split('\n').map((paragraph) => (
+                <Paragraph className="text-center text-md-left">
+                  {paragraph}
+                </Paragraph>
+              ))}
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </div>
   );
 }
 
