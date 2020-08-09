@@ -75,8 +75,9 @@ function GrideCarousel() {
       <MDBContainer className="px-md-4">
         {/*grid for the covers of books that are new release and best sellers */}
         <MDBRow around>
-          {booksArray.slice(0, 4).map((book) => (
+          {booksArray.slice(0, 4).map((book, index) => (
             <MDBCol
+              key={index}
               lg="6"
               md="3"
               sm="3"
