@@ -1,1 +1,9 @@
-{}
+{
+  "ContactUsPage": {
+    "writeToUs": "Write To Us :",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "message": "Message"
+  }
+}
