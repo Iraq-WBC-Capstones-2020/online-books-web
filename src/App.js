@@ -1,10 +1,10 @@
 import React from 'react';
 import './i18n';
-import FormPage from './pages/login';
+
 function App() {
   return (
     <div>
-      <h1>Online Books</h1>
+      <h1>Online Book</h1>
     </div>
   );
 }
