@@ -3,6 +3,24 @@
     "follow": "Follow",
     "books": "Books"
   },
+  "profilePage":{
+    "edit":"Edit",
+    "livesIn":"Lives in",
+    "addressSpreater":", ",
+    "memberSince":"Member since",
+    "about":"About",
+    "purchaseHistory":"Purchase History",
+    "basicInfo":"Basic Info",
+    "contactInfo":"Contact Info",
+    "name":"Name",
+    "gender":"Gender",
+    "dateOfBirth":"Date of birth",
+    "city":"City",
+    "country":"Country",
+    "address":"Address",
+    "phoneNumber":"Phone number",
+    "email":"E-Mail"
+  },
   "footer": {
     "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
     "copyright": "Copyright © BookZone",
