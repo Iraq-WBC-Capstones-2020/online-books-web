@@ -11,7 +11,7 @@ import {
   MDBBtn,
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
-import CreateStars from './createStars';
+import CreateStars from './CreateStars';
 
 // create 4 items for the carsouel movement
 function CarouselItems({ activeCard, handelChangeCard }) {

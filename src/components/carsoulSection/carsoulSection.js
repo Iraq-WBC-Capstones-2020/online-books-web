@@ -9,18 +9,18 @@ import {
   MDBBtn,
 } from 'mdbreact';
 import './StylecarsoulSection/myStyle.scss';
-import CarouselItems from './carsoureItem';
-import GrideCarousel from './gridCarousel';
-import HighLight from './highlightSection';
+import CarouselItems from './CarsoureItem';
+import GrideCarousel from './GridCarousel';
+import HighLight from './HighlightSection';
 
 function CarsoulSection() {
   const [activeCardItem, setActiveCardItemState] = useState(0);
   const timerId = useRef();
   useEffect(() => (timerId.current = resetTimer()), []);
-  function resetTimer() {
+  let resetTimer = () => {
     return setTimeout(() => handelChangeCard(true, 'unClicked'), 5000);
-  }
-  function handelChangeCard(increase, buttom) {
+  };
+  let handelChangeCard = (increase, buttom) => {
     if (increase) {
       buttom == 'unClicked'
         ? setActiveCardItemState((oldCard) => (oldCard == 3 ? 0 : oldCard + 1))
@@ -34,7 +34,7 @@ function CarsoulSection() {
     }
     clearTimeout(timerId.current);
     timerId.current = resetTimer();
-  }
+  };
   return (
     <>
       <MDBContainer>
