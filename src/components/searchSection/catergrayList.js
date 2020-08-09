@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MDBIcon } from 'mdbreact';
 import './myStyle.scss';
-
+ 
 function CatergrayList({ items }) {
   let itemsTags = [];
   let numberOfItems = items.length;

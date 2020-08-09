@@ -10,7 +10,7 @@ $light-pink: #fee4cb;
 .lightBlack {
   background: $light-black;
 }
-
+ 
 .mycolorPink {
   // background: $pink-color;
   background: $light-pink;
@@ -98,3 +98,8 @@ $light-pink: #fee4cb;
   border-bottom: none !important;
   box-shadow: none !important ;
 }
+
+.sandwitchItem{
+  display:inline-block;
+}
+
