@@ -1,7 +1,12 @@
 import React from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
+import {
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+} from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import Paragraph from '../../components/Paragraph/Paragraph';
+import Pills from '../../components/Pills/Pills';
 
 function ProfilePage() {
   const { t } = useTranslation();
@@ -27,7 +32,12 @@ function ProfilePage() {
     'profilePage.addressSpread'
   )}${profileInfo.address.country}\n
   ${profileInfo.email}`;
+  const tabs = [
+    { title: t('profilePage.about'), content: <div>about</div> },
+    { title: t('profilePage.purchaseHistory'), content: <div>about2</div> },
+  ];
   return (
+    <>
       <div className="bg-gray-200">
         <MDBContainer>
           <MDBRow className="h-auto">
@@ -43,7 +53,7 @@ function ProfilePage() {
               md="6"
               sm="12"
               size="12"
-              className="pt-4 pb-4 text-center text-md-left"
+              className="py-4 text-center text-md-left"
             >
               <h4 className="text-3xl font-medium text-blue-500 pb-3">
                 {profileInfo.name}
@@ -57,6 +67,10 @@ function ProfilePage() {
           </MDBRow>
         </MDBContainer>
       </div>
+      <div>
+        <Pills tabs={tabs} />
+      </div>
+    </>
   );
 }
 
