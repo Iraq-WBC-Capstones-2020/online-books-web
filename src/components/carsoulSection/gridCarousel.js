@@ -86,7 +86,7 @@ function GrideCarousel() {
             >
               <img className="imgGrideCarsouel mx-lg-0 " src={book.cover} />
             </MDBCol>
-          ))}
+          ))} 
         </MDBRow>
       </MDBContainer>
     </>
