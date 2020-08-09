@@ -20,8 +20,7 @@ Array [
           <p
             className="text-3xl font-medium border-b-4 inline border-blue-500"
           >
-            Ann Druyan
-            :
+            Ann Druyan:
           </p>
           <p
             className="text-base leading-loose text-justify"
@@ -40,29 +39,26 @@ Array [
               className="text-2xl"
             >
               <a
-                className="mr-3"
-                href="https://www.facebook.com/"
+                href="https://www.linkedin.com"
               >
                 <i
-                  className="fab fa-facebook-square"
+                  className="fab fa-linkedin mr-3"
                   data-test="fa"
                 />
               </a>
               <a
-                className="mr-3"
-                href="https://www.twitter.com/"
+                href="https://www.facebook.com"
               >
                 <i
-                  className="fab fa-twitter-square"
+                  className="fab fa-facebook-square mr-3"
                   data-test="fa"
                 />
               </a>
               <a
-                className="mr-3"
-                href="https://www.linkedin.com/"
+                href="https://www.twitter.com"
               >
                 <i
-                  className="fab fa-linkedin"
+                  className="fab fa-twitter-square mr-3"
                   data-test="fa"
                 />
               </a>
