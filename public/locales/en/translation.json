@@ -1,8 +1,13 @@
 {
+  "clientPage": {
+    "clients": "Our Clients"
+  },
+  
   "authorPage": {
     "follow": "Follow",
     "books": "Books"
   },
+
   "footer": {
     "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
     "copyright": "Copyright © BookZone",
@@ -10,6 +15,7 @@
     "tags": "Tags",
     "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
   },
+  
   "landingPage": false,
   "navbar": false,
   "profilePage": false,

@@ -1,4 +1,8 @@
 {
+  "clientPage": {
+    "clients": "عملائنا"
+  },
+  
   "authorPage": false,
   "footer": false,
   "landingPage": false,
