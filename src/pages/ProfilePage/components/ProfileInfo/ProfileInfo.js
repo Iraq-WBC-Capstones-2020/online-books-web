@@ -26,6 +26,7 @@ function ProfileInfo({ profileInfo }) {
       >
         {t('profilePage.edit')}
       </MDBBtn>
+      <div className="clearfix"></div>
       <MDBRow>
         <MDBCol md="6" sm="12" size="12">
           <h3 className="text-2xl leading-loose font-semibold">
