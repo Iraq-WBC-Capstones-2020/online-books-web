@@ -2,7 +2,7 @@
 
 exports[`searchSection snapshot 1`] = `
 <div
-  className="container  bg-black p-0 "
+  className="container bg-black p-0 "
   data-test="container"
 >
   <div
@@ -10,7 +10,7 @@ exports[`searchSection snapshot 1`] = `
     data-test="row"
   >
     <div
-      className="col-8 col-md-10 col-lg-10 mycolorPink columnSearchBooks p-0 h-12 z-depth-4 "
+      className="col-8 col-md-10 col-lg-10 mycolorPink columnSearchBooks p-0 h-12 z-depth-4"
       data-test="col"
     >
       <form
@@ -25,7 +25,7 @@ exports[`searchSection snapshot 1`] = `
           
           <input
             aria-disabled={false}
-            className="form-control text-black  mb-md-3 form-control "
+            className="form-control text-black  mb-md-3 form-control"
             data-test="input"
             disabled={false}
             onBlur={[Function]}
@@ -48,14 +48,14 @@ exports[`searchSection snapshot 1`] = `
           </label>
         </div>
         <i
-          className="fa fa-search fa-lg text-black hoverCursor pb-3 mb-md-1 "
+          className="fa fa-search fa-lg text-black hoverCursor pb-3 mb-md-1"
           data-test="fa"
           onClick={[Function]}
         />
       </form>
     </div>
     <div
-      className="col-md-12  text-center pb-3 text-white font-bold "
+      className="col-md-12 text-center pb-3 text-white font-bold"
       data-test="col"
     >
       SEARCH BY
@@ -108,7 +108,7 @@ exports[`searchSection snapshot 1`] = `
       data-test="col"
     >
       <div
-        className="text-left lightBlack h-10 mb-1 "
+        className="text-left lightBlack h-10 mb-1"
         onClick={[Function]}
       >
         <i
@@ -122,7 +122,7 @@ exports[`searchSection snapshot 1`] = `
         </p>
       </div>
       <div
-        className="text-left lightBlack h-10 mb-1 "
+        className="text-left lightBlack h-10 mb-1"
         onClick={[Function]}
       >
         <i
@@ -136,7 +136,7 @@ exports[`searchSection snapshot 1`] = `
         </p>
       </div>
       <div
-        className="text-left lightBlack h-10 mb-1 "
+        className="text-left lightBlack h-10 mb-1"
         onClick={[Function]}
       >
         <i
@@ -150,7 +150,7 @@ exports[`searchSection snapshot 1`] = `
         </p>
       </div>
       <div
-        className="text-left lightBlack h-10 mb-1 "
+        className="text-left lightBlack h-10 mb-1"
         onClick={[Function]}
       >
         <i
@@ -164,7 +164,7 @@ exports[`searchSection snapshot 1`] = `
         </p>
       </div>
       <div
-        className="text-left lightBlack h-10 mb-1 "
+        className="text-left lightBlack h-10 mb-1"
         onClick={[Function]}
       >
         <i
