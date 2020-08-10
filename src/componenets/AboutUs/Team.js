@@ -24,12 +24,13 @@ function TeamMembersInformation() {
     const { name } = member;
     return Object.assign({}, member, teamInfo[name]);
   });
+  console.log(team);
   const title = t('aboutPage.title');
   return (
     <>
       <MDBCol>
         <div className="text-center">
-          <h1 className=" text-3xl mt-10 font-weight-bold ">
+          <h1 className="text-3xl mt-10 font-weight-bold">
             {title} <MDBIcon icon="users blue-text" />
           </h1>
           <br />
@@ -38,9 +39,9 @@ function TeamMembersInformation() {
           </div>
         </div>
       </MDBCol>
-      <div className=" row m-10 flex justify-center mt-20">
+      <div className="row m-10 flex justify-center mt-20">
         {team.map((member) => (
-          <TeamMemberCards key={member.id} member={member}></TeamMemberCards>
+          <TeamMemberCards key={member.id} member={member} />
         ))}
       </div>
     </>

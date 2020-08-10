@@ -6,11 +6,10 @@ function TeamMemberCards({ member }) {
   return (
     <MDBCard
       className="animate transition duration-500 ease-in-out  
-                        transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100 "
+                        transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
     >
       <img
-        style={{ width: '9rem', marginTop: '-25%' }}
-        className=" rounded-circle img-fluid z-depth-1 mx-auto"
+        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
         src={pic}
         alt={fullName}
         wave

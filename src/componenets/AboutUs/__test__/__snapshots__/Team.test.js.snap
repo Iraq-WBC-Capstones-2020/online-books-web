@@ -10,7 +10,7 @@ Array [
       className="text-center"
     >
       <h1
-        className=" text-3xl mt-10 font-weight-bold "
+        className="text-3xl mt-10 font-weight-bold"
       >
         aboutPage.title
          
@@ -30,21 +30,15 @@ Array [
     </div>
   </div>,
   <div
-    className=" row m-10 flex justify-center mt-20"
+    className="row m-10 flex justify-center mt-20"
   >
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100 "
+      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
-        className=" rounded-circle img-fluid z-depth-1 mx-auto"
+        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
         src="pic6.jpg"
-        style={
-          Object {
-            "marginTop": "-25%",
-            "width": "9rem",
-          }
-        }
         wave={true}
       />
       <div
@@ -106,18 +100,12 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100 "
+      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
-        className=" rounded-circle img-fluid z-depth-1 mx-auto"
+        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
         src="pic1.jpg"
-        style={
-          Object {
-            "marginTop": "-25%",
-            "width": "9rem",
-          }
-        }
         wave={true}
       />
       <div
@@ -179,18 +167,12 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100 "
+      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
-        className=" rounded-circle img-fluid z-depth-1 mx-auto"
+        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
         src="pic2.jpg"
-        style={
-          Object {
-            "marginTop": "-25%",
-            "width": "9rem",
-          }
-        }
         wave={true}
       />
       <div
@@ -252,18 +234,12 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100 "
+      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
-        className=" rounded-circle img-fluid z-depth-1 mx-auto"
+        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
         src="pic3.jpg"
-        style={
-          Object {
-            "marginTop": "-25%",
-            "width": "9rem",
-          }
-        }
         wave={true}
       />
       <div
@@ -325,18 +301,12 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100 "
+      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
-        className=" rounded-circle img-fluid z-depth-1 mx-auto"
+        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
         src="pic4.jpg"
-        style={
-          Object {
-            "marginTop": "-25%",
-            "width": "9rem",
-          }
-        }
         wave={true}
       />
       <div
@@ -398,18 +368,12 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100 "
+      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
-        className=" rounded-circle img-fluid z-depth-1 mx-auto"
+        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
         src="pic5.jpg"
-        style={
-          Object {
-            "marginTop": "-25%",
-            "width": "9rem",
-          }
-        }
         wave={true}
       />
       <div
