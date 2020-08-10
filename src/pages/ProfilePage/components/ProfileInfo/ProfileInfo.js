@@ -8,7 +8,7 @@ function ProfileInfo({ profileInfo }) {
   const basicInfo = {
     name: profileInfo.name,
     gender: profileInfo.gender,
-    birthday: profileInfo.birthday,
+    birthday: new Date(profileInfo.birthday).toDateString(),
     city: profileInfo.address.city,
     country: profileInfo.address.country,
   };
