@@ -5,5 +5,16 @@
     "lastName": "Last Name",
     "email": "Email",
     "message": "Message"
+  },
+  "authorPage": {
+    "follow": "Follow",
+    "books": "Books"
+  },
+  "footer": {
+    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
+    "copyright": "Copyright © BookZone",
+    "followUs": "Follow Us",
+    "tags": "Tags",
+    "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
   }
 }
