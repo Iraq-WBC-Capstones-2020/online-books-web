@@ -4,7 +4,7 @@ import './MyStyle.scss';
 
 function CatergrayList({ items }) {
   let itemsTags = [];
-  let CatogryItem;
+
   const numberOfItems = items.length;
   const [ActiveBubble, setActiveBubble] = useState(0);
   const [Catogray, setCatogray] = useState('');
@@ -27,21 +27,17 @@ function CatergrayList({ items }) {
   const typeItems = () => {
     itemsTags = items.map((item, index) => {
       return (
-        <div
-          className="text-left lightBlack h-10 mb-1"
-          key={index}
-          //turn the light to pink for the item that choose and the other to unactive
-        >
+        <div className="text-left lightBlack h-10 mb-1" key={index}>
           <MDBIcon
             icon="circle"
             className={`p-3 sizeBubble ${isActive(index)}`}
           />
           <p
             className="parg1 d-inline hoverCursor"
+            //turn the light to pink for the item that choose and the other to unactive
             onClick={(e) => {
               setActiveBubble(index);
-              CatogryItem = e.target;
-              setCatogray(CatogryItem.innerHTML);
+              setCatogray(e.target.innerHTML);
             }}
           >
             {item.name}
