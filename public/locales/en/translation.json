@@ -47,7 +47,7 @@
   "contactUSPage": false,
   "signInPage": false,
   "sigOutPage": false,
-  
+
   "paymentPage": {
     "booksOrder": "Your Books Order",
     "books": "Books",
