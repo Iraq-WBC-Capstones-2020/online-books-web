@@ -12,7 +12,7 @@ import {
 
 function Pills({ tabs }) {
     const [items, setItems] = useState({
-      default: '1',
+      default: '0',
     });
   
     const togglePills = (type, tab) => (e) => {
@@ -28,11 +28,9 @@ function Pills({ tabs }) {
       <>
         <div className="py-2 border-t-2 border-b-2">
           <MDBContainer>
-            <MDBRow>
-              <MDBCol>
                 <MDBNav className="nav-pills">
                   {tabs.map((tab, index) => (
-                    <MDBNavItem>
+                    <MDBNavItem key={index}>
                       <MDBNavLink
                         link
                         to="#"
@@ -44,15 +42,13 @@ function Pills({ tabs }) {
                     </MDBNavItem>
                   ))}
                 </MDBNav>
-              </MDBCol>
-            </MDBRow>
           </MDBContainer>
         </div>
-        <div className="w-full bg-gray-200 py-4">
+        <div className="bg-gray-200 py-4">
           <MDBContainer>
             <MDBTabContent activeItem={items['default']}>
               {tabs.map((tab, index) => (
-                <MDBTabPane tabId={index.toString()}>
+                <MDBTabPane tabId={index.toString()} key={index}>
                   {tab.content}
                 </MDBTabPane>
               ))}
