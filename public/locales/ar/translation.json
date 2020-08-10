@@ -5,6 +5,11 @@
       "add to cart": "أضف الى العربة ",
       "newRelease": "أحدث اصدارات الكتب"
     },
+    "searchByPart": {
+      "SEARCH BY":"أبحث بواسطة",
+      "Authors": "المؤلفيين",
+      "Books": "الكتب"
+    },
 
     "catogry": {
       "Popular": "الشائع",

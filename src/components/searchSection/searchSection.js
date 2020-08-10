@@ -9,14 +9,16 @@ import {
 } from 'mdbreact';
 import './MyStyle.scss';
 import CatergrayList from './CatergrayList';
+import { useTranslation } from 'react-i18next';
 
 function SearchSection() {
+  const { t } = useTranslation();
   const catograysBook = [
-    { name: 'Popular' },
-    { name: 'Biographies &Memoirs' },
-    { name: 'Literature & Fiction' },
-    { name: 'Business&Investing' },
-    { name: 'History' },
+    { name: t('mainPage.catogry.Popular') },
+    { name: t('mainPage.catogry.Biographies &Memoirs') },
+    { name: t('mainPage.catogry.Literature & Fiction') },
+    { name: t('mainPage.catogry.Business&Investing') },
+    { name: t('mainPage.catogry.History') },
   ];
   const authorNames = [
     { name: 'zeena kareem' },
@@ -24,6 +26,7 @@ function SearchSection() {
     { name: 'sara ahmed' },
     { name: 'dunia tarq' },
   ];
+
   const [setsearchInputValue] = useState('');
   //we use number 2 as default value to make the BOOKS choosen in first time when we open the website
   const [activeItem, setActiveItem] = useState(2);
@@ -68,7 +71,7 @@ function SearchSection() {
 
           {/* SEARCH BY PART FOR Authors AND Books*/}
           <MDBCol md="12" className="text-center pb-3 text-white font-bold">
-            SEARCH BY
+            {t('mainPage.searchByPart.SEARCH BY')}
           </MDBCol>
 
           <MDBCol size="6" md="6" className="  text-center  px-3 pb-2">
@@ -84,7 +87,10 @@ function SearchSection() {
                 size="lg"
                 className={`pb-2 ${handelColor(1)}`}
               />
-              <p className={`pb-2 textParg ${handelColor(1)}`}> Authors</p>
+              <p className={`pb-2 textParg ${handelColor(1)}`}>
+                {' '}
+                {t('mainPage.searchByPart.Authors')}{' '}
+              </p>
             </div>
           </MDBCol>
 
@@ -101,7 +107,10 @@ function SearchSection() {
                 size="lg"
                 className={`pb-2 ${handelColor(2)}`}
               />
-              <p className={`pb-2 textParg ${handelColor(2)}`}>Books</p>
+              <p className={`pb-2 textParg ${handelColor(2)}`}>
+                {' '}
+                {t('mainPage.searchByPart.Books')}{' '}
+              </p>
             </div>
           </MDBCol>
         </MDBRow>
