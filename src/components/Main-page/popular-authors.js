@@ -1,7 +1,5 @@
 import React from 'react';
-import 'style.scss';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
-
 const PopularAuthors = () => {
   const authorsName = 'John Doe';
   return (
