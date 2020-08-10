@@ -49,8 +49,8 @@ export default function PaymentTable() {
                 <td>
                   <p className="h6">{t('PaymentPage.total')}</p>
                 </td>
-                <td>{}</td>
-                <td>{}</td>
+                <td>total copies here</td>
+                <td>total price here</td>
               </tr>
             </MDBTableBody>
           </MDBTable>
