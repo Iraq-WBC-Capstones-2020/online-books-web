@@ -36,7 +36,7 @@ function Detailsclient() {
       </MDBCol>
       <MDBContainer className="w-9/12 mt-5 grid grid-cols-4 gab-5">
         {clientsLogo.map((client) => (
-          <ClientCard key={client.id} client={client}></ClientCard>
+          <ClientCard key={client.id} client={client} />
         ))}
       </MDBContainer>
     </>
