@@ -9,7 +9,7 @@ function CatergrayList({ items }) {
   const [setCatogray] = useState('');
 
   //light the bubble by pink color
-  const handelBubble = (index) => {
+  const isActive = (index) => {
     if (ActiveBubble === index) {
       return 'textPink';
     }
@@ -22,9 +22,11 @@ function CatergrayList({ items }) {
   };
   const getItemList = (e) => {
     let doseHaveTarget = Boolean(e.target);
-
+    console.log(doseHaveTarget,e.target)
+    console.log(e.target.children[1])
     if (doseHaveTarget) {
-      setCatogray(e.target.children[1].innerHTML);
+      let a=e.target.children[1].innerHTML
+      setCatogray(a);
     }
   };
 
@@ -42,7 +44,7 @@ function CatergrayList({ items }) {
         >
           <MDBIcon
             icon="circle"
-            className={`p-3 sizeBubble ${handelBubble(index)}`}
+            className={`p-3 sizeBubble ${isActive(index)}`}
           />
           <p className="parg1 d-inline hoverCursor">{item.name}</p>
         </div>
