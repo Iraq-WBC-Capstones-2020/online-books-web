@@ -3,8 +3,8 @@ import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import Paragraph from '../../components/Paragraph/Paragraph';
 import Pills from '../../components/Pills/Pills';
-import ProfileInfo from './components/ProfileInfo/ProfileInfo';
-import PurchaseHistory from './components/PurchaseHistory/PurchaseHistory';
+import ProfileInfo from '../../components/ProfilePage/ProfileInfo/ProfileInfo';
+import PurchaseHistory from '../../components/ProfilePage/PurchaseHistory/PurchaseHistory';
 
 function ProfilePage() {
   const { t } = useTranslation();
