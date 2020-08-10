@@ -14,8 +14,8 @@ test('ProfileInfo snapshot', () => {
     email: 'sara@eample.com',
     img: 'https://via.placeholder.com/300x300',
     gender: 'Female',
-    joined: new Date('02/01/2010').getTime(),
-    birthday: new Date('02/01/1998').getTime(),
+    joined: 886280400000,
+    birthday: 886291200000,
     phoneNumber: '07154245455',
     address: {
       street: 'Middle Erbil',
