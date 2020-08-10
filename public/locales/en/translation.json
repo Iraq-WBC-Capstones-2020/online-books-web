@@ -1,8 +1,24 @@
 {
+  "clientPage": {
+    "clients": "Our Clients"
+  },
+
   "authorPage": {
     "follow": "Follow",
     "books": "Books"
   },
+
+  "footer": {
+    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
+    "copyright": "Copyright © BookZone",
+    "followUs": "Follow Us",
+    "tags": "Tags",
+    "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
+  },
+
+  "landingPage": false,
+  "navbar": false,
+
   "profilePage": {
     "edit": "Edit",
     "livesIn": "Lives in",
@@ -26,11 +42,11 @@
     "originalPrice": "Original Price",
     "totalPrice": "Total Price"
   },
-  "footer": {
-    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
-    "copyright": "Copyright © BookZone",
-    "followUs": "Follow Us",
-    "tags": "Tags",
-    "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
-  }
+
+  "aboutUsPage": false,
+  "contactUSPage": false,
+  "signInPage": false,
+  "sigOutPage": false,
+  "paymentPage": false,
+  "bookPage": false
 }
