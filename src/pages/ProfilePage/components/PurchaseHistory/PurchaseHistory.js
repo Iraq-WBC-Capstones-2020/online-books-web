@@ -4,6 +4,9 @@ import { useTranslation } from 'react-i18next';
 
 function PurchaseHistory() {
   const { t } = useTranslation();
+  const SETS_ENTRIES_OPTION_TO_DISPALY = [5, 10, 20];
+  const INITIAL_NUMBER_PAGES_PAGINATION = 4;
+  const NUMBERS_OF_ROWS = 5;
   const numberOfPurchases = 23;
   const purchases = Array(numberOfPurchases).fill({
     orderId: '25565845',
@@ -44,9 +47,9 @@ function PurchaseHistory() {
   return (
     <MDBDataTableV5
       hover
-      entriesOptions={[5, 20, 25]}
-      entries={5}
-      pagesAmount={4}
+      entries={NUMBERS_OF_ROWS}
+      entriesOptions={SETS_ENTRIES_OPTION_TO_DISPALY}
+      pagesAmount={INITIAL_NUMBER_PAGES_PAGINATION}
       data={datatable}
     />
   );
