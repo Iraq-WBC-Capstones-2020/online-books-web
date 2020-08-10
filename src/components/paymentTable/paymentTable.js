@@ -1,6 +1,5 @@
 import React from 'react';
 import './paymentTable.scss';
-import '../../assets/main.css';
 import { useTranslation } from 'react-i18next';
 import BooksRender from './BooksRender';
 
