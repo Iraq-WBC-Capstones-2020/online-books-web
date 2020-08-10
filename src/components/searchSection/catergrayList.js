@@ -4,9 +4,9 @@ import './MyStyle.scss';
 
 function CatergrayList({ items }) {
   let itemsTags = [];
-  let numberOfItems = items.length;
-  let [ActiveBubble, setActiveBubble] = useState(0);
-  let [setCatogray] = useState('');
+  const numberOfItems = items.length;
+  const [ActiveBubble, setActiveBubble] = useState(0);
+  const [setCatogray] = useState('');
 
   //light the bubble by pink color
   const handelBubble = (index) => {
@@ -21,7 +21,9 @@ function CatergrayList({ items }) {
     }
   };
   const getItemList = (e) => {
-    if (e.target !== undefined) {
+    let doseHaveTarget = Boolean(e.target);
+
+    if (doseHaveTarget) {
       setCatogray(e.target.children[1].innerHTML);
     }
   };
