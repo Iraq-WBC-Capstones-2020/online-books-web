@@ -2,7 +2,7 @@ import React from 'react';
 import './paymentTable.scss';
 import '../../assets/main.css';
 import { useTranslation } from 'react-i18next';
-import booksRender from './booksRender';
+import BooksRender from './BooksRender';
 
 import {
   MDBContainer,
@@ -12,6 +12,15 @@ import {
   MDBTableBody,
   MDBTableHead,
 } from 'mdbreact';
+
+const NUMBER_OF_BOOKS = 4;
+
+const BOOKS = Array(NUMBER_OF_BOOKS).fill({
+  title: 'book',
+  copies: 1,
+  price: '15 $',
+  id: 3,
+});
 
 export default function PaymentTable() {
   const { t } = useTranslation();
@@ -35,7 +44,7 @@ export default function PaymentTable() {
               </tr>
             </MDBTableHead>
             <MDBTableBody>
-              {booksRender()}
+              <BooksRender books={BOOKS} />
               <tr>
                 <td></td>
                 <td>
