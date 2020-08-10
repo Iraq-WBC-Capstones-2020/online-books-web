@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pills snapshot 1`] = `
+Array [
+  <div
+    className="py-2 border-t-2 border-b-2"
+  >
+    <div
+      className="container"
+      data-test="container"
+    >
+      <ul
+        className="nav nav-pills"
+        data-test="nav"
+      >
+        <li
+          className="nav-item"
+          data-test="nav-item"
+        >
+          <a
+            className="nav-link Ripple-parent nav-link Ripple-parent active"
+            data-test="nav-link"
+            href="/"
+            onClick={[Function]}
+            onMouseUp={[Function]}
+            onTouchStart={[Function]}
+          >
+            profilePage.about
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+          </a>
+        </li>
+        <li
+          className="nav-item"
+          data-test="nav-item"
+        >
+          <a
+            className="nav-link Ripple-parent nav-link Ripple-parent"
+            data-test="nav-link"
+            href="/"
+            onClick={[Function]}
+            onMouseUp={[Function]}
+            onTouchStart={[Function]}
+          >
+            profilePage.purchaseHistory
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="bg-gray-200 py-4"
+  >
+    <div
+      className="container"
+      data-test="container"
+    >
+      <div
+        className="tab-content"
+        data-test="tabContent"
+      >
+        <div
+          className="tab-pane active"
+          data-test="tab-pane"
+          role="tabpanel"
+        >
+          <div>
+            about
+          </div>
+        </div>
+        <div
+          className="tab-pane"
+          data-test="tab-pane"
+          role="tabpanel"
+        >
+          <div>
+            purchaseHistory
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

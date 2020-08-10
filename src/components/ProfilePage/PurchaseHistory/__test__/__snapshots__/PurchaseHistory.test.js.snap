@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PurchaseHistory snapshot 1`] = `
+<div
+  className="mdb-datatable dt-bootstrap4"
+  data-test="datatable"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+      data-test="mdb-datatable-table"
+    >
+      <div
+        className=""
+        data-test="table"
+        style={
+          Object {
+            "maxHeight": undefined,
+          }
+        }
+      >
+        <table
+          className="table table-borderless table-hover mdb-dataTable"
+          entries={5}
+        >
+          <thead
+            className="mdb-dataTable-head"
+            data-test="datatable-head"
+          >
+            <tr>
+              <th
+                aria-controls="DataTable"
+                aria-label="orderId"
+                className="sorting"
+                onClick={[Function]}
+              >
+                profilePage.orderId
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                profilePage.books
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                profilePage.status
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                profilePage.originalPrice
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                profilePage.totalPrice
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            data-test="table-body"
+          >
+            <tr>
+              <td>
+                25565845
+              </td>
+              <td>
+                System Architect
+              </td>
+              <td>
+                Edinburgh
+              </td>
+              <td>
+                61
+              </td>
+              <td>
+                2011/04/25
+              </td>
+            </tr>
+            <tr>
+              <td>
+                25565845
+              </td>
+              <td>
+                System Architect
+              </td>
+              <td>
+                Edinburgh
+              </td>
+              <td>
+                61
+              </td>
+              <td>
+                2011/04/25
+              </td>
+            </tr>
+            <tr>
+              <td>
+                25565845
+              </td>
+              <td>
+                System Architect
+              </td>
+              <td>
+                Edinburgh
+              </td>
+              <td>
+                61
+              </td>
+              <td>
+                2011/04/25
+              </td>
+            </tr>
+            <tr>
+              <td>
+                25565845
+              </td>
+              <td>
+                System Architect
+              </td>
+              <td>
+                Edinburgh
+              </td>
+              <td>
+                61
+              </td>
+              <td>
+                2011/04/25
+              </td>
+            </tr>
+            <tr>
+              <td>
+                25565845
+              </td>
+              <td>
+                System Architect
+              </td>
+              <td>
+                Edinburgh
+              </td>
+              <td>
+                61
+              </td>
+              <td>
+                2011/04/25
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="d-flex w-100 justify-content-between"
+    >
+      <div
+        className="row ml-3 justify-content-between"
+      >
+        <div
+          className="false"
+          data-test="datatable-search"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="mdb-datatable-filter flex-row"
+            data-test="datatable-input"
+          >
+            <input
+              aria-label="Search"
+              className="form-control form-control-sm ml-0 my-1"
+              onChange={[Function]}
+              placeholder="Search"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="d-flex align-items-center justify-content-end"
+      >
+        <div
+          className="mdb-datatable-entries"
+          data-test="mdb-datatable-entries"
+        >
+          <div
+            className="mdb-datatable-length bs-select"
+            data-test="datatable-select"
+          >
+            <label>
+              Rows per page:
+              <select
+                className="custom-select custom-select-sm form-control form-control-sm"
+                onChange={[Function]}
+                style={
+                  Object {
+                    "marginLeft": ".5rem",
+                  }
+                }
+                value={5}
+              >
+                <option
+                  value={5}
+                >
+                  5
+                </option>
+                <option
+                  value={10}
+                >
+                  10
+                </option>
+                <option
+                  value={20}
+                >
+                  20
+                </option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div
+          className="mdb-datatable-info d-flex align-items-center"
+          data-test="datatable-info"
+        >
+          <div
+            aria-live="polite"
+            role="status"
+          >
+             1 - 5 of 23 
+          </div>
+        </div>
+        <div
+          data-test="datatable-pagination"
+        >
+          <div
+            className="mdb-dataTables_paginate"
+          >
+            <ul
+              className="pagination m-0"
+              data-test="pagination"
+            >
+              <li
+                className="disabled page-item"
+                data-test="page-item"
+              >
+                <a
+                  aria-label="Prev"
+                  className="page-link page-link"
+                  data-test="page-link"
+                  onClick={[Function]}
+                >
+                  <span>
+                    <i
+                      className="fas fa-chevron-left"
+                    />
+                  </span>
+                </a>
+              </li>
+              <li
+                className="page-item"
+                data-test="page-item"
+              >
+                <a
+                  aria-label="Next"
+                  className="page-link page-link"
+                  data-test="page-link"
+                  onClick={[Function]}
+                >
+                  <span>
+                    <i
+                      className="fas fa-chevron-right"
+                    />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
