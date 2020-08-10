@@ -1,13 +1,13 @@
 import React from 'react';
 import { MDBContainer, MDBCol } from 'mdbreact';
-import client1 from './clients/client-1.png';
-import client2 from './clients/client-2.png';
-import client3 from './clients/client-3.png';
-import client4 from './clients/client-4.png';
-import client5 from './clients/client-5.png';
-import client6 from './clients/client-6.png';
-import client7 from './clients/client-7.png';
-import client8 from './clients/client-8.png';
+import client1 from './media/client-1.png';
+import client2 from './media/client-2.png';
+import client3 from './media/client-3.png';
+import client4 from './media/client-4.png';
+import client5 from './media/client-5.png';
+import client6 from './media/client-6.png';
+import client7 from './media/client-7.png';
+import client8 from './media/client-8.png';
 import { useTranslation } from 'react-i18next';
 import ClientCard from './ClientCard';
 function Detailsclient() {
