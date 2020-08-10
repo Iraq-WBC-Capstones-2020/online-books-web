@@ -2,7 +2,7 @@
   "clientPage": {
     "clients": "Our Clients"
   },
-  
+
   "authorPage": {
     "follow": "Follow",
     "books": "Books"
@@ -15,10 +15,34 @@
     "tags": "Tags",
     "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
   },
-  
+
   "landingPage": false,
   "navbar": false,
-  "profilePage": false,
+
+  "profilePage": {
+    "edit": "Edit",
+    "livesIn": "Lives in",
+    "addressSpread": ", ",
+    "memberSince": "Member since",
+    "about": "About",
+    "purchaseHistory": "Purchase History",
+    "basicInfo": "Basic Info",
+    "contactInfo": "Contact Info",
+    "name": "Name",
+    "gender": "Gender",
+    "birthday": "Date of birth",
+    "city": "City",
+    "country": "Country",
+    "address": "Address",
+    "phoneNumber": "Phone number",
+    "email": "E-Mail",
+    "orderId": "Order ID",
+    "books": "Books",
+    "status": "Status",
+    "originalPrice": "Original Price",
+    "totalPrice": "Total Price"
+  },
+
   "aboutUsPage": false,
   "contactUSPage": false,
   "signInPage": false,
