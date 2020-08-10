@@ -43,7 +43,7 @@ function SearchSection() {
           {/*SEARCH BOX PART */}
 
           <MDBCol
-            size="10"
+            size="8"
             md="10"
             lg="10"
             className="mycolorPink columnSearchBooks p-0 h-12 z-depth-4 "

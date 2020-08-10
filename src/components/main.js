@@ -31,26 +31,35 @@ function Main() {
         />
 
         <MDBRow around>
-          <MDBCol md="3" lg="3" className="containerSearchSection bg-black">
+          <MDBCol
+            size="0"
+            md="3"
+            lg="3"
+            className="containerSearchSection bg-black"
+          >
             <SearchSection />
           </MDBCol>
 
           {/*Modal for search section will appeare in the small devices */}
+
           <MDBModal
             isOpen={modal8}
             toggle={() => handelModel8(true)}
             fullHeight
             position="left"
             animation="left"
-          //  hiddenModal={}
+            contentClassName=" bg-black"
           >
-            <MDBModalHeader toggle={() => handelModel8(false)} className="bg-black border-b-0"></MDBModalHeader>
+            <MDBModalHeader
+              toggle={() => handelModel8(false)}
+              className="border-b-0 py-0 mb-3"
+            ></MDBModalHeader>
             <MDBModalBody className="bg-black">
               <SearchSection />
             </MDBModalBody>
           </MDBModal>
 
-          <MDBCol md="8" lg="8">
+          <MDBCol size="11" md="8" lg="8">
             <MDBContainer>GRIDE BOOKS </MDBContainer>
           </MDBCol>
         </MDBRow>

@@ -14,7 +14,7 @@ function CatergrayList({ items }) {
       return 'textPink';
     }
   };
-
+ 
   const emptyItems = () => {
     for (let i = 1; i <= 9 - numberOfItems; i++) {
       itemsTags.push(<div md="12" className="lightBlack h-10 mb-1"></div>);
