@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Clients snapshot 1`] = `
+Array [
+  <div
+    className="col"
+    data-test="col"
+  >
+    <div
+      className="text-center mt-5"
+    >
+      <h1
+        className="text-3xl font-medium inline border-b border-gray-400 px-5"
+      >
+        clientPage.clients
+      </h1>
+    </div>
+  </div>,
+  <div
+    className="container w-9/12 mt-5 grid grid-cols-4 gab-5"
+    data-test="container"
+  >
+    <div
+      className="border border-solid border-4 border-gray-200 flex justify-center"
+    >
+      <img
+        alt="myob company"
+        className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
+        src="client-1.png"
+      />
+    </div>
+    <div
+      className="border border-solid border-4 border-gray-200 flex justify-center"
+    >
+      <img
+        alt="Belimo company"
+        className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
+        src="client-2.png"
+      />
+    </div>
+    <div
+      className="border border-solid border-4 border-gray-200 flex justify-center"
+    >
+      <img
+        alt="life groups"
+        className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
+        src="client-3.png"
+      />
+    </div>
+    <div
+      className="border border-solid border-4 border-gray-200 flex justify-center"
+    >
+      <img
+        alt="lily company"
+        className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
+        src="client-4.png"
+      />
+    </div>
+    <div
+      className="border border-solid border-4 border-gray-200 flex justify-center"
+    >
+      <img
+        alt="citrus company"
+        className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
+        src="client-5.png"
+      />
+    </div>
+    <div
+      className="border border-solid border-4 border-gray-200 flex justify-center"
+    >
+      <img
+        alt="trusly"
+        className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
+        src="client-6.png"
+      />
+    </div>
+    <div
+      className="border border-solid border-4 border-gray-200 flex justify-center"
+    >
+      <img
+        alt="oldendorff company"
+        className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
+        src="client-7.png"
+      />
+    </div>
+    <div
+      className="border border-solid border-4 border-gray-200 flex justify-center"
+    >
+      <img
+        alt="grabuo company"
+        className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/3 m-4"
+        src="client-8.png"
+      />
+    </div>
+  </div>,
+]
+`;
