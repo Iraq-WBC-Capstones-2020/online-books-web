@@ -5,13 +5,12 @@
       "aboutUsText": "It is a long established fact that a reader will be distracted bythe readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  content hereh. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of etters, as opposed to using Content h ereh.",
       "readMoreButton": "Read More"
     }
-  }
+  },
   "footer": {
     "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
     "copyright": "Copyright © BookZone",
     "followUs": "Follow Us",
     "tags": "Tags",
     "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
-
   }
 }
