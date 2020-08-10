@@ -10,13 +10,13 @@ import {
   MDBIcon,
   MDBModalFooter,
 } from 'mdbreact';
-import './log.css';
+import './log.scss';
 
-const FormPage = () => {
+function FormPage() {
   return (
     <MDBContainer>
       <MDBRow>
-        <MDBCol md="5" className="mt-5 ">
+        <MDBCol md="5" className="mt-5">
           <MDBCard className="mt-5 " className="log">
             <MDBCardBody className="mx-4">
               <div className="text-center">
@@ -53,7 +53,6 @@ const FormPage = () => {
                   Sign in
                 </MDBBtn>
               </div>
-
               <div className="row my-3 d-flex justify-content-center"></div>
             </MDBCardBody>
           </MDBCard>
@@ -63,7 +62,7 @@ const FormPage = () => {
             <MDBCardBody className="mt-5">
               <div className="text-center">
                 <div className="mt-5">
-                  <button className=" rounded-pill "> or </button>
+                  <button className="rounded-pill"> or </button>
                 </div>
               </div>
             </MDBCardBody>
@@ -109,6 +108,6 @@ const FormPage = () => {
       </MDBRow>
     </MDBContainer>
   );
-};
+}
 
 export default FormPage;
