@@ -4,9 +4,12 @@ import './MyStyle.scss';
 
 function CatergrayList({ items }) {
   let itemsTags = [];
+  let CatogryItem;
   const numberOfItems = items.length;
   const [ActiveBubble, setActiveBubble] = useState(0);
-  const [setCatogray] = useState('');
+  const [Catogray, setCatogray] = useState('');
+
+  console.log(Catogray);
 
   //light the bubble by pink color
   const isActive = (index) => {
@@ -20,15 +23,6 @@ function CatergrayList({ items }) {
       itemsTags.push(<div md="12" className="lightBlack h-10 mb-1"></div>);
     }
   };
-  const getItemList = (e) => {
-    let doseHaveTarget = Boolean(e.target);
-    console.log(doseHaveTarget,e.target)
-    console.log(e.target.children[1])
-    if (doseHaveTarget) {
-      let a=e.target.children[1].innerHTML
-      setCatogray(a);
-    }
-  };
 
   const typeItems = () => {
     itemsTags = items.map((item, index) => {
@@ -37,16 +31,21 @@ function CatergrayList({ items }) {
           className="text-left lightBlack h-10 mb-1"
           key={index}
           //turn the light to pink for the item that choose and the other to unactive
-          onClick={(e) => {
-            setActiveBubble(index);
-            getItemList(e);
-          }}
         >
           <MDBIcon
             icon="circle"
             className={`p-3 sizeBubble ${isActive(index)}`}
           />
-          <p className="parg1 d-inline hoverCursor">{item.name}</p>
+          <p
+            className="parg1 d-inline hoverCursor"
+            onClick={(e) => {
+              setActiveBubble(index);
+              CatogryItem = e.target;
+              setCatogray(CatogryItem.innerHTML);
+            }}
+          >
+            {item.name}
+          </p>
         </div>
       );
     });
