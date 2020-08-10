@@ -8,7 +8,7 @@ import {
   MDBFormInline,
 } from 'mdbreact';
 import './myStyle.scss';
-import CatergrayList from './catergrayList';
+import CatergrayList from './CatergrayList';
 
 function SearchSection() {
   let catograysBook = [

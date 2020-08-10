@@ -13,7 +13,7 @@ import {
   MDBModalHeader,
   MDBIcon,
 } from 'mdbreact';
-import SearchSection from './searchSection/searchSection';
+import SearchSection from '../components/searchSection/SearchSection';
 
 function Main() {
   let [modal8, handelModel8] = useState(false);
