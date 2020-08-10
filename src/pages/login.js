@@ -10,7 +10,7 @@ import {
   MDBIcon,
   MDBModalFooter,
 } from 'mdbreact';
-import './log.scss';
+import './login.scss';
 
 function FormPage() {
   return (
