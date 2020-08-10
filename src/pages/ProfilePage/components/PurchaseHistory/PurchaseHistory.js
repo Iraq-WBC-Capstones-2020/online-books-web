@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBDataTableV5 } from 'mdbreact';
+import { MDBDataTableV5 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 
 function PurchaseHistory() {

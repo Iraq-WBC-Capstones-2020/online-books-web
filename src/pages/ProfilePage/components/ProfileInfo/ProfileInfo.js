@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
+import { MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 
 function ProfileInfo({ profileInfo }) {
