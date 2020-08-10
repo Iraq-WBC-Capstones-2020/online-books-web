@@ -1,39 +1,48 @@
 import React from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
-const PopularAuthors = () => {
-  const authorsName = 'John Doe';
+import './style.scss';
+import { MDBContainer, MDBBtn, MDBRow, MDBCol } from 'mdbreact';
+function Author() {
+  const popularAuthor = [
+    'Zen Cho',
+    'John Doe',
+    'Ahemd Doe ',
+    'Ali Doe',
+    'Alif Doe',
+    'john Doe',
+    'rema bedr',
+    'Ali Doe',
+    'Alif Doe',
+    'john Doe',
+    'Ali Doe',
+    'John Doe',
+  ];
   return (
-    <MDBContainer>
-      <h1 className="text-center mt-3">Popular Authors</h1>
-      <MDBRow className="mt-5">
-        <MDBCol size="6" sm="2">
-          <MDBBtn className="rounded-pill" color="info">
-            {authorsName}
-          </MDBBtn>
-        </MDBCol>
-        <MDBCol size="6" sm="2">
-          <MDBBtn className="rounded-pill width-150" color="info">
-            {authorsName}
-          </MDBBtn>
-        </MDBCol>
-        <MDBCol size="6" sm="2">
-          <MDBBtn className="rounded-pill" color="info">
-            {authorsName}
-          </MDBBtn>
-        </MDBCol>
-        <MDBCol size="6" sm="2">
-          <MDBBtn className="rounded-pill" color="info">
-            {authorsName}
-          </MDBBtn>
-        </MDBCol>
-        <MDBCol size="6" sm="2">
-          <MDBBtn className="rounded-pill" color="info">
-            {authorsName}
-          </MDBBtn>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+    <div>
+      <MDBContainer className="mt-5">
+        <div>
+          <h1 className="text-center text-3xl ">Popular authors</h1>
+        </div>
+        <MDBRow className="mt-5">
+          {popularAuthor.map((author) => {
+            return (
+              <MDBCol
+                size="12"
+                sm="2"
+                className="mt-4  d-flex justify-content-center align-items-center"
+              >
+                <MDBBtn
+                  color="light-blue"
+                  className="px-2 rounded-pill  button"
+                >
+                  {author}
+                </MDBBtn>
+              </MDBCol>
+            );
+          })}
+        </MDBRow>
+      </MDBContainer>
+    </div>
   );
-};
+}
 
-export default PopularAuthors;
+export default Author;
