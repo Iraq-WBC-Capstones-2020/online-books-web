@@ -8,7 +8,7 @@ import {
   MDBFormInline,
 } from 'mdbreact';
 import './MyStyle.scss';
-import CatergrayList from './CatergrayList';
+import CategoryList from './CategoryList';
 import { useTranslation } from 'react-i18next';
 
 function SearchSection() {
@@ -118,7 +118,7 @@ function SearchSection() {
         {/*itemList for book catogray and authors names*/}
         <MDBRow className="mt-2 mb-0">
           <MDBCol md="12">
-            <CatergrayList items={data} />
+            <CategoryList items={data} />
           </MDBCol>
         </MDBRow>
       </MDBContainer>
