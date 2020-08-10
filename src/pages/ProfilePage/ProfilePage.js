@@ -1,13 +1,10 @@
 import React from 'react';
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-} from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import Paragraph from '../../components/Paragraph/Paragraph';
 import Pills from '../../components/Pills/Pills';
 import ProfileInfo from './components/ProfileInfo/ProfileInfo';
+import PurchaseHistory from './components/PurchaseHistory/PurchaseHistory';
 
 function ProfilePage() {
   const { t } = useTranslation();
@@ -34,7 +31,14 @@ function ProfilePage() {
   )}${profileInfo.address.country}\n
   ${profileInfo.email}`;
   const tabs = [
-    { title: t('profilePage.about'), content:<ProfileInfo profileInfo={profileInfo} /> },
+    {
+      title: t('profilePage.about'),
+      content: <ProfileInfo profileInfo={profileInfo} />,
+    },
+    {
+      title: t('profilePage.purchaseHistory'),
+      content: <PurchaseHistory profileInfo={profileInfo} />,
+    },
   ];
   return (
     <>
@@ -58,8 +62,8 @@ function ProfilePage() {
               <h4 className="text-3xl font-medium text-blue-500 pb-3">
                 {profileInfo.name}
               </h4>
-              {userParagraph.split('\n').map((paragraph) => (
-                <Paragraph className="text-center text-md-left">
+              {userParagraph.split('\n').map((paragraph, index) => (
+                <Paragraph className="text-center text-md-left" key={index}>
                   {paragraph}
                 </Paragraph>
               ))}
