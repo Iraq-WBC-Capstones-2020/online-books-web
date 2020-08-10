@@ -10,7 +10,7 @@ $light-pink: #fee4cb;
 .lightBlack {
   background: $light-black;
 }
- 
+
 .mycolorPink {
   // background: $pink-color;
   background: $light-pink;
@@ -65,12 +65,6 @@ $light-pink: #fee4cb;
   font-size: 1rem;
 }
 
-.buttomSearch {
-  width: 2.6rem;
-  height: 2.5rem;
-  border-radius: 5rem;
-}
-
 .sizeBubble {
   font-size: 0.6rem;
 }
@@ -99,7 +93,6 @@ $light-pink: #fee4cb;
   box-shadow: none !important ;
 }
 
-.sandwitchItem{
-  display:inline-block;
+.sandwitchItem {
+  display: inline-block;
 }
-

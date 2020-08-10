@@ -34,6 +34,8 @@ function Main() {
           <MDBCol md="3" lg="3" className="containerSearchSection bg-black">
             <SearchSection />
           </MDBCol>
+
+          {/*Modal for search section will appeare in the small devices */}
           <MDBModal
             isOpen={modal8}
             toggle={() => handelModel8(true)}
@@ -42,7 +44,7 @@ function Main() {
             animation="left"
           //  hiddenModal={}
           >
-            <MDBModalHeader toggle={() => handelModel8(false)}></MDBModalHeader>
+            <MDBModalHeader toggle={() => handelModel8(false)} className="bg-black border-b-0"></MDBModalHeader>
             <MDBModalBody className="bg-black">
               <SearchSection />
             </MDBModalBody>

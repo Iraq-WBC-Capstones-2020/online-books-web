@@ -5,7 +5,6 @@ import {
   MDBContainer,
   MDBInput,
   MDBIcon,
-  MDBBtn,
   MDBFormInline,
 } from 'mdbreact';
 import './myStyle.scss';
@@ -44,27 +43,25 @@ function SearchSection() {
           {/*SEARCH BOX PART */}
 
           <MDBCol
+            size="10"
             md="10"
             lg="10"
             className="mycolorPink columnSearchBooks p-0 h-12 z-depth-4 "
           >
-            <MDBFormInline className="searchBox">
-              <div>
-                <MDBInput
-                  hint="Find Your Book"
-                  type="text"
-                  className="text-black pl-2 mr-3 form-control"
-                  onChange={(e) => setInputValue(e.target.value)}
-                  containerClass="active-pink"
-                />
-              </div>
-              <MDBBtn
-                color=""
-                className="shadow buttomSearch px-1 pb-3 mb-3 mt-0 "
+            <MDBFormInline className="searchBox d-flex justify-content-around">
+              <MDBInput
+                hint="Find Your Book"
+                type="text"
+                className="text-black  mb-md-3 form-control "
+                onChange={(e) => setInputValue(e.target.value)}
+                containerClass="active-pink"
+              />
+              <MDBIcon
+                icon="search"
+                size="lg"
+                className="text-black hoverCursor pb-3 mb-md-1 "
                 onClick={() => {}}
-              >
-                <MDBIcon icon="search" size="lg" className="text-black " />
-              </MDBBtn>
+              />
             </MDBFormInline>
 
             {/*  spin */}
@@ -75,7 +72,7 @@ function SearchSection() {
             SEARCH BY
           </MDBCol>
 
-          <MDBCol md="6" className="  text-center  px-3 pb-2">
+          <MDBCol size="6" md="6" className="  text-center  px-3 pb-2">
             <div
               key={1}
               className="lightBlack h-16 pt-2 text-gray-300 border-orange-500"
@@ -93,7 +90,7 @@ function SearchSection() {
             </div>
           </MDBCol>
 
-          <MDBCol md="6" className="text-center px-3 pb-2">
+          <MDBCol size="6" md="6" className="text-center px-3 pb-2">
             <div
               key={2}
               className="lightBlack text-gray-300 h-16  pt-2"
@@ -123,4 +120,3 @@ function SearchSection() {
   );
 }
 export default SearchSection;
- 
