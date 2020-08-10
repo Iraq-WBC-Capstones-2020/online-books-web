@@ -26,6 +26,7 @@ function Author() {
           {popularAuthor.map((author) => {
             return (
               <MDBCol
+                key={author}
                 size="12"
                 sm="2"
                 className="mt-4  d-flex justify-content-center align-items-center"
