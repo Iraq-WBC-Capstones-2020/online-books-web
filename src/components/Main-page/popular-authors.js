@@ -5,7 +5,7 @@ function Author() {
   const popularAuthor = [
     'Zen Cho',
     'John Doe',
-    'Ahemd Doe ',
+    'Ahemd Doe',
     'Ali Doe',
     'Alif Doe',
     'john Doe',
@@ -20,7 +20,7 @@ function Author() {
     <div>
       <MDBContainer className="mt-5">
         <div>
-          <h1 className="text-center text-3xl ">Popular authors</h1>
+          <h1 className="text-center text-3xl">Popular authors</h1>
         </div>
         <MDBRow className="mt-5">
           {popularAuthor.map((author) => {
@@ -29,12 +29,9 @@ function Author() {
                 key={author}
                 size="12"
                 sm="2"
-                className="mt-4  d-flex justify-content-center align-items-center"
+                className="mt-4 d-flex justify-content-center align-items-center"
               >
-                <MDBBtn
-                  color="light-blue"
-                  className="px-2 rounded-pill  button"
-                >
+                <MDBBtn color="light-blue" className="px-2 rounded-pill button">
                   {author}
                 </MDBBtn>
               </MDBCol>
