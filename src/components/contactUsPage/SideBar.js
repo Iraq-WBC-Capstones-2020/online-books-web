@@ -3,13 +3,13 @@ import { MDBCard } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 function ContactInformation() {
   const { t } = useTranslation();
-  const contact = t('contactUsPage.contactUs');
+
   return (
     <>
       <div className="flex justify-end">
         <MDBCard className="max-h-full bg-blue-800 w-1/4 flex justify-center">
           <h1 className=" my-4 pb-2 text-center white-text text-2xl">
-            {contact}
+            {t('contactUsPage.contactUs')}
           </h1>
           <div
             className="flex justify-start animate transition duration-500 ease-in-out  
