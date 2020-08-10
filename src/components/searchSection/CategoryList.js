@@ -9,6 +9,8 @@ function CategoryList({ items }) {
   const [category, setCategory] = useState('');
   const [newItems, setNewItems] = useState([]);
 
+  
+
   //light the bubble by pink color
   const isActive = (index) => {
     if (activeBubble === index) {
@@ -33,19 +35,24 @@ function CategoryList({ items }) {
           <div
             className="text-left lightBlack h-10 mb-1"
             key={index}
-            //turn the light to pink for the item that choose and the other to unactive
+            data-value={item.name}
+            onClick={(e) => {
+              setActiveBubble(index);
+              setCategory(e.target.dataset.value);
+            }}
           >
+            {/* //turn the light to pink for the item that choose and the other to inactive */}
             <MDBIcon
               icon="circle"
               className={`p-3 sizeBubble ${isActive(index)}`}
             />
             <p
               className="parg1 d-inline hoverCursor"
+              data-value={item.name}
               onClick={(e) => {
                 setActiveBubble(index);
-                const CategoryItem = e.target;
-                setCategory(CategoryItem.innerHTML);
-                console.log(category);
+
+                setCategory(e.target.dataset.value);
               }}
             >
               {item.name}

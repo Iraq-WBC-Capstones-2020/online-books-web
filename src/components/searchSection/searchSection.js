@@ -118,7 +118,7 @@ function SearchSection() {
         {/*itemList for book catogray and authors names*/}
         <MDBRow className="mt-2 mb-0">
           <MDBCol md="12">
-            <CategoryList items={data} />
+              <CategoryList items={data} />
           </MDBCol>
         </MDBRow>
       </MDBContainer>
