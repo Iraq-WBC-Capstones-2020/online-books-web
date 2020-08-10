@@ -14,12 +14,17 @@
     "contactInfo":"Contact Info",
     "name":"Name",
     "gender":"Gender",
-    "dateOfBirth":"Date of birth",
+    "birthday":"Date of birth",
     "city":"City",
     "country":"Country",
     "address":"Address",
     "phoneNumber":"Phone number",
-    "email":"E-Mail"
+    "email":"E-Mail",
+    "orderId":"Order ID",
+    "books":"Books",
+    "status":"Status",
+    "originalPrice":"Original Price",
+    "totalPrice":"Total Price"
   },
   "footer": {
     "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
