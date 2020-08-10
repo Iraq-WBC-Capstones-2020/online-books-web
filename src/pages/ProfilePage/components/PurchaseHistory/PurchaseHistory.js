@@ -4,7 +4,14 @@ import { useTranslation } from 'react-i18next';
 
 function PurchaseHistory() {
   const { t } = useTranslation();
-
+  const numberOfPurchases = 23;
+  const purchases = Array(numberOfPurchases).fill({
+    orderId: '25565845',
+    books: 'System Architect',
+    status: 'Edinburgh',
+    originalPrice: '61',
+    totalPrice: '2011/04/25',
+  });
   const [datatable] = useState({
     columns: [
       {
@@ -32,64 +39,7 @@ function PurchaseHistory() {
         field: 'totalPrice',
       },
     ],
-    rows: [
-      {
-        orderId: 'Tiger Nixon',
-        books: 'System Architect',
-        status: 'Edinburgh',
-        originalPrice: '61',
-        totalPrice: '2011/04/25',
-      },
-      {
-        orderId: 'Tiger Nixon',
-        books: 'System Architect',
-        status: 'Edinburgh',
-        originalPrice: '61',
-        totalPrice: '2011/04/25',
-      },
-      {
-        orderId: 'Tiger Nixon',
-        books: 'System Architect',
-        status: 'Edinburgh',
-        originalPrice: '61',
-        totalPrice: '2011/04/25',
-      },
-      {
-        orderId: 'Tiger Nixon',
-        books: 'System Architect',
-        status: 'Edinburgh',
-        originalPrice: '61',
-        totalPrice: '2011/04/25',
-      },
-      {
-        orderId: 'Tiger Nixon',
-        books: 'System Architect',
-        status: 'Edinburgh',
-        originalPrice: '61',
-        totalPrice: '2011/04/25',
-      },
-      {
-        orderId: 'Tiger Nixon',
-        books: 'System Architect',
-        status: 'Edinburgh',
-        originalPrice: '61',
-        totalPrice: '2011/04/25',
-      },
-      {
-        orderId: 'Tiger Nixon',
-        books: 'System Architect',
-        status: 'Edinburgh',
-        originalPrice: '61',
-        totalPrice: '2011/04/25',
-      },
-      {
-        orderId: 'Tiger Nixon',
-        books: 'System Architect',
-        status: 'Edinburgh',
-        originalPrice: '61',
-        totalPrice: '2011/04/25',
-      },
-    ],
+    rows: purchases,
   });
   return (
     <MDBDataTableV5
