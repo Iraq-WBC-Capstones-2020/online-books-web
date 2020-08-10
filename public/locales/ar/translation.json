@@ -1,4 +1,5 @@
 {
+  "mainPage":{
   "highlight": {
     "best selling books": "أفضل الكتب المباعة",
     "add to cart": "أضف الى العربة ",
@@ -12,4 +13,5 @@
     "Business&Investing": "العمل",
     "History": "التاريخ"
   }
+}
 }

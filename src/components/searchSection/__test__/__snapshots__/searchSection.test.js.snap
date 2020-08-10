@@ -10,70 +10,48 @@ exports[`searchSection snapshot 1`] = `
     data-test="row"
   >
     <div
-      className="col-md-10 col-lg-10 mycolorPink columnSearchBooks p-0 h-12 z-depth-4 "
+      className="col-8 col-md-10 col-lg-10 mycolorPink columnSearchBooks p-0 h-12 z-depth-4 "
       data-test="col"
     >
       <form
-        className="form-inline searchBox"
+        className="form-inline searchBox d-flex justify-content-around"
         data-test="form-inline"
         onMouseDown={[Function]}
         onTouchStart={[Function]}
       >
-        <div>
-          <div
-            className="md-form active-pink"
-          >
-            
-            <input
-              aria-disabled={false}
-              className="form-control text-black pl-2 mr-3 form-control"
-              data-test="input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInput={[Function]}
-              placeholder="Find Your Book"
-              type="text"
-              value=""
-            />
-            <label
-              aria-labelledby=""
-              className="active"
-              data-error=""
-              data-success=""
-              id=""
-              onClick={[Function]}
-            >
-               
-            </label>
-          </div>
-        </div>
-        <button
-          className="btn Ripple-parent shadow buttomSearch px-1 pb-3 mb-3 mt-0 "
-          data-test="button"
-          onClick={[Function]}
-          onMouseUp={[Function]}
-          onTouchStart={[Function]}
-          type="button"
+        <div
+          className="md-form active-pink"
         >
-          <i
-            className="fa fa-search fa-lg text-black "
-            data-test="fa"
+          
+          <input
+            aria-disabled={false}
+            className="form-control text-black  mb-md-3 form-control "
+            data-test="input"
+            disabled={false}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onInput={[Function]}
+            placeholder="Find Your Book"
+            type="text"
+            value=""
           />
-          <div
-            className="Ripple "
-            data-test="waves"
-            style={
-              Object {
-                "height": "0px",
-                "left": "0px",
-                "top": "0px",
-                "width": "0px",
-              }
-            }
-          />
-        </button>
+          <label
+            aria-labelledby=""
+            className="active"
+            data-error=""
+            data-success=""
+            id=""
+            onClick={[Function]}
+          >
+             
+          </label>
+        </div>
+        <i
+          className="fa fa-search fa-lg text-black hoverCursor pb-3 mb-md-1 "
+          data-test="fa"
+          onClick={[Function]}
+        />
       </form>
     </div>
     <div
@@ -83,7 +61,7 @@ exports[`searchSection snapshot 1`] = `
       SEARCH BY
     </div>
     <div
-      className="col-md-6   text-center  px-3 pb-2"
+      className="col-6 col-md-6   text-center  px-3 pb-2"
       data-test="col"
     >
       <div
@@ -102,7 +80,7 @@ exports[`searchSection snapshot 1`] = `
       </div>
     </div>
     <div
-      className="col-md-6 text-center px-3 pb-2"
+      className="col-6 col-md-6 text-center px-3 pb-2"
       data-test="col"
     >
       <div

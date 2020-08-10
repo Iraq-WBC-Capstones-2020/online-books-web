@@ -7,6 +7,7 @@ $light-blue2: #f9f9f9;
 $font-roboto: 'Roboto';
 $light-black: #0e0e0e;
 $light-pink: #fee4cb;
+
 .lightBlack {
   background: $light-black;
 }
@@ -85,19 +86,21 @@ $light-pink: #fee4cb;
   box-shadow: 0 1px 0 0 $pink-color;
   z-index: 2;
 }
-.active-pink input {
+%input-decoration {
   border-bottom: none !important;
   box-shadow: none !important ;
 }
+.active-pink input {
+  @extend %input-decoration;
+}
 
 .active-pink input:focus {
-  border-bottom: none !important;
-  box-shadow: none !important ;
+  @extend %input-decoration;
 }
 
 .sandwitchItem {
   display: none;
   @media (max-width: 768px) {
-    display:inline-block;
+    display: inline-block;
   }
 }

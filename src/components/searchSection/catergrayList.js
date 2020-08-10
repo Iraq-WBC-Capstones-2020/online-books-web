@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MDBIcon } from 'mdbreact';
-import './myStyle.scss';
- 
+import './MyStyle.scss';
+
 function CatergrayList({ items }) {
   let itemsTags = [];
   let numberOfItems = items.length;
@@ -14,7 +14,7 @@ function CatergrayList({ items }) {
       return 'textPink';
     }
   };
- 
+
   const emptyItems = () => {
     for (let i = 1; i <= 9 - numberOfItems; i++) {
       itemsTags.push(<div md="12" className="lightBlack h-10 mb-1"></div>);
@@ -30,7 +30,7 @@ function CatergrayList({ items }) {
     itemsTags = items.map((item, index) => {
       return (
         <div
-          className="text-left lightBlack h-10 mb-1 "
+          className="text-left lightBlack h-10 mb-1"
           key={index}
           //turn the light to pink for the item that choose and the other to unactive
           onClick={(e) => {
