@@ -12,7 +12,7 @@ import {
   MDBBtn,
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
-import CreateStars from './CreateStars';
+import CreateStars from './createStars';
 
 // create 4 items for the carsouel movement
 function CarouselItems({ activeCard, handelChangeCard }) {
@@ -112,12 +112,12 @@ function CarouselItems({ activeCard, handelChangeCard }) {
 
                 <MDBCol md="1" lg="1"></MDBCol>
 
-                <MDBCol md="7" lg="6" size="12" className="my-auto">
+                <MDBCol md="7" lg="6" size="12" className="mb-0 mt-auto">
                   <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto mt-md-2">
                     <div>
                       <h1 className="fontHeader1 mb-0 font-weight-normal  text-2xl">
                         {book.authorName}
-                      </h1>
+                      </h1> 
                     </div>
                     <MDBCardText>
                       <p className="mb-1 fontHeader2 font-normal font-weight-normal ">{`${book.bookName}`}</p>
@@ -139,22 +139,23 @@ function CarouselItems({ activeCard, handelChangeCard }) {
                       {t('addtocart')}
                     </button>
                   </MDBCardBody>
-                  {/*arrow button */}
-                  <div className="h-10 mt-md-4 d-flex justify-content-end">
+                  {/*arrow button// d-flex justify-content-end */}
+                  <div className="h-16 relative">
+                    <div className="absolute bottom-0 right-0">
                     <MDBBtn
                       color=""
-                      className="shadow p-0"
+                      className="shadow p-0 h-8"
                       onClick={() => handelChangeCard(true)}
                     >
                       <MDBIcon
-                        icon="chevron-left "
+                        icon="chevron-left"
                         size="lg"
                         className="px-2 py-1"
                       />
                     </MDBBtn>
                     <MDBBtn
                       color=""
-                      className="shadow p-0"
+                      className="shadow p-0 h-8"
                       onClick={() => handelChangeCard(false)}
                     >
                       <MDBIcon
@@ -163,6 +164,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
                         className="px-2 py-1"
                       />
                     </MDBBtn>
+                    </div>
                   </div>
                 </MDBCol>
               </MDBRow>

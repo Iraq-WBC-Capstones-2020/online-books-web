@@ -23,7 +23,7 @@ function CreateStars({ rate }) {
           );
         }
       }
-    }
+    } 
     return stars;
   };
   return <>{createStars()}</>;

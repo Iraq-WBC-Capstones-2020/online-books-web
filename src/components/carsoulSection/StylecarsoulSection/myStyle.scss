@@ -7,13 +7,14 @@ $dark-blue: #7aa2d6;
 $light-gray: #f6f6f6;
 $light-blue2: #f9f9f9;
 $font-roboto: 'Roboto';
+$light-pink:#FEE4CB;
 
 .mycolorPink {
-  background: $pink-color;
+  background: $light-pink;
 }
 
 %fontType {
-  font: 'Saira';
+  font-family: 'Saira';
 }
 
 .fontHeader1 {

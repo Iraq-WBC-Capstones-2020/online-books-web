@@ -5,7 +5,7 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 //main component
 import Paragraph from '../components/paragraph';
-import CarsoulSection from '../components/carsoulSection/CarsoulSection';
+import CarsoulSection from '../components/carsoulSection/carsoulSection';
 function Main() {
   return (
     <>

@@ -70,7 +70,7 @@ function GrideCarousel() {
       id: 6,
     },
   ];
-  return (
+  return ( 
     <>
       <MDBContainer className="px-md-4">
         {/*grid for the covers of books that are new release and best sellers */}

@@ -7,9 +7,9 @@ import {
   MDBContainer,
 } from 'mdbreact';
 import './StylecarsoulSection/myStyle.scss';
-import CarouselItems from './CarsoureItem';
-import GrideCarousel from './GridCarousel';
-import HighLight from './HighlightSection';
+import CarouselItems from './carsoureItem';
+import GrideCarousel from './gridCarousel';
+import HighLight from './highlightSection';
 
 function CarsoulSection() {
   const [activeCardItem, setActiveCardItemState] = useState(0);
@@ -32,7 +32,7 @@ function CarsoulSection() {
     }
     clearTimeout(timerId.current);
     timerId.current = resetTimer();
-  };
+  }; 
   return (
     <>
       <MDBContainer>
