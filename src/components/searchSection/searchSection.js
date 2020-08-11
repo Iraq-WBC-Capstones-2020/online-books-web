@@ -7,7 +7,7 @@ import {
   MDBIcon,
   MDBFormInline,
 } from 'mdbreact';
-import './MyStyle.scss';
+import './searchSectionStyle.scss';
 import CategoryList from './CategoryList';
 import BookImage from './bookImage';
 import { useTranslation } from 'react-i18next';
@@ -27,7 +27,7 @@ function SearchSection() {
     { name: 'sara ahmed' },
     { name: 'dunia tarq' },
   ];
-  const [setSearchInputValue] = useState('');
+  const [searchInputValue,setSearchInputValue] = useState('');
   //we use number 2 as default value to make the BOOKS choosen in first time when we open the website
   const [activeItem, setActiveItem] = useState(2);
   const [data, setData] = useState(categoriesBooks);
