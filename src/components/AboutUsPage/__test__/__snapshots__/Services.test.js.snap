@@ -12,7 +12,7 @@ exports[`Services snapshot 1`] = `
       className="text-center"
     >
       <h1
-        className=" text-3xl mt-10 font-weight-bold "
+        className="text-3xl mt-10 font-weight-bold"
       >
         aboutPage.services.header
       </h1>
@@ -27,7 +27,7 @@ exports[`Services snapshot 1`] = `
     </div>
   </div>
   <div
-    className="card-body row ml-48 "
+    className="card-body row ml-48"
     data-test="card-body"
   >
     <div

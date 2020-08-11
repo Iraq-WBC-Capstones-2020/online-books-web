@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCol, MDBCardBody, MDBCard, MDBContainer } from 'mdbreact';
+import { MDBCol, MDBCardBody } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import buildingInsights2 from '@iconify/icons-carbon/building-insights-2';
 import deliveryTruck from '@iconify/icons-carbon/delivery-truck';
@@ -28,7 +28,7 @@ function Services() {
     <div className="col bg-gray-100">
       <MDBCol>
         <div className="text-center">
-          <h1 className=" text-3xl mt-10 font-weight-bold ">{header}</h1>
+          <h1 className="text-3xl mt-10 font-weight-bold">{header}</h1>
           <br />
           <div className="flex justify-center">
             <hr className="w-48" />
@@ -36,7 +36,7 @@ function Services() {
         </div>
       </MDBCol>
 
-      <MDBCardBody className="row ml-48 ">
+      <MDBCardBody className="row ml-48">
         {ourServices.map((service) => (
           <ServiceCard key={service.id} service={service} />
         ))}
