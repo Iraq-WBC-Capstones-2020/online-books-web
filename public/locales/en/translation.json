@@ -1,1 +1,6 @@
-
+{
+  "bookPage": {
+    "language": "Language",
+    "addToCart": "Add to cart"
+  }
+}

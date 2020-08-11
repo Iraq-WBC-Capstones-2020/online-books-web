@@ -1,8 +1,10 @@
 import React from 'react';
 import './style.scss';
+import { useTranslation } from 'react-i18next';
 import CreateStars from './starRate';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 const BookPage = () => {
+  const { t } = useTranslation();
   const bookPage = {
     bookName: 'Mind Without Body',
     bookCover: 'https://via.placeholder.com/353x498',
@@ -32,7 +34,7 @@ const BookPage = () => {
             <p className="mt-3 text-2xl leading-7 text-justify">
               {bookPage.description}
             </p>
-            <span className="gray-text">language:Arabic</span>
+            <span className="gray-text">{t('bookPage.language')}:Arabic</span>
           </div>
           <br />
           {isLoggedIn ? (
@@ -72,7 +74,7 @@ const BookPage = () => {
               </div>
               <div className="mt-4">
                 <MDBBtn color="primary" className="px-4 rounded-pill">
-                  addToCart
+                  {t('bookPage.addToCart')}
                 </MDBBtn>
               </div>
             </>
