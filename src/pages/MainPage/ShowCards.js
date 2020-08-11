@@ -1,18 +1,17 @@
-import React from 'react';
+import React from './node_modules/react';
 import './style.scss';
 import {
   MDBContainer,
   MDBCol,
   MDBCard,
   MDBIcon,
-  MDBBtn,
   MDBRow,
-} from 'mdbreact';
+} from './node_modules/mdbreact';
 import CreateStars from './StarRate';
 const ProjectsPage = () => {
   const BookInfo = {
     authorName: 'kevin kwan',
-    bookName: 'the shadows',
+    bookName: 'The shadows',
     bookType: 'A Novel',
     newPrice: '$30.00',
     oldPrice: '$32.75',
@@ -29,27 +28,23 @@ const ProjectsPage = () => {
             }}
           >
             <div className=" text-center position text-white">
-              <h3 className="font-weight-bold mt-2 text-xl">
-                <strong>Kevin Kwan</strong>
+              <h3 className="font-weight-normal mt-2 text-2xl ">
+                {BookInfo.authorName}
               </h3>
               <CreateStars />
 
-              <p className="pb-3 text-xl">
+              <p className="pb-3 text-xl grayColor">
                 {`${BookInfo.bookName}: ${BookInfo.bookType}`}
               </p>
             </div>
-            <div
-              style={{
-                width: '100%',
-              }}
-              className="d-flex justify-content-around align-items-center absolute bottom-0 dark text-center text-white"
-            >
-              <p className="text-xl">{BookInfo.newPrice}</p>
-              <p className="text-xl ">
+
+            <div className="d-flex background justify-content-around align-items-center absolute bottom-0 dark text-center text-white">
+              <p className="text-2xl price">{BookInfo.newPrice}</p>
+              <p className="text-xl grayColor">
                 <del>{BookInfo.oldPrice}</del>
               </p>
-              <div className=" border">
-                <MDBIcon size="2x" icon="cart-plus" />
+              <div>
+                <MDBIcon className="icon p-2" icon="cart-plus" />
               </div>
             </div>
           </MDBCard>

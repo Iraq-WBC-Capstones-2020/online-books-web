@@ -1,6 +1,5 @@
 import React from './node_modules/react';
 import PropTypes from './node_modules/prop-types';
-
 function CreateStars({ rate }) {
   let stars = [];
   let firstDigit = rate - parseInt(rate);
