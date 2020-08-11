@@ -7,17 +7,15 @@ import {
   MDBCardBody,
   MDBInput,
   MDBBtn,
-  MDBIcon,
-  MDBModalFooter,
 } from 'mdbreact';
 import './login.scss';
 
 function FormPage() {
   return (
-    <MDBContainer>
+    <MDBContainer className="ml-20">
       <MDBRow>
         <MDBCol md="5" className="mt-5">
-          <MDBCard className="mt-5 " className="log">
+          <MDBCard className="mt-5 log">
             <MDBCardBody className="mx-4">
               <div className="text-center">
                 <h3 className="dark mb-5">
@@ -37,7 +35,7 @@ function FormPage() {
                 group
                 type="password"
                 validate
-                containerClass="mb-0"
+                ClassName="mb-0"
               />
               <p className="font-small blue-text d-flex justify-content-end pb-3">
                 <a href="#!" className="blue-text ml-1">
@@ -57,26 +55,26 @@ function FormPage() {
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
-        <MDBCol md="2" className="mt-5">
-          <MDBCard className="mt-5" className="orr">
-            <MDBCardBody className="mt-5">
+        <MDBCol md="1">
+          <div className="verline d-none d-sm-block"></div>
+          <MDBCard className=" orr">
+            <MDBCardBody>
               <div className="text-center">
-                <div className="mt-5">
-                  <button className="rounded-pill"> or </button>
-                </div>
+                <button className="rounded-pill px-2"> or </button>
               </div>
             </MDBCardBody>
           </MDBCard>
+          <div className="verline2 d-none d-sm-block"></div>
         </MDBCol>
         <MDBCol md="5" className="mt-5">
-          <MDBCard className="mt-5" className="log">
+          <MDBCard className="mt-5 log">
             <MDBCardBody className="mx-4">
               <div className="text-center">
-                <div className="mt-5" className="social">
+                <div className=" social">
                   <button
                     type="button"
-                    className="btn btn-gplus"
-                    className="btn btn-danger btn-rounded"
+                    className="btn btn-gplus
+                   btn btn-danger rounded-pill"
                   >
                     <i className="fab fa-google-plus-g pr-1"></i> Login with
                     Google
@@ -85,8 +83,8 @@ function FormPage() {
                   <br></br>
                   <button
                     type="button"
-                    className="btn btn-git"
-                    className="btn btn-grey btn-rounded"
+                    className="btn btn-git
+                  btn btn-grey rounded-pill"
                   >
                     <i className="fab fa-github pr-1"></i> Login with Github...
                   </button>
@@ -94,8 +92,8 @@ function FormPage() {
 
                   <button
                     type="button"
-                    className="btn btn-fb"
-                    className="btn btn-primary btn-rounded"
+                    className="btn btn-fb
+                   btn btn-primary rounded-pill"
                   >
                     <i className="fab fa-facebook-f pr-1"></i>Login with
                     Facebook
