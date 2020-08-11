@@ -1,8 +1,13 @@
 {
+  "clientPage": {
+    "clients": "Our Clients"
+  },
+
   "authorPage": {
     "follow": "Follow",
     "books": "Books"
   },
+
   "footer": {
     "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
     "copyright": "Copyright © BookZone",
@@ -10,6 +15,7 @@
     "tags": "Tags",
     "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
   },
+
   "aboutPage": {
     "services": {
       "header": "Our Services",
@@ -38,5 +44,56 @@
         "explanation": "An autographed book from your favorite author can turn an item of personal value into a cherished keepsake of financial worth. Whether one of hundreds or one of a kind"
       }
     }
-  }
+  },
+
+
+  "landingPage": false,
+  "navbar": false,
+
+  "profilePage": {
+    "edit": "Edit",
+    "livesIn": "Lives in",
+    "addressSpread": ", ",
+    "memberSince": "Member since",
+    "about": "About",
+    "purchaseHistory": "Purchase History",
+    "basicInfo": "Basic Info",
+    "contactInfo": "Contact Info",
+    "name": "Name",
+    "gender": "Gender",
+    "birthday": "Date of birth",
+    "city": "City",
+    "country": "Country",
+    "address": "Address",
+    "phoneNumber": "Phone number",
+    "email": "E-Mail",
+    "orderId": "Order ID",
+    "books": "Books",
+    "status": "Status",
+    "originalPrice": "Original Price",
+    "totalPrice": "Total Price"
+  },
+
+ 
+  "contactUSPage": false,
+  "signInPage": false,
+  "sigOutPage": false,
+  
+  "paymentPage": {
+    "booksOrder": "Your Books Order",
+    "books": "Books",
+    "copies": "Copies",
+    "price": "Price",
+    "total": "Total",
+    "paymentMethod": "Payment Method",
+    "creditCard": "Credit Card",
+    "paypal": "Paypal",
+    "name": "Name",
+    "cardNumber": "Card Number",
+    "MMYYYY": "MM/YYYY",
+    "CVC": "CVC",
+    "purchase": "Purchase"
+  },
+  "bookPage": false
+
 }
