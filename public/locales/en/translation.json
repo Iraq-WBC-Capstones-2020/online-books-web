@@ -1,4 +1,11 @@
 {
+
+  "navBar": {
+    "home": "Home",
+    "aboutus": "aboutus",
+    "contact": "contact",
+    "language": "language"
+  },
   "aboutPage": {
 
     "title": "The Team",
@@ -52,6 +59,7 @@
     "email": "Email",
     "message": "Message",
     "send": "Send"
+
   },
 
   "clientPage": {
