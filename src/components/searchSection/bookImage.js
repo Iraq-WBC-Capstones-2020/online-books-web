@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function BookImage({ isBooksSelected }) {
   return (
@@ -23,5 +24,8 @@ function BookImage({ isBooksSelected }) {
     </>
   );
 }
+BookImage.propTypes = {
+  isBooksSelected: PropTypes.const,
+};
 
 export default BookImage;

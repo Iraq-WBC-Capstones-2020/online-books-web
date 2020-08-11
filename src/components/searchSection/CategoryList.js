@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MDBIcon } from 'mdbreact';
 import './MyStyle.scss';
+import PropTypes from 'prop-types';
 
 const MAXIMUM_TABS_TO_SHOW = 9;
 
@@ -8,7 +9,6 @@ function CategoryList({ items }) {
   const [activeBubble, setActiveBubble] = useState(0);
   const [setCategory] = useState('');
   const [newItems, setNewItems] = useState([]);
-
   //light the bubble by pink color
   const isActive = (index) => activeBubble === index;
 
@@ -61,4 +61,8 @@ function CategoryList({ items }) {
     </>
   );
 }
+CategoryList.propTypes = {
+  items: PropTypes.array,
+};
+
 export default CategoryList;
