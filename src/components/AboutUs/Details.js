@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from './pic.png';
+import pic from './media/pic.png';
 import { MDBRow, MDBCol } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 
