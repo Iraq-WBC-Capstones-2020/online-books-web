@@ -1,5 +1,6 @@
 {
 
+
   "aboutPage": {
     "title": "The Team",
     "members": {
@@ -35,12 +36,17 @@
         "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
         "specailty": "designer"
       }
-    }
+    },
+
+  "contactUsPage": {
+    "contactUs": "Contact Informations"
+
   },
 
   "clientPage": {
     "clients": "Our Clients"
   },
+
 
   "authorPage": {
     "follow": "Follow",
@@ -86,7 +92,7 @@
   "contactUSPage": false,
   "signInPage": false,
   "sigOutPage": false,
-  
+
   "paymentPage": {
     "booksOrder": "Your Books Order",
     "books": "Books",

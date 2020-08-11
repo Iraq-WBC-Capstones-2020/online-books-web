@@ -1,5 +1,6 @@
 {
 
+
   "aboutPage": {
     "title": "الفريق",
     "members": {
@@ -46,7 +47,11 @@
         "pic": "pic5.jpg",
         "id": "6"
       }
-    }
+    },
+
+  "contactUsPage": {
+    "contactUs": "معلومات الاتصال بنا "
+
   },
 
   "clientPage": {
