@@ -29,6 +29,7 @@ function Author() {
                 key={author}
                 size="12"
                 sm="2"
+                md="3"
                 className="mt-4 d-flex justify-content-center align-items-center"
               >
                 <MDBBtn color="light-blue" className="px-2 rounded-pill button">
