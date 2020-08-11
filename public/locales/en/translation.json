@@ -1,6 +1,4 @@
 {
-
-
   "aboutPage": {
     "title": "The Team",
     "members": {
@@ -39,18 +37,13 @@
     }
   },
 
-
-
-
   "contactUsPage": {
     "contactUs": "Contact Informations"
-
   },
 
   "clientPage": {
     "clients": "Our Clients"
   },
-
 
   "authorPage": {
     "follow": "Follow",
@@ -92,7 +85,6 @@
     "totalPrice": "Total Price"
   },
 
-  
   "contactUSPage": false,
   "signInPage": false,
   "sigOutPage": false,
@@ -113,6 +105,4 @@
     "purchase": "Purchase"
   },
   "bookPage": false
-
 }
-

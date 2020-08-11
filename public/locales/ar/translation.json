@@ -1,6 +1,4 @@
 {
-
-
   "aboutPage": {
     "title": "الفريق",
     "members": {
@@ -50,12 +48,8 @@
     }
   },
 
-
- 
-
   "contactUsPage": {
     "contactUs": "معلومات الاتصال بنا "
-
   },
 
   "clientPage": {
@@ -72,6 +66,4 @@
   "sigOutPage": false,
   "paymentPage": false,
   "bookPage": false
-
 }
-
