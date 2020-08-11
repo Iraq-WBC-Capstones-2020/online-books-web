@@ -24,7 +24,7 @@ function TeamMembersInformation() {
     const { name } = member;
     return Object.assign({}, member, teamInfo[name]);
   });
-  console.log(team);
+
   const title = t('aboutPage.title');
   return (
     <>
