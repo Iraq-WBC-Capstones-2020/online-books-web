@@ -8,7 +8,13 @@
   },
 
   "contactUsPage": {
-    "contactUs": "Contact Informations"
+    "contactUs": "Contact Informations",
+    "writeToUs": "Write To Us :",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
   },
 
   "clientPage": {
