@@ -15,43 +15,42 @@ import {
   MDBContainer,
   MDBBtn,
 } from 'mdbreact';
+import { useTranslation } from 'react-i18next';
+function NavbarPage() {
+  const { t } = useTranslation();
 
-const NavbarPage = () => {
-  const [state, setState] = useState({
-    isOpen: false,
-  });
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleCollapse = () =>
-    setState((oldState) => {
-      return { isOpen: !oldState.isOpen };
-    });
+  const toggleCollapse = () => setIsOpen((oldState) => !oldState);
   return (
     <>
       <MDBContainer>
         <MDBNavbar className="shadow-none" light expand="md">
           <MDBNavbarBrand>
-            <strong className="black-text">Navbar</strong>
+            <strong className="black-text">BooksZone</strong>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={toggleCollapse} />
-          <MDBCollapse id="navbarCollapse3" isOpen={state.isOpen} navbar>
+          <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink to="#!">Home</MDBNavLink>
+                <MDBNavLink to="#!">{t('navBar.home')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="#!">About Us</MDBNavLink>
+                <MDBNavLink to="#!">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="#!">Contact</MDBNavLink>
+                <MDBNavLink to="#!">{t('navBar.contact')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>
                   <MDBDropdownToggle nav caret>
-                    <div className="d-none d-md-inline">Language</div>
+                    <div className="d-none d-md-inline">
+                      {t('navBar.language')}
+                    </div>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu className="dropdown-default">
-                    <MDBDropdownItem href="#!">Arabic</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Kurdish</MDBDropdownItem>
+                    <MDBDropdownItem href="#!">عربي</MDBDropdownItem>
+                    <MDBDropdownItem href="#!">كوردى</MDBDropdownItem>
                     <MDBDropdownItem href="#!">English</MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
@@ -76,6 +75,6 @@ const NavbarPage = () => {
       <hr className="mt-0" />
     </>
   );
-};
+}
 
 export default NavbarPage;
