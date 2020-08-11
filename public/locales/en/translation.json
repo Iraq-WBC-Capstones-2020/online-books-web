@@ -22,6 +22,36 @@
     "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
   },
 
+  "aboutPage": {
+    "services": {
+      "header": "Our Services",
+      "reservations": {
+        "title": "Reservations",
+        "explanation": "Reserve online the books you want, then pay and pick up in the  store , we can get you any book you want first copy or signed book  "
+      },
+      "PrepaidPickup": {
+        "title": "Prepaid Pickup",
+        "explanation": "Order and pay online, then pick up in store Request an on-demand pickup for your UPS ground, air, and international shipments"
+      },
+      "MailOrder": {
+        "title": "Mail Order",
+        "explanation": "Shipped directly to your home via UPS we can reach you anywhere so order now ,and sometimes we have discounts and also who buys more than 3 books you will get  free shipping "
+      },
+      "StudentHelper": {
+        "title": "Student Helper",
+        "explanation": "jhelp students find books, solution manuals, past papers e.t.c and lectures recommended by their course teachers ,and help with all ind or resourse "
+      },
+      "GiftCards": {
+        "title": "Gift Cards",
+        "explanation": "A gift card is a prepaid debit card that contains a specific amount of money available for use for a variety of purchases"
+      },
+      "SignedBooks": {
+        "title": "Signed Books",
+        "explanation": "An autographed book from your favorite author can turn an item of personal value into a cherished keepsake of financial worth. Whether one of hundreds or one of a kind"
+      }
+    }
+  },
+
   "landingPage": false,
   "navbar": false,
 
@@ -49,7 +79,6 @@
     "totalPrice": "Total Price"
   },
 
-  "aboutUsPage": false,
   "contactUSPage": false,
   "signInPage": false,
   "sigOutPage": false,
