@@ -43,7 +43,7 @@ const ShowCards = () => {
                 }}
               >
                 <div className=" text-center position text-white">
-                  <h3 className="font-weight-normal mt-2 text-2xl ">
+                  <h3 className="font-weight-normal mt-2 text-2xl">
                     {book.authorName}
                   </h3>
                   <CreateStars />

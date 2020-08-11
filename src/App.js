@@ -1,10 +1,10 @@
 import React from 'react';
 import './i18n';
-
+import ShowCards from './pages/MainPage/ShowCards';
 function App() {
   return (
     <div>
-      <h1>Online Books</h1>
+      <ShowCards />
     </div>
   );
 }
