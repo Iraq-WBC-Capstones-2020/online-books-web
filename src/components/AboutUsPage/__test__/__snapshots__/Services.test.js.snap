@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Services snapshot 1`] = `
+exports[`Services snapshot 1`] = ` 
 <div
   className="col bg-gray-100"
 >
