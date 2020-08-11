@@ -2,14 +2,10 @@ import React from 'react';
 import './login.scss';
 import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
-import {
-  MDBContainer,
-  MDBRow,
-} from 'mdbreact';
+import { MDBContainer, MDBRow } from 'mdbreact';
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 
 function FormPage() {
-
   const formData = {
     title: 'Sign in',
     button: { title: 'Sign in', href: '#' },
@@ -30,12 +26,12 @@ function FormPage() {
       },
     ],
   };
-  
+
   return (
     <MDBContainer>
       <MDBRow>
         <Form formData={formData} />
-        <VerticalSeparated />        
+        <VerticalSeparated />
         <SocialMediaButtons />
       </MDBRow>
     </MDBContainer>

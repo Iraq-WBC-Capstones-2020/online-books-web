@@ -3,7 +3,7 @@ import { MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn } from 'mdbreact';
 
 export default function Form({ formData }) {
   const { title, button, extraAnchor, inputFields } = formData;
-  
+
   return (
     <MDBCol md="5" className="mt-5 ml-5">
       <MDBCard className="mt-5 log">
