@@ -1,9 +1,65 @@
 {
+
   "navBar": {
     "home": "Home",
     "aboutus": "aboutus",
     "contact": "contact",
     "language": "language"
+  },
+  "aboutPage": {
+
+    "title": "The Team",
+    "members": {
+      "sara": {
+        "fullName": "Sarah Al-Taee",
+        "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+        "specailty": "designer"
+      },
+
+      "neven": {
+        "fullName": "Neven Bedr",
+        "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+        "specailty": "designer"
+      },
+      "dunia": {
+        "fullName": "Dunia Nasr",
+        "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+        "specailty": "designer"
+      },
+      "qays": {
+        "fullName": "Qays Ayad",
+        "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+        "specailty": "designer"
+      },
+
+      "zeena": {
+        "fullName": "Zeena Kareem",
+        "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+        "specailty": "designer"
+      },
+      "zainab": {
+        "fullName": "Zainab Saud",
+        "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+        "specailty": "designer"
+      },
+
+    "aboutSection": {
+      "aboutUs": "About us",
+      "aboutUsText": "It is a long established fact that a reader will be distracted bythe readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  content hereh. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of etters, as opposed to using Content h ereh.",
+      "readMoreButton": "Read More"
+
+    }
+  },
+
+  "contactUsPage": {
+    "contactUs": "Contact Informations",
+    "writeToUs": "Write To Us :",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+
   },
 
   "clientPage": {
@@ -50,7 +106,6 @@
     "totalPrice": "Total Price"
   },
 
-  "aboutUsPage": false,
   "contactUSPage": false,
   "signInPage": false,
   "sigOutPage": false,
