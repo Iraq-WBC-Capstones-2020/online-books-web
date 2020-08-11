@@ -4,6 +4,7 @@
   "private": true,
   "author": "Re:Coded",
   "dependencies": {
+    "@iconify/icons-carbon": "^1.0.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -11,22 +12,32 @@
     "i18next-browser-languagedetector": "^5.0.0",
     "i18next-http-backend": "^1.0.17",
     "mdbreact": "^4.27.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.7.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-test-renderer": "^16.13.1",
     "tailwindcss": "^1.6.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "test:nowatch": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "fix": "prettier --write src/. public/.",
+<<<<<<< HEAD
     "lint": "eslint src/**/*.js --max-warnings 5",
     "build:css": "tailwind build src/style.css -o src/index.css"
+||||||| 4acd9a5
+    "lint": "eslint src/**/*.js --max-warnings 5"
+=======
+    "lint": "eslint src/**/*.js --max-warnings 5",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+>>>>>>> c7db67d79460bb337553d815033931a799cf2275
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,10 +55,13 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
-    "prettier": "^2.0.5"
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.0.5",
+    "tailwindcss": "^1.6.0"
   }
 }
