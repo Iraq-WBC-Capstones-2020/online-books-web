@@ -1,7 +1,13 @@
 {
+
+  "contactUsPage": {
+    "contactUs": "Contact Informations"
+  },
+
   "clientPage": {
     "clients": "Our Clients"
   },
+
 
   "authorPage": {
     "follow": "Follow",

@@ -1,4 +1,9 @@
 {
+
+  "contactUsPage": {
+    "contactUs": "معلومات الاتصال بنا "
+  },
+
   "clientPage": {
     "clients": "عملائنا"
   },
@@ -14,4 +19,5 @@
   "sigOutPage": false,
   "paymentPage": false,
   "bookPage": false
+
 }
