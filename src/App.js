@@ -1,12 +1,12 @@
 import React from 'react';
 import './i18n';
 import { HashRouter, Route } from 'react-router-dom';
+import SignPage from './pages/signup';
 function App() {
   return (
     <HashRouter>
-      <Route exact path="/">
-        <h1>Online Book</h1>
-      </Route>
+      <SignPage />
+      <Route exact path="/"></Route>
     </HashRouter>
   );
 }
