@@ -12,9 +12,9 @@ import './login.scss';
 
 function FormPage() {
   return (
-    <MDBContainer className="ml-20">
+    <MDBContainer>
       <MDBRow>
-        <MDBCol md="5" className="mt-5">
+        <MDBCol md="5" className="mt-5 ml-5">
           <MDBCard className="mt-5 log">
             <MDBCardBody className="mx-4">
               <div className="text-center">
