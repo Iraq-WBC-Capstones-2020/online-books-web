@@ -6,17 +6,11 @@ const MAXIMUM_TABS_TO_SHOW = 9;
 
 function CategoryList({ items }) {
   const [activeBubble, setActiveBubble] = useState(0);
-  const [category, setCategory] = useState('');
+  const [setCategory] = useState('');
   const [newItems, setNewItems] = useState([]);
 
-  
-
   //light the bubble by pink color
-  const isActive = (index) => {
-    if (activeBubble === index) {
-      return 'textPink';
-    }
-  };
+  const isActive = (index) => activeBubble === index;
 
   useEffect(() => {
     if (items.length < MAXIMUM_TABS_TO_SHOW) {
@@ -44,14 +38,16 @@ function CategoryList({ items }) {
             {/* //turn the light to pink for the item that choose and the other to inactive */}
             <MDBIcon
               icon="circle"
-              className={`p-3 sizeBubble ${isActive(index)}`}
+              className={`p-3 sizeBubble ${
+                isActive(index) ? 'textPink' : 'lightBlackText'
+              }`}
             />
+
             <p
               className="parg1 d-inline hoverCursor"
               data-value={item.name}
               onClick={(e) => {
                 setActiveBubble(index);
-
                 setCategory(e.target.dataset.value);
               }}
             >

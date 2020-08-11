@@ -6,12 +6,12 @@
       "newRelease": "أحدث اصدارات الكتب"
     },
     "searchByPart": {
-      "SEARCH BY":"أبحث بواسطة",
+      "SEARCH BY": "أبحث بواسطة",
       "Authors": "المؤلفيين",
       "Books": "الكتب"
     },
 
-    "catogry": {
+    "category": {
       "Popular": "الشائع",
       "Biographies &Memoirs": "السير الذاتية",
       "Literature & Fiction": "الادب والخيال",

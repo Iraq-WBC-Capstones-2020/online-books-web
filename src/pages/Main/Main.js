@@ -47,8 +47,8 @@ function Main() {
             toggle={() => handelModel8(true)}
             fullHeight
             position="left"
-            animation="left"
-            contentClassName=" bg-black"
+            size="sm"
+            contentClassName="bg-black"
           >
             <MDBModalHeader
               toggle={() => handelModel8(false)}
@@ -59,6 +59,7 @@ function Main() {
             </MDBModalBody>
           </MDBModal>
 
+          {/*GRID BOOKS */}
           <MDBCol size="11" md="8" lg="8">
             <MDBContainer>GRIDE BOOKS </MDBContainer>
           </MDBCol>

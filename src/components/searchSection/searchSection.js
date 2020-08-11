@@ -9,16 +9,17 @@ import {
 } from 'mdbreact';
 import './MyStyle.scss';
 import CategoryList from './CategoryList';
+import BookImage from './bookImage';
 import { useTranslation } from 'react-i18next';
 
 function SearchSection() {
   const { t } = useTranslation();
-  const catograysBook = [
-    { name: t('mainPage.catogry.Popular') },
-    { name: t('mainPage.catogry.Biographies &Memoirs') },
-    { name: t('mainPage.catogry.Literature & Fiction') },
-    { name: t('mainPage.catogry.Business&Investing') },
-    { name: t('mainPage.catogry.History') },
+  const categoriesBooks = [
+    { name: t('mainPage.category.Popular') },
+    { name: t('mainPage.category.Biographies &Memoirs') },
+    { name: t('mainPage.category.Literature & Fiction') },
+    { name: t('mainPage.category.Business&Investing') },
+    { name: t('mainPage.category.History') },
   ];
   const authorNames = [
     { name: 'zeena kareem' },
@@ -26,17 +27,12 @@ function SearchSection() {
     { name: 'sara ahmed' },
     { name: 'dunia tarq' },
   ];
-
-  const [setsearchInputValue] = useState('');
+  const [setSearchInputValue] = useState('');
   //we use number 2 as default value to make the BOOKS choosen in first time when we open the website
   const [activeItem, setActiveItem] = useState(2);
-  const [data, setData] = useState(catograysBook);
-
-  const handelColor = (index) => {
-    if (activeItem === index) {
-      return 'textPink';
-    }
-  };
+  const [data, setData] = useState(categoriesBooks);
+  const isAuthorsSelected = activeItem === 1;
+  const isBooksSelected = activeItem === 2;
 
   return (
     <>
@@ -48,14 +44,14 @@ function SearchSection() {
             size="10"
             md="10"
             lg="10"
-            className="mycolorPink columnSearchBooks p-0 h-12 z-depth-4"
+            className="mycolorPink columnSearchBooks p-0 h-12 z-depth-4 border-b-2 border-gray-800"
           >
             <MDBFormInline className="searchBox d-flex justify-content-around">
               <MDBInput
                 hint="Find Your Book"
                 type="text"
                 className="text-black  mb-md-3 form-control"
-                onChange={(e) => setsearchInputValue(e.target.value)}
+                onChange={(e) => setSearchInputValue(e.target.value)}
                 containerClass="active-pink"
               />
               <MDBIcon
@@ -65,8 +61,6 @@ function SearchSection() {
                 onClick={() => {}}
               />
             </MDBFormInline>
-
-            {/*  spin */}
           </MDBCol>
 
           {/* SEARCH BY PART FOR Authors AND Books*/}
@@ -74,9 +68,13 @@ function SearchSection() {
             {t('mainPage.searchByPart.SEARCH BY')}
           </MDBCol>
 
-          <MDBCol size="6" md="6" className="  text-center  px-3 pb-2">
+          <MDBCol size="6" md="6" className="text-center px-3 pb-2">
             <div
-              className="lightBlack h-16 pt-2 text-gray-300 border-orange-500"
+              className={`lightBlack h-16 pt-2 text-gray-300 ${
+                isAuthorsSelected
+                  ? 'activeBorder rounded'
+                  : 'inactiveBorder rounded'
+              } `}
               onClick={() => {
                 setActiveItem(1);
                 setData(authorNames);
@@ -85,29 +83,35 @@ function SearchSection() {
               <MDBIcon
                 icon="user-tie"
                 size="lg"
-                className={`pb-2 ${handelColor(1)}`}
+                className={`pb-2 ${isAuthorsSelected ? 'textPink' : ''}`}
               />
-              <p className={`pb-2 textParg ${handelColor(1)}`}>
+              <p
+                className={`pb-2 textParg ${
+                  isAuthorsSelected ? 'textPink ' : ''
+                }`}
+              >
                 {' '}
                 {t('mainPage.searchByPart.Authors')}{' '}
               </p>
             </div>
           </MDBCol>
 
-          <MDBCol size="6" md="6" className="text-center px-3 pb-2">
+          <MDBCol size="6" md="6" className="text-center px-3">
             <div
-              className="lightBlack text-gray-300 h-16  pt-2"
+              className={`lightBlack text-gray-300 h-16 pt-2 ${
+                isBooksSelected
+                  ? 'activeBorder rounded'
+                  : 'inactiveBorder rounded'
+              } `}
               onClick={() => {
                 setActiveItem(2);
-                setData(catograysBook);
+                setData(categoriesBooks);
               }}
             >
-              <MDBIcon
-                icon="book"
-                size="lg"
-                className={`pb-2 ${handelColor(2)}`}
-              />
-              <p className={`pb-2 textParg ${handelColor(2)}`}>
+              <BookImage isBooksSelected={isBooksSelected} />
+              <p
+                className={`pb-2 textParg ${isBooksSelected ? 'textPink' : ''}`}
+              >
                 {' '}
                 {t('mainPage.searchByPart.Books')}{' '}
               </p>
@@ -118,7 +122,7 @@ function SearchSection() {
         {/*itemList for book catogray and authors names*/}
         <MDBRow className="mt-2 mb-0">
           <MDBCol md="12">
-              <CategoryList items={data} />
+            <CategoryList items={data} />
           </MDBCol>
         </MDBRow>
       </MDBContainer>
