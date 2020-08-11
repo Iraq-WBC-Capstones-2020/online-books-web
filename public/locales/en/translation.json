@@ -46,7 +46,6 @@
     }
   },
 
-
   "landingPage": false,
   "navbar": false,
 
@@ -74,11 +73,10 @@
     "totalPrice": "Total Price"
   },
 
- 
   "contactUSPage": false,
   "signInPage": false,
   "sigOutPage": false,
-  
+
   "paymentPage": {
     "booksOrder": "Your Books Order",
     "books": "Books",
@@ -95,5 +93,4 @@
     "purchase": "Purchase"
   },
   "bookPage": false
-
 }
