@@ -1,6 +1,6 @@
 import React from 'react';
 import Services from './components/AboutUsPage/Services';
-import Detailsclient from './components/AboutUsPage/Clients';
+import DetailsClient from './components/AboutUsPage/Clients';
 import Details from './components/AboutUsPage/Details';
 import TeamMembersInformation from './components/AboutUsPage/Team';
 function AboutUsPageMain() {
@@ -9,7 +9,7 @@ function AboutUsPageMain() {
       <Details />
       <TeamMembersInformation />
       <Services />
-      <Detailsclient />
+      <DetailsClient />
     </>
   );
 }
