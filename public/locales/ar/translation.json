@@ -1,4 +1,5 @@
 {
+
   "aboutPage": {
     "title": "الفريق",
     "members": {
@@ -46,5 +47,21 @@
         "id": "6"
       }
     }
-  }
+  },
+
+  "clientPage": {
+    "clients": "عملائنا"
+  },
+
+  "authorPage": false,
+  "footer": false,
+  "landingPage": false,
+  "navbar": false,
+  "profilePage": false,
+  "contactUSPage": false,
+  "signInPage": false,
+  "sigOutPage": false,
+  "paymentPage": false,
+  "bookPage": false
+
 }

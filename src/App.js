@@ -1,13 +1,13 @@
-import React, { Suspense } from 'react';
-import Spinner from './componenets/Spinner/Spinner';
-
+import React from 'react';
+import './i18n';
+import { HashRouter, Route } from 'react-router-dom';
 function App() {
   return (
-    <Suspense fallback={<Spinner />}>
-      <div>
-        <h1>Online Books</h1>
-      </div>
-    </Suspense>
+    <HashRouter>
+      <Route exact path="/">
+        <h1>Online Book</h1>
+      </Route>
+    </HashRouter>
   );
 }
 
