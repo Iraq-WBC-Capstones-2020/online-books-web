@@ -5,5 +5,25 @@
       "aboutUsText": "من الحقائق الراسخة أن القارئ سيشتت انتباهه من خلال المحتوى المقروء للصفحة عند النظر في تصميمها. والغرض من استخدام Lorem Ipsum هو أنه يحتوي على توزيع عادي للرسائل بشكل أو بآخر ، بدلاً من استخدام المحتوى هنا. من الحقائق الثابتة أن القارئ سيشتت انتباهه بسبب المحتوى المقروء للصفحة عند النظر في تصميمه. الهدف من استخدام Lorem Ipsum هو أنه يحتوي على توزيع عادي إلى حد ما من رسائل ، على عكس استخدام المحتوى hereh. ",
       "readMoreButton": "اقرا المزيد"
     }
-  }
+  },
+
+  "contactUsPage": {
+    "contactUs": "معلومات الاتصال بنا "
+  },
+
+  "clientPage": {
+    "clients": "عملائنا"
+  },
+
+  "authorPage": false,
+  "footer": false,
+  "landingPage": false,
+  "navbar": false,
+  "profilePage": false,
+  "aboutUsPage": false,
+  "contactUSPage": false,
+  "signInPage": false,
+  "sigOutPage": false,
+  "paymentPage": false,
+  "bookPage": false
 }
