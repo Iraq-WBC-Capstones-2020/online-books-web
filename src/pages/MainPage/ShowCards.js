@@ -34,7 +34,7 @@ const ShowCards = () => {
       <MDBRow className="mt-5">
         {BookInfo.map((book) => {
           return (
-            <MDBCol sm="3" size="12">
+            <MDBCol sm="3" size="12" key={book.id}>
               <MDBCard
                 className="card-image"
                 style={{
