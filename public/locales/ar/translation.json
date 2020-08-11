@@ -1,1 +1,23 @@
-{}
+{
+
+  "contactUsPage": {
+    "contactUs": "معلومات الاتصال بنا "
+  },
+
+  "clientPage": {
+    "clients": "عملائنا"
+  },
+
+  "authorPage": false,
+  "footer": false,
+  "landingPage": false,
+  "navbar": false,
+  "profilePage": false,
+  "aboutUsPage": false,
+  "contactUSPage": false,
+  "signInPage": false,
+  "sigOutPage": false,
+  "paymentPage": false,
+  "bookPage": false
+
+}
