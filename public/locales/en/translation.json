@@ -1,10 +1,11 @@
 {
-  "ContactUsPage": {
+  "contactUsPage": {
     "writeToUs": "Write To Us :",
     "firstName": "First Name",
     "lastName": "Last Name",
     "email": "Email",
-    "message": "Message"
+    "message": "Message",
+    "send": "Send"
   },
   "authorPage": {
     "follow": "Follow",

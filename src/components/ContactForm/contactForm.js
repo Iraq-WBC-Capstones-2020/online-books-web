@@ -1,7 +1,6 @@
 import React from 'react';
-import '../../assets/main.css';
 import { useTranslation } from 'react-i18next';
-import { MDBContainer, MDBRow, MDBCol, MDBInput } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBInput} from 'mdbreact';
 
 export default function ContactForm() {
   const { t } = useTranslation();
@@ -34,13 +33,13 @@ export default function ContactForm() {
                   strokeLinejoin="round"
                 />
               </svg>
-              {t('ContactUsPage.writeToUs')}
+              {t('contactUsPage.writeToUs')}
             </p>
             <div className="text-gray-500">
               <MDBRow>
                 <MDBCol md="6">
                   <MDBInput
-                    label={t('ContactUsPage.firstName')}
+                    label={t('contactUsPage.firstName')}
                     group
                     type="text"
                     validate
@@ -50,7 +49,7 @@ export default function ContactForm() {
                 </MDBCol>
                 <MDBCol md="6">
                   <MDBInput
-                    label={t('ContactUsPage.lastName')}
+                    label={t('contactUsPage.lastName')}
                     group
                     type="email"
                     validate
@@ -60,27 +59,24 @@ export default function ContactForm() {
                 </MDBCol>
               </MDBRow>
               <MDBInput
-                label={t('ContactUsPage.email')}
+                label={t('contactUsPage.email')}
                 group
                 type="text"
                 validate
                 error="wrong"
                 success="right"
               />
-              <MDBInput
-                type="textarea"
-                rows="2"
-                style={{ width: '550px' }}
-                label={t('ContactUsPage.message')}
-                icon="paper-plane"
-                containerClass="d-flex flex-row-reverse"
-                className="ml-0 mr-1"
-                labelClass="ml-1"
-              ></MDBInput>
+              <MDBInput type="textarea" rows="3" label={t('contactUsPage.message')} />
             </div>
-          </form>
+            <div className="text-center py-3 size">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full focus-none"> 
+                {t('contactUsPage.send')}
+            </button>
+            </div>
+            </form>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
   );
 }
+
