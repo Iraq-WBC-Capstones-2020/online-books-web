@@ -37,7 +37,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
       price: '$31.5',
-      rate: 3.50,
+      rate: 3.5,
       views: '22k',
       id: 2,
     },

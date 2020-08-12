@@ -19,7 +19,7 @@ function CarsouelSection() {
 
   useEffect(() => (timerId.current = resetTimer()), []);
   let resetTimer = () => {
-    return setTimeout(() => handelChangeCard(true,'unClicked'), 5000);
+    return setTimeout(() => handelChangeCard(true, 'unClicked'), 5000);
   };
 
   let handelChangeCard = (increase, button) => {

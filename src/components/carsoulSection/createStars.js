@@ -10,16 +10,16 @@ function CreateStars({ rate }) {
   let createStars = () => {
     for (let i = 1; i <= 5; i++) {
       if (i <= rate) {
-        stars.push(<icon className="fa fa-star text-yellow-300 mr-1"></icon>);
+        stars.push(<icon className="fa fa-star text-yellow-300 mr-1" key={i}></icon>);
       } else {
         if (secondDigit >= 5 && secondDigit <= 7) {
           secondDigit = 0;
           stars.push(
-            <icon className="fas fa-star-half-alt text-yellow-300 mr-1"></icon>
+            <icon className="fas fa-star-half-alt text-yellow-300 mr-1" key={i}></icon>
           );
         } else {
           stars.push(
-            <icon className="fa fa-star text-yellow-300 mr-1 font-light"></icon>
+            <icon className="fa fa-star text-yellow-300 mr-1 font-light" key={i}></icon>
           );
         }
       }

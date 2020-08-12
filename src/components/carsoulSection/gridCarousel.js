@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBCol, MDBRow, MDBContainer, MDBMask, MDBView } from 'mdbreact';
-
-function GrideCarousel({activeCardItem}) {
+import PropTypes from 'prop-types';
+function GrideCarousel({ activeCardItem }) {
   let booksArray = [
     {
       cover:
@@ -84,10 +84,14 @@ function GrideCarousel({activeCardItem}) {
               size="3"
               className="px-2 pl-md-1 py-1 "
             >
-              <MDBView>{/*pattern={1} */}
-                <img className="imgGrideCarsouel mx-lg-0" src={book.cover}/>
-                {activeCardItem===index?<></>:<MDBMask overlay="black-light" ></MDBMask>}
-                
+              <MDBView>
+                {/*pattern={1} */}
+                <img className="imgGrideCarsouel mx-lg-0" src={book.cover} />
+                {activeCardItem === index ? (
+                  <></>
+                ) : (
+                  <MDBMask overlay="black-light"></MDBMask>
+                )}
               </MDBView>
             </MDBCol>
           ))}
@@ -96,5 +100,7 @@ function GrideCarousel({activeCardItem}) {
     </>
   );
 }
-
+GrideCarousel.propTypes = {
+  activeCardItem: PropTypes.number,
+};
 export default GrideCarousel;
