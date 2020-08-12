@@ -34,7 +34,7 @@
     "eject": "react-scripts eject",
     "fix": "prettier --write src/. public/.",
     "lint": "eslint src/**/*.js --max-warnings 5",
-    "build:css": "tailwind build src/style.css -o src/index.css",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "eslintConfig": {
