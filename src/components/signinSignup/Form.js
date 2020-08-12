@@ -9,7 +9,7 @@ export default function Form({ formData }) {
       <MDBCard className="mt-5 log">
         <MDBCardBody className="mx-4">
           <div className="text-center">
-            <h3 className="dark mb-5">
+            <h3 className="dark  mb-5">
               <strong>{title}</strong>
             </h3>
           </div>
@@ -35,7 +35,7 @@ export default function Form({ formData }) {
             <MDBBtn
               type="button"
               color="blue"
-              className=" rounded-pill btn-block z-depth-1a"
+              className=" rounded-pill btn-block z-depth-1a text-white  "
             >
               {button.title}
             </MDBBtn>

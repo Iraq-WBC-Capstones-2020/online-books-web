@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCol, MDBCard, MDBCardBody } from 'mdbreact';
+import { MDBCol, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 
 export default function SocialMediaButtons() {
   return (
@@ -11,27 +11,29 @@ export default function SocialMediaButtons() {
               <button
                 type="button"
                 className="btn btn-gplus
-                   btn btn-danger rounded-pill"
+             btn btn-danger rounded-pill"
               >
-                <i className="fab fa-google-plus-g pr-1"></i> Login with Google
+                <MDBIcon fab icon="google" color="white" />
+                Login with G
               </button>
 
               <br></br>
               <button
                 type="button"
                 className="btn btn-git
-                  btn btn-grey rounded-pill"
+            btn btn-grey rounded-pill"
               >
-                <i className="fab fa-github pr-1"></i> Login with Github...
+                <MDBIcon fab icon="github" color="white" /> Login with Github...
               </button>
               <br></br>
 
               <button
                 type="button"
                 className="btn btn-fb
-                   btn btn-primary rounded-pill"
+             btn btn-primary rounded-pill"
               >
-                <i className="fab fa-facebook-f pr-1"></i>Login with Facebook
+                <MDBIcon fab icon="facebook-f" color="white" />
+                Login with Facebook
               </button>
             </div>
           </div>
