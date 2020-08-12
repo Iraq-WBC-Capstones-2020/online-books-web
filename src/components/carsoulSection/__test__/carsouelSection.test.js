@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import CarsoulSection from './../carsoulSection';
+import CarsouelSection from '../carsouelSection';
 
 test('CarsoulSection snapshot', () => {
-  const tree = renderer.create(<CarsoulSection />).toJSON();
+  const tree = renderer.create(<CarsouelSection />).toJSON();
   expect(tree).toMatchSnapshot();
 });

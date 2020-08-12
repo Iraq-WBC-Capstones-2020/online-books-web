@@ -18,7 +18,7 @@ import CreateStars from './createStars';
 function CarouselItems({ activeCard, handelChangeCard }) {
   const { t } = useTranslation();
 
-  let booksArray = [
+  const booksArray = [
     {
       cover:
         'http://1.bp.blogspot.com/-yQklGusIOBE/Ul-oQ0_9vOI/AAAAAAAAfI4/XQTmNLaJZLQ/s1600/book-cover-poster-27.jpg',
@@ -26,7 +26,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
       price: '$31.5',
-      rate: 3.5,
+      rate: 3.27,
       views: '22,333',
       id: 1,
     },
@@ -37,7 +37,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
       price: '$31.5',
-      rate: 3.5,
+      rate: 3.50,
       views: '22k',
       id: 2,
     },
@@ -48,7 +48,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
       price: '$31.5',
-      rate: 3,
+      rate: 3.76,
       views: '22k',
       id: 3,
     },
@@ -70,7 +70,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
       price: '$31.5',
-      rate: 3.5,
+      rate: 3.73,
       views: '22k',
       id: 5,
     },
@@ -81,7 +81,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
       price: '$31.5',
-      rate: 3,
+      rate: 3.46,
       views: '22k',
       id: 6,
     },
@@ -93,11 +93,9 @@ function CarouselItems({ activeCard, handelChangeCard }) {
         <MDBCarouselItem
           itemId={index}
           key={book.id}
-          className={
-            (activeCard === index ? 'active-card' : 'unactive-card') +
-            ' ' +
-            'mt-md-4 mb-md-4 pl-lg-3'
-          }
+          className={`
+            ${activeCard === index ? 'active-card' : 'inactive-card'}
+             mt-md-4 mb-md-4 pl-lg-3`}
         >
           <MDBCard className="w-30 shadow-none" wide>
             <MDBContainer className="w-full">
@@ -117,7 +115,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
                     <div>
                       <h1 className="fontHeader1 mb-0 font-weight-normal  text-2xl">
                         {book.authorName}
-                      </h1> 
+                      </h1>
                     </div>
                     <MDBCardText>
                       <p className="mb-1 fontHeader2 font-normal font-weight-normal ">{`${book.bookName}`}</p>
@@ -142,28 +140,28 @@ function CarouselItems({ activeCard, handelChangeCard }) {
                   {/*arrow button// d-flex justify-content-end */}
                   <div className="h-16 relative">
                     <div className="absolute bottom-0 right-0">
-                    <MDBBtn
-                      color=""
-                      className="shadow p-0 h-8"
-                      onClick={() => handelChangeCard(true)}
-                    >
-                      <MDBIcon
-                        icon="chevron-left"
-                        size="lg"
-                        className="px-2 py-1"
-                      />
-                    </MDBBtn>
-                    <MDBBtn
-                      color=""
-                      className="shadow p-0 h-8"
-                      onClick={() => handelChangeCard(false)}
-                    >
-                      <MDBIcon
-                        icon="chevron-right"
-                        size="lg"
-                        className="px-2 py-1"
-                      />
-                    </MDBBtn>
+                      <MDBBtn
+                        color=""
+                        className="shadow-sm p-0 h-8"
+                        onClick={() => handelChangeCard(true)}
+                      >
+                        <MDBIcon
+                          icon="chevron-left"
+                          size="lg"
+                          className="px-2 py-1"
+                        />
+                      </MDBBtn>
+                      <MDBBtn
+                        color=""
+                        className="shadow-sm p-0 h-8"
+                        onClick={() => handelChangeCard(false)}
+                      >
+                        <MDBIcon
+                          icon="chevron-right"
+                          size="lg"
+                          className="px-2 py-1"
+                        />
+                      </MDBBtn>
                     </div>
                   </div>
                 </MDBCol>

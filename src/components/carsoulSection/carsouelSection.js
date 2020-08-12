@@ -7,38 +7,44 @@ import {
   MDBContainer,
 } from 'mdbreact';
 import './StylecarsoulSection/myStyle.scss';
-import CarouselItems from './carsoureItem';
+import CarouselItems from './carsourelItem';
 import GrideCarousel from './gridCarousel';
-import HighLight from './highlightSection';
+import HighlightedSectionLabel from './HighlightedSectionLabel';
 
-function CarsoulSection() {
+function CarsouelSection() {
   const [activeCardItem, setActiveCardItemState] = useState(0);
   const timerId = useRef();
+  const firstCardIndex = 0;
+  const lastCardIndex = 3;
+
   useEffect(() => (timerId.current = resetTimer()), []);
   let resetTimer = () => {
-    return setTimeout(() => handelChangeCard(true, 'unClicked'), 5000);
+    return setTimeout(() => handelChangeCard(true,'unClicked'), 5000);
   };
-  let handelChangeCard = (increase, buttom) => {
+
+  let handelChangeCard = (increase, button) => {
     if (increase) {
-      buttom == 'unClicked'
-        ? setActiveCardItemState((oldCard) => (oldCard == 3 ? 0 : oldCard + 1))
+      button === 'unClicked'
+        ? setActiveCardItemState((oldCard) =>
+            oldCard === lastCardIndex ? firstCardIndex : oldCard + 1
+          )
         : setActiveCardItemState((oldCard) =>
-            oldCard == 3 ? oldCard : oldCard + 1
+            oldCard === lastCardIndex ? oldCard : oldCard + 1
           );
     } else {
       setActiveCardItemState((oldCard) =>
-        oldCard == 0 ? oldCard : oldCard - 1
+        oldCard === firstCardIndex ? oldCard : oldCard - 1
       );
     }
     clearTimeout(timerId.current);
     timerId.current = resetTimer();
-  }; 
+  };
   return (
     <>
       <MDBContainer>
         <MDBRow center>
           <MDBCol md="11" lg="10" xl="8">
-            <HighLight text="best sellers in books" />
+            <HighlightedSectionLabel text="best sellers in books" />
 
             <MDBContainer fluid className="bgGray ">
               <MDBRow>
@@ -68,7 +74,7 @@ function CarsoulSection() {
                   className="mt-3 mb-md-0 mt-md-0 mb-lg-4 mt-lg-4  "
                 >
                   {/* gride for the new release and best sellers  */}
-                  <GrideCarousel />
+                  <GrideCarousel activeCardItem={activeCardItem} />
                 </MDBCol>
               </MDBRow>
             </MDBContainer>
@@ -79,4 +85,4 @@ function CarsoulSection() {
   );
 }
 
-export default CarsoulSection;
+export default CarsouelSection;

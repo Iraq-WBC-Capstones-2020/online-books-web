@@ -7,10 +7,10 @@ $dark-blue: #7aa2d6;
 $light-gray: #f6f6f6;
 $light-blue2: #f9f9f9;
 $font-roboto: 'Roboto';
-$light-pink:#FEE4CB;
+$light-pink: #ebcdb2;
 
 .mycolorPink {
-  background: $light-pink;
+  background: $pink-color;
 }
 
 %fontType {
@@ -30,25 +30,29 @@ $light-pink:#FEE4CB;
 
 .parg1 {
   color: $gray-color;
-  font: $font-roboto;
+  font-family: $font-roboto;
   font-size: 0.9rem;
 }
 
 .fontPrice {
-  font: $font-roboto;
+  font-family: $font-roboto;
   color: #333333;
   font-size: 1.5rem;
 }
 
 .buttomText {
-  font: $font-roboto;
+  font-family: $font-roboto;
   font-size: 1rem;
 }
 
 .highlight {
-  font: $font-roboto;
+  font-family: $font-roboto;
   width: 15rem;
   height: 2.3rem;
+  @media (max-width: 640px) {
+    width: auto;
+    height: 2rem;
+  }
 }
 
 .bgGray {
@@ -66,8 +70,11 @@ $light-pink:#FEE4CB;
 .imgGrideCarsouel {
   display: block;
   width: 100%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   height: 9rem;
+  @media (max-width: 640px) {
+    height: 5rem;
+  }
 }
 
 .imageCardCarsouel {
@@ -76,22 +83,12 @@ $light-pink:#FEE4CB;
   height: 19rem;
 }
 
-@media (max-width: 640px) {
-  .imgGrideCarsouel {
-    height: 5rem;
-  }
-  .highlight {
-    width: auto;
-    height: 2rem;
-  }
-}
-
 .active-card {
   left: 0px !important;
   position: relative !important;
 }
 
-.unactive-card {
+.inactive-card {
   left: +100% !important;
   position: absolute !important;
 }

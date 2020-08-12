@@ -1,7 +1,7 @@
 import React from 'react';
-import { MDBCol, MDBRow, MDBContainer } from 'mdbreact';
+import { MDBCol, MDBRow, MDBContainer, MDBMask, MDBView } from 'mdbreact';
 
-function GrideCarousel() {
+function GrideCarousel({activeCardItem}) {
   let booksArray = [
     {
       cover:
@@ -70,7 +70,7 @@ function GrideCarousel() {
       id: 6,
     },
   ];
-  return ( 
+  return (
     <>
       <MDBContainer className="px-md-4">
         {/*grid for the covers of books that are new release and best sellers */}
@@ -84,9 +84,13 @@ function GrideCarousel() {
               size="3"
               className="px-2 pl-md-1 py-1 "
             >
-              <img className="imgGrideCarsouel mx-lg-0 " src={book.cover} />
+              <MDBView>{/*pattern={1} */}
+                <img className="imgGrideCarsouel mx-lg-0" src={book.cover}/>
+                {activeCardItem===index?<></>:<MDBMask overlay="black-light" ></MDBMask>}
+                
+              </MDBView>
             </MDBCol>
-          ))} 
+          ))}
         </MDBRow>
       </MDBContainer>
     </>

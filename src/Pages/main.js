@@ -5,12 +5,12 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 //main component
 import Paragraph from '../components/paragraph';
-import CarsoulSection from '../components/carsoulSection/carsoulSection';
+import CarsouelSection from '../components/carsoulSection/carsouelSection';
 function Main() {
   return (
     <>
       <Paragraph />
-      <CarsoulSection />
+      <CarsouelSection />
     </>
   );
 }
