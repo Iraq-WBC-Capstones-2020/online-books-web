@@ -1,11 +1,11 @@
 import React from 'react';
 import './i18n';
-import Main from './pages/main'
+import MainPage from './Pages/MainPage/MainPage';
 function App() {
   return (
     <div>
       <h1>Online Books</h1>
-      <Main/>
+      <MainPage />
     </div>
   );
 }
