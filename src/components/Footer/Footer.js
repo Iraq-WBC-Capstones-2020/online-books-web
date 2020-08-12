@@ -69,14 +69,15 @@ const Footer = () => {
                 <h4 className="text-blue-500 font-bold mb-3 uppercase">
                   {t('footer.tags')}
                 </h4>
-                {tags.map((tag) => (
-                  <h4
-                    key={tag}
-                    className="inline-block capitalize font-semibold mr-2 mb-2 py-2 px-4 border border-black rounded-full"
-                  >
-                    {tag}
-                  </h4>
-                ))}
+                {Array.isArray(tags) &&
+                  tags.map((tag) => (
+                    <h4
+                      key={tag}
+                      className="inline-block capitalize font-semibold mr-2 mb-2 py-2 px-4 border border-black rounded-full"
+                    >
+                      {tag}
+                    </h4>
+                  ))}
               </div>
             </MDBCol>
           </MDBRow>
