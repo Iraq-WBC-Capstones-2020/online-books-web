@@ -97,7 +97,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
             ${activeCard === index ? 'active-card' : 'inactive-card'}
              mt-md-4 mb-md-4 pl-lg-3`}
         >
-          <MDBCard className="w-30 shadow-none" wide>
+          <MDBCard className="w-30 shadow-none Card" wide>
             <MDBContainer className="w-full">
               <MDBRow className="p-0">
                 <MDBCol size="12" md="4" lg="5" className="p-0">
@@ -133,7 +133,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
                       </div>
                     </MDBCardText>
 
-                    <button className="buttomText text-center mycolorPink w-5/6 shadow-md  hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full">
+                    <button className="buttomText text-center mycolorPink w-5/6 shadow-xl  hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full">
                       {t('carsouelSection.addtocart')}
                     </button>
                   </MDBCardBody>

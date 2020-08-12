@@ -7,7 +7,7 @@ $dark-blue: #7aa2d6;
 $light-gray: #f6f6f6;
 $light-blue2: #f9f9f9;
 $font-roboto: 'Roboto';
-$light-pink: #ebcdb2;
+$light-pink: #fee4cb;
 
 .mycolorPink {
   background: $pink-color;
@@ -91,4 +91,8 @@ $light-pink: #ebcdb2;
 .inactive-card {
   left: +100% !important;
   position: absolute !important;
+}
+
+.Card{
+  border-style: none !important;
 }
