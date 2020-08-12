@@ -1,9 +1,7 @@
 import React from 'react';
 import './style.scss';
-import { useTranslation } from 'react-i18next';
-import BookPage from '../../components/BookPage/BookPageSection';
+import BookPage from '../../components/BookPage/BookPage';
 const BookPage = () => {
-  const { t } = useTranslation();
   return (
     <div>
       <BookPage />
