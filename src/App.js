@@ -1,12 +1,14 @@
 import React from 'react';
 import './i18n';
-import Main from './pages/main';
+import { HashRouter, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <div>
-      <h1>Online Books</h1>
-      <Main />
-    </div>
+    <HashRouter>
+      <Route exact path="/">
+        <h1>Online Book</h1>
+      </Route>
+    </HashRouter>
   );
 }
 
