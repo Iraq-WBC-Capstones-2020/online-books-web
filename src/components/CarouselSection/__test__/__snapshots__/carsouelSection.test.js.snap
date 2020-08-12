@@ -822,3 +822,5 @@ exports[`CarsoulSection snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`carouselSection snapshot 1`] = `<carouselSection />`;
