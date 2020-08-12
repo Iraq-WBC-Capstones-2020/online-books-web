@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 //main component
-import Paragraph from '../components/paragraph';
+import Paragraph from '../components/MainPageFirstParagraph/MainPageFirstParagraph';
 import CarsouelSection from '../components/carsoulSection/carsouelSection';
 function Main() {
   return (

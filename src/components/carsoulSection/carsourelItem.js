@@ -134,7 +134,7 @@ function CarouselItems({ activeCard, handelChangeCard }) {
                     </MDBCardText>
 
                     <button className="buttomText text-center mycolorPink w-5/6 shadow-md  hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full">
-                      {t('addtocart')}
+                      {t('carsouelSection.addtocart')}
                     </button>
                   </MDBCardBody>
                   {/*arrow button// d-flex justify-content-end */}

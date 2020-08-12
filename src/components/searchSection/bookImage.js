@@ -25,7 +25,7 @@ function BookImage({ isBooksSelected }) {
   );
 }
 BookImage.propTypes = {
-  isBooksSelected: PropTypes.const,
+  isBooksSelected: PropTypes.bool,
 };
 
 export default BookImage;
