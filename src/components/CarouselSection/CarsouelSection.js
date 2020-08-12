@@ -6,9 +6,9 @@ import {
   MDBRow,
   MDBContainer,
 } from 'mdbreact';
-import './StylecarsoulSection/myStyle.scss';
-import CarouselItems from './carsourelItem';
-import GrideCarousel from './gridCarousel';
+import './StyleCarouselSection/CarouselSection.scss';
+import CarouselItems from './CarouselItem';
+import GrideCarousel from './GridCarousel';
 import HighlightedSectionLabel from './HighlightedSectionLabel';
 
 
