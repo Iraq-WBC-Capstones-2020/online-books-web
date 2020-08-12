@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import BookPage from '../../components/BookPage/BookPage';
+import BookPageSection from '../../components/BookPage/BookPage';
 const BookPage = () => {
   return (
     <div>
@@ -9,4 +9,4 @@ const BookPage = () => {
   );
 };
 
-export default BookPage;
+export default BookPageSection;
