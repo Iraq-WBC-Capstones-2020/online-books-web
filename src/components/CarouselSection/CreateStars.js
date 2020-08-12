@@ -12,7 +12,7 @@ function CreateStars({ rate }) {
       if (i <= rate) {
         stars.push(<icon className="fa fa-star text-yellow-300 mr-1"></icon>);
       } else {
-        if (secondDigit >= 5 && secondDigit <= 7) {
+        if (secondDigit >= 5) {
           secondDigit = 0;
           stars.push(
             <icon className="fas fa-star-half-alt text-yellow-300 mr-1"></icon>
