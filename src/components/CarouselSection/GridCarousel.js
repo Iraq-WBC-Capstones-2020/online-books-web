@@ -1,6 +1,5 @@
 import React from 'react';
 import { MDBCol, MDBRow, MDBContainer, MDBMask, MDBView } from 'mdbreact';
-
 function GrideCarousel({ activeCardItem }) {
   let booksArray = [
     {
@@ -100,5 +99,7 @@ function GrideCarousel({ activeCardItem }) {
     </>
   );
 }
-
+GrideCarousel.propTypes = {
+  activeCardItem: PropTypes.number,
+};
 export default GrideCarousel;
