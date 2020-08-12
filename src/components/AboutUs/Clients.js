@@ -10,7 +10,7 @@ import client7 from './media/client-7.png';
 import client8 from './media/client-8.png';
 import { useTranslation } from 'react-i18next';
 import ClientCard from './ClientCard';
-function Detailsclient() {
+function DetailsClient() {
   const { t } = useTranslation();
   let clientsLogo = [
     { logo: client1, name: 'myob company', id: 1 },
@@ -42,4 +42,4 @@ function Detailsclient() {
     </>
   );
 }
-export default Detailsclient;
+export default DetailsClient;
