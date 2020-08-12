@@ -11,7 +11,6 @@ import CarouselItems from './CarouselItem';
 import GrideCarousel from './GridCarousel';
 import HighlightedSectionLabel from './HighlightedSectionLabel';
 
-
 function CarsouelSection() {
   const [activeCardItem, setActiveCardItemState] = useState(0);
   const timerId = useRef();
