@@ -22,7 +22,7 @@ function Details() {
             </p>
             <button className="rounded-full h-8 w-1/9 mt-3 transition duration-500 ease-in-out bg-blue-500 hover:bg-blue-700 transform hover:-translate-y-1 hover:scale-110">
               <span className="text-white">
-                {t('aboutPage.aboutSection.ReadMoreButton')}
+                {t('aboutPage.aboutSection.readMoreButton')}
               </span>
             </button>
           </div>
