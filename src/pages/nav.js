@@ -16,10 +16,21 @@ import {
   MDBBtn,
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
+import { useHistory } from 'react-router-dom';
+
 function NavbarPage() {
   const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
+  const history = useHistory();
+  const goToSignUpPage = () =>
+    history.push({
+      pathname: '/signup',
+    });
+  const goToLoginPage = () =>
+    history.push({
+      pathname: '/login',
+    });
 
   const toggleCollapse = () => setIsOpen((oldState) => !oldState);
   return (
@@ -33,13 +44,13 @@ function NavbarPage() {
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink to="#!">{t('navBar.home')}</MDBNavLink>
+                <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="#!">{t('navBar.aboutus')}</MDBNavLink>
+                <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="#!">{t('navBar.contact')}</MDBNavLink>
+                <MDBNavLink to="/contact">{t('navBar.contact')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>
@@ -56,7 +67,12 @@ function NavbarPage() {
                 </MDBDropdown>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBBtn color="primary" className="rounded-pill " size="sm">
+                <MDBBtn
+                  color="primary"
+                  className="rounded-pill "
+                  size="sm"
+                  onClick={goToSignUpPage}
+                >
                   Sign Up
                 </MDBBtn>
                 <MDBBtn
@@ -64,6 +80,7 @@ function NavbarPage() {
                   color="primary"
                   className="rounded-pill"
                   size="sm"
+                  onClick={goToLoginPage}
                 >
                   Login
                 </MDBBtn>
