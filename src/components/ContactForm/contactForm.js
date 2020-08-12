@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { MDBContainer, MDBRow, MDBCol, MDBInput} from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBInput } from 'mdbreact';
 
 export default function ContactForm() {
   const { t } = useTranslation();
@@ -66,17 +66,20 @@ export default function ContactForm() {
                 error="wrong"
                 success="right"
               />
-              <MDBInput type="textarea" rows="3" label={t('contactUsPage.message')} />
+              <MDBInput
+                type="textarea"
+                rows="3"
+                label={t('contactUsPage.message')}
+              />
             </div>
             <div className="text-center py-3 size">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full focus-none"> 
+              <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full focus-none">
                 {t('contactUsPage.send')}
-            </button>
+              </button>
             </div>
-            </form>
+          </form>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
   );
 }
-

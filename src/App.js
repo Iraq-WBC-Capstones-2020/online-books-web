@@ -16,9 +16,9 @@ function App() {
         <Route exact path="/book/:bookId" render={() => <div>BookPage</div>} />
         <Route path="/aboutus" component={AboutUsPage} />
         <Route exact path="/contact" render={() => <div>ContactPage</div>} />
-        <Route path='/author/:authorId' component={AuthorPage} />
-        <Route exact path='/profile' component={ProfilePage} />
-        <Route exact path='/login' component={LoginPage} />
+        <Route path="/author/:authorId" component={AuthorPage} />
+        <Route exact path="/profile" component={ProfilePage} />
+        <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" render={() => <div>SignupPage</div>} />
         <Route path="/" render={() => <div>MainPage</div>} />
       </Switch>
