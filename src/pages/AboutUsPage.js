@@ -1,8 +1,8 @@
 import React from 'react';
-import Services from './components/AboutUsPage/Services';
-import DetailsClient from './components/AboutUsPage/Clients';
-import Details from './components/AboutUsPage/Details';
-import TeamMembersInformation from './components/AboutUsPage/Team';
+import Services from './../components/AboutUsPage/Services';
+import DetailsClient from './../components/AboutUs/Clients';
+import Details from './../components/AboutUs/Details';
+import TeamMembersInformation from './../components/AboutUs/Team';
 function AboutUsPageMain() {
   return (
     <>
