@@ -39,15 +39,14 @@
         "fullName": "Zainab Saud",
         "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
         "specailty": "designer"
-      },
-
-      "aboutSection": {
-        "aboutUs": "About us",
-        "aboutUsText": "It is a long established fact that a reader will be distracted bythe readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  content hereh. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of etters, as opposed to using Content h ereh.",
-        "readMoreButton": "Read More"
       }
     },
-
+    "aboutSection": {
+      "aboutUs": "About us",
+      "aboutUsText": "It is a long established fact that a reader will be distracted bythe readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  content hereh. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of etters, as opposed to using Content h ereh.",
+      "readMoreButton": "Read More"
+    }
+  },
     "contactUsPage": {
       "contactUs": "Contact Informations",
       "writeToUs": "Write To Us :",
@@ -75,7 +74,6 @@
       "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
     },
 
-    "landingPage": false,
     "navbar": false,
 
     "profilePage": {
@@ -121,8 +119,8 @@
       "CVC": "CVC",
       "purchase": "Purchase"
     },
-    "bookPage": false
-  },
+    "bookPage": false,
+
   "mainPage": {
     "searchByPart": {
       "SEARCH BY": "SEARCH BY",
