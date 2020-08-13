@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCol, MDBIcon } from 'mdbreact';
+import { MDBCol, MDBRow, MDBIcon, MDBContainer } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import TeamMemberCards from './TeamMemberCards';
 import pic1 from './media/pic1.jpg';
@@ -28,22 +28,24 @@ function TeamMembersInformation() {
   const title = t('aboutPage.title');
   return (
     <>
-      <MDBCol>
-        <div className="text-center">
-          <h1 className="text-3xl mt-10 font-weight-bold">
-            {title} <MDBIcon icon="users blue-text" />
-          </h1>
-          <br />
-          <div className="flex justify-center">
-            <hr className="w-48" />
+      <MDBContainer>
+        <MDBCol>
+          <div className="text-center mt-5 mb-5">
+            <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
+              {title}
+              <MDBIcon icon="users blue-text" />
+            </h1>
           </div>
-        </div>
-      </MDBCol>
-      <div className="row m-10 flex justify-center mt-20">
-        {team.map((member) => (
-          <TeamMemberCards key={member.id} member={member} />
-        ))}
-      </div>
+        </MDBCol>
+
+        <MDBRow>
+          {team.map((member) => (
+            <MDBCol size="12" xs="6" sm="4">
+              <TeamMemberCards key={member.id} member={member} />
+            </MDBCol>
+          ))}
+        </MDBRow>
+      </MDBContainer>
     </>
   );
 }

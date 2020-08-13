@@ -1,15 +1,17 @@
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 import PropTypes from 'prop-types';
+import './style.css';
 function TeamMemberCards({ member }) {
   const { pic, fullName, specailty, bio } = member;
   return (
     <MDBCard
+      color="blue lighten-5"
       className="animate transition duration-500 ease-in-out  
-                        transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
+                        transform hover:-translate-y-1 hover:scale-110  mt-24"
     >
       <img
-        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
+        className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
         src={pic}
         alt={fullName}
         wave

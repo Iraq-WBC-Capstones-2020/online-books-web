@@ -27,13 +27,16 @@ function DetailsClient() {
 
   return (
     <>
-      <MDBCol>
-        <div className="text-center mt-5">
-          <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
-            {client}
-          </h1>
-        </div>
-      </MDBCol>
+      <MDBContainer>
+        <MDBCol>
+          <div className="text-center mt-5">
+            <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
+              {client}
+            </h1>
+          </div>
+        </MDBCol>
+      </MDBContainer>
+
       <MDBContainer className="w-9/12 mt-5 grid grid-cols-4 gab-5">
         {clientsLogo.map((client) => (
           <ClientCard key={client.id} client={client} />

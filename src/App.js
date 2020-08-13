@@ -25,7 +25,7 @@ function App() {
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={signUp} />
-        <Route exact path="/" component={MainPage} />
+        <Route exact path="/" render={() => <MainPage />} />
       </Switch>
       <Footer />
     </HashRouter>

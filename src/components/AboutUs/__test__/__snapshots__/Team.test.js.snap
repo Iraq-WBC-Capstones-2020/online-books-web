@@ -1,439 +1,464 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Team snapshot 1`] = `
-Array [
+<div
+  className="container"
+  data-test="container"
+>
   <div
     className="col"
     data-test="col"
   >
     <div
-      className="text-center"
+      className="text-center mt-5 mb-5"
     >
       <h1
-        className="text-3xl mt-10 font-weight-bold"
+        className="text-3xl font-medium inline border-b border-gray-400 px-5"
       >
         aboutPage.title
-         
         <i
           className="fa fa-users blue-text"
           data-test="fa"
         />
       </h1>
-      <br />
-      <div
-        className="flex justify-center"
-      >
-        <hr
-          className="w-48"
-        />
-      </div>
     </div>
-  </div>,
+  </div>
   <div
-    className="row m-10 flex justify-center mt-20"
+    className="row"
+    data-test="row"
   >
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
-      data-test="card"
+      className="col-12 col-xs-6 col-sm-4"
+      data-test="col"
     >
-      <img
-        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
-        src="pic6.jpg"
-        wave={true}
-      />
       <div
-        className="card-body m-1"
-        data-test="card-body"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        data-test="card"
       >
-        <h4
-          className="card-title text-center font-sans"
-        >
-          <span
-            className="text-blue-700"
-          >
-              | 
-          </span>
-        </h4>
-        <p
-          className="text-gray-700 font-sans"
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          src="pic6.jpg"
+          wave={true}
         />
         <div
-          className="flex justify-center m-2"
+          className="card-body m-1"
+          data-test="card-body"
         >
-          <i
-            className="fa"
-            data-test="fa"
+          <h4
+            className="card-title text-center font-sans"
           >
-            <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
           >
-            <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+          </div>
         </div>
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
-      data-test="card"
+      className="col-12 col-xs-6 col-sm-4"
+      data-test="col"
     >
-      <img
-        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
-        src="pic1.jpg"
-        wave={true}
-      />
       <div
-        className="card-body m-1"
-        data-test="card-body"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        data-test="card"
       >
-        <h4
-          className="card-title text-center font-sans"
-        >
-          <span
-            className="text-blue-700"
-          >
-              | 
-          </span>
-        </h4>
-        <p
-          className="text-gray-700 font-sans"
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          src="pic1.jpg"
+          wave={true}
         />
         <div
-          className="flex justify-center m-2"
+          className="card-body m-1"
+          data-test="card-body"
         >
-          <i
-            className="fa"
-            data-test="fa"
+          <h4
+            className="card-title text-center font-sans"
           >
-            <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
           >
-            <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+          </div>
         </div>
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
-      data-test="card"
+      className="col-12 col-xs-6 col-sm-4"
+      data-test="col"
     >
-      <img
-        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
-        src="pic2.jpg"
-        wave={true}
-      />
       <div
-        className="card-body m-1"
-        data-test="card-body"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        data-test="card"
       >
-        <h4
-          className="card-title text-center font-sans"
-        >
-          <span
-            className="text-blue-700"
-          >
-              | 
-          </span>
-        </h4>
-        <p
-          className="text-gray-700 font-sans"
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          src="pic2.jpg"
+          wave={true}
         />
         <div
-          className="flex justify-center m-2"
+          className="card-body m-1"
+          data-test="card-body"
         >
-          <i
-            className="fa"
-            data-test="fa"
+          <h4
+            className="card-title text-center font-sans"
           >
-            <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
           >
-            <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+          </div>
         </div>
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
-      data-test="card"
+      className="col-12 col-xs-6 col-sm-4"
+      data-test="col"
     >
-      <img
-        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
-        src="pic3.jpg"
-        wave={true}
-      />
       <div
-        className="card-body m-1"
-        data-test="card-body"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        data-test="card"
       >
-        <h4
-          className="card-title text-center font-sans"
-        >
-          <span
-            className="text-blue-700"
-          >
-              | 
-          </span>
-        </h4>
-        <p
-          className="text-gray-700 font-sans"
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          src="pic3.jpg"
+          wave={true}
         />
         <div
-          className="flex justify-center m-2"
+          className="card-body m-1"
+          data-test="card-body"
         >
-          <i
-            className="fa"
-            data-test="fa"
+          <h4
+            className="card-title text-center font-sans"
           >
-            <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
           >
-            <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+          </div>
         </div>
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
-      data-test="card"
+      className="col-12 col-xs-6 col-sm-4"
+      data-test="col"
     >
-      <img
-        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
-        src="pic4.jpg"
-        wave={true}
-      />
       <div
-        className="card-body m-1"
-        data-test="card-body"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        data-test="card"
       >
-        <h4
-          className="card-title text-center font-sans"
-        >
-          <span
-            className="text-blue-700"
-          >
-              | 
-          </span>
-        </h4>
-        <p
-          className="text-gray-700 font-sans"
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          src="pic4.jpg"
+          wave={true}
         />
         <div
-          className="flex justify-center m-2"
+          className="card-body m-1"
+          data-test="card-body"
         >
-          <i
-            className="fa"
-            data-test="fa"
+          <h4
+            className="card-title text-center font-sans"
           >
-            <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
           >
-            <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+          </div>
         </div>
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
-      data-test="card"
+      className="col-12 col-xs-6 col-sm-4"
+      data-test="col"
     >
-      <img
-        className="rounded-circle img-fluid z-depth-1 mx-auto w-40 mt-25"
-        src="pic5.jpg"
-        wave={true}
-      />
       <div
-        className="card-body m-1"
-        data-test="card-body"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        data-test="card"
       >
-        <h4
-          className="card-title text-center font-sans"
-        >
-          <span
-            className="text-blue-700"
-          >
-              | 
-          </span>
-        </h4>
-        <p
-          className="text-gray-700 font-sans"
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          src="pic5.jpg"
+          wave={true}
         />
         <div
-          className="flex justify-center m-2"
+          className="card-body m-1"
+          data-test="card-body"
         >
-          <i
-            className="fa"
-            data-test="fa"
+          <h4
+            className="card-title text-center font-sans"
           >
-            <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
           >
-            <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
-          <i
-            className="fa"
-            data-test="fa"
-          >
-            <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-              href="#"
-            />
-          </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+            <i
+              className="fa"
+              data-test="fa"
+            >
+              <a
+                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+                href="#"
+              />
+            </i>
+          </div>
         </div>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;
