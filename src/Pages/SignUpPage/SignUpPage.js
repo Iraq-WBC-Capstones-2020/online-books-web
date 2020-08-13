@@ -1,14 +1,14 @@
 import React from 'react';
+import { MDBContainer, MDBRow } from 'mdbreact';
 import '../loginPage/login.scss';
 import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
-import { MDBContainer, MDBRow } from 'mdbreact';
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 
-function SignUpPage() {
+function FormPage() {
   const formData = {
-    title: 'Sign up',
-    button: { title: 'Sign up', href: '#' },
+    title: 'Sign Up',
+    button: { title: 'Sign Up', href: '#' },
 
     inputFields: [
       {
@@ -40,4 +40,4 @@ function SignUpPage() {
   );
 }
 
-export default SignUpPage;
+export default FormPage;

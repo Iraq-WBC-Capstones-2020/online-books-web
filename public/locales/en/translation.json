@@ -1,4 +1,8 @@
 {
+  "bookPage": {
+    "language": "Language",
+    "addToCart": "Add to cart"
+  },
 
   "navBar": {
     "home": "Home",
@@ -7,7 +11,6 @@
     "language": "language"
   },
   "aboutPage": {
-
     "title": "The Team",
     "members": {
       "sara": {
@@ -41,16 +44,41 @@
         "fullName": "Zainab Saud",
         "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
         "specailty": "designer"
-      },
-
+      }
+    },
     "aboutSection": {
       "aboutUs": "About us",
       "aboutUsText": "It is a long established fact that a reader will be distracted bythe readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  content hereh. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of etters, as opposed to using Content h ereh.",
       "readMoreButton": "Read More"
-
+    },
+    "services": {
+      "header": "Our Services",
+      "reservations": {
+        "title": "Reservations",
+        "explanation": "Reserve online the books you want, then pay and pick up in the  store , we can get you any book you want first copy or signed book  "
+      },
+      "PrepaidPickup": {
+        "title": "Prepaid Pickup",
+        "explanation": "Order and pay online, then pick up in store Request an on-demand pickup for your UPS ground, air, and international shipments"
+      },
+      "MailOrder": {
+        "title": "Mail Order",
+        "explanation": "Shipped directly to your home via UPS we can reach you anywhere so order now ,and sometimes we have discounts and also who buys more than 3 books you will get  free shipping "
+      },
+      "StudentHelper": {
+        "title": "Student Helper",
+        "explanation": "help students find books, solution manuals, past papers e.t.c and lectures recommended by their course teachers ,and help with all ind or resourse "
+      },
+      "GiftCards": {
+        "title": "Gift Cards",
+        "explanation": "A gift card is a prepaid debit card that contains a specific amount of money available for use for a variety of purchases"
+      },
+      "SignedBooks": {
+        "title": "Signed Books",
+        "explanation": "An autographed book from your favorite author can turn an item of personal value into a cherished keepsake of financial worth. Whether one of hundreds or one of a kind"
+      }
     }
   },
-
   "contactUsPage": {
     "contactUs": "Contact Informations",
     "writeToUs": "Write To Us :",
@@ -59,7 +87,6 @@
     "email": "Email",
     "message": "Message",
     "send": "Send"
-
   },
 
   "clientPage": {
@@ -125,5 +152,23 @@
     "CVC": "CVC",
     "purchase": "Purchase"
   },
-  "bookPage": false
+  "carsouelSection": {
+    "addtocart": "Add to cart",
+    "bestSellers": "best sellers in books",
+    "newRelease": "new releases in Books"
+  },
+  "mainPage": {
+    "searchByPart": {
+      "SEARCH BY": "SEARCH BY",
+      "Authors": "Authors",
+      "Books": "Books"
+    },
+    "category": {
+      "Popular": "Popular",
+      "Biographies &Memoirs": "Biographies &Memoirs",
+      "Literature & Fiction": "Literature & Fiction",
+      "Business&Investing": "Business&Investing",
+      "History": "History"
+    }
+  }
 }
