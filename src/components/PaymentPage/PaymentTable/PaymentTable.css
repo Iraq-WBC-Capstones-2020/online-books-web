@@ -1,0 +1,12 @@
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #2f80ed;
+}
+
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #2f80ed;
+}
+/*# sourceMappingURL=PaymentTable.css.map */
