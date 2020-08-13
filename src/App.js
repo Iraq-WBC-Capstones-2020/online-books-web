@@ -3,6 +3,7 @@ import './i18n';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './Pages/nav';
 import Footer from './components/Footer/Footer';
+import signUp from './Pages/SignUpPage/SignUpPage';
 import AboutUsPage from './Pages/AboutUsPage/AboutUsPage';
 import AuthorPage from './Pages/AuthorPage/AuthorPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
@@ -21,7 +22,7 @@ function App() {
         <Route path="/author/:authorId" component={AuthorPage} />
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/signup" render={() => <div>SignupPage</div>} />
+        <Route exact path="/signup" component={signUp} />
         <Route exact path="/" component={MainPage} />
       </Switch>
       <Footer />
