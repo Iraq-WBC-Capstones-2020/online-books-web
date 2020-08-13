@@ -47,79 +47,79 @@
       "readMoreButton": "Read More"
     }
   },
-    "contactUsPage": {
-      "contactUs": "Contact Informations",
-      "writeToUs": "Write To Us :",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "message": "Message",
-      "send": "Send"
-    },
+  "contactUsPage": {
+    "contactUs": "Contact Informations",
+    "writeToUs": "Write To Us :",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
 
-    "clientPage": {
-      "clients": "Our Clients"
-    },
+  "clientPage": {
+    "clients": "Our Clients"
+  },
 
-    "authorPage": {
-      "follow": "Follow",
-      "books": "Books"
-    },
+  "authorPage": {
+    "follow": "Follow",
+    "books": "Books"
+  },
 
-    "footer": {
-      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
-      "copyright": "Copyright © BookZone",
-      "followUs": "Follow Us",
-      "tags": "Tags",
-      "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
-    },
+  "footer": {
+    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
+    "copyright": "Copyright © BookZone",
+    "followUs": "Follow Us",
+    "tags": "Tags",
+    "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
+  },
 
-    "navbar": false,
+  "navbar": false,
 
-    "profilePage": {
-      "edit": "Edit",
-      "livesIn": "Lives in",
-      "addressSpread": ", ",
-      "memberSince": "Member since",
-      "about": "About",
-      "purchaseHistory": "Purchase History",
-      "basicInfo": "Basic Info",
-      "contactInfo": "Contact Info",
-      "name": "Name",
-      "gender": "Gender",
-      "birthday": "Date of birth",
-      "city": "City",
-      "country": "Country",
-      "address": "Address",
-      "phoneNumber": "Phone number",
-      "email": "E-Mail",
-      "orderId": "Order ID",
-      "books": "Books",
-      "status": "Status",
-      "originalPrice": "Original Price",
-      "totalPrice": "Total Price"
-    },
+  "profilePage": {
+    "edit": "Edit",
+    "livesIn": "Lives in",
+    "addressSpread": ", ",
+    "memberSince": "Member since",
+    "about": "About",
+    "purchaseHistory": "Purchase History",
+    "basicInfo": "Basic Info",
+    "contactInfo": "Contact Info",
+    "name": "Name",
+    "gender": "Gender",
+    "birthday": "Date of birth",
+    "city": "City",
+    "country": "Country",
+    "address": "Address",
+    "phoneNumber": "Phone number",
+    "email": "E-Mail",
+    "orderId": "Order ID",
+    "books": "Books",
+    "status": "Status",
+    "originalPrice": "Original Price",
+    "totalPrice": "Total Price"
+  },
 
-    "contactUSPage": false,
-    "signInPage": false,
-    "sigOutPage": false,
+  "contactUSPage": false,
+  "signInPage": false,
+  "sigOutPage": false,
 
-    "paymentPage": {
-      "booksOrder": "Your Books Order",
-      "books": "Books",
-      "copies": "Copies",
-      "price": "Price",
-      "total": "Total",
-      "paymentMethod": "Payment Method",
-      "creditCard": "Credit Card",
-      "paypal": "Paypal",
-      "name": "Name",
-      "cardNumber": "Card Number",
-      "MMYYYY": "MM/YYYY",
-      "CVC": "CVC",
-      "purchase": "Purchase"
-    },
-    "bookPage": false,
+  "paymentPage": {
+    "booksOrder": "Your Books Order",
+    "books": "Books",
+    "copies": "Copies",
+    "price": "Price",
+    "total": "Total",
+    "paymentMethod": "Payment Method",
+    "creditCard": "Credit Card",
+    "paypal": "Paypal",
+    "name": "Name",
+    "cardNumber": "Card Number",
+    "MMYYYY": "MM/YYYY",
+    "CVC": "CVC",
+    "purchase": "Purchase"
+  },
+  "bookPage": false,
 
   "mainPage": {
     "searchByPart": {

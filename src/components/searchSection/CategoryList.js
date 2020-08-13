@@ -7,7 +7,7 @@ const MAXIMUM_TABS_TO_SHOW = 9;
 
 function CategoryList({ items }) {
   const [activeBubble, setActiveBubble] = useState(0);
-  const [category,setCategory] = useState('');
+  const [category, setCategory] = useState('');
   const [newItems, setNewItems] = useState([]);
   //light the bubble by pink color
   const isActive = (index) => activeBubble === index;

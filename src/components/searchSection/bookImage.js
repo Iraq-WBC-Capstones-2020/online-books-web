@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function BookImage({ isBooksSelected }) {
-  const pinkColor="#fee4cb";
-  const grayColor="#e2e8f0";
+  const pinkColor = '#fee4cb';
+  const grayColor = '#e2e8f0';
   return (
     <>
       <svg
