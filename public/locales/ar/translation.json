@@ -1,4 +1,9 @@
 {
+  "bookPage": {
+    "language": "اللغة",
+    "addToCart": "أضف إلى السلة"
+  },
+
   "aboutPage": {
     "title": "الفريق",
     "members": {
@@ -63,13 +68,28 @@
   },
 
   "authorPage": false,
-  "footer": false,
-  "landingPage": false,
-  "navbar": false,
-  "profilePage": false,
-  "contactUSPage": false,
-  "signInPage": false,
-  "sigOutPage": false,
-  "paymentPage": false,
-  "bookPage": false
+
+  "carsouelSection": {
+    "bestSellers": "أفضل الكتب المباعة",
+    "addtocart": "أضف الى العربة ",
+    "newRelease": "أحدث اصدارات الكتب"
+  },
+  "mainPage": {
+    "searchByPart": {
+      "SEARCH BY": "أبحث بواسطة",
+      "Authors": "المؤلفيين",
+      "Books": "الكتب"
+    },
+
+    "authorPage": false,
+    "footer": false,
+    "landingPage": false,
+    "navbar": false,
+    "profilePage": false,
+    "contactUSPage": false,
+    "signInPage": false,
+    "sigOutPage": false,
+    "paymentPage": false,
+    "bookPage": false
+  }
 }
