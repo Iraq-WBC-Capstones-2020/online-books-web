@@ -3,7 +3,7 @@ import CreateStars from './StarRate';
 import PropTypes from 'prop-types';
 import { MDBContainer, MDBCol, MDBRow, MDBIcon, MDBCard } from 'mdbreact';
 function Cards({ book }) {
-  const { id, authorName, bookName, bookType, newPrice, oldPrice } = book;
+  const { id, authorName, bookName, bookType, newPrice, oldPrice, rate } = book;
   return (
     <MDBContainer>
       <MDBRow className="mt-5">
@@ -17,7 +17,7 @@ function Cards({ book }) {
           >
             <div className=" text-center position text-white">
               <h3 className="font-weight-normal mt-2 text-2xl">{authorName}</h3>
-              <CreateStars />
+              <CreateStars rate={rate} />
 
               <p className="pb-3 text-xl grayColor">
                 {`${bookName}: ${bookType}`}

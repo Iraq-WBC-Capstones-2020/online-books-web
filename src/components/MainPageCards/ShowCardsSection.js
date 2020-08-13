@@ -10,6 +10,7 @@ const ShowCardsSection = () => {
       bookType: 'A Novel',
       newPrice: '$30.00',
       oldPrice: '$32.75',
+      rate: 4,
     },
     {
       id: '2',
@@ -18,6 +19,7 @@ const ShowCardsSection = () => {
       bookType: 'A Novel',
       newPrice: '$10.00',
       oldPrice: '$15.75',
+      rate: 4.5,
     },
     {
       id: '3',
@@ -26,6 +28,7 @@ const ShowCardsSection = () => {
       bookType: 'A Novel',
       newPrice: '$15.00',
       oldPrice: '$20.75',
+      rate: 2,
     },
   ];
   return (
