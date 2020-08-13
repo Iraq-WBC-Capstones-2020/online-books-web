@@ -1,8 +1,8 @@
 import React from 'react';
-import './style.scss';
+import '../../pages/AudioPage/style.scss';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import AudioPlayerPage from './audioPlayer';
-const AudioPage = () => {
+const AudioPageSection = () => {
   const bookInfo = {
     bookName: 'Mind without body',
     bookCover: 'https://via.placeholder.com/353x498',
@@ -43,4 +43,4 @@ const AudioPage = () => {
   );
 };
 
-export default AudioPage;
+export default AudioPageSection;
