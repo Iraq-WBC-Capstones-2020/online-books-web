@@ -1,9 +1,8 @@
 {
-
   "bookPage": {
     "language": "Language",
     "addToCart": "Add to cart"
-  }
+  },
 
   "navBar": {
     "home": "Home",
@@ -127,7 +126,6 @@
     "CVC": "CVC",
     "purchase": "Purchase"
   },
-  "bookPage": false,
   "carsouelSection": {
     "addtocart": "Add to cart",
     "bestSellers": "best sellers in books",
