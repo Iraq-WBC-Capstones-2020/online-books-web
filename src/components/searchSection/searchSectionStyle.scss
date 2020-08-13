@@ -1,5 +1,5 @@
 $gray-color: #979797;
-$pink-color: #eec197;
+$pink-color: #e6c19f;
 $light-blue: #8bb4ea;
 $dark-blue: #7aa2d6;
 $light-gray: #f6f6f6;
@@ -17,7 +17,7 @@ $light-pink: #fee4cb;
 }
 
 .mycolorPink {
-  background: $light-pink;
+  background: $pink-color;
 }
 .textPink {
   color: $light-pink;
@@ -45,7 +45,7 @@ $light-pink: #fee4cb;
 }
 
 .mainContainer {
-  margin: 3rem 0 0 0;
+  margin: 5rem 0 5rem 0;
 }
 
 .containerSearchSection {
