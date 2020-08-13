@@ -1,12 +1,13 @@
 import React from 'react';
 import './i18n';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './pages/nav';
+import Navbar from './Pages/nav';
 import Footer from './components/Footer/Footer';
-import AboutUsPage from './pages/AboutUsPage';
-import AuthorPage from './pages/AuthorPage/AuthorPage';
-import ProfilePage from './pages/ProfilePage/ProfilePage';
-import LoginPage from './pages/loginPage/LoginPage';
+import AboutUsPage from './Pages/AboutUsPage/AboutUsPage';
+import AuthorPage from './Pages/AuthorPage/AuthorPage';
+import ProfilePage from './Pages/ProfilePage/ProfilePage';
+import LoginPage from './Pages/loginPage/LoginPage';
+import MainPage from './Pages/MainPage/MainPage';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" render={() => <div>SignupPage</div>} />
-        <Route path="/" render={() => <div>MainPage</div>} />
+        <Route exact path="/" component={MainPage} />
       </Switch>
       <Footer />
     </HashRouter>
