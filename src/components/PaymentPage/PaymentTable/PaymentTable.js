@@ -29,17 +29,17 @@ export default function PaymentTable() {
         <MDBCol md="12">
           <div className="text-center">
             <p className="h5 mt-5 text-gray-800">
-              {t('PaymentPage.booksOrder')}
+              {t('paymentPage.booksOrder')}
             </p>
             <hr className="border-4 my-3 mx-4 bg-primary"></hr>
           </div>
           <MDBTable>
-            <MDBTableHead>
-              <tr>
+            <MDBTableHead >
+              <tr className="text-center">
                 <th></th>
-                <th>{t('PaymentPage.books')}</th>
-                <th>{t('PaymentPage.copies')}</th>
-                <th>{t('PaymentPage.price')}</th>
+                <th>{t('paymentPage.books')}</th>
+                <th>{t('paymentPage.copies')}</th>
+                <th>{t('paymentPage.price')}</th>
               </tr>
             </MDBTableHead>
             <MDBTableBody>
@@ -47,7 +47,7 @@ export default function PaymentTable() {
               <tr>
                 <td></td>
                 <td>
-                  <p className="h6">{t('PaymentPage.total')}</p>
+                  <p className="h6">{t('paymentPage.total')}</p>
                 </td>
                 <td>total copies here</td>
                 <td>total price here</td>
