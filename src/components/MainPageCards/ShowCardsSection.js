@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import Cards from './Cards';
+import MainCard from './MainCard';
 const ShowCardsSection = () => {
   const BookInfo = [
     {
@@ -34,7 +34,7 @@ const ShowCardsSection = () => {
   return (
     <div>
       {BookInfo.map((book) => {
-        return <Cards BookInfo={book} key={book.id} />;
+        return <MainCard BookInfo={book} key={book.id} />;
       })}
     </div>
   );
