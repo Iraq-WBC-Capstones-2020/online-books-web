@@ -8,6 +8,7 @@ import AboutUsPage from './pages/AboutUsPage';
 import AuthorPage from './pages/AuthorPage/AuthorPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import LoginPage from './pages/loginPage/LoginPage';
+import MainPage from './pages/MainPage/MainPage';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" render={() => <div>SignupPage</div>} />
-        <Route path="/" render={() => <div>MainPage</div>} />
+        <Route path="/" render={() => <MainPage />} />
       </Switch>
       <Footer />
     </HashRouter>

@@ -1,0 +1,121 @@
+$gray-color: #979797;
+$pink-color: #eec197;
+$light-blue: #8bb4ea;
+$dark-blue: #7aa2d6;
+$light-gray: #f6f6f6;
+$light-blue2: #f9f9f9;
+$font-roboto: 'Roboto';
+$light-black: #0e0e0e;
+$light-pink: #fee4cb;
+
+.lightBlack {
+  background: $light-black;
+}
+
+.lightBlackText {
+  color: $light-black;
+}
+
+.mycolorPink {
+  background: $light-pink;
+}
+.textPink {
+  color: $light-pink;
+}
+
+%fontType {
+  font-family: 'Saira';
+}
+
+.fontHeader1 {
+  @extend %fontType;
+  color: $dark-blue;
+}
+
+.fontHeader2 {
+  @extend %fontType;
+  color: $gray-color;
+  font-size: 1.1rem;
+}
+
+.parg1 {
+  color: $gray-color;
+  font-family: $font-roboto;
+  font-size: 0.9rem;
+}
+
+.mainContainer {
+  margin: 3rem 0 0 0;
+}
+
+.containerSearchSection {
+  width: 100%;
+  height: 35.3rem;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.searchBox {
+  height: 2.5rem;
+  position: relative;
+  top: -1.1rem;
+}
+
+.columnSearchBooks {
+  position: relative;
+  top: -1.4rem;
+  border-radius: 0.2rem;
+}
+
+.buttomText {
+  font-family: $font-roboto;
+  font-size: 1rem;
+}
+
+.sizeBubble {
+  font-size: 0.6rem;
+}
+
+.textParg {
+  font: $font-roboto;
+  font-size: 0.9rem;
+}
+
+.hoverCursor {
+  cursor: pointer;
+}
+
+.borderActive {
+  border-bottom: 1px solid $pink-color;
+  box-shadow: 0 1px 0 0 $pink-color;
+  z-index: 2;
+}
+
+%input-decoration {
+  border-bottom: none !important;
+  box-shadow: none !important ;
+}
+
+.active-pink input {
+  @extend %input-decoration;
+}
+
+.active-pink input:focus {
+  @extend %input-decoration;
+}
+
+.sandwitchItem {
+  display: none;
+  @media (max-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.activeBorder {
+  border: 1.2px solid $light-pink;
+}
+
+.inactiveBorder {
+  border: 1.2px solid $light-black;
+}
