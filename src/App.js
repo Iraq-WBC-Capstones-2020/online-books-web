@@ -10,7 +10,7 @@ import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import LoginPage from './Pages/loginPage/LoginPage';
 import MainPage from './Pages/MainPage/MainPage';
 import BookPage from './Pages/BookPage/BookPage';
-import PaymentPage from './pages/PaymentPage/PaymentPage';
+import PaymentPage from './Pages/PaymentPage/PaymentPage';
 
 function App() {
   return (

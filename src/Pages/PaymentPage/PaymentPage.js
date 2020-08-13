@@ -7,11 +7,11 @@ import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 export default function PaymentPage() {
   return (
     <MDBContainer>
-      <MDBRow center className="payform">
-        <MDBCol md="5">
+      <MDBRow center className="payContainer">
+        <MDBCol md="4">
           <PaymentTable />
         </MDBCol>
-        <MDBCol md="5">
+        <MDBCol md="4">
           <PaymentForm />
         </MDBCol>
       </MDBRow>
