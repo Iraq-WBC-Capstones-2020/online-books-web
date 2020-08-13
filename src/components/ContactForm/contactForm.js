@@ -73,9 +73,13 @@ export default function ContactForm() {
               />
             </div>
             <div className="text-center py-3 size">
-              <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full focus-none">
-                {t('contactUsPage.send')}
-              </button>
+            <MDBBtn
+                  color="primary"
+                  className="rounded-pill mb-3"
+                  size="sm"
+              >
+                  {t('contactUsPage.send')}
+                  </MDBBtn>
             </div>
           </form>
         </MDBCol>
@@ -83,3 +87,6 @@ export default function ContactForm() {
     </MDBContainer>
   );
 }
+<button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full focus-none">
+                {t('contactUsPage.send')}
+              </button>
