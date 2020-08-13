@@ -7,8 +7,8 @@ import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 
 function FormPage() {
   const formData = {
-    title: 'Sign in',
-    button: { title: 'Sign in', href: '#' },
+    title: 'Sign Up',
+    button: { title: 'Sign Up', href: '#' },
 
     inputFields: [
       {
@@ -17,12 +17,12 @@ function FormPage() {
         type: 'text',
       },
       {
-        id: '1',
+        id: '2',
         label: 'Your Email',
         type: 'email',
       },
       {
-        id: '2',
+        id: '3',
         label: 'Your Password',
         type: 'password',
       },
