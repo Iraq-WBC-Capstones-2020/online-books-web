@@ -34,7 +34,7 @@ const ShowCardsSection = () => {
   return (
     <div>
       {BookInfo.map((book) => {
-        return <MainCard BookInfo={book} key={book.id} />;
+        return <MainCard book={book} key={book.id} />;
       })}
     </div>
   );
