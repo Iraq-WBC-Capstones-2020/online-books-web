@@ -10,6 +10,7 @@ import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import LoginPage from './Pages/loginPage/LoginPage';
 import MainPage from './Pages/MainPage/MainPage';
 import BookPage from './Pages/BookPage/BookPage';
+import PaymentPage from './Pages/PaymentPage/PaymentPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route exact path="/book/:bookId" component={BookPage} />
         <Route path="/aboutus" component={AboutUsPage} />
+        <Route path="/purchase" component={PaymentPage} />
         <Route exact path="/contact" render={() => <div>ContactPage</div>} />
         <Route path="/author/:authorId" component={AuthorPage} />
         <Route exact path="/profile" component={ProfilePage} />
