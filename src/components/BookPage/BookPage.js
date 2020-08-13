@@ -1,11 +1,10 @@
 import React from 'react';
-import '../Pages/style.scss';
 import { useTranslation } from 'react-i18next';
-import CreateStars from './starRate';
+import CreateStars from './StarRate';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 const BookPage = () => {
   const { t } = useTranslation();
-  const bookPage = {
+  const book = {
     bookName: 'Mind Without Body',
     bookCover: 'https://via.placeholder.com/353x498',
     description: `is simply dummy text of the printing and typesetting industry.
@@ -17,6 +16,7 @@ const BookPage = () => {
     bookType: 'Fantasy',
     publishDate: '2017',
     price: '15$',
+    rate: 3.5,
   };
 
   const isLoggedIn = false;
@@ -25,14 +25,14 @@ const BookPage = () => {
       <MDBRow>
         <MDBCol sm="6" size="12">
           <div className="mt-5">
-            <h1 className="blue-text"> {bookPage.bookName}</h1>
-            <span className="gray-text">{bookPage.authortName}</span>
+            <h1 className="blue-text"> {book.bookName}</h1>
+            <span className="gray-text">{book.authortName}</span>
             <br />
             <div className="mt-2 yellow-star">
-              <CreateStars />
+              <CreateStars rate={book.rate} />
             </div>
             <p className="mt-3 text-2xl leading-7 text-justify">
-              {bookPage.description}
+              {book.description}
             </p>
             <span className="gray-text">{t('bookPage.language')}:Arabic</span>
           </div>
@@ -41,10 +41,10 @@ const BookPage = () => {
             <>
               <div className="mt-3">
                 <MDBBtn color="info" className="mr-3 px-3 py-0">
-                  {bookPage.bookType}
+                  {book.bookType}
                 </MDBBtn>
                 <MDBBtn color="info" className="px-3 py-0">
-                  {bookPage.publishDate}
+                  {book.publishDate}
                 </MDBBtn>
               </div>
               <div className="mt-4">
@@ -61,15 +61,15 @@ const BookPage = () => {
           ) : (
             <>
               <span className="gray-text">
-                Price: <strong>{bookPage.price}</strong>
+                Price: <strong>{book.price}</strong>
               </span>
 
               <div className="mt-3">
                 <MDBBtn color="info" className="mr-3 px-3 py-0">
-                  {bookPage.bookType}
+                  {book.bookType}
                 </MDBBtn>
                 <MDBBtn color="info" className="px-3 py-0">
-                  {bookPage.publishDate}
+                  {book.publishDate}
                 </MDBBtn>
               </div>
               <div className="mt-4">
@@ -84,7 +84,7 @@ const BookPage = () => {
         <MDBCol sm="6" size="12">
           <div className="mt-5 d-flex justify-content-center align-self-center">
             <img
-              src={bookPage.bookCover}
+              src={book.bookCover}
               alt="Book cover"
               width="353"
               height="498"

@@ -8,13 +8,14 @@ import AuthorPage from './Pages/AuthorPage/AuthorPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import LoginPage from './Pages/loginPage/LoginPage';
 import MainPage from './Pages/MainPage/MainPage';
+import BookPage from './Pages/BookPage/BookPage';
 
 function App() {
   return (
     <HashRouter>
       <Navbar />
       <Switch>
-        <Route exact path="/book/:bookId" render={() => <div>BookPage</div>} />
+        <Route exact path="/book/:bookId" component={BookPage} />
         <Route path="/aboutus" component={AboutUsPage} />
         <Route exact path="/contact" render={() => <div>ContactPage</div>} />
         <Route path="/author/:authorId" component={AuthorPage} />

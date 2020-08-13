@@ -90,13 +90,6 @@
     "signInPage": false,
     "sigOutPage": false,
     "paymentPage": false,
-
-    "category": {
-      "Popular": "الشائع",
-      "Biographies &Memoirs": "السير الذاتية",
-      "Literature & Fiction": "الادب والخيال",
-      "Business&Investing": "العمل",
-      "History": "التاريخ"
-    }
+    "bookPage": false
   }
 }
