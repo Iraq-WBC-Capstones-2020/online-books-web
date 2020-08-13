@@ -1,5 +1,5 @@
 import React from 'react';
-import CreateStars from './StarRate';
+import CreateStars from '../CarouselSection/CreateStars';
 import PropTypes from 'prop-types';
 import { MDBContainer, MDBCol, MDBRow, MDBIcon, MDBCard } from 'mdbreact';
 function Cards({ book }) {
