@@ -7,7 +7,7 @@ import AboutUsPage from './pages/AboutUsPage';
 import AuthorPage from './pages/AuthorPage/AuthorPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import LoginPage from './pages/loginPage/LoginPage';
-import signUp from './pages/SignUPPage/signup';
+import signUp from './pages/SignUpPage/SignUpPage';
 
 
 function App() {

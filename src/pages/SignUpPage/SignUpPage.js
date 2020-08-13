@@ -1,8 +1,8 @@
 import React from 'react';
-import './signup.scss';
+import { MDBContainer, MDBRow } from 'mdbreact';
+import '../loginPage/login.scss';
 import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
-import { MDBContainer, MDBRow } from 'mdbreact';
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 
 function FormPage() {
