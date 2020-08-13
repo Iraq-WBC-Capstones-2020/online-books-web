@@ -46,7 +46,6 @@ function Main() {
           </MDBCol>
         </MDBRow>
 
-        {/*    <MDBRow md="12" className="containerSearchSection"></MDBRow>   */}
       </MDBContainer>
       <CarouselSection />
     </>
