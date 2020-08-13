@@ -33,7 +33,8 @@ Array [
     className="row m-10 flex justify-center mt-20"
   >
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
+      className="card animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
@@ -65,7 +66,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -74,7 +76,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -83,7 +86,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -92,7 +96,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -100,7 +105,8 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
+      className="card animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
@@ -132,7 +138,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -141,7 +148,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -150,7 +158,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -159,7 +168,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -167,7 +177,8 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
+      className="card animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
@@ -199,7 +210,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -208,7 +220,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -217,7 +230,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -226,7 +240,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -234,7 +249,8 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
+      className="card animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
@@ -266,7 +282,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -275,7 +292,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -284,7 +302,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -293,7 +312,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -301,7 +321,8 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
+      className="card animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
@@ -333,7 +354,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -342,7 +364,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -351,7 +374,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -360,7 +384,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -368,7 +393,8 @@ Array [
       </div>
     </div>
     <div
-      className="card animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
+      className="card animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110 content-start max-w-xs m-5 bg-blue-100"
       data-test="card"
     >
       <img
@@ -400,7 +426,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -409,7 +436,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -418,7 +446,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
@@ -427,7 +456,8 @@ Array [
             data-test="fa"
           >
             <a
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
+              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             />
           </i>
