@@ -1,0 +1,824 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarouselSection snapshot 1`] = `
+<div
+  className="container"
+  data-test="container"
+>
+  <div
+    className="row justify-content-center"
+    data-test="row"
+  >
+    <div
+      className="col-md-11 col-lg-10 col-xl-8"
+      data-test="col"
+    >
+      <div
+        className="buttomText bg-black  pt-1 pt-md-2 text-white font-bold text-center  highlight "
+      >
+        best sellers in books
+      </div>
+      <div
+        className="container-fluid bgGray "
+        data-test="container"
+      >
+        <div
+          className="row"
+          data-test="row"
+        >
+          <div
+            className="col-md-12 col-lg-8 col-xl-8"
+            data-test="col"
+          >
+            <div
+              aria-label="carousel"
+              className="carousel carousel-fade"
+              data-test="carousel"
+              length={4}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="carousel-inner"
+                data-test="carousel-inner"
+              >
+                <div>
+                  <div
+                    className="carousel-item active carousel-slide-item 
+            active-card
+             mt-md-4 mb-md-4 pl-lg-3"
+                    data-test="carousel-item"
+                    style={
+                      Object {
+                        "left": "0",
+                      }
+                    }
+                  >
+                    <div
+                      className="card-cascade wider card w-30 shadow-none Card"
+                      data-test="card"
+                    >
+                      <div
+                        className="container w-full"
+                        data-test="container"
+                      >
+                        <div
+                          className="row p-0"
+                          data-test="row"
+                        >
+                          <div
+                            className="col-12 col-md-4 col-lg-5 p-0"
+                            data-test="col"
+                          >
+                            <img
+                              alt="cover book"
+                              className="imageCardCarsouel"
+                              src="http://1.bp.blogspot.com/-yQklGusIOBE/Ul-oQ0_9vOI/AAAAAAAAfI4/XQTmNLaJZLQ/s1600/book-cover-poster-27.jpg"
+                            />
+                          </div>
+                          <div
+                            className="col-md-1 col-lg-1"
+                            data-test="col"
+                          />
+                          <div
+                            className="col-12 col-md-7 col-lg-6 mb-0 mt-auto"
+                            data-test="col"
+                          >
+                            <div
+                              className="card-body p-lg-0 text-center text-md-left text-lg-left mx-auto mt-md-2"
+                              data-test="card-body"
+                            >
+                              <div>
+                                <h1
+                                  className="fontHeader1 mb-0 font-weight-normal  text-2xl"
+                                >
+                                  Alice Mayer
+                                </h1>
+                              </div>
+                              <p
+                                className="card-text"
+                                data-test="card-text"
+                              >
+                                <p
+                                  className="mb-1 fontHeader2 font-normal font-weight-normal "
+                                >
+                                  The Shadows: A Novel
+                                </p>
+                                <p
+                                  className="mb-1 parg1 font-weight-normal"
+                                >
+                                  formate:Hardback
+                                </p>
+                                <p
+                                  className="font-black fontPrice font-weight-normal "
+                                >
+                                  $31.5
+                                </p>
+                                <div
+                                  className="mb-3"
+                                >
+                                  <div
+                                    className="inline-block mr-2"
+                                  >
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                    />
+                                      
+                                    22,333
+                                     views
+                                  </div>
+                                </div>
+                              </p>
+                              <button
+                                className="buttomText text-center mycolorPink w-5/6 shadow-xl  hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full"
+                              >
+                                carsouelSection.addtocart
+                              </button>
+                            </div>
+                            <div
+                              className="h-16 relative"
+                            >
+                              <div
+                                className="absolute bottom-0 right-0"
+                              >
+                                <button
+                                  className="btn Ripple-parent shadow-sm p-0 h-8"
+                                  data-test="button"
+                                  onClick={[Function]}
+                                  onMouseUp={[Function]}
+                                  onTouchStart={[Function]}
+                                  type="button"
+                                >
+                                  <i
+                                    className="fa fa-chevron-left fa-lg px-2 py-1"
+                                    data-test="fa"
+                                  />
+                                  <div
+                                    className="Ripple "
+                                    data-test="waves"
+                                    style={
+                                      Object {
+                                        "height": "0px",
+                                        "left": "0px",
+                                        "top": "0px",
+                                        "width": "0px",
+                                      }
+                                    }
+                                  />
+                                </button>
+                                <button
+                                  className="btn Ripple-parent shadow-sm p-0 h-8"
+                                  data-test="button"
+                                  onClick={[Function]}
+                                  onMouseUp={[Function]}
+                                  onTouchStart={[Function]}
+                                  type="button"
+                                >
+                                  <i
+                                    className="fa fa-chevron-right fa-lg px-2 py-1"
+                                    data-test="fa"
+                                  />
+                                  <div
+                                    className="Ripple "
+                                    data-test="waves"
+                                    style={
+                                      Object {
+                                        "height": "0px",
+                                        "left": "0px",
+                                        "top": "0px",
+                                        "width": "0px",
+                                      }
+                                    }
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item active carousel-slide-item 
+            inactive-card
+             mt-md-4 mb-md-4 pl-lg-3"
+                    data-test="carousel-item"
+                    style={
+                      Object {
+                        "left": "100%",
+                        "position": "absolute",
+                      }
+                    }
+                  >
+                    <div
+                      className="card-cascade wider card w-30 shadow-none Card"
+                      data-test="card"
+                    >
+                      <div
+                        className="container w-full"
+                        data-test="container"
+                      >
+                        <div
+                          className="row p-0"
+                          data-test="row"
+                        >
+                          <div
+                            className="col-12 col-md-4 col-lg-5 p-0"
+                            data-test="col"
+                          >
+                            <img
+                              alt="cover book"
+                              className="imageCardCarsouel"
+                              src="http://www.snugglyoranges.com/wp-content/uploads/2014/09/Unspoken.jpg"
+                            />
+                          </div>
+                          <div
+                            className="col-md-1 col-lg-1"
+                            data-test="col"
+                          />
+                          <div
+                            className="col-12 col-md-7 col-lg-6 mb-0 mt-auto"
+                            data-test="col"
+                          >
+                            <div
+                              className="card-body p-lg-0 text-center text-md-left text-lg-left mx-auto mt-md-2"
+                              data-test="card-body"
+                            >
+                              <div>
+                                <h1
+                                  className="fontHeader1 mb-0 font-weight-normal  text-2xl"
+                                >
+                                  Alice Mayer
+                                </h1>
+                              </div>
+                              <p
+                                className="card-text"
+                                data-test="card-text"
+                              >
+                                <p
+                                  className="mb-1 fontHeader2 font-normal font-weight-normal "
+                                >
+                                  The Shadows: A Novel
+                                </p>
+                                <p
+                                  className="mb-1 parg1 font-weight-normal"
+                                >
+                                  formate:Hardback
+                                </p>
+                                <p
+                                  className="font-black fontPrice font-weight-normal "
+                                >
+                                  $31.5
+                                </p>
+                                <div
+                                  className="mb-3"
+                                >
+                                  <div
+                                    className="inline-block mr-2"
+                                  >
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fas fa-star-half-alt text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                    />
+                                      
+                                    22k
+                                     views
+                                  </div>
+                                </div>
+                              </p>
+                              <button
+                                className="buttomText text-center mycolorPink w-5/6 shadow-xl  hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full"
+                              >
+                                carsouelSection.addtocart
+                              </button>
+                            </div>
+                            <div
+                              className="h-16 relative"
+                            >
+                              <div
+                                className="absolute bottom-0 right-0"
+                              >
+                                <button
+                                  className="btn Ripple-parent shadow-sm p-0 h-8"
+                                  data-test="button"
+                                  onClick={[Function]}
+                                  onMouseUp={[Function]}
+                                  onTouchStart={[Function]}
+                                  type="button"
+                                >
+                                  <i
+                                    className="fa fa-chevron-left fa-lg px-2 py-1"
+                                    data-test="fa"
+                                  />
+                                  <div
+                                    className="Ripple "
+                                    data-test="waves"
+                                    style={
+                                      Object {
+                                        "height": "0px",
+                                        "left": "0px",
+                                        "top": "0px",
+                                        "width": "0px",
+                                      }
+                                    }
+                                  />
+                                </button>
+                                <button
+                                  className="btn Ripple-parent shadow-sm p-0 h-8"
+                                  data-test="button"
+                                  onClick={[Function]}
+                                  onMouseUp={[Function]}
+                                  onTouchStart={[Function]}
+                                  type="button"
+                                >
+                                  <i
+                                    className="fa fa-chevron-right fa-lg px-2 py-1"
+                                    data-test="fa"
+                                  />
+                                  <div
+                                    className="Ripple "
+                                    data-test="waves"
+                                    style={
+                                      Object {
+                                        "height": "0px",
+                                        "left": "0px",
+                                        "top": "0px",
+                                        "width": "0px",
+                                      }
+                                    }
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item active carousel-slide-item 
+            inactive-card
+             mt-md-4 mb-md-4 pl-lg-3"
+                    data-test="carousel-item"
+                    style={
+                      Object {
+                        "left": "100%",
+                        "position": "absolute",
+                      }
+                    }
+                  >
+                    <div
+                      className="card-cascade wider card w-30 shadow-none Card"
+                      data-test="card"
+                    >
+                      <div
+                        className="container w-full"
+                        data-test="container"
+                      >
+                        <div
+                          className="row p-0"
+                          data-test="row"
+                        >
+                          <div
+                            className="col-12 col-md-4 col-lg-5 p-0"
+                            data-test="col"
+                          >
+                            <img
+                              alt="cover book"
+                              className="imageCardCarsouel"
+                              src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+                            />
+                          </div>
+                          <div
+                            className="col-md-1 col-lg-1"
+                            data-test="col"
+                          />
+                          <div
+                            className="col-12 col-md-7 col-lg-6 mb-0 mt-auto"
+                            data-test="col"
+                          >
+                            <div
+                              className="card-body p-lg-0 text-center text-md-left text-lg-left mx-auto mt-md-2"
+                              data-test="card-body"
+                            >
+                              <div>
+                                <h1
+                                  className="fontHeader1 mb-0 font-weight-normal  text-2xl"
+                                >
+                                  Alice Mayer
+                                </h1>
+                              </div>
+                              <p
+                                className="card-text"
+                                data-test="card-text"
+                              >
+                                <p
+                                  className="mb-1 fontHeader2 font-normal font-weight-normal "
+                                >
+                                  The Shadows: A Novel
+                                </p>
+                                <p
+                                  className="mb-1 parg1 font-weight-normal"
+                                >
+                                  formate:Hardback
+                                </p>
+                                <p
+                                  className="font-black fontPrice font-weight-normal "
+                                >
+                                  $31.5
+                                </p>
+                                <div
+                                  className="mb-3"
+                                >
+                                  <div
+                                    className="inline-block mr-2"
+                                  >
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fas fa-star-half-alt text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                    />
+                                      
+                                    22k
+                                     views
+                                  </div>
+                                </div>
+                              </p>
+                              <button
+                                className="buttomText text-center mycolorPink w-5/6 shadow-xl  hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full"
+                              >
+                                carsouelSection.addtocart
+                              </button>
+                            </div>
+                            <div
+                              className="h-16 relative"
+                            >
+                              <div
+                                className="absolute bottom-0 right-0"
+                              >
+                                <button
+                                  className="btn Ripple-parent shadow-sm p-0 h-8"
+                                  data-test="button"
+                                  onClick={[Function]}
+                                  onMouseUp={[Function]}
+                                  onTouchStart={[Function]}
+                                  type="button"
+                                >
+                                  <i
+                                    className="fa fa-chevron-left fa-lg px-2 py-1"
+                                    data-test="fa"
+                                  />
+                                  <div
+                                    className="Ripple "
+                                    data-test="waves"
+                                    style={
+                                      Object {
+                                        "height": "0px",
+                                        "left": "0px",
+                                        "top": "0px",
+                                        "width": "0px",
+                                      }
+                                    }
+                                  />
+                                </button>
+                                <button
+                                  className="btn Ripple-parent shadow-sm p-0 h-8"
+                                  data-test="button"
+                                  onClick={[Function]}
+                                  onMouseUp={[Function]}
+                                  onTouchStart={[Function]}
+                                  type="button"
+                                >
+                                  <i
+                                    className="fa fa-chevron-right fa-lg px-2 py-1"
+                                    data-test="fa"
+                                  />
+                                  <div
+                                    className="Ripple "
+                                    data-test="waves"
+                                    style={
+                                      Object {
+                                        "height": "0px",
+                                        "left": "0px",
+                                        "top": "0px",
+                                        "width": "0px",
+                                      }
+                                    }
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="carousel-item active carousel-slide-item 
+            inactive-card
+             mt-md-4 mb-md-4 pl-lg-3"
+                    data-test="carousel-item"
+                    style={
+                      Object {
+                        "left": "100%",
+                        "position": "absolute",
+                      }
+                    }
+                  >
+                    <div
+                      className="card-cascade wider card w-30 shadow-none Card"
+                      data-test="card"
+                    >
+                      <div
+                        className="container w-full"
+                        data-test="container"
+                      >
+                        <div
+                          className="row p-0"
+                          data-test="row"
+                        >
+                          <div
+                            className="col-12 col-md-4 col-lg-5 p-0"
+                            data-test="col"
+                          >
+                            <img
+                              alt="cover book"
+                              className="imageCardCarsouel"
+                              src="https://th.bing.com/th/id/OIP.Zf2SkeIiSI4ymvT2cc4u2AHaKd?pid=Api&rs=1"
+                            />
+                          </div>
+                          <div
+                            className="col-md-1 col-lg-1"
+                            data-test="col"
+                          />
+                          <div
+                            className="col-12 col-md-7 col-lg-6 mb-0 mt-auto"
+                            data-test="col"
+                          >
+                            <div
+                              className="card-body p-lg-0 text-center text-md-left text-lg-left mx-auto mt-md-2"
+                              data-test="card-body"
+                            >
+                              <div>
+                                <h1
+                                  className="fontHeader1 mb-0 font-weight-normal  text-2xl"
+                                >
+                                  Alice Mayer
+                                </h1>
+                              </div>
+                              <p
+                                className="card-text"
+                                data-test="card-text"
+                              >
+                                <p
+                                  className="mb-1 fontHeader2 font-normal font-weight-normal "
+                                >
+                                  The Shadows: A Novel
+                                </p>
+                                <p
+                                  className="mb-1 parg1 font-weight-normal"
+                                >
+                                  formate:Hardback
+                                </p>
+                                <p
+                                  className="font-black fontPrice font-weight-normal "
+                                >
+                                  $31.5
+                                </p>
+                                <div
+                                  className="mb-3"
+                                >
+                                  <div
+                                    className="inline-block mr-2"
+                                  >
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                    />
+                                    <icon
+                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                    />
+                                      
+                                    22k
+                                     views
+                                  </div>
+                                </div>
+                              </p>
+                              <button
+                                className="buttomText text-center mycolorPink w-5/6 shadow-xl  hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full"
+                              >
+                                carsouelSection.addtocart
+                              </button>
+                            </div>
+                            <div
+                              className="h-16 relative"
+                            >
+                              <div
+                                className="absolute bottom-0 right-0"
+                              >
+                                <button
+                                  className="btn Ripple-parent shadow-sm p-0 h-8"
+                                  data-test="button"
+                                  onClick={[Function]}
+                                  onMouseUp={[Function]}
+                                  onTouchStart={[Function]}
+                                  type="button"
+                                >
+                                  <i
+                                    className="fa fa-chevron-left fa-lg px-2 py-1"
+                                    data-test="fa"
+                                  />
+                                  <div
+                                    className="Ripple "
+                                    data-test="waves"
+                                    style={
+                                      Object {
+                                        "height": "0px",
+                                        "left": "0px",
+                                        "top": "0px",
+                                        "width": "0px",
+                                      }
+                                    }
+                                  />
+                                </button>
+                                <button
+                                  className="btn Ripple-parent shadow-sm p-0 h-8"
+                                  data-test="button"
+                                  onClick={[Function]}
+                                  onMouseUp={[Function]}
+                                  onTouchStart={[Function]}
+                                  type="button"
+                                >
+                                  <i
+                                    className="fa fa-chevron-right fa-lg px-2 py-1"
+                                    data-test="fa"
+                                  />
+                                  <div
+                                    className="Ripple "
+                                    data-test="waves"
+                                    style={
+                                      Object {
+                                        "height": "0px",
+                                        "left": "0px",
+                                        "top": "0px",
+                                        "width": "0px",
+                                      }
+                                    }
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mt-3 mb-md-0 mt-md-0 mb-lg-4 mt-lg-4  "
+            data-test="col"
+          >
+            <div
+              className="container px-md-4"
+              data-test="container"
+            >
+              <div
+                className="row justify-content-around"
+                data-test="row"
+              >
+                <div
+                  className="col-3 col-sm-3 col-md-3 col-lg-6 px-2 pl-md-1 py-1 "
+                  data-test="col"
+                >
+                  <div
+                    className="view"
+                    data-test="view"
+                    onMouseDown={[Function]}
+                    onTouchStart={[Function]}
+                    style={Object {}}
+                  >
+                    <img
+                      className="imgGrideCarsouel mx-lg-0 "
+                      src="http://1.bp.blogspot.com/-yQklGusIOBE/Ul-oQ0_9vOI/AAAAAAAAfI4/XQTmNLaJZLQ/s1600/book-cover-poster-27.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="col-3 col-sm-3 col-md-3 col-lg-6 px-2 pl-md-1 py-1 "
+                  data-test="col"
+                >
+                  <div
+                    className="view"
+                    data-test="view"
+                    onMouseDown={[Function]}
+                    onTouchStart={[Function]}
+                    style={Object {}}
+                  >
+                    <img
+                      className="imgGrideCarsouel mx-lg-0 "
+                      src="http://www.snugglyoranges.com/wp-content/uploads/2014/09/Unspoken.jpg"
+                    />
+                    <div
+                      className="mask rgba-black-light"
+                      data-test="mask"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="col-3 col-sm-3 col-md-3 col-lg-6 px-2 pl-md-1 py-1 "
+                  data-test="col"
+                >
+                  <div
+                    className="view"
+                    data-test="view"
+                    onMouseDown={[Function]}
+                    onTouchStart={[Function]}
+                    style={Object {}}
+                  >
+                    <img
+                      className="imgGrideCarsouel mx-lg-0 "
+                      src="https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg"
+                    />
+                    <div
+                      className="mask rgba-black-light"
+                      data-test="mask"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="col-3 col-sm-3 col-md-3 col-lg-6 px-2 pl-md-1 py-1 "
+                  data-test="col"
+                >
+                  <div
+                    className="view"
+                    data-test="view"
+                    onMouseDown={[Function]}
+                    onTouchStart={[Function]}
+                    style={Object {}}
+                  >
+                    <img
+                      className="imgGrideCarsouel mx-lg-0 "
+                      src="https://th.bing.com/th/id/OIP.Zf2SkeIiSI4ymvT2cc4u2AHaKd?pid=Api&rs=1"
+                    />
+                    <div
+                      className="mask rgba-black-light"
+                      data-test="mask"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
