@@ -45,7 +45,6 @@ function Main() {
             <MDBContainer>GRIDE BOOKS </MDBContainer>
           </MDBCol>
         </MDBRow>
-
       </MDBContainer>
       <CarouselSection />
     </>
