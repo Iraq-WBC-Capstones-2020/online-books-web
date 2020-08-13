@@ -34,7 +34,7 @@ export default function PaymentTable() {
             <hr className="border-4 my-3 mx-4 bg-primary"></hr>
           </div>
           <MDBTable>
-            <MDBTableHead >
+            <MDBTableHead>
               <tr className="text-center">
                 <th></th>
                 <th>{t('paymentPage.books')}</th>

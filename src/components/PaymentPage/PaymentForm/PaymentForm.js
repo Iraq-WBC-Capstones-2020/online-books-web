@@ -1,6 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBInput,MDBBtn } from 'mdbreact';
+import {
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+  MDBInput,
+  MDBBtn,
+} from 'mdbreact';
 
 export default function PaymentForm() {
   const { t } = useTranslation();
@@ -82,12 +89,8 @@ export default function PaymentForm() {
               </MDBRow>
             </div>
             <div className="text-center">
-              <MDBBtn
-                  color="primary"
-                  className="rounded-pill mb-3"
-                  size="sm"
-              >
-                  {t('paymentPage.purchase')}
+              <MDBBtn color="primary" className="rounded-pill mb-3" size="sm">
+                {t('paymentPage.purchase')}
               </MDBBtn>
             </div>
           </form>
