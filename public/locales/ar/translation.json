@@ -78,6 +78,11 @@
     "paymentPage": false,
     "bookPage": false
   },
+  "carsouelSection": {
+    "bestSellers": "أفضل الكتب المباعة",
+    "addtocart": "أضف الى العربة ",
+    "newRelease": "أحدث اصدارات الكتب"
+  },
   "mainPage": {
     "searchByPart": {
       "SEARCH BY": "أبحث بواسطة",
