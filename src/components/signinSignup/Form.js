@@ -35,7 +35,7 @@ export default function Form({ formData }) {
             <MDBBtn
               type="button"
               color="blue"
-              className=" rounded-pill btn-block z-depth-1a"
+              className=" rounded-pill text-white btn-block z-depth-1a"
             >
               {button.title}
             </MDBBtn>
