@@ -1,8 +1,12 @@
 import React from 'react';
 import './style.scss';
-import ShowCards from '../../components/MainPageCards/ShowCards';
+import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
 const ShowCards = () => {
-  return <div></div>;
+  return (
+    <div>
+      <ShowCardsSection />
+    </div>
+  );
 };
 
 export default ShowCards;
