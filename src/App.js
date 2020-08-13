@@ -3,7 +3,7 @@ import './i18n';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './Pages/nav';
 import Footer from './components/Footer/Footer';
-import signUp from './pages/SignUpPage/SignUpPage';
+import signUp from './Pages/SignUpPage/SignUpPage';
 import AboutUsPage from './Pages/AboutUsPage/AboutUsPage';
 import AuthorPage from './Pages/AuthorPage/AuthorPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
