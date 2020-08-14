@@ -40,7 +40,7 @@ function Main() {
 
           {/*Modal for search section will appeare in the small devices */}
           <ModalSearchSection modal8={modal8} handelModel8={handelModel8} />
-
+ 
           {/*GRID BOOKS */}
           <MDBCol size="11" md="8" lg="8">
             <MDBContainer>

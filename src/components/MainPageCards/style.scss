@@ -1,28 +1,37 @@
 $gray-color: #979797;
+$light-gray: #dadada;
 $pink-color: #eec197;
 $light-blue: #8bb4ea;
 $dark-blue: #7aa2d6;
 $light-gray: #f6f6f6;
+$light-blue2:#BBE1FA;
 .price {
   color: $light-blue;
 }
 .authorName {
   color: $dark-blue;
 }
+/*
 .background {
   width: 100%;
   height: 60px;
 }
+*/
 .grayColor {
   color: $light-gray;
+}
+.darkGray{
+  color:$gray-color
 }
 .dark {
   background-color: #0e0e0e;
 }
+
 .card-image {
-  height: 400px;
+  height: auto;
   border-radius: 5%;
 }
+
 .position {
   position: absolute;
   top: 60%;
@@ -34,4 +43,40 @@ $light-gray: #f6f6f6;
   border: 2px solid $pink-color;
   border-radius: 50%;
   color: $dark-blue;
+}
+
+.containerGridCards {
+  height: 35.3rem;
+}
+
+.imgCardBook {
+  height: 16rem;
+  @media (max-width: 640px) {
+  }
+}
+.Card {
+  border-style: none !important;
+}
+.blackOpacity {
+  background: #0e0e0e;
+  opacity: 0.8;
+}
+
+.HeaderCardBook {
+  font-family: 'Roboto';
+}
+
+.smallStars {
+  width: 0.1rem;
+}
+
+.lightBlue {
+  color: $light-blue2;
+}
+
+.sizeStarsContainer {
+  font-size: 0.5rem;
+}
+.mrSmallStars{
+  margin-right: 0.15rem;
 }

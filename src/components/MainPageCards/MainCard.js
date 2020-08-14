@@ -1,20 +1,50 @@
 import React from 'react';
 import CreateStars from '../CarouselSection/CreateStars';
+import CartIcon from './cartIcon';
 import PropTypes from 'prop-types';
-import { MDBContainer, MDBCol, MDBRow, MDBIcon, MDBCard } from 'mdbreact';
+
+import { MDBCol, MDBCard, MDBCardBody } from 'mdbreact';
 function Cards({ book }) {
-  const { id, authorName, bookName, bookType, newPrice, oldPrice, rate } = book;
+  const { id, authorName, bookName, newPrice, oldPrice, rate, cover } = book;
   return (
-    <MDBContainer>
-      <MDBRow className="mt-5">
-        <MDBCol sm="3" size="12" key={id}>
-          <MDBCard
-            className="card-image"
-            style={{
-              backgroundImage:
-                'url(https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20%2873%29.jpg)',
-            }}
-          >
+    <MDBCol size="12" md="3" lg="3" key={id} className="h-90">
+      <MDBCard
+        tag="div"
+        className="relative h-100 Card shadow-xl animate transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+      >
+        <img src={cover} className="imgCardBook rounded-t-md" />
+
+        <MDBCardBody className="absolute  bottom-0 w-full px-0 py-0">
+          {/*opacity part*/}
+          <div className="">
+            <div className="blackOpacity text-center py-1">
+              <h5 className="HeaderCardBook mb-0 text-xl text-white">
+                {authorName}
+              </h5>
+              <div className="sizeStarsContainer">
+                <CreateStars rate={rate} starSize="small" />
+              </div>
+              <p className="HeaderCardBook grayColor text-sm font-bold">
+                {bookName}
+              </p>
+            </div>
+            {/*black part*/}
+            <div className="bg-black d-flex flex-row justify-content-around py-2 px-2">
+              <p className="lightBlue font-semibold font-sans text-lg p-1">
+                {newPrice}
+              </p>
+              <p className="darkGray font-normal line-through p-1">
+                {oldPrice}
+              </p>
+
+              <div className="rounded-full w-8 h-8 border-2 border-orange-200 text-center">
+                <CartIcon className="p-1" />
+              </div>
+            </div>
+          </div>
+        </MDBCardBody>
+
+        {/* 
             <div className=" text-center position text-white">
               <h3 className="font-weight-normal mt-2 text-2xl">{authorName}</h3>
               <CreateStars rate={rate} />
@@ -33,10 +63,9 @@ function Cards({ book }) {
                 <MDBIcon className="icon p-2" icon="cart-plus" />
               </div>
             </div>
-          </MDBCard>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+            */}
+      </MDBCard>
+    </MDBCol>
   );
 }
 Cards.propTypes = {
