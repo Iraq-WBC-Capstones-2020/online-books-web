@@ -14,7 +14,6 @@ import SignUpPage from './Pages/SignUpPage/SignUpPage';
 import PaymentPage from './Pages/PaymentPage/PaymentPage';
 import BookPage from './Pages/BookPage/BookPage';
 
-
 function App() {
   return (
     <HashRouter>
