@@ -33,14 +33,13 @@ function TeamMembersInformation() {
           <div className="text-center mt-5 mb-5">
             <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
               {title}
-              <MDBIcon icon="users blue-text" />
             </h1>
           </div>
         </MDBCol>
 
-        <MDBRow>
+        <MDBRow className="ml-12">
           {team.map((member) => (
-            <MDBCol size="12" xs="6" sm="4">
+            <MDBCol size="8" xs="4" sm="3" className="m-5">
               <TeamMemberCards key={member.id} member={member} />
             </MDBCol>
           ))}
