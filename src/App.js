@@ -4,7 +4,7 @@ import { HashRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './Pages/nav';
 import Footer from './components/Footer/Footer';
 
-import AboutUsPage from './pages/AboutUsPage';
+import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import AuthorPage from './pages/AuthorPage/AuthorPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import LoginPage from './pages/loginPage/LoginPage';
@@ -19,11 +19,8 @@ function App() {
       <Switch>
         <Route exact path="/book/:bookId" component={BookPage} />
         <Route path="/aboutus" component={AboutUsPage} />
-
         <Route exact path="/contact" render={ContactUsPage} />
-
         <Route path="/purchase" component={PaymentPage} />
-
         <Route path="/author/:authorId" component={AuthorPage} />
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/login" component={LoginPage} />
