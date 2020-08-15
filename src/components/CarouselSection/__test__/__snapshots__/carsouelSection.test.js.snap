@@ -124,19 +124,19 @@ exports[`CarouselSection snapshot 1`] = `
                                     className="inline-block mr-2"
                                   >
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                      className=" fa fa-star font-light fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                      className=" fa fa-star font-light fa-md mr-1 text-yellow-300"
                                     />
                                       
                                     22,333
@@ -292,19 +292,19 @@ exports[`CarouselSection snapshot 1`] = `
                                     className="inline-block mr-2"
                                   >
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fas fa-star-half-alt text-yellow-300 mr-1"
+                                      className="fas fa-star-half-alt fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                      className=" fa fa-star font-light fa-md mr-1 text-yellow-300"
                                     />
                                       
                                     22k
@@ -460,19 +460,19 @@ exports[`CarouselSection snapshot 1`] = `
                                     className="inline-block mr-2"
                                   >
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fas fa-star-half-alt text-yellow-300 mr-1"
+                                      className="fas fa-star-half-alt fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                      className=" fa fa-star font-light fa-md mr-1 text-yellow-300"
                                     />
                                       
                                     22k
@@ -628,19 +628,19 @@ exports[`CarouselSection snapshot 1`] = `
                                     className="inline-block mr-2"
                                   >
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1"
+                                      className="fa fa-star fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                      className=" fa fa-star font-light fa-md mr-1 text-yellow-300"
                                     />
                                     <icon
-                                      className="fa fa-star text-yellow-300 mr-1 font-light"
+                                      className=" fa fa-star font-light fa-md mr-1 text-yellow-300"
                                     />
                                       
                                     22k
