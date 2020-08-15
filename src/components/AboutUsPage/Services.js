@@ -35,7 +35,7 @@ function Services() {
           </div>
         </MDBCol>
 
-        <MDBCardBody className="row ml-48">
+        <MDBCardBody className="ml-12 grid grid-cols-3">
           {ourServices.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}
