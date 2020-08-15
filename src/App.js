@@ -11,7 +11,6 @@ import LoginPage from './pages/loginPage/LoginPage';
 import MainPage from './pages/MainPage/MainPage';
 import ContactUsPage from './pages/ContactUsPage';
 
-
 function App() {
   return (
     <HashRouter>
