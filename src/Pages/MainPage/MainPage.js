@@ -9,6 +9,7 @@ import CarouselSection from '../../components/CarouselSection/CarouselSection';
 import SearchSection from '../../components/searchSection/searchSection';
 import ModalSearchSection from '../../components/searchSection/ModalSearchSection';
 import { MDBCol, MDBRow, MDBContainer, MDBIcon } from 'mdbreact';
+import Author from '../../components/PopularAuthors/PopularAuthors';
 
 function Main() {
   const [modal8, handelModel8] = useState(false);
@@ -45,10 +46,10 @@ function Main() {
             <MDBContainer>GRIDE BOOKS </MDBContainer>
           </MDBCol>
         </MDBRow>
-
-        {/*    <MDBRow md="12" className="containerSearchSection"></MDBRow>   */}
       </MDBContainer>
       <CarouselSection />
+      {/*Popular authors */}
+      <Author />
     </>
   );
 }
