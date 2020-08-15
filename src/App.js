@@ -1,5 +1,6 @@
 import React from 'react';
 import './i18n';
+
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './pages/nav';
 import Footer from './components/Footer/Footer';

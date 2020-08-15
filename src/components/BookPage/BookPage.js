@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import CreateStars from './StarRate';
+import CreateStars from '../CarouselSection/CreateStars';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 const BookPage = () => {
   const { t } = useTranslation();
