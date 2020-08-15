@@ -17,7 +17,7 @@ function TeamMembersInformation() {
     { name: 'dunia', pic: pic2, id: 3 },
     { name: 'qays', pic: pic3, id: 4 },
     { name: 'zeena', pic: pic4, id: 5 },
-    { name: 'zainab', pic: pic5, id: 6 },
+    { name: 'zaniab', pic: pic5, id: 6 },
   ];
   const teamInfo = t(`aboutPage.members`, { returnObjects: true });
   const team = members.map((member) => {
