@@ -27,8 +27,6 @@ function NavbarPage() {
   const [isOpen, setIsOpen] = useState(false);
   const history = useHistory();
 
-  const toggleCollapse = () => setIsOpen((oldState) => !oldState);
-
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
   useEffect(() => {
