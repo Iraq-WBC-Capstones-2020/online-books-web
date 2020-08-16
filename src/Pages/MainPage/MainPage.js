@@ -11,7 +11,7 @@ import ModalSearchSection from '../../components/searchSection/ModalSearchSectio
 import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
 import { MDBCol, MDBRow, MDBContainer, MDBIcon } from 'mdbreact';
 import Author from '../../components/PopularAuthors/PopularAuthors';
-
+   
 function Main() {
   const [modal8, handelModel8] = useState(false);
   return (
