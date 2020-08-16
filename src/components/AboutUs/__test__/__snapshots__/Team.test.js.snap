@@ -16,27 +16,23 @@ exports[`Team snapshot 1`] = `
         className="text-3xl font-medium inline border-b border-gray-400 px-5"
       >
         aboutPage.title
-        <i
-          className="fa fa-users blue-text"
-          data-test="fa"
-        />
       </h1>
     </div>
   </div>
   <div
-    className="row"
+    className="row ml-12"
     data-test="row"
   >
     <div
-      className="col-12 col-xs-6 col-sm-4"
+      className="col-8 col-xs-4 col-sm-3 m-5"
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
-          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
           src="pic6.jpg"
           wave={true}
         />
@@ -59,56 +55,56 @@ exports[`Team snapshot 1`] = `
           <div
             className="flex justify-center m-2"
           >
-            <i
-              className="fa"
-              data-test="fa"
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
               />
-            </i>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-xs-6 col-sm-4"
+      className="col-8 col-xs-4 col-sm-3 m-5"
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
-          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
           src="pic1.jpg"
           wave={true}
         />
@@ -131,56 +127,56 @@ exports[`Team snapshot 1`] = `
           <div
             className="flex justify-center m-2"
           >
-            <i
-              className="fa"
-              data-test="fa"
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
               />
-            </i>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-xs-6 col-sm-4"
+      className="col-8 col-xs-4 col-sm-3 m-5"
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
-          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
           src="pic2.jpg"
           wave={true}
         />
@@ -203,56 +199,56 @@ exports[`Team snapshot 1`] = `
           <div
             className="flex justify-center m-2"
           >
-            <i
-              className="fa"
-              data-test="fa"
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
               />
-            </i>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-xs-6 col-sm-4"
+      className="col-8 col-xs-4 col-sm-3 m-5"
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
-          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
           src="pic3.jpg"
           wave={true}
         />
@@ -275,56 +271,56 @@ exports[`Team snapshot 1`] = `
           <div
             className="flex justify-center m-2"
           >
-            <i
-              className="fa"
-              data-test="fa"
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
               />
-            </i>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-xs-6 col-sm-4"
+      className="col-8 col-xs-4 col-sm-3 m-5"
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
-          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
           src="pic4.jpg"
           wave={true}
         />
@@ -347,56 +343,56 @@ exports[`Team snapshot 1`] = `
           <div
             className="flex justify-center m-2"
           >
-            <i
-              className="fa"
-              data-test="fa"
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
               />
-            </i>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-xs-6 col-sm-4"
+      className="col-8 col-xs-4 col-sm-3 m-5"
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-24"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
-          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
           src="pic5.jpg"
           wave={true}
         />
@@ -419,42 +415,42 @@ exports[`Team snapshot 1`] = `
           <div
             className="flex justify-center m-2"
           >
-            <i
-              className="fa"
-              data-test="fa"
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
               />
-            </i>
-            <i
-              className="fa"
-              data-test="fa"
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="#"
             >
-              <a
-                className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110"
-                href="#"
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
               />
-            </i>
+            </a>
           </div>
         </div>
       </div>
