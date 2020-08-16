@@ -15,8 +15,7 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
   MDBContainer,
-  MDBBtn,
-  MDBIcon
+  MDBIcon,
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
@@ -26,14 +25,6 @@ function NavbarPage() {
 
   const [isOpen, setIsOpen] = useState(false);
   const history = useHistory();
-  const goToSignUpPage = () =>
-    history.push({
-      pathname: '/signup',
-    });
-  const goToLoginPage = () =>
-    history.push({
-      pathname: '/login',
-    });
 
   const toggleCollapse = () => setIsOpen((oldState) => !oldState);
 
@@ -59,9 +50,16 @@ function NavbarPage() {
     });
   }, []);
   const onLogout = () => {
-    console.log('logout');
     auth.signOut();
   };
+  const goToSignUpPage = () =>
+    history.push({
+      pathname: '/signup',
+    });
+  const goToLoginPage = () =>
+    history.push({
+      pathname: '/login',
+    });
 
   return (
     <>
@@ -96,26 +94,48 @@ function NavbarPage() {
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
-              {user.isSigned && <><MDBNavItem><MDBNavLink to="/"><MDBIcon icon="shopping-cart" /></MDBNavLink> </MDBNavItem><MDBNavItem><MDBNavLink to="/"><MDBIcon icon="user-circle" /></MDBNavLink> </MDBNavItem></>}
-              <MDBNavItem>
-                {!user.isSigned && <><MDBBtn
-                  color="primary"
-                  className="rounded-pill "
-                  size="sm"
-                  onClick={goToSignUpPage}
-                >
-                  Sign Up
-                </MDBBtn>
-                  <MDBBtn
-                    outline
-                    color="primary"
-                    className="rounded-pill"
-                    size="sm"
-                    onClick={goToLoginPage}
-                  >
-                    Login
-                </MDBBtn></>}
-              </MDBNavItem>
+              {user.isSigned && (
+                <>
+                  <MDBNavItem>
+                    <MDBNavLink to="/purchase">
+                      <MDBIcon icon="shopping-cart" />
+                    </MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="/profile">
+                      <MDBIcon icon="user-circle" />
+                    </MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <button
+                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mx-2 rounded-full"
+                      onClick={onLogout}
+                    >
+                      Logout
+                    </button>
+                  </MDBNavItem>
+                </>
+              )}
+              {!user.isSigned && (
+                <>
+                  <MDBNavItem>
+                    <button
+                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 border-2 border-transparent rounded-full"
+                      onClick={goToSignUpPage}
+                    >
+                      Sign Up
+                    </button>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <button
+                      className="bg-gray-100 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 rounded-full"
+                      onClick={goToLoginPage}
+                    >
+                      Login
+                    </button>
+                  </MDBNavItem>
+                </>
+              )}
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBNavbar>
