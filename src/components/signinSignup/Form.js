@@ -38,12 +38,7 @@ export default function Form({ formData, onButtonClick }) {
             <MDBBtn
               type="button"
               color="blue"
-<<<<<<< HEAD
-              className=" rounded-pill text-white btn-block z-depth-1a"
-              onClick={onButtonClick}
-=======
               className="rounded-pill text-white z-depth-1a w-48"
->>>>>>> d52d351ed8966b73579226c880a0d492c91e4556
             >
               {button.title}
             </MDBBtn>

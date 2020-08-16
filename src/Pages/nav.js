@@ -62,13 +62,10 @@ function NavbarPage() {
       pathname: '/login',
     });
 
-<<<<<<< HEAD
-=======
   function hanndleClick(Lang) {
     i18n.changeLanguage(Lang);
   }
   const toggleCollapse = () => setIsOpen((oldState) => !oldState);
->>>>>>> d52d351ed8966b73579226c880a0d492c91e4556
   return (
     <>
       <MDBContainer>
@@ -107,7 +104,6 @@ function NavbarPage() {
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
-<<<<<<< HEAD
               {user.isSigned && (
                 <>
                   <MDBNavItem>
@@ -150,27 +146,6 @@ function NavbarPage() {
                   </MDBNavItem>
                 </>
               )}
-=======
-              <MDBNavItem>
-                <MDBBtn
-                  color="primary"
-                  className="rounded-pill"
-                  size="sm"
-                  onClick={goToSignUpPage}
-                >
-                  Sign Up
-                </MDBBtn>
-                <MDBBtn
-                  outline
-                  color="primary"
-                  className="rounded-pill"
-                  size="sm"
-                  onClick={goToLoginPage}
-                >
-                  Login
-                </MDBBtn>
-              </MDBNavItem>
->>>>>>> d52d351ed8966b73579226c880a0d492c91e4556
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBNavbar>
