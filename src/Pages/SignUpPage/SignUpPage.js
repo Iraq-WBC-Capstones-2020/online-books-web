@@ -10,7 +10,7 @@ function FormPage() {
   const formRef = useRef();
 
   const formData = {
-    formRef:formRef,
+    formRef: formRef,
     title: 'Sign Up',
     button: { title: 'Sign Up', href: '#' },
 
@@ -19,19 +19,19 @@ function FormPage() {
         id: '1',
         label: 'Full Name',
         type: 'text',
-        name:'fullName'
+        name: 'fullName',
       },
       {
         id: '2',
         label: 'Your Email',
         type: 'email',
-        name:'email'
+        name: 'email',
       },
       {
         id: '3',
         label: 'Your Password',
         type: 'password',
-        name:'password'
+        name: 'password',
       },
     ],
   };

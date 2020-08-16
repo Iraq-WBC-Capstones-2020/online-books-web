@@ -14,18 +14,18 @@ export default function Form({ formData, onButtonClick }) {
             </h3>
           </div>
           <form ref={formRef}>
-          {inputFields.map((input) => (
-            <MDBInput
-              key={input.id}
-              label={input.label}
-              group
-              type={input.type}
-              name={input.name}
-              validate
-              error="wrong"
-              success="right"
-            />
-          ))}
+            {inputFields.map((input) => (
+              <MDBInput
+                key={input.id}
+                label={input.label}
+                group
+                type={input.type}
+                name={input.name}
+                validate
+                error="wrong"
+                success="right"
+              />
+            ))}
           </form>
           {extraAnchor && (
             <p className="d-flex justify-content-end pb-3">

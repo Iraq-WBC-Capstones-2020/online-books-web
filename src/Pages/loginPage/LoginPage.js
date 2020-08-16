@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React, { useRef } from 'react';
 import './login.scss';
 import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
@@ -10,7 +10,7 @@ function FormPage() {
   const formRef = useRef();
 
   const formData = {
-    formRef:formRef,
+    formRef: formRef,
     title: 'Sign in',
     button: { title: 'Sign in', href: '#' },
     extraAnchor: {
@@ -22,13 +22,13 @@ function FormPage() {
         id: '1',
         label: 'Your Email',
         type: 'email',
-        name:'email'
+        name: 'email',
       },
       {
         id: '2',
         label: 'Your Password',
         type: 'password',
-        name:'password'
+        name: 'password',
       },
     ],
   };
@@ -50,7 +50,7 @@ function FormPage() {
   return (
     <MDBContainer>
       <MDBRow>
-        <Form formData={formData} onButtonClick={handleLogin}/>
+        <Form formData={formData} onButtonClick={handleLogin} />
         <VerticalSeparated />
         <SocialMediaButtons />
       </MDBRow>

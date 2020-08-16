@@ -18,27 +18,26 @@ import allReducers from './reducers';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-
 const store = createStore(allReducers);
 
 function App() {
   return (
     <Provider store={store}>
-    <HashRouter>
-      <Navbar />
-      <Switch>
-        <Route exact path="/book/:bookId" component={BookPage} />
-        <Route path="/aboutus" component={AboutUsPage} />
-        <Route exact path="/contact" render={ContactUsPage} />
-        <Route path="/purchase" component={PaymentPage} />
-        <Route path="/author/:authorId" component={AuthorPage} />
-        <Route exact path="/profile" component={ProfilePage} />
-        <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/signup" component={SignUpPage} />
-        <Route exact path="/" render={() => <MainPage />} />
-      </Switch>
-      <Footer />
-    </HashRouter>
+      <HashRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/book/:bookId" component={BookPage} />
+          <Route path="/aboutus" component={AboutUsPage} />
+          <Route exact path="/contact" render={ContactUsPage} />
+          <Route path="/purchase" component={PaymentPage} />
+          <Route path="/author/:authorId" component={AuthorPage} />
+          <Route exact path="/profile" component={ProfilePage} />
+          <Route exact path="/login" component={LoginPage} />
+          <Route exact path="/signup" component={SignUpPage} />
+          <Route exact path="/" render={() => <MainPage />} />
+        </Switch>
+        <Footer />
+      </HashRouter>
     </Provider>
   );
 }
