@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { usersRef, auth } from './../api/firebase';
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from './../actions';
@@ -16,6 +16,7 @@ import {
   MDBDropdownItem,
   MDBContainer,
   MDBBtn,
+  MDBIcon
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
@@ -95,8 +96,9 @@ function NavbarPage() {
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
+              {user.isSigned && <><MDBNavItem><MDBNavLink to="/"><MDBIcon icon="shopping-cart" /></MDBNavLink> </MDBNavItem><MDBNavItem><MDBNavLink to="/"><MDBIcon icon="user-circle" /></MDBNavLink> </MDBNavItem></>}
               <MDBNavItem>
-                <MDBBtn
+                {!user.isSigned && <><MDBBtn
                   color="primary"
                   className="rounded-pill "
                   size="sm"
@@ -104,15 +106,15 @@ function NavbarPage() {
                 >
                   Sign Up
                 </MDBBtn>
-                <MDBBtn
-                  outline
-                  color="primary"
-                  className="rounded-pill"
-                  size="sm"
-                  onClick={goToLoginPage}
-                >
-                  Login
-                </MDBBtn>
+                  <MDBBtn
+                    outline
+                    color="primary"
+                    className="rounded-pill"
+                    size="sm"
+                    onClick={goToLoginPage}
+                  >
+                    Login
+                </MDBBtn></>}
               </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>
