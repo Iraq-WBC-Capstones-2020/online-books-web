@@ -39,7 +39,7 @@ exports[`Details snapshot 1`] = `
             aboutPage.aboutSection.aboutUsText
           </p>
           <button
-            className="btn-primary btn Ripple-parent btn-sm rounded-pill"
+            className="btn-primary btn Ripple-parent btn-md rounded-pill "
             data-test="button"
             onMouseUp={[Function]}
             onTouchStart={[Function]}
