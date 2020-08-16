@@ -2,7 +2,7 @@ import React from 'react';
 import './i18n';
 
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './pages/nav';
+import Navbar from './Pages/nav';
 import Footer from './components/Footer/Footer';
 
 import AboutUsPage from './Pages/AboutUsPage/AboutUsPage';
