@@ -38,14 +38,13 @@ function NavbarPage() {
       <MDBContainer>
         <MDBNavbar className="shadow-none" light expand="md">
           <MDBNavbarBrand>
-            <strong className="black-text">BooksZone</strong>
+            <MDBNavLink to="/">
+              <strong className="black-text font-bold">BooksZone</strong>
+            </MDBNavLink>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
-              <MDBNavItem>
-                <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
-              </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
@@ -69,7 +68,7 @@ function NavbarPage() {
               <MDBNavItem>
                 <MDBBtn
                   color="primary"
-                  className="rounded-pill "
+                  className="rounded-pill"
                   size="sm"
                   onClick={goToSignUpPage}
                 >

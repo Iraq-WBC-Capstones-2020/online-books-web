@@ -6,9 +6,9 @@
 
   "navBar": {
     "home": "Home",
-    "aboutus": "aboutus",
-    "contact": "contact",
-    "language": "language"
+    "aboutus": "About Us",
+    "contact": "Contact Us",
+    "language": "Language"
   },
   "aboutPage": {
     "title": "The Team",
