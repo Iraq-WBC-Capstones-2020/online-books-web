@@ -14,9 +14,16 @@ import ContactUsPage from './Pages/ContactUsPage/ContactUsPage';
 import SignUpPage from './Pages/SignUpPage/SignUpPage';
 import PaymentPage from './Pages/PaymentPage/PaymentPage';
 import BookPage from './Pages/BookPage/BookPage';
+import allReducers from './reducers';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+
+const store = createStore(allReducers);
 
 function App() {
   return (
+    <Provider store={store}>
     <HashRouter>
       <Navbar />
       <Switch>
@@ -32,6 +39,7 @@ function App() {
       </Switch>
       <Footer />
     </HashRouter>
+    </Provider>
   );
 }
 
