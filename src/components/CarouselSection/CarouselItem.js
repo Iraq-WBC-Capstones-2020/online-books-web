@@ -17,7 +17,7 @@ import CreateStars from './CreateStars';
 // create 4 items for the carsouel movement
 function CarouselItems({ activeCard, handelChangeCard }) {
   const { t } = useTranslation();
-
+ 
   const booksArray = [
     {
       cover:
