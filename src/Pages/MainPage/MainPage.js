@@ -8,6 +8,7 @@ import Paragraph from '../../components/CarouselSection/paragraph';
 import CarouselSection from '../../components/CarouselSection/CarouselSection';
 import SearchSection from '../../components/searchSection/searchSection';
 import ModalSearchSection from '../../components/searchSection/ModalSearchSection';
+import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
 import { MDBCol, MDBRow, MDBContainer, MDBIcon } from 'mdbreact';
 import Author from '../../components/PopularAuthors/PopularAuthors';
 
@@ -43,7 +44,9 @@ function Main() {
 
           {/*GRID BOOKS */}
           <MDBCol size="11" md="8" lg="8">
-            <MDBContainer>GRIDE BOOKS </MDBContainer>
+            <MDBContainer>
+              <ShowCardsSection />
+            </MDBContainer>
           </MDBCol>
         </MDBRow>
       </MDBContainer>

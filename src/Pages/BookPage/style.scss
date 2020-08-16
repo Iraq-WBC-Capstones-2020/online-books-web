@@ -1,0 +1,17 @@
+@import '../../assets/main.css';
+
+$gray-color: #979797;
+$dark-blue: #7aa2d6;
+$font-roboto: 'Roboto';
+.blue-text {
+  color: $dark-blue;
+  font-size: 2rem;
+  font-family: $font-roboto;
+}
+.gray-text {
+  color: $gray-color;
+  font-size: 1.3rem;
+}
+.yellow-star {
+  color: #e3f322;
+}

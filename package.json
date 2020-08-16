@@ -18,12 +18,17 @@
     "mathjs": "^7.1.0",
     "mdbreact": "^4.27.0",
     "node-sass": "^4.14.1",
+    "prop-type": "^0.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-h5-audio-player": "^3.2.0",
     "react-i18next": "^11.7.0",
+    "react-player": "^2.6.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "react-test-renderer": "^16.13.1",
+    "sass": "^1.26.10",
     "tailwindcss": "^1.6.0"
   },
   "scripts": {
@@ -34,7 +39,7 @@
     "eject": "react-scripts eject",
     "fix": "prettier --write src/. public/.",
     "lint": "eslint src/**/*.js --max-warnings 5",
-    "build:css": "tailwind build src/style.css -o src/index.css",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "eslintConfig": {
