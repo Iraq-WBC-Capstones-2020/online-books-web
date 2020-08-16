@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn } from 'mdbreact';
 
-export default function Form({ formData }) {
+export default function Form({ formData, onButtonClick }) {
   const { formRef, title, button, extraAnchor, inputFields } = formData;
 
   return (
@@ -20,6 +20,7 @@ export default function Form({ formData }) {
               label={input.label}
               group
               type={input.type}
+              name={input.name}
               validate
               error="wrong"
               success="right"
@@ -38,6 +39,7 @@ export default function Form({ formData }) {
               type="button"
               color="blue"
               className=" rounded-pill text-white btn-block z-depth-1a"
+              onClick={onButtonClick}
             >
               {button.title}
             </MDBBtn>
