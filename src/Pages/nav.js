@@ -17,6 +17,7 @@ import {
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
+import i18n from '../i18n';
 
 function NavbarPage() {
   const { t } = useTranslation();
@@ -32,6 +33,9 @@ function NavbarPage() {
       pathname: '/login',
     });
 
+  function hanndleClick(Lang) {
+    i18n.changeLanguage(Lang);
+  }
   const toggleCollapse = () => setIsOpen((oldState) => !oldState);
   return (
     <>
@@ -59,9 +63,15 @@ function NavbarPage() {
                     </div>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu className="dropdown-default">
-                    <MDBDropdownItem href="#!">عربي</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">كوردى</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">English</MDBDropdownItem>
+                    <MDBDropdownItem onClick={() => hanndleClick('ar')}>
+                      عربي
+                    </MDBDropdownItem>
+                    <MDBDropdownItem onClick={() => hanndleClick('ku')}>
+                      كوردى
+                    </MDBDropdownItem>
+                    <MDBDropdownItem onClick={() => hanndleClick('en')}>
+                      English
+                    </MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
