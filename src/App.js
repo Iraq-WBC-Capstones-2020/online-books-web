@@ -20,8 +20,10 @@ function App() {
     <HashRouter>
       <Navbar />
       <Switch>
-        <Route exact path="/book/:bookId" render={() => <div>BookPage</div>} />
+        <Route exact path="/book/:bookId" component={BookPage} />
         <Route path="/aboutus" component={AboutUsPage} />
+        <Route exact path="/contact" render={ContactUsPage} />
+        <Route path="/purchase" component={PaymentPage} />
         <Route path="/author/:authorId" component={AuthorPage} />
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/login" component={LoginPage} />
