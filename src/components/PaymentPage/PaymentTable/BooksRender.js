@@ -1,10 +1,10 @@
-import React from './node_modules/react';
+import React from 'react';
 
 export default function BooksRender({ books }) {
   return books.map((book, index) => {
     const { title, copies, price } = book;
     return (
-      <tr key={index}>
+      <tr key={index} className="text-center">
         <td>
           <input type="checkbox" />
         </td>

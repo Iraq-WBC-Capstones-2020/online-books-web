@@ -4,22 +4,20 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 //main component
-import {
-  MDBCol,
-  MDBRow,
-  MDBContainer,
-  MDBModal,
-  MDBModalBody,
-  MDBModalHeader,
-  MDBIcon,
-} from 'mdbreact';
+import Paragraph from '../../components/CarouselSection/paragraph';
+import CarouselSection from '../../components/CarouselSection/CarouselSection';
 import SearchSection from '../../components/searchSection/searchSection';
+import ModalSearchSection from '../../components/searchSection/ModalSearchSection';
+import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
+import { MDBCol, MDBRow, MDBContainer, MDBIcon } from 'mdbreact';
 
 function Main() {
   const [modal8, handelModel8] = useState(false);
-
   return (
     <>
+      <Paragraph />
+      <CarouselSection />
+      {/* */}
       <MDBContainer className="mainContainer">
         {/*will put this buttom in the navbar */}
         <MDBIcon
@@ -41,32 +39,17 @@ function Main() {
           </MDBCol>
 
           {/*Modal for search section will appeare in the small devices */}
-
-          <MDBModal
-            isOpen={modal8}
-            toggle={() => handelModel8(true)}
-            fullHeight
-            position="left"
-            size="sm"
-            contentClassName="bg-black"
-          >
-            <MDBModalHeader
-              toggle={() => handelModel8(false)}
-              className="border-b-0 py-0 mb-3"
-            ></MDBModalHeader>
-            <MDBModalBody className="bg-black">
-              <SearchSection />
-            </MDBModalBody>
-          </MDBModal>
+          <ModalSearchSection modal8={modal8} handelModel8={handelModel8} />
 
           {/*GRID BOOKS */}
           <MDBCol size="11" md="8" lg="8">
-            <MDBContainer>GRIDE BOOKS </MDBContainer>
+            <MDBContainer>
+              <ShowCardsSection />
+            </MDBContainer>
           </MDBCol>
         </MDBRow>
-
-        <MDBRow md="12" className="containerSearchSection"></MDBRow>
       </MDBContainer>
+      <CarouselSection />
     </>
   );
 }

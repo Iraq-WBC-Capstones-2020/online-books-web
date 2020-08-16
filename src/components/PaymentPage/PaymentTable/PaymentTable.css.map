@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,MADI,CACJ,KAAK,CAAC,EAAE,CAAC;EACP,cAAc,EAAE,MAAM;EACtB,aAAa,EAAE,iBAAiB;CACjC;;AAJH,AAKE,MALI,CAKJ,EAAE;AALJ,MAAM,CAMJ,EAAE,CAAC;EACD,OAAO,EAAE,OAAO;EAChB,cAAc,EAAE,GAAG;EACnB,UAAU,EAAE,iBAAiB;CAC9B",
+    "sources": [
+        "PaymentTable.scss"
+    ],
+    "names": [],
+    "file": "PaymentTable.css"
+}

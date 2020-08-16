@@ -2,51 +2,64 @@
 
 exports[`Details snapshot 1`] = `
 <div
-  className="bg-gray-100 col"
+  className="bg-gray-100"
 >
   <div
-    className="row"
-    data-test="row"
+    className="container"
+    data-test="container"
   >
     <div
-      className="col-lg-5"
-      data-test="col"
-    >
-      <img
-        alt="artwork of a girl reading a book"
-        src="pic.png"
-      />
-    </div>
-    <div
-      className="col"
-      data-test="col"
+      className="row"
+      data-test="row"
     >
       <div
-        className="mt-48"
+        className="col-lg-5"
+        data-test="col"
       >
-        <h3
-          className="font-weight-bold text-3xl ml-1"
-        >
-          aboutPage.aboutSection.aboutUs
-           :
-        </h3>
-        <hr
-          className="col-lg-2 h-2 bg-blue-500"
+        <img
+          alt="artwork of a girl reading a book"
+          src="pic.png"
         />
-        <p
-          className="mt-2 mr-5 text-lg text-justify"
+      </div>
+      <div
+        className="col"
+        data-test="col"
+      >
+        <div
+          className="mt-24"
         >
-          aboutPage.aboutSection.aboutUsText
-        </p>
-        <button
-          className="rounded-full h-8 w-1/9 mt-3 transition duration-500 ease-in-out bg-blue-500 hover:bg-blue-700 transform hover:-translate-y-1 hover:scale-110"
-        >
-          <span
-            className="text-white"
+          <p
+            className="text-3xl font-medium border-b-4 inline border-blue-500"
+          >
+            aboutPage.aboutSection.aboutUs
+          </p>
+          <p
+            className="text-base leading-loose text-justify"
+          >
+            aboutPage.aboutSection.aboutUsText
+          </p>
+          <button
+            className="btn-primary btn Ripple-parent btn-md rounded-pill "
+            data-test="button"
+            onMouseUp={[Function]}
+            onTouchStart={[Function]}
+            type="button"
           >
             aboutPage.aboutSection.readMoreButton
-          </span>
-        </button>
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+          </button>
+        </div>
       </div>
     </div>
   </div>

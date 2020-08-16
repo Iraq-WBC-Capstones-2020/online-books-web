@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { MDBContainer, MDBRow, MDBCol, MDBInput } from 'mdbreact';
+
+import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import ContactInformation from './../contactUsPage/SideBar';
 
 export default function ContactForm() {
   const { t } = useTranslation();
@@ -73,11 +75,14 @@ export default function ContactForm() {
               />
             </div>
             <div className="text-center py-3 size">
-              <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full focus-none">
+              <MDBBtn color="primary" className="rounded-pill mb-3" size="sm">
                 {t('contactUsPage.send')}
-              </button>
+              </MDBBtn>
             </div>
           </form>
+        </MDBCol>
+        <MDBCol>
+          <ContactInformation />
         </MDBCol>
       </MDBRow>
     </MDBContainer>
