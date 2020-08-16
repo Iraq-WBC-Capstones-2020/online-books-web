@@ -44,19 +44,19 @@ function NavbarPage() {
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
+                <MDBNavLink to="/">{t('navBar.Home')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
+                <MDBNavLink to="/aboutus">{t('navBar.AboutUs')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="/contact">{t('navBar.contact')}</MDBNavLink>
+                <MDBNavLink to="/contact">{t('navBar.Contact')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>
                   <MDBDropdownToggle nav caret>
                     <div className="d-none d-md-inline">
-                      {t('navBar.language')}
+                      {t('navBar.Language')}
                     </div>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu className="dropdown-default">

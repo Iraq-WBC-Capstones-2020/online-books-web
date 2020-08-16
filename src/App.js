@@ -1,8 +1,6 @@
 import React from 'react';
 import './i18n';
-import { HashRouter, Route } from 'react-router-dom';
-import { HashRouter, Route } from 'react-router-dom';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './Pages/nav';
 import Footer from './components/Footer/Footer';
 import signUp from './Pages/SignUpPage/SignUpPage';
