@@ -1,5 +1,5 @@
-import React from 'react';
-import { MDBContainer, MDBRow } from 'mdbreact';
+import React from './node_modules/react';
+import { MDBContainer, MDBRow } from './node_modules/mdbreact';
 import '../loginPage/login.scss';
 import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';

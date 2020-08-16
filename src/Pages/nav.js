@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from './node_modules/react';
 
 import {
   MDBNavbar,
@@ -14,9 +14,9 @@ import {
   MDBDropdownItem,
   MDBContainer,
   MDBBtn,
-} from 'mdbreact';
-import { useTranslation } from 'react-i18next';
-import { useHistory } from 'react-router-dom';
+} from './node_modules/mdbreact';
+import { useTranslation } from './node_modules/react-i18next';
+import { useHistory } from './node_modules/react-router-dom';
 import i18n from '../i18n';
 
 function NavbarPage() {

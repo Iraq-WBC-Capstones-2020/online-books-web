@@ -1,6 +1,6 @@
-import React from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
-import { useTranslation } from 'react-i18next';
+import React from './node_modules/react';
+import { MDBContainer, MDBRow, MDBCol, MDBIcon } from './node_modules/mdbreact';
+import { useTranslation } from './node_modules/react-i18next';
 import Paragraph from '../../components/Paragraph/Paragraph';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
