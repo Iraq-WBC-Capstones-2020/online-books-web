@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-
+import React, { useState,useEffect } from 'react';
+import { usersRef, auth } from './../api/firebase';
+import { useSelector, useDispatch } from 'react-redux';
+import { setUser } from './../actions';
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -33,6 +35,33 @@ function NavbarPage() {
     });
 
   const toggleCollapse = () => setIsOpen((oldState) => !oldState);
+
+  const user = useSelector((state) => state.user);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    auth.onAuthStateChanged(async (authUser) => {
+      console.log(authUser);
+      if (authUser) {
+        try {
+          const userData = await usersRef.doc(authUser.uid).get();
+          const user = userData.data();
+          // const user = { isSigned: true, uid: authUser.uid };
+          user.isSigned = true;
+          dispatch(setUser(user));
+        } catch (e) {
+          console.log(e.message);
+          dispatch(setUser({ isSigned: false }));
+        }
+      } else {
+        dispatch(setUser({ isSigned: false }));
+      }
+    });
+  }, []);
+  const onLogout = () => {
+    console.log('logout');
+    auth.signOut();
+  };
+
   return (
     <>
       <MDBContainer>
