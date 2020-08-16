@@ -95,7 +95,15 @@
       "Authors": "المؤلفيين",
       "Books": "الكتب"
     },
-    "text": "انت لست ضائع انت هنا "
+    "category": {
+      "Popular": "الشائع",
+      "Biographies &Memoirs": "السير الذاتية والمذكرات",
+      "Literature & Fiction": "أدب و خيال",
+      "Business&Investing": "الأعمال والاستثمار",
+      "History": "التاريخ"
+    },
+    "text": "انت لست ضائع انت هنا ",
+    "PopularAuthors":"المؤلفون المشهورون "
   },
 
   "footer": false,

@@ -17,7 +17,7 @@ function Main() {
   return (
     <>
       <Paragraph />
-      <CarouselSection />
+      <CarouselSection highlightText="bestSellers"/>
       {/* */}
       <MDBContainer className="mainContainer">
         {/*will put this buttom in the navbar */}
@@ -50,7 +50,7 @@ function Main() {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <CarouselSection />
+      <CarouselSection highlightText="newRelease" />
       {/*Popular authors */}
       <Author />
     </>

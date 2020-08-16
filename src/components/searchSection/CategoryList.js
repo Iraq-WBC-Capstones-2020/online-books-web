@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { MDBIcon } from 'mdbreact';
 import './searchSectionStyle.scss';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 const MAXIMUM_TABS_TO_SHOW = 9;
 
 function CategoryList({ items }) {
+  const { t } = useTranslation();
   const [activeBubble, setActiveBubble] = useState(0);
   const [category, setCategory] = useState('');
   const [newItems, setNewItems] = useState([]);
@@ -51,7 +53,7 @@ function CategoryList({ items }) {
                 setCategory(e.target.dataset.value);
               }}
             >
-              {item.name}
+              {t(`mainPage.category.${item.name}`)}
             </p>
           </div>
         ) : (

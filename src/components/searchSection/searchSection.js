@@ -15,11 +15,11 @@ import { useTranslation } from 'react-i18next';
 function SearchSection() {
   const { t } = useTranslation();
   const categoriesBooks = [
-    { name: t('mainPage.category.Popular') },
-    { name: t('mainPage.category.Biographies &Memoirs') },
-    { name: t('mainPage.category.Literature & Fiction') },
-    { name: t('mainPage.category.Business&Investing') },
-    { name: t('mainPage.category.History') },
+    { name: 'Popular' },
+    { name: 'Biographies &Memoirs' },
+    { name: 'Literature & Fiction'},
+    { name: 'Business&Investing'},
+    { name: 'History'},
   ];
   const authorNames = [
     { name: 'zeena kareem' },

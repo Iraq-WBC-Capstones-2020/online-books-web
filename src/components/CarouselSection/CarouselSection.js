@@ -11,7 +11,7 @@ import CarouselItems from './CarouselItem';
 import GrideCarousel from './GridCarousel';
 import HighlightedSectionLabel from './HighlightedSectionLabel';
 
-function CarsouelSection() {
+function CarsouelSection({highlightText}) {
   const [activeCardItem, setActiveCardItemState] = useState(0);
   const timerId = useRef();
   const firstCardIndex = 0;
@@ -44,7 +44,7 @@ function CarsouelSection() {
       <MDBContainer>
         <MDBRow center>
           <MDBCol md="11" lg="10" xl="8">
-            <HighlightedSectionLabel text="best sellers in books" />
+            <HighlightedSectionLabel text={highlightText} />
 
             <MDBContainer fluid className="bgGray ">
               <MDBRow>
