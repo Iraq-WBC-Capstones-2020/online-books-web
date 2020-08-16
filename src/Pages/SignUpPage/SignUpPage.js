@@ -62,7 +62,7 @@ function FormPage() {
   return (
     <MDBContainer>
       <MDBRow>
-        <Form formData={formData} />
+        <Form formData={formData} onButtonClick={handleSignup} />
         <VerticalSeparated />
         <SocialMediaButtons />
       </MDBRow>
