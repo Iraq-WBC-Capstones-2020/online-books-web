@@ -22,5 +22,7 @@ const db = firebase.firestore();
 export const usersRef = db.collection('users');
 
 export const auth = firebase.auth();
-export const googleAuth = new firebase.auth.GoogleAuthProvider();
+export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+export const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
+export const githubAuthProvider = new firebase.auth.GithubAuthProvider();
 export default firebase;
