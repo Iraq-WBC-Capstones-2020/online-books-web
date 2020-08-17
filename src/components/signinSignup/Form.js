@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn } from 'mdbreact';
 
 export default function Form({ formData, onSubmit }) {
-  const { formRef, title, button, extraAnchor, inputFields } = formData;
+  const { title, button, extraAnchor, inputFields } = formData;
 
   return (
     <MDBCol md="5" className="mt-5 ml-5">
@@ -13,7 +13,7 @@ export default function Form({ formData, onSubmit }) {
               <strong>{title}</strong>
             </h3>
           </div>
-          <form ref={formRef} onSubmit={onSubmit}>
+          <form onSubmit={onSubmit}>
             {inputFields.map((input) => (
               <MDBInput
                 key={input.id}

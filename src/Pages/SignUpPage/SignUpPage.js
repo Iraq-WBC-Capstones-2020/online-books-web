@@ -7,10 +7,7 @@ import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 import { usersRef, auth } from './../../api/firebase';
 
 function FormPage() {
-  const formRef = useRef();
-
   const formData = {
-    formRef: formRef,
     title: 'Sign Up',
     button: { title: 'Sign Up', href: '#' },
 
@@ -37,7 +34,7 @@ function FormPage() {
   };
   const handleSignup = async (e) => {
     e.preventDefault();
-    const form = new FormData(formRef.current);
+    const form = new FormData(e.target);
     const newUser = {
       fullName: form.get('fullName'),
       email: form.get('email'),

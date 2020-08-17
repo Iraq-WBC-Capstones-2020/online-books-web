@@ -7,10 +7,7 @@ import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 import { auth } from './../../api/firebase';
 
 function FormPage() {
-  const formRef = useRef();
-
   const formData = {
-    formRef: formRef,
     title: 'Sign in',
     button: { title: 'Sign in', href: '#' },
     extraAnchor: {
@@ -35,7 +32,7 @@ function FormPage() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const form = new FormData(formRef.current);
+    const form = new FormData(e.target);
     try {
       await auth.signInWithEmailAndPassword(
         form.get('email'),
