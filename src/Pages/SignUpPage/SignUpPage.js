@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { MDBContainer, MDBRow } from 'mdbreact';
 import '../loginPage/login.scss';
 import Form from '../../components/signinSignup/Form';

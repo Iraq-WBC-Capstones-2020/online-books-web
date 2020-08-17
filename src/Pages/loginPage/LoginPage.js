@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './login.scss';
 import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
