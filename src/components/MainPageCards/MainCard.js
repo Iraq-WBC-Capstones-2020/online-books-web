@@ -1,5 +1,5 @@
 import React from 'react';
-import CreateStars from '../CarouselSection/CreateStars';
+import CreateStars from '../CarsouelSlick/CreateStars';
 import CartIcon from './cartIcon';
 import PropTypes from 'prop-types';
 

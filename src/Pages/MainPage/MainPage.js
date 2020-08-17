@@ -4,8 +4,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 //main component
-import Paragraph from '../../components/CarouselSection/paragraph';
-import CarouselSection from '../../components/CarouselSection/CarouselSection';
+import Paragraph from '../../components/CarsouelSlick/paragraph';
+import CarsouelSlick from '../../components/CarsouelSlick/carsouelSlick';
 import SearchSection from '../../components/searchSection/searchSection';
 import ModalSearchSection from '../../components/searchSection/ModalSearchSection';
 import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
@@ -17,7 +17,7 @@ function Main() {
   return (
     <>
       <Paragraph />
-      <CarouselSection highlightText="bestSellers"/>
+      <CarsouelSlick highlightText="bestSellers"/>
       {/* */}
       <MDBContainer className="mainContainer">
         {/*will put this buttom in the navbar */}
@@ -50,7 +50,7 @@ function Main() {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <CarouselSection highlightText="newRelease" />
+      <CarsouelSlick highlightText="newRelease"/>
       {/*Popular authors */}
       <Author />
     </>
