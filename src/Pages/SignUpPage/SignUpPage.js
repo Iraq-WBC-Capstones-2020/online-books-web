@@ -5,28 +5,30 @@ import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 import { usersRef, auth } from './../../api/firebase';
+import { useTranslation } from 'react-i18next';
 
 function FormPage() {
+  const { t } = useTranslation();
   const formData = {
-    title: 'Sign Up',
-    button: { title: 'Sign Up', href: '#' },
+    title: t('signUpPage.signUp'),
+    button: { title: t('signUpPage.signUp'), href: '#' },
 
     inputFields: [
       {
         id: '1',
-        label: 'Full Name',
+        label: t('signUpPage.fullName'),
         type: 'text',
         name: 'fullName',
       },
       {
         id: '2',
-        label: 'Your Email',
+        label: t('signUpPage.yourEmail'),
         type: 'email',
         name: 'email',
       },
       {
         id: '3',
-        label: 'Your Password',
+        label: t('signUpPage.yourPassword'),
         type: 'password',
         name: 'password',
       },

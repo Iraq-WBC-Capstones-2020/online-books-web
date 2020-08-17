@@ -5,25 +5,27 @@ import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons
 import { MDBContainer, MDBRow } from 'mdbreact';
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 import { auth } from './../../api/firebase';
+import { useTranslation } from 'react-i18next';
 
 function FormPage() {
+  const { t } = useTranslation();
   const formData = {
-    title: 'Sign in',
-    button: { title: 'Sign in', href: '#' },
+    title: t('signInPage.signIn'),
+    button: { title: t('signInPage.signIn') },
     extraAnchor: {
-      title: 'Forgot Password?',
+      title: t('signInPage.forgotPassword'),
       href: '#',
     },
     inputFields: [
       {
         id: '1',
-        label: 'Your Email',
+        label: t('signInPage.yourEmail'),
         type: 'email',
         name: 'email',
       },
       {
         id: '2',
-        label: 'Your Password',
+        label: t('signInPage.yourPassword'),
         type: 'password',
         name: 'password',
       },
