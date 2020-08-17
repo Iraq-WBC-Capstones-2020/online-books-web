@@ -6,9 +6,11 @@ import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 import { usersRef, auth } from './../../api/firebase';
 import { useTranslation } from 'react-i18next';
+import { useHistory } from 'react-router-dom';
 
 function FormPage() {
   const { t } = useTranslation();
+  const history = useHistory();
   const formData = {
     title: t('signUpPage.signUp'),
     button: { title: t('signUpPage.signUp'), href: '#' },
@@ -34,6 +36,10 @@ function FormPage() {
       },
     ],
   };
+  const goToHomePage = () =>
+    history.push({
+      pathname: '/',
+    });
   const handleSignup = async (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -53,6 +59,7 @@ function FormPage() {
         email: newUser.email,
       };
       await usersRef.doc(newUserFirebase.uid).set(newUserFirebase);
+      goToHomePage();
     } catch (e) {
       console.log(e.message);
     }

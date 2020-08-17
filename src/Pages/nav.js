@@ -31,12 +31,10 @@ function NavbarPage() {
   const dispatch = useDispatch();
   useEffect(() => {
     auth.onAuthStateChanged(async (authUser) => {
-      console.log(authUser);
       if (authUser) {
         try {
           const userData = await usersRef.doc(authUser.uid).get();
           const user = userData.data();
-          // const user = { isSigned: true, uid: authUser.uid };
           user.isSigned = true;
           dispatch(setUser(user));
         } catch (e) {
@@ -48,8 +46,13 @@ function NavbarPage() {
       }
     });
   }, []);
+  const goToHomePage = () =>
+    history.push({
+      pathname: '/',
+    });
   const onLogout = () => {
     auth.signOut();
+    goToHomePage();
   };
   const goToSignUpPage = () =>
     history.push({

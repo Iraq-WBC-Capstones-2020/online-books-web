@@ -6,9 +6,11 @@ import { MDBContainer, MDBRow } from 'mdbreact';
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 import { auth } from './../../api/firebase';
 import { useTranslation } from 'react-i18next';
+import { useHistory } from 'react-router-dom';
 
 function FormPage() {
   const { t } = useTranslation();
+  const history = useHistory();
   const formData = {
     title: t('signInPage.signIn'),
     button: { title: t('signInPage.signIn') },
@@ -31,7 +33,10 @@ function FormPage() {
       },
     ],
   };
-
+  const goToHomePage = () =>
+    history.push({
+      pathname: '/',
+    });
   const handleLogin = async (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -40,6 +45,7 @@ function FormPage() {
         form.get('email'),
         form.get('password')
       );
+      goToHomePage();
     } catch (e) {
       console.log(e.message);
     }
