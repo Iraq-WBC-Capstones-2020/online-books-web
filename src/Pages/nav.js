@@ -62,7 +62,7 @@ function NavbarPage() {
                 <MDBDropdown>
                   <MDBDropdownToggle nav caret>
                     <div className="d-none d-md-inline">
-                      {t('navBar.Language')}
+                      {t('navBar.language')}
                     </div>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu className="dropdown-default">
