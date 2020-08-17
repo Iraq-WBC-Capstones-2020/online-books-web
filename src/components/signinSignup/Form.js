@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn } from 'mdbreact';
 
-export default function Form({ formData, onButtonClick }) {
+export default function Form({ formData, onSubmit }) {
   const { formRef, title, button, extraAnchor, inputFields } = formData;
 
   return (
@@ -13,7 +13,7 @@ export default function Form({ formData, onButtonClick }) {
               <strong>{title}</strong>
             </h3>
           </div>
-          <form ref={formRef}>
+          <form ref={formRef} onSubmit={onSubmit}>
             {inputFields.map((input) => (
               <MDBInput
                 key={input.id}
@@ -26,23 +26,23 @@ export default function Form({ formData, onButtonClick }) {
                 success="right"
               />
             ))}
+            {extraAnchor && (
+              <p className="d-flex justify-content-end pb-3">
+                <a href={extraAnchor.href} className="ml-1">
+                  {extraAnchor.title}
+                </a>
+              </p>
+            )}
+            <div className="text-center mb-3">
+              <MDBBtn
+                type="submit"
+                color="blue"
+                className="rounded-pill text-white z-depth-1a w-48"
+              >
+                {button.title}
+              </MDBBtn>
+            </div>
           </form>
-          {extraAnchor && (
-            <p className="d-flex justify-content-end pb-3">
-              <a href={extraAnchor.href} className="ml-1">
-                {extraAnchor.title}
-              </a>
-            </p>
-          )}
-          <div className="text-center mb-3">
-            <MDBBtn
-              type="button"
-              color="blue"
-              className="rounded-pill text-white z-depth-1a w-48"
-            >
-              {button.title}
-            </MDBBtn>
-          </div>
           <div className="row my-3 d-flex justify-content-center"></div>
         </MDBCardBody>
       </MDBCard>

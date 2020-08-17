@@ -54,7 +54,6 @@ function FormPage() {
         email: newUser.email,
       };
       await usersRef.doc(newUserFirebase.uid).set(newUserFirebase);
-      // onClose();
     } catch (e) {
       console.log(e.message);
     }
@@ -62,7 +61,7 @@ function FormPage() {
   return (
     <MDBContainer>
       <MDBRow>
-        <Form formData={formData} onButtonClick={handleSignup} />
+        <Form formData={formData} onSubmit={handleSignup} />
         <VerticalSeparated />
         <SocialMediaButtons />
       </MDBRow>

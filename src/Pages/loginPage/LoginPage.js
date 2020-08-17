@@ -37,11 +37,10 @@ function FormPage() {
     e.preventDefault();
     const form = new FormData(formRef.current);
     try {
-      const userCredential = await auth.signInWithEmailAndPassword(
+      await auth.signInWithEmailAndPassword(
         form.get('email'),
         form.get('password')
       );
-      // if (userCredential.user) onClose();
     } catch (e) {
       console.log(e.message);
     }
@@ -50,7 +49,7 @@ function FormPage() {
   return (
     <MDBContainer>
       <MDBRow>
-        <Form formData={formData} onButtonClick={handleLogin} />
+        <Form formData={formData} onSubmit={handleLogin} />
         <VerticalSeparated />
         <SocialMediaButtons />
       </MDBRow>
