@@ -23,7 +23,8 @@ export default function SocialMediaButtons() {
                 className="btn btn-git
                         btn btn-grey rounded-pill"
               >
-                <i className="fab fa-github pr-1 "></i> Login with Github...
+                <i className="fab fa-github pr-1 text-white "></i> Login with
+                Github...
               </button>
               <br></br>
 
