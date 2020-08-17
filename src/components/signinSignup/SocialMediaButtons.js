@@ -24,9 +24,10 @@ export default function SocialMediaButtons() {
                 className="btn btn-gplus
                    btn btn-danger rounded-pill z-depth-0 animate transition duration-500 ease-in-out  
                    transform hover:-translate-y-1 hover:scale-110"
-                   onClick={signInWithGoogle}
+                onClick={signInWithGoogle}
               >
-                <i className="fab fa-google-plus-g pr-1"></i> {t('socialMediaPage.signInGoogle')}
+                <i className="fab fa-google-plus-g pr-1"></i>{' '}
+                {t('socialMediaPage.signInGoogle')}
               </button>
 
               <br></br>
@@ -35,9 +36,10 @@ export default function SocialMediaButtons() {
                 className="btn btn-git
                   btn btn-grey rounded-pill z-depth-0 animate transition duration-500 ease-in-out  
                   transform hover:-translate-y-1 hover:scale-110"
-                  onClick={signInWithGithub}
+                onClick={signInWithGithub}
               >
-                <i className="fab fa-github pr-1"></i> {t('socialMediaPage.signInGithub')}
+                <i className="fab fa-github pr-1"></i>{' '}
+                {t('socialMediaPage.signInGithub')}
               </button>
               <br></br>
 
@@ -46,9 +48,10 @@ export default function SocialMediaButtons() {
                 className="btn btn-fb
                    btn btn-primary rounded-pill z-depth-0 animate transition duration-500 ease-in-out  
                    transform hover:-translate-y-1 hover:scale-110"
-                   onClick={signInWithFacebook}
+                onClick={signInWithFacebook}
               >
-                <i className="fab fa-facebook-f pr-1"></i> {t('socialMediaPage.signInFacebook')}
+                <i className="fab fa-facebook-f pr-1"></i>{' '}
+                {t('socialMediaPage.signInFacebook')}
               </button>
             </div>
           </div>

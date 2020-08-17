@@ -112,13 +112,7 @@
     "copyright": "Copyright © BookZone",
     "followUs": "Follow Us",
     "tags": "Tags",
-    "tagsList": [
-      "Shop",
-      "Books",
-      "Online",
-      "Read",
-      "Knowledge"
-    ]
+    "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
   },
   "landingPage": false,
   "navbar": false,
