@@ -6,11 +6,9 @@ import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 import { usersRef, auth } from './../../api/firebase';
 import { useTranslation } from 'react-i18next';
-import { useHistory } from 'react-router-dom';
 
 function FormPage() {
   const { t } = useTranslation();
-  const history = useHistory();
   const formData = {
     title: t('signUpPage.signUp'),
     button: { title: t('signUpPage.signUp'), href: '#' },

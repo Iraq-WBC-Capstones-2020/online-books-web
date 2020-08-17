@@ -6,11 +6,9 @@ import { MDBContainer, MDBRow } from 'mdbreact';
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 import { auth } from './../../api/firebase';
 import { useTranslation } from 'react-i18next';
-import { useHistory } from 'react-router-dom';
 
 function FormPage() {
   const { t } = useTranslation();
-  const history = useHistory();
   const formData = {
     title: t('signInPage.signIn'),
     button: { title: t('signInPage.signIn') },
