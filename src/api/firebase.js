@@ -5,7 +5,7 @@ import 'firebase/analytics';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: 'AIzaSyCr9W670NPUv2MmP_wH_5-5cTOpJ_01WlM',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: 'bookszone-49e46.firebaseapp.com',
   databaseURL: 'https://bookszone-49e46.firebaseio.com',
   projectId: 'bookszone-49e46',
