@@ -53,11 +53,6 @@ function NavbarPage() {
                 <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="/aboutus">{t('navBar.aboutUs')}</MDBNavLink>
-                <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
                 <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
