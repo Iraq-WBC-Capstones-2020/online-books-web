@@ -1,12 +1,9 @@
 import React from 'react';
 import './i18n';
-
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-
 import Navbar from './Pages/nav';
 import Footer from './components/Footer/Footer';
-
 import AboutUsPage from './Pages/AboutUsPage/AboutUsPage';
 import AuthorPage from './Pages/AuthorPage/AuthorPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
