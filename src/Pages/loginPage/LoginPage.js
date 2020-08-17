@@ -33,10 +33,6 @@ function FormPage() {
       },
     ],
   };
-  const goToHomePage = () =>
-    history.push({
-      pathname: '/',
-    });
   const handleLogin = async (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -45,7 +41,6 @@ function FormPage() {
         form.get('email'),
         form.get('password')
       );
-      goToHomePage();
     } catch (e) {
       console.log(e.message);
     }

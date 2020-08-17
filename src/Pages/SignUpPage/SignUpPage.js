@@ -36,10 +36,6 @@ function FormPage() {
       },
     ],
   };
-  const goToHomePage = () =>
-    history.push({
-      pathname: '/',
-    });
   const handleSignup = async (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -59,7 +55,6 @@ function FormPage() {
         email: newUser.email,
       };
       await usersRef.doc(newUserFirebase.uid).set(newUserFirebase);
-      goToHomePage();
     } catch (e) {
       console.log(e.message);
     }

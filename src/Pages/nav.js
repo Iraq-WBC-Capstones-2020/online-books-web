@@ -46,13 +46,8 @@ function NavbarPage() {
       }
     });
   }, []);
-  const goToHomePage = () =>
-    history.push({
-      pathname: '/',
-    });
   const onLogout = () => {
     auth.signOut();
-    goToHomePage();
   };
   const goToSignUpPage = () =>
     history.push({
