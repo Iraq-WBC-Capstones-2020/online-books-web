@@ -6,10 +6,10 @@ export default function Form({ formData }) {
 
   return (
     <MDBCol md="5" className="mt-5 ml-5">
-      <MDBCard className="mt-5 log">
+      <MDBCard className="mt-5 log z-depth-0">
         <MDBCardBody className="mx-4">
-          <div className="text-center">
-            <h3 className="dark  mb-5">
+          <div className="text-center bg-gray-400">
+            <h3 className="mb-5">
               <strong>{title}</strong>
             </h3>
           </div>
@@ -25,8 +25,8 @@ export default function Form({ formData }) {
             />
           ))}
           {extraAnchor && (
-            <p className="font-small blue-text d-flex justify-content-end pb-3">
-              <a href={extraAnchor.href} className="blue-text ml-1">
+            <p className="d-flex justify-content-end pb-3">
+              <a href={extraAnchor.href} className="ml-1">
                 {extraAnchor.title}
               </a>
             </p>
@@ -38,6 +38,8 @@ export default function Form({ formData }) {
               className=" rounded-pill btn-block z-depth-1a text-white  "
               className=" rounded-pill btn-block z-depth-1a"
               className=" rounded-pill text-white btn-block z-depth-1a"
+              className=" rounded-pill text-white btn-block z-depth-1a"
+              className="rounded-pill text-white z-depth-1a w-48"
             >
               {button.title}
             </MDBBtn>

@@ -17,6 +17,7 @@ import {
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
+import i18n from '../i18n';
 
 function NavbarPage() {
   const { t } = useTranslation();
@@ -32,13 +33,18 @@ function NavbarPage() {
       pathname: '/login',
     });
 
+  function hanndleClick(Lang) {
+    i18n.changeLanguage(Lang);
+  }
   const toggleCollapse = () => setIsOpen((oldState) => !oldState);
   return (
     <>
       <MDBContainer>
         <MDBNavbar className="shadow-none" light expand="md">
           <MDBNavbarBrand>
-            <strong className="black-text">BooksZone</strong>
+            <MDBNavLink to="/">
+              <strong className="black-text font-bold">BooksZone</strong>
+            </MDBNavLink>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
@@ -48,6 +54,11 @@ function NavbarPage() {
               </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/aboutus">{t('navBar.AboutUs')}</MDBNavLink>
+                <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
+                <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/contact">{t('navBar.Contact')}</MDBNavLink>
@@ -60,16 +71,22 @@ function NavbarPage() {
                     </div>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu className="dropdown-default">
-                    <MDBDropdownItem href="#!">عربي</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">كوردى</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">English</MDBDropdownItem>
+                    <MDBDropdownItem onClick={() => hanndleClick('ar')}>
+                      عربي
+                    </MDBDropdownItem>
+                    <MDBDropdownItem onClick={() => hanndleClick('ku')}>
+                      كوردى
+                    </MDBDropdownItem>
+                    <MDBDropdownItem onClick={() => hanndleClick('en')}>
+                      English
+                    </MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBBtn
                   color="primary"
-                  className="rounded-pill "
+                  className="rounded-pill"
                   size="sm"
                   onClick={goToSignUpPage}
                 >

@@ -6,9 +6,9 @@
 
   "navBar": {
     "home": "Home",
-    "aboutus": "aboutus",
-    "contact": "contact",
-    "language": "language"
+    "aboutus": "About Us",
+    "contact": "Contact Us",
+    "language": "Language"
   },
   "aboutPage": {
     "title": "The Team",
@@ -89,6 +89,22 @@
     "send": "Send"
   },
 
+  "paymentPage": {
+    "booksOrder": "Your Books Order",
+    "books": "Books",
+    "copies": "Copies",
+    "price": "Price",
+    "total": "Total",
+    "paymentMethod": "Payment Method",
+    "creditCard": "Credit Card",
+    "paypal": "Paypal",
+    "name": "Name",
+    "cardNumber": "Card Number",
+    "MMYYYY": "MM/YYYY",
+    "CVC": "CVC",
+    "purchase": "Purchase"
+  },
+
   "clientPage": {
     "clients": "Our Clients"
   },
@@ -137,21 +153,6 @@
   "signInPage": false,
   "sigOutPage": false,
 
-  "paymentPage": {
-    "booksOrder": "Your Books Order",
-    "books": "Books",
-    "copies": "Copies",
-    "price": "Price",
-    "total": "Total",
-    "paymentMethod": "Payment Method",
-    "creditCard": "Credit Card",
-    "paypal": "Paypal",
-    "name": "Name",
-    "cardNumber": "Card Number",
-    "MMYYYY": "MM/YYYY",
-    "CVC": "CVC",
-    "purchase": "Purchase"
-  },
   "carsouelSection": {
     "addtocart": "Add to cart",
     "bestSellers": "best sellers in books",
@@ -169,6 +170,7 @@
       "Literature & Fiction": "Literature & Fiction",
       "Business&Investing": "Business&Investing",
       "History": "History"
-    }
+    },
+    "text": " YOU ARE NOT LOST YOU ARE HERE"
   }
 }

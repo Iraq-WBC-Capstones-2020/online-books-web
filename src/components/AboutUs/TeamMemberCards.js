@@ -8,10 +8,10 @@ function TeamMemberCards({ member }) {
     <MDBCard
       color="blue lighten-5"
       className="animate transition duration-500 ease-in-out  
-                        transform hover:-translate-y-1 hover:scale-110  mt-24"
+                        transform hover:-translate-y-1 hover:scale-110  mt-10"
     >
       <img
-        className="rounded-circle mt img-fluid z-depth-1 mx-auto w-40 "
+        className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
         src={pic}
         alt={fullName}
         wave
@@ -23,34 +23,34 @@ function TeamMemberCards({ member }) {
         </h4>
         <p className="text-gray-700 font-sans">{bio}</p>
         <div className="flex justify-center m-2">
-          <MDBIcon>
-            <a
-              href="#"
-              className="fab fa-facebook-square fa-2x indigo-text transition duration-500 ease-in-out  
+          <a
+            href="#"
+            className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
                         transform hover:-translate-y-1 hover:scale-110"
-            ></a>
-          </MDBIcon>
-          <MDBIcon>
-            <a
-              href="#"
-              className="fab fa-twitter pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out  
+          >
+            <MDBIcon fab icon="facebook-square" />
+          </a>
+          <a
+            href="#"
+            className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
                         transform hover:-translate-y-1 hover:scale-110"
-            ></a>
-          </MDBIcon>
-          <MDBIcon>
-            <a
-              href="#"
-              className="fab fa-github-alt pr-2 fa-2x indigo-text transition duration-500 ease-in-out  
+          >
+            <MDBIcon fab icon="twitter" />
+          </a>
+          <a
+            href="#"
+            className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
                         transform hover:-translate-y-1 hover:scale-110"
-            ></a>
-          </MDBIcon>
-          <MDBIcon>
-            <a
-              href="#"
-              className="fab fa-linkedin pr-2 fa-2x blue-text transition duration-500 ease-in-out  
+          >
+            <MDBIcon fab icon="github-alt" />
+          </a>
+          <a
+            href="#"
+            className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
                         transform hover:-translate-y-1 hover:scale-110"
-            ></a>
-          </MDBIcon>
+          >
+            <MDBIcon fab icon="linkedin" />
+          </a>
         </div>
       </MDBCardBody>
     </MDBCard>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import ContactInformation from './../contactUsPage/SideBar';
 
 export default function ContactForm() {
   const { t } = useTranslation();
@@ -78,6 +80,9 @@ export default function ContactForm() {
               </MDBBtn>
             </div>
           </form>
+        </MDBCol>
+        <MDBCol>
+          <ContactInformation />
         </MDBCol>
       </MDBRow>
     </MDBContainer>

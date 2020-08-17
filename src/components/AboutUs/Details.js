@@ -18,7 +18,7 @@ function Details() {
               <Paragraph title={t('aboutPage.aboutSection.aboutUs')}>
                 {t('aboutPage.aboutSection.aboutUsText')}
               </Paragraph>
-              <MDBBtn color="primary" className="rounded-pill" size="sm">
+              <MDBBtn color="primary" className="rounded-pill " size="md">
                 {t('aboutPage.aboutSection.readMoreButton')}
               </MDBBtn>
             </div>
