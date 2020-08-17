@@ -43,17 +43,6 @@ export default function Form({ formData, onSubmit }) {
               </MDBBtn>
             </div>
           </form>
-          {inputFields.map((input) => (
-            <MDBInput
-              key={input.id}
-              label={input.label}
-              group
-              type={input.type}
-              validate
-              error="wrong"
-              success="right"
-            />
-          ))}
           <div className="row my-3 d-flex justify-content-center"></div>
         </MDBCardBody>
       </MDBCard>
