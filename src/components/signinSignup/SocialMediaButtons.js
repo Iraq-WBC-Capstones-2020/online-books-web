@@ -7,7 +7,7 @@ export default function SocialMediaButtons() {
       <MDBCard className="mt-5 log z-depth-0">
         <MDBCardBody className="mx-4">
           <div className="text-center">
-            <div className=" social">
+            <div className=" social text-white">
               <button
                 type="button"
                 className="btn btn-gplus

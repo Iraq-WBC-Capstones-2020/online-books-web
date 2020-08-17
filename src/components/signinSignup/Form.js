@@ -8,7 +8,7 @@ export default function Form({ formData }) {
     <MDBCol md="5" className="mt-5 ml-5">
       <MDBCard className="mt-5 log z-depth-0">
         <MDBCardBody className="mx-4">
-          <div className="text-center bg-gray-400">
+          <div className="text-center ">
             <h3 className="mb-5">
               <strong>{title}</strong>
             </h3>
