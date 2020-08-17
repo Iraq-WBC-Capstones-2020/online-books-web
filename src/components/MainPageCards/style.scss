@@ -5,9 +5,11 @@ $light-blue: #8bb4ea;
 $dark-blue: #7aa2d6;
 $light-gray: #f6f6f6;
 $light-blue2: #bbe1fa;
+
 .price {
   color: $light-blue;
 }
+
 .authorName {
   color: $dark-blue;
 }
@@ -20,9 +22,11 @@ $light-blue2: #bbe1fa;
 .grayColor {
   color: $light-gray;
 }
+
 .darkGray {
   color: $gray-color;
 }
+
 .dark {
   background-color: #0e0e0e;
 }
@@ -79,4 +83,17 @@ $light-blue2: #bbe1fa;
 }
 .mrSmallStars {
   margin-right: 0.15rem;
+}
+.marginTop {
+  margin-top: 3.3rem;
+}
+
+.rightArrowOfGrid {
+  right: -50px;
+  top: 260px;
+}
+
+.leftArrowOfGrid {
+  left: -50px;
+  top: 260px;
 }
