@@ -50,10 +50,10 @@ function NavbarPage() {
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink to="/">{t('navBar.Home')}</MDBNavLink>
+                <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="/aboutus">{t('navBar.AboutUs')}</MDBNavLink>
+                <MDBNavLink to="/aboutus">{t('navBar.aboutUs')}</MDBNavLink>
                 <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
@@ -61,7 +61,7 @@ function NavbarPage() {
                 <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="/contact">{t('navBar.Contact')}</MDBNavLink>
+                <MDBNavLink to="/contact">{t('navBar.contact')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>
