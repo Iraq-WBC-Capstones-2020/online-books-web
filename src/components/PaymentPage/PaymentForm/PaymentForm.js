@@ -11,7 +11,7 @@ import PaypalForm from './PaypalForm';
 
 export default function PaymentForm() {
   const { t } = useTranslation();
-  const [paymentMethod, setPaymentMethod] = useState('credit card');
+  const [paymentMethod, setPaymentMethod] = useState('credit-card');
 
   const handleChange = (e) => {
     setPaymentMethod(e.target.value);
@@ -28,10 +28,10 @@ export default function PaymentForm() {
             <MDBCol md="6">
               <input
                 type="radio"
-                id="credit card"
-                value="credit card"
+                id="credit-card"
+                value="credit-card"
                 onChange={handleChange}
-                checked={paymentMethod === 'credit card'}
+                checked={paymentMethod === 'credit-card'}
                 className="h6 text-center ml-5 mr-2 text-gray-800 mb-4"
               />
               <label for="credit card">{t('paymentPage.creditCard')}</label>
@@ -42,7 +42,7 @@ export default function PaymentForm() {
                 id="paypal"
                 value="paypal"
                 onChange={handleChange}
-                checked={paymentMethod === 'paypal' && <PaypalForm />}
+                checked={paymentMethod === 'paypal'}
                 className="h6 text-center ml-3 mr-2 text-gray-800 mb-4"
               />
               <label for="paypal">{t('paymentPage.paypal')}</label>
@@ -51,7 +51,7 @@ export default function PaymentForm() {
         </MDBCol>
       </MDBRow>
       <MDBRow>
-        {paymentMethod === 'credit card' ? <CreditForm /> : null}
+        {paymentMethod === 'credit-card' ? <CreditForm /> : null}
         {paymentMethod === 'paypal' ? <PaypalForm /> : null}
       </MDBRow>
     </MDBContainer>
