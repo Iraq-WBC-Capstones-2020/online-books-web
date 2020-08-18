@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
+import { usersRef, auth } from './../api/firebase';
+import { useSelector, useDispatch } from 'react-redux';
+import { setUser } from './../actions';
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -13,7 +15,7 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
   MDBContainer,
-  MDBBtn,
+  MDBIcon,
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
@@ -24,6 +26,29 @@ function NavbarPage() {
 
   const [isOpen, setIsOpen] = useState(false);
   const history = useHistory();
+
+  const user = useSelector((state) => state.user);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    auth.onAuthStateChanged(async (authUser) => {
+      if (authUser) {
+        try {
+          const userData = await usersRef.doc(authUser.uid).get();
+          const user = userData.data();
+          user.isSigned = true;
+          dispatch(setUser(user));
+        } catch (e) {
+          console.log(e.message);
+          dispatch(setUser({ isSigned: false }));
+        }
+      } else {
+        dispatch(setUser({ isSigned: false }));
+      }
+    });
+  }, []);
+  const onLogout = () => {
+    auth.signOut();
+  };
   const goToSignUpPage = () =>
     history.push({
       pathname: '/signup',
@@ -78,25 +103,47 @@ function NavbarPage() {
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
-              <MDBNavItem>
-                <MDBBtn
-                  color="primary"
-                  className="rounded-pill"
-                  size="sm"
-                  onClick={goToSignUpPage}
-                >
-                  Sign Up
-                </MDBBtn>
-                <MDBBtn
-                  outline
-                  color="primary"
-                  className="rounded-pill"
-                  size="sm"
-                  onClick={goToLoginPage}
-                >
-                  Login
-                </MDBBtn>
-              </MDBNavItem>
+              {user.isSigned ? (
+                <>
+                  <MDBNavItem>
+                    <MDBNavLink to="/purchase">
+                      <MDBIcon icon="shopping-cart" />
+                    </MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="/profile">
+                      <MDBIcon icon="user-circle" />
+                    </MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <button
+                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mx-2 rounded-full"
+                      onClick={onLogout}
+                    >
+                      {t('navBar.logout')}
+                    </button>
+                  </MDBNavItem>
+                </>
+              ) : (
+                <>
+                  <MDBNavItem>
+                    <button
+                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 border-2 border-transparent rounded-full"
+                      onClick={goToSignUpPage}
+                    >
+                      {t('navBar.signUp')}
+                    </button>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <button
+                      className="bg-gray-100 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 rounded-full"
+                      onClick={goToLoginPage}
+                    >
+                      {t('navBar.login')}
+                    </button>
+                  </MDBNavItem>
+                </>
+              )}
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBNavbar>
