@@ -57,11 +57,9 @@ export default function PaymentTable() {
     setTotal({ copies, price });
   }, [BOOKS]);
   const changeCheck = (id, value) => {
-    console.log(value);
     setBooks((oldBooks) => {
       const newBooks = oldBooks.map((book) => {
         if (book.id === id) {
-          console.log(book.checked);
           book.checked = value;
         }
         return book;
