@@ -103,7 +103,7 @@ function NavbarPage() {
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>
-              {user.isSigned && (
+              {user.isSigned ? (
                 <>
                   <MDBNavItem>
                     <MDBNavLink to="/purchase">
@@ -124,8 +124,7 @@ function NavbarPage() {
                     </button>
                   </MDBNavItem>
                 </>
-              )}
-              {!user.isSigned && (
+              ) : (
                 <>
                   <MDBNavItem>
                     <button

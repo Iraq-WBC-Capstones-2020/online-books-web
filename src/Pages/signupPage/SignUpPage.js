@@ -1,9 +1,9 @@
 import React from 'react';
 import { MDBContainer, MDBRow } from 'mdbreact';
-import '../loginPage/login.scss';
-import Form from '../../components/signinSignup/Form';
-import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
-import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
+import './../loginPage/login.scss';
+import Form from './../../components/signinSignup/Form';
+import SocialMediaButtons from './../../components/signinSignup/SocialMediaButtons';
+import VerticalSeparated from './../../components/signinSignup/VerticalSeparated';
 import { usersRef, auth } from './../../api/firebase';
 import { useTranslation } from 'react-i18next';
 
