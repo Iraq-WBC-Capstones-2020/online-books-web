@@ -6,18 +6,17 @@ function Author() {
     'Zen Cho',
     'John Doe',
     'Ahemd Doe',
-    'Ali Doe',
+    'Alix Doe',
     'Alif Doe',
-    'john Doe',
+    'jun Doe',
     'rema bedr',
     'Ali Doe',
     'Alif Doe',
     'john Doe',
-    'Ali Doe',
-    'John Doe',
+    'mohemd Doe',
+    'Jad Doe',
   ];
   return (
-    <div>
       <MDBContainer className="mt-5">
         <div>
           <h1 className="text-center text-3xl">Popular authors</h1>
@@ -40,7 +39,7 @@ function Author() {
           })}
         </MDBRow>
       </MDBContainer>
-    </div>
+   
   );
 }
 

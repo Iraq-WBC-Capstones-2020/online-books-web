@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AudioPagePlayer snapshot 1`] = `
+
+  <div
+      src={audio}
+      className="height-200"
+      customVolumeControls={[]}
+      customAdditionalControls={[]}
+      showFilledProgress={false}
+    />
+`;

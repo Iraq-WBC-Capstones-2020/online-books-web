@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowCardsSection snapshot 1`] = `
+  <>
+      <div className="containerGridCards flex-col justify-between" data-test="row">
+        {BookInfo.map((book) => (
+          <MainCard book={book} key={book.id} />
+        ))}
+      </div>
+    </>
+`;

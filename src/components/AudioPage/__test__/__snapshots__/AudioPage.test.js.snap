@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AudioPage snapshot 1`] = `
+   <div className=" container mt-5" data-test="container">
+      <div className="row" data-test="row">
+        <div className="col-sm-5 col-12">
+          <div className="mt-5 d-flex align-items-center justify-content-center">
+            <img
+              src={bookInfo.bookCover}
+              width="353"
+              height="498"
+              alt="bookCover"
+            />
+          </div>
+        </div>
+        <div className="col-sm-7 col-12" data-test="col">
+          <div className="mt-5">
+            <h1 className="blue-text">{bookInfo.bookName}</h1>
+            <p className="mt-3 d-none d-sm-block text-2xl leading-7 text-justify">
+              {bookInfo.description}
+            </p>
+          </div>
+          <div className="mt-5">
+            <AudioPlayerPage />
+          </div>
+        </div>
+      </div>
+    </div>
+`;

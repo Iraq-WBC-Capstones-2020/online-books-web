@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainCard snapshot 1`] = `
+     <div  key={id} className="col-12 col-md-3 col-lg-3 h-90">
+      <div
+        tag="div"
+        data-test="card"
+        className="relative h-100 Card shadow-xl animate transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+      >
+        <img src={cover} className="imgCardBook rounded-t-md" />
+
+        <div className=" card-body absolute  bottom-0 w-full px-0 py-0"
+        data-test="card"
+        >
+          <div className="">
+            <div className="blackOpacity text-center py-1">
+              <h5 className="HeaderCardBook mb-0 text-xl text-white">
+                {authorName}
+              </h5>
+              <div className="sizeStarsContainer">
+                <CreateStars rate={rate} starSize="small" />
+              </div>
+              <p className="HeaderCardBook grayColor text-sm font-bold">
+                {bookName}
+              </p>
+            </div>
+          
+            <div className="bg-black d-flex flex-row justify-content-around py-2 px-2">
+              <p className="lightBlue font-semibold font-sans text-lg p-1">
+                {newPrice}
+              </p>
+              <p className="darkGray font-normal line-through p-1">
+                {oldPrice}
+              </p>
+
+              <div className="rounded-full w-8 h-8 border-2 border-orange-200 text-center">
+                <CartIcon className="p-1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+`;
