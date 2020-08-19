@@ -52,7 +52,7 @@ function CarsouelSlick({ highlightText }) {
       type: 'formate:Hardback',
       price: '$31.5',
       rate: 3.27,
-      views: '22,333',
+      views: '22k',
       id: 1,
     },
     {

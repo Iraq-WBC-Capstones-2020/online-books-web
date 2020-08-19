@@ -98,9 +98,22 @@ $light-pink: #fee4cb;
 .rightArrow {
   bottom: 30px;
   right: 15px;
+  @media (max-width: 425px) {
+    bottom: 20px;
+  }
+  @media (max-width: 320px) {
+    bottom: 20px;
+  }
 }
 
 .leftArrow {
   bottom: 30px;
   right: 60px;
+  @media (max-width: 425px) {
+    bottom: 20px;
+    left:15px;
+  }
+  @media (max-width: 320px) {
+    bottom: 20px;
+  }
 }
