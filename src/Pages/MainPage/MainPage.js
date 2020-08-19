@@ -1,15 +1,15 @@
 import React, { useState } from './node_modules/react';
 //style files  for mdbreact
-import './node_modules/@fortawesome/fontawesome-free/css/all.min.css';
-import './node_modules/bootstrap-css-only/css/bootstrap.min.css';
-import './node_modules/mdbreact/dist/css/mdb.css';
+import './@fortawesome/fontawesome-free/css/all.min.css';
+import './bootstrap-css-only/css/bootstrap.min.css';
+import './mdbreact/dist/css/mdb.css';
 //main component
 import Paragraph from '../../components/CarsouelSlick/paragraph';
 import CarsouelSlick from '../../components/CarsouelSlick/carsouelSlick';
 import SearchSection from '../../components/searchSection/searchSection';
 import ModalSearchSection from '../../components/searchSection/ModalSearchSection';
 import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
-import { MDBCol, MDBRow, MDBContainer, MDBIcon } from 'mdbreact';
+import { MDBCol, MDBRow, MDBContainer} from 'mdbreact';
 import Author from '../../components/PopularAuthors/PopularAuthors';
    
 
