@@ -1,6 +1,7 @@
 import React from 'react';
 import './i18n';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import Navbar from './Pages/nav';
 import Footer from './components/Footer/Footer';
 import AboutUsPage from './Pages/AboutUsPage/AboutUsPage';
@@ -10,18 +11,29 @@ import LoginPage from './Pages/loginPage/LoginPage';
 import MainPage from './Pages/MainPage/MainPage';
 
 function App() {
+  const user = useSelector((state) => state.user);
+
   return (
     <HashRouter>
       <Navbar />
       <Switch>
-        <Route exact path="/book/:bookId" render={() => <div>BookPage</div>} />
-        <Route path="/aboutus" component={AboutUsPage} />
-        <Route exact path="/contact" render={() => <div>ContactPage</div>} />
+        <Route exact path="/book/:bookId" component={BookPage} />
+        <Route exact path="/aboutus" component={AboutUsPage} />
+        <Route exact path="/contact" render={ContactUsPage} />
+        <Route exact path="/purchase">
+          {user.isSigned ? <PaymentPage /> : <Redirect to="/login" />}
+        </Route>
         <Route path="/author/:authorId" component={AuthorPage} />
-        <Route exact path="/profile" component={ProfilePage} />
-        <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/signup" render={() => <div>SignupPage</div>} />
-        <Route exact path="/" component={MainPage} />
+        <Route exact path="/profile">
+          {user.isSigned ? <ProfilePage /> : <Redirect to="/login" />}
+        </Route>
+        <Route exact path="/login">
+          {!user.isSigned ? <LoginPage /> : <Redirect to="/profile" />}
+        </Route>
+        <Route exact path="/signup">
+          {!user.isSigned ? <SignUpPage /> : <Redirect to="/profile" />}
+        </Route>
+        <Route path="/" component={MainPage} />
       </Switch>
       <Footer />
     </HashRouter>
