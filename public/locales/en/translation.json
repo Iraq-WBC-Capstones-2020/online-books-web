@@ -101,6 +101,8 @@
     "cardNumber": "Card Number",
     "MMYYYY": "MM/YYYY",
     "CVC": "CVC",
+    "email": "Email",
+    "password": "Password",
     "purchase": "Purchase"
   },
   "clientPage": {

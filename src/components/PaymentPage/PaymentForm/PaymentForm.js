@@ -1,38 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBIcon,
-  MDBInput,
-  MDBBtn,
-} from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import PaypalForm from './PaypalForm';
 
 export default function PaymentForm() {
   const { t } = useTranslation();
+  const [paymentMethod, setPaymentMethod] = useState('credit-card');
+
+  const handleChange = (e) => {
+    setPaymentMethod(e.target.value);
+  };
+
   return (
     <MDBContainer>
       <MDBRow>
         <MDBCol md="12">
+          <p className="h5 mx-5 my-5 text-gray-800">
+            {t('paymentPage.paymentMethod')}
+          </p>
+          <MDBRow>
+            <MDBCol md="6">
+              <input
+                type="radio"
+                id="credit-card"
+                value="credit-card"
+                onChange={handleChange}
+                checked={paymentMethod === 'credit-card'}
+                className="h6 text-center ml-5 mr-1 text-gray-800 mb-4"
+              />
+              <label for="credit-card">{t('paymentPage.creditCard')}</label>
+            </MDBCol>
+            <MDBCol md="6">
+              <input
+                type="radio"
+                id="paypal"
+                value="paypal"
+                onChange={handleChange}
+                checked={paymentMethod === 'paypal'}
+                className="h6 text-center ml-5 mr-1 text-gray-800 mb-4"
+              />
+              <label for="paypal">{t('paymentPage.paypal')}</label>
+            </MDBCol>
+          </MDBRow>
+        </MDBCol>
+      </MDBRow>
+      <MDBRow>
+        {paymentMethod === 'credit-card' ? <CreditForm /> : null}
+        {paymentMethod === 'paypal' ? <PaypalForm /> : null}
+      </MDBRow>
+    </MDBContainer>
+  );
+}
+
+function CreditForm() {
+  const { t } = useTranslation();
+  return (
+    <MDBContainer>
+      <MDBRow>
+        <MDBCol >
           <form>
-            <p className="h5 mx-5 my-5 text-gray-800">
-              {t('paymentPage.paymentMethod')}
-            </p>
-            <MDBRow>
-              <MDBCol md="6">
-                <p className="h6 text-center mx-3 text-gray-800 mb-4">
-                  <MDBIcon className="mx-2 my-1" icon="dot-circle" />
-                  {t('paymentPage.creditCard')}
-                </p>
-              </MDBCol>
-              <MDBCol md="6">
-                <p className="h6 text-center mx-3 text-gray-800 mb-4">
-                  <MDBIcon className="mx-2 my-1" far icon="circle" />
-                  {t('paymentPage.paypal')}
-                </p>
-              </MDBCol>
-            </MDBRow>
             <div className="text-gray-600">
               <MDBInput
                 label={t('paymentPage.name')}
@@ -88,8 +114,12 @@ export default function PaymentForm() {
                 </MDBCol>
               </MDBRow>
             </div>
-            <div className="text-center">
-              <MDBBtn color="primary" className="rounded-pill mb-3" size="sm">
+            <div className="text-center mb-3">
+              <MDBBtn
+                type="button"
+                color="blue"
+                className="rounded-pill text-white z-depth-1a w-48"
+              >
                 {t('paymentPage.purchase')}
               </MDBBtn>
             </div>
