@@ -7,7 +7,7 @@ import Paragraph from '../../components/Paragraph/Paragraph';
 function Details() {
   const { t } = useTranslation();
   return (
-    <div className="bg-gray-100">
+    <>
       <MDBContainer>
         <MDBRow>
           <MDBCol lg="5">
@@ -25,7 +25,7 @@ function Details() {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-    </div>
+    </>
   );
 }
 
