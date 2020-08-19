@@ -29,7 +29,7 @@ function Services() {
     <div className="bg-gray-100">
       <MDBContainer>
         <SectionTitle>{header}</SectionTitle>
-        <MDBRow>
+        <MDBRow className="py-3">
             {ourServices.map((service) => (
               <MDBCol lg="4" md="6" sm="12" size="12">
               <ServiceCard key={service.id} service={service} />
