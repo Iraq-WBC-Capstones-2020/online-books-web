@@ -6,11 +6,19 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Spinner from './components/Spinner/Spinner';
+import allReducers from './reducers';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+const store = createStore(allReducers);
+
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={<Spinner />}>
-      <App />
-    </Suspense>
+    <Provider store={store}>
+      <Suspense fallback={<Spinner />}>
+        <App />
+      </Suspense>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

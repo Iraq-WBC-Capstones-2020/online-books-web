@@ -3,12 +3,14 @@
     "language": "Language",
     "addToCart": "Add to cart"
   },
-
   "navBar": {
     "home": "Home",
     "aboutus": "About Us",
     "contact": "Contact Us",
-    "language": "Language"
+    "language": "Language",
+    "login": "Login",
+    "signUp": "Sign Up",
+    "logout": "Logout"
   },
   "aboutPage": {
     "title": "The Team",
@@ -18,7 +20,6 @@
         "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
         "specailty": "designer"
       },
-
       "neven": {
         "fullName": "Neven Bedr",
         "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
@@ -34,7 +35,6 @@
         "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
         "specailty": "designer"
       },
-
       "zeena": {
         "fullName": "Zeena Kareem",
         "bio": "Nemo enim ipsam voluptatem quia voluptas sit aspernatu  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
@@ -88,7 +88,6 @@
     "message": "Message",
     "send": "Send"
   },
-
   "paymentPage": {
     "booksOrder": "Your Books Order",
     "books": "Books",
@@ -102,18 +101,17 @@
     "cardNumber": "Card Number",
     "MMYYYY": "MM/YYYY",
     "CVC": "CVC",
+    "email": "Email",
+    "password": "Password",
     "purchase": "Purchase"
   },
-
   "clientPage": {
     "clients": "Our Clients"
   },
-
   "authorPage": {
     "follow": "Follow",
     "books": "Books"
   },
-
   "footer": {
     "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
     "copyright": "Copyright © BookZone",
@@ -121,10 +119,8 @@
     "tags": "Tags",
     "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
   },
-
   "landingPage": false,
   "navbar": false,
-
   "profilePage": {
     "edit": "Edit",
     "livesIn": "Lives in",
@@ -148,11 +144,25 @@
     "originalPrice": "Original Price",
     "totalPrice": "Total Price"
   },
-
   "contactUSPage": false,
-  "signInPage": false,
+  "signInPage": {
+    "signIn": "Sign in",
+    "yourEmail": "Your Email",
+    "yourPassword": "Your Password",
+    "forgotPassword": "Forgot Password?"
+  },
+  "signUpPage": {
+    "signUp": "Sign up",
+    "fullName": "Full Name",
+    "yourEmail": "Your Email",
+    "yourPassword": "Your Password"
+  },
+  "socialMediaPage": {
+    "signInGoogle": "Login with Google",
+    "signInGithub": "Login with Github",
+    "signInFacebook": "Login with Facebook"
+  },
   "sigOutPage": false,
-
   "carsouelSection": {
     "addtocart": "Add to cart",
     "bestSellers": "best sellers in books",
