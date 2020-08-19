@@ -1,8 +1,53 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import Form from './../Form';
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-test('Clients snapshot', () => {
-  const tree = renderer.create(<Form />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+exports[`Form snapshot 1`] = `
+Array [
+  <div
+    className="container"
+    data-test="container"
+  >
+  <div data-test="col" className="mt-5 ml-5 col-md-5">
+      <div className="mt-5 log z-depth-0"  data-test="card">
+        <div className="mx-4 card-body"  data-test="card">
+          <div className="text-center ">
+            <h3 className="mb-5">
+              <strong>{title}</strong>
+            </h3>
+          </div>
+          <form onSubmit={onSubmit}>
+            {inputFields.map((input) => (
+              <input
+                key={input.id}
+                label={input.label}
+                group
+                type={input.type}
+                name={input.name}
+                validate
+                error="wrong"
+                success="right"
+              />
+            ))}
+            {extraAnchor && (
+              <p className="d-flex justify-content-end pb-3">
+                <a href={extraAnchor.href} className="ml-1">
+                  {extraAnchor.title}
+                </a>
+              </p>
+            )}
+            <div className="text-center mb-3">
+              <button
+                type="submit"
+                color="blue"
+                className="rounded-pill text-white z-depth-1a w-48"
+              >
+                {button.title}
+              </button>
+            </div>
+          </form>
+          <div className="row my-3 d-flex justify-content-center"></div>
+        </div>
+      </div>
+    </div>
+   
+]
+`;

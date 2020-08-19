@@ -1,8 +1,14 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import Paragraph from './../MainPageFirstParagraph';
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-test('Clients snapshot', () => {
-  const tree = renderer.create(<Paragraph />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+exports[`MainPageFirstParagraph snapshot 1`] = `
+Array [
+  <div
+    className="container"
+    data-test="container"
+  >
+  <p className="font-serif text-center text-black font-bold my-12 text-xl bgLightblue">
+      YOU ARE NOT LOST YOU ARE HERE
+    </p>
+   
+]
+`;

@@ -1,8 +1,22 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import VerticalSeparated from './../VerticalSeparated';
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-test('Clients snapshot', () => {
-  const tree = renderer.create(<VerticalSeparated />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+exports[`VerticalSeparated snapshot 1`] = `
+Array [
+  <div
+    className="container"
+    data-test="container"
+  >
+    <div data-test="col"  className="col-md-5">
+      <div className="verline d-none d-sm-block"></div>
+      <div className=" orr"  data-test="card">
+        <div  className="card-body" data-test="card">
+          <div className="text-center">
+            <div className="rounded-pill px-2"> or </div>
+          </div>
+        </div>
+      </div>
+      <div className="verline2 d-none d-sm-block"></div>
+    </div>
+   
+]
+`;

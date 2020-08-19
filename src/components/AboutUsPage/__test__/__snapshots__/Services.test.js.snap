@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Services snapshot 1`] = `
+Array [
+ 
+ <div className="col bg-gray-100">
+      <div
+    className="container"
+    data-test="container"
+  >
+        <div   data-test="col">
+          <div className="text-center mt-10">
+            <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
+              {header}
+            </h1>
+          </div>
+        </div>
+
+        <div  className="ml-12 grid grid-cols-3 card-body " data-test="card">
+          {ourServices.map((service) => (
+            <ServiceCard key={service.id} service={service} />
+          ))}
+        </div>
+      </div>
+    </div>
+   
+]
+`;

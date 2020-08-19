@@ -1,8 +1,96 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import PaymentForm from './../PaymentForm/PaymentForm';
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-test('Clients snapshot', () => {
-  const tree = renderer.create(<PaymentForm />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+exports[`PaymentForm snapshot 1`] = `
+Array [
+  <div
+    className="container"
+    data-test="container"
+  >
+  
+      <div className="row"  data-test="row">
+        <div className="col-md-12" data-test="col">
+          <form >
+            <p className="h5 mx-5 my-5 text-gray-800">
+              {t('paymentPage.paymentMethod')}
+            </p>
+           <div className="row"  data-test="row">
+              <div   className="col-md-6"  data-test="col">
+                <p className="h6 text-center mx-3 text-gray-800 mb-4">
+                  <i className="mx-2 my-1" icon="dot-circle" />
+                  {t('paymentPage.creditCard')}
+                </p>
+              </div>
+              <div className="col-md-6" data-test="col">
+                <p className="h6 text-center mx-3 text-gray-800 mb-4">
+                  <i className="mx-2 my-1" far icon="circle" />
+                  {t('paymentPage.paypal')}
+                </p>
+              </div>
+            </div>
+            <div className="text-gray-600">
+              <input
+                label={t('paymentPage.name')}
+                icon="user"
+                containerClass="d-flex flex-row-reverse"
+                className="ml-0 mr-1"
+                labelClass="ml-4.5"
+                group
+                type="text"
+                validate
+                error="wrong"
+                success="right"
+              />
+
+              <input
+                label={t('paymentPage.cardNumber')}
+                icon="credit-card"
+                containerClass="d-flex flex-row-reverse"
+                className="ml-0 mr-1"
+                labelClass="ml-4.5"
+                group
+                type="email"
+                validate
+                error="wrong"
+                success="right"
+              />
+              <div>
+                <div className="col-md-6" data-test="col">
+                  <input
+                    label={t('paymentPage.MMYYYY')}
+                    icon="calendar"
+                    containerClass="d-flex flex-row-reverse"
+                    className="ml-0 mr-1"
+                    labelClass="ml-4.5"
+                    group
+                    type="text"
+                    validate
+                    error="wrong"
+                    success="right"
+                  />
+                </div>
+                <div className="col-md-12" data-test="col">
+                  <input
+                    label={t('paymentPage.CVC')}
+                    icon="lock"
+                    containerClass="d-flex flex-row-reverse"
+                    className="ml-0 mr-1"
+                    labelClass="ml-4.5"
+                    group
+                    type="password"
+                    validate
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="text-center">
+              <button color="primary" className="rounded-pill mb-3" size="sm">
+                {t('paymentPage.purchase')}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+]
+`;
+

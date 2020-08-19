@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm snapshot 1`] = `
+Array [
+  <div
+    className="container"
+    data-test="container"
+  >
+ 
+      <div  className="row" data-test="row">
+        <div  className="col-md-5" data-test="col" >
+          <form>
+            <p className="h5 mb-4 mt-5 text-gray-700">
+              <svg
+                className="inline-block ml-1 mr-2"
+                width="30"
+                height="30"
+                viewBox="0 0 41 39"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.83366 6.5H34.167C36.0462 6.5 37.5837 7.9625 37.5837 9.75V29.25C37.5837 31.0375 36.0462 32.5 34.167 32.5H6.83366C4.95449 32.5 3.41699 31.0375 3.41699 29.25V9.75C3.41699 7.9625 4.95449 6.5 6.83366 6.5Z"
+                  stroke="#4F4F4F"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M37.5837 9.75L20.5003 21.125L3.41699 9.75"
+                  stroke="#4F4F4F"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              {t('contactUsPage.writeToUs')}
+            </p>
+            <div className="text-gray-500">
+             <div  className="row" data-test="row">
+        <div  className="col-md-6" data-test="col" >
+                  <input
+                    label={t('contactUsPage.firstName')}
+                    group
+                    type="text"
+                    validate
+                    error="wrong"
+                    success="right"
+                  />
+                </div>
+                <div  className="col-md-6" data-test="col">
+                  <input
+                    label={t('contactUsPage.lastName')}
+                    group
+                    type="email"
+                    validate
+                    error="wrong"
+                    success="right"
+                  />
+                </div>
+              </div>
+              <input
+                label={t('contactUsPage.email')}
+                group
+                type="text"
+                validate
+                error="wrong"
+                success="right"
+              />
+              <input
+                type="textarea"
+                rows="3"
+                label={t('contactUsPage.message')}
+              />
+            </div>
+            <div className="text-center py-3 size">
+              <button color="primary" className="rounded-pill mb-3" size="sm">
+                {t('contactUsPage.send')}
+              </button>
+            </div>
+          </form>
+        </div>
+        <div data-test="col">
+          <ContactInformation />
+        </div>
+      </div>
+    </div>
+]
+`;

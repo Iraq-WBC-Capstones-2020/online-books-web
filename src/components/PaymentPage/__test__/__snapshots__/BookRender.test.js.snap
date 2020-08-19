@@ -1,8 +1,20 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import BooksRender from './../PaymentTable/BooksRender';
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-test('Clients snapshot', () => {
-  const tree = renderer.create(<BooksRender />).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+exports[`BookRender snapshot 1`] = `
+Array [
+  <div
+    className="container"
+    data-test="container"
+  >
+
+  <tr key={index} className="text-center">
+        <td>
+          <input type="checkbox" />
+        </td>
+        <td>{title}</td>
+        <td>{copies}</td>
+        <td>{price}</td>
+      </tr>
+   
+]
+`;
