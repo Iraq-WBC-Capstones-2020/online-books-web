@@ -21,6 +21,7 @@ firebase.analytics();
 const db = firebase.firestore();
 export const usersRef = db.collection('users');
 export const booksRef = db.collection('books');
+export const authorsRef = db.collection('authors');
 
 export const auth = firebase.auth();
 export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
