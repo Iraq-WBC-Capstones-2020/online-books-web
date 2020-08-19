@@ -53,6 +53,13 @@ $light-blue2: #bbe1fa;
   height: 35.3rem;
 }
 
+.colMd11{
+  $colMd11:"false";
+  @media (max-width:768px) {
+    $colMd11:"true";
+  }
+}
+
 .imgCardBook {
   height: 16rem;
   @media (max-width: 640px) {
@@ -60,6 +67,10 @@ $light-blue2: #bbe1fa;
 }
 .Card {
   border-style: none !important;
+  @media (max-width:1024px) {
+    margin-right:2px !important;
+    margin-left:2px !important;
+  }
 }
 .blackOpacity {
   background: #0e0e0e;

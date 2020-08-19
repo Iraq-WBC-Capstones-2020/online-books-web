@@ -14,6 +14,7 @@ import Author from '../../components/PopularAuthors/PopularAuthors';
    
 function Main() {
   const [modal8, handelModel8] = useState(false);
+  
   return (
     <>
       <Paragraph />
@@ -42,8 +43,8 @@ function Main() {
           {/*Modal for search section will appeare in the small devices */}
           <ModalSearchSection modal8={modal8} handelModel8={handelModel8} />
 
-          {/*GRID BOOKS */}
-          <MDBCol size="11" md="8" lg="8">
+          {/*GRID BOOKS md="8"*/}
+          <MDBCol size="11"  lg="8" className="md:grid-cols-12 px-sm-0 px-md-3" >
             <MDBContainer>
               <ShowCardsSection />
             </MDBContainer>

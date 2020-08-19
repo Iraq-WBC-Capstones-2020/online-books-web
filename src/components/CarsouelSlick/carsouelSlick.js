@@ -11,22 +11,20 @@ import HighlightedSectionLabel from './HighlightedSectionLabel';
 function CarsouelSlick({ highlightText }) {
   const [activeCardItem, setActiveCardItemState] = useState(0);
 
-  const NextArrow = (props) => {
-    const { onClick } = props;
+  const NextArrow = ({ onClick }) => {
     return (
       <div className="absolute z-10 rightArrow">
-        <MDBBtn color="" className="shadow-sm p-0 h-8 " onClick={onClick}>
+        <MDBBtn className="shadow-sm bg-white p-0 h-8 " onClick={onClick}>
           <MDBIcon icon="chevron-right" size="lg" className="px-2 py-1" />
         </MDBBtn>
       </div>
     );
   };
 
-  const PrevArrow = (props) => {
-    const { onClick } = props;
+  const PrevArrow = ({ onClick }) => {
     return (
       <div className="absolute z-10 leftArrow">
-        <MDBBtn color="" className="shadow-sm p-0 h-8" onClick={onClick}>
+        <MDBBtn className="shadow-sm bg-white p-0 h-8" onClick={onClick}>
           <MDBIcon icon="chevron-left" size="lg" className="px-2 py-1" />
         </MDBBtn>
       </div>
@@ -137,7 +135,7 @@ function CarsouelSlick({ highlightText }) {
                   md="12"
                   lg="4"
                   xl="4"
-                  className="mt-3 mb-md-0 mt-md-0 mb-lg-4 mt-lg-4  "
+                  className="mt-3 mb-md-0 mt-md-0 mb-lg-4 mt-lg-4"
                 >
                   {/* gride for the new release and best sellers  */}
                   <GrideCarousel activeCardItem={activeCardItem} />

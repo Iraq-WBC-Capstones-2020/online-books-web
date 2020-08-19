@@ -15,16 +15,17 @@ import { useTranslation } from 'react-i18next';
 function SearchSection() {
   const { t } = useTranslation();
   const categoriesBooks = [
-    { name: 'Popular' },
-    { name: 'Biographies &Memoirs' },
-    { name: 'Literature & Fiction'},
-    { name: 'Business&Investing'},
-    { name: 'History'},
+    { name: t('mainPage.category.Popular') },
+    { name: t('mainPage.category.Biographies&Memoirs') },
+    { name: t('mainPage.category.Literature&Fiction') },
+    { name: t('mainPage.category.Business&Investing') },
+    { name: t('mainPage.category.History') },
   ];
   const authorNames = [
     { name: 'zeena kareem' },
     { name: 'zainab azzam' },
     { name: 'sara ahmed' },
+    { name: 'qays ayad' },
     { name: 'dunia tarq' },
   ];
   const [searchInputValue, setSearchInputValue] = useState('');
@@ -48,7 +49,7 @@ function SearchSection() {
           >
             <MDBFormInline className="searchBox d-flex justify-content-around">
               <MDBInput
-                hint="Find Your Book"
+                hint={t('mainPage.searchByPart.FindYourBook')}
                 type="text"
                 className="text-black  mb-md-3 form-control"
                 onChange={(e) => setSearchInputValue(e.target.value)}

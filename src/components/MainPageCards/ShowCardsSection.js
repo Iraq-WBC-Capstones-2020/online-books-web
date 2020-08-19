@@ -6,7 +6,7 @@ import '../CarsouelSlick/carsouelSlick.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-
+const isSmallScreen=window.screen.width<=425?true:false;
 const ShowCardsSection = () => {
   const BookInfo = [
     {
@@ -145,7 +145,7 @@ const ShowCardsSection = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow:isSmallScreen?2:4,
     speed: 500,
     rows: 1,
     slidesPerRow: 2,

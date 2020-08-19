@@ -156,19 +156,21 @@
   "carsouelSection": {
     "addtocart": "Add to cart",
     "bestSellers": "best sellers in books",
-    "newRelease": "new releases in Books"
+    "newRelease": "new releases in Books",
+    "ratings":"ratings"
   },
   "mainPage": {
     "searchByPart": {
+      "FindYourBook":"Find Your Book",
       "SEARCH BY": "SEARCH BY",
       "Authors": "Authors",
       "Books": "Books"
     },
     "category": {
       "Popular": "Popular",
-      "Biographies &Memoirs": "Biographies &Memoirs",
-      "Literature & Fiction": "Literature & Fiction",
-      "Business&Investing": "Business&Investing",
+      "Biographies&Memoirs": "Biographies & Memoirs",
+      "Literature&Fiction": "Literature & Fiction",
+      "Business&Investing": "Business & Investing",
       "History": "History"
     },
     "text": " YOU ARE NOT LOST YOU ARE HERE",

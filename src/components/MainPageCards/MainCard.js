@@ -7,11 +7,12 @@ function Cards({ book, key }) {
   const { id, authorName, bookName, newPrice, oldPrice, rate, cover } = book;
   id % 2 == 0 ? console.log('key even') : console.log('odd');
   const isBottomCardInColumn = id % 2 === 0;
+
   return (
     <MDBCard
       key={key}
       tag="div"
-      className={`relative h-100 Card shadow-xl animate transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mx-md-3
+      className={`relative h-100 Card shadow-xl animate transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mx-sm-0 mx-md-1 mx-lg-3
          ${isBottomCardInColumn ? 'marginTop' : ''}`}
     >
       <img src={cover} className="imgCardBook rounded-t-md" />
@@ -29,15 +30,15 @@ function Cards({ book, key }) {
             <p className="HeaderCardBook grayColor text-sm font-bold">
               {bookName}
             </p>
-          </div>
+          </div> 
           {/*black part*/}
-          <div className="bg-black d-flex flex-row justify-content-around py-2 px-2">
-            <p className="lightBlue font-semibold font-sans text-lg p-1">
+          <div className="bg-black d-flex flex-row justify-content-around py-md-2 px-md-2 px-sm-0">
+            <p className="lightBlue font-semibold font-sans md:text-lg p-1">
               {newPrice}
             </p>
             <p className="darkGray font-normal line-through p-1">{oldPrice}</p>
 
-            <div className="rounded-full w-8 h-8 border-2 border-orange-200 text-center">
+            <div className="rounded-full w-8  h-8 border-2 border-orange-200 text-center">
               <CartIcon className="p-1" />
             </div>
           </div>
