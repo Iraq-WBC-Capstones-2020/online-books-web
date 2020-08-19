@@ -8,10 +8,10 @@ export default function PaymentPage() {
   return (
     <MDBContainer>
       <MDBRow center className="payContainer">
-        <MDBCol md="4">
+        <MDBCol lg="5" md="6" sm="10" >
           <PaymentTable />
         </MDBCol>
-        <MDBCol md="4">
+        <MDBCol lg="5" md="6" sm="10" >
           <PaymentForm />
         </MDBCol>
       </MDBRow>

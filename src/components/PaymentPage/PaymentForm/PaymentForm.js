@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBInput,
-  MDBBtn,
-} from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
 import PaypalForm from './PaypalForm';
 
 export default function PaymentForm() {
@@ -32,9 +26,9 @@ export default function PaymentForm() {
                 value="credit-card"
                 onChange={handleChange}
                 checked={paymentMethod === 'credit-card'}
-                className="h6 text-center ml-5 mr-2 text-gray-800 mb-4"
+                className="h6 text-center ml-5 mr-1 text-gray-800 mb-4"
               />
-              <label for="credit card">{t('paymentPage.creditCard')}</label>
+              <label for="credit-card">{t('paymentPage.creditCard')}</label>
             </MDBCol>
             <MDBCol md="6">
               <input
@@ -43,7 +37,7 @@ export default function PaymentForm() {
                 value="paypal"
                 onChange={handleChange}
                 checked={paymentMethod === 'paypal'}
-                className="h6 text-center ml-3 mr-2 text-gray-800 mb-4"
+                className="h6 text-center ml-5 mr-1 text-gray-800 mb-4"
               />
               <label for="paypal">{t('paymentPage.paypal')}</label>
             </MDBCol>
@@ -63,7 +57,7 @@ function CreditForm() {
   return (
     <MDBContainer>
       <MDBRow>
-        <MDBCol md="12">
+        <MDBCol >
           <form>
             <div className="text-gray-600">
               <MDBInput
