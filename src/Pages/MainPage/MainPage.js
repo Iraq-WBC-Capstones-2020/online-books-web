@@ -21,7 +21,7 @@ function Main() {
       <CarsouelSlick highlightText="bestSellers"/>
       {/* */}
       <MDBContainer className="mainContainer">
-        {/*will put this buttom in the navbar */}
+        {/*will put this buttom in the navbar
         <MDBIcon
           icon="bars"
           size="1x"
@@ -29,7 +29,7 @@ function Main() {
           border
           className="sandwitchItem"
         />
-
+ */}
         <MDBRow around>
           <MDBCol
             size="0"
@@ -44,7 +44,7 @@ function Main() {
           <ModalSearchSection modal8={modal8} handelModel8={handelModel8} />
 
           {/*GRID BOOKS md="8"*/}
-          <MDBCol size="11"  lg="8" className="md:grid-cols-12 px-sm-0 px-md-3" >
+          <MDBCol size="11"  lg="8" className="md:grid-cols-12 px-md-3 paddingZero" >
             <MDBContainer>
               <ShowCardsSection />
             </MDBContainer>

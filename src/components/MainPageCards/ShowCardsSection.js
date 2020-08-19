@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.scss';
 import MainCard from './MainCard';
 import { MDBRow, MDBBtn, MDBIcon } from 'mdbreact';
@@ -6,8 +6,22 @@ import '../CarsouelSlick/carsouelSlick.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-const isSmallScreen=window.screen.width<=425?true:false;
-const ShowCardsSection = () => {
+
+function ShowCardsSection() {
+
+  const useWindowSize = () => {
+    const [size, setSize] = useState(window.innerWidth);
+    useEffect(() => {
+      const handleResize = () => {
+        setSize([window.innerWidth]);
+      };
+      window.addEventListener('resize', handleResize);
+    }, []);
+    return size;
+  };
+  const width = useWindowSize();
+  const isSmallScreen = width <= 425 ? true : false;
+  
   const BookInfo = [
     {
       id: '1',
@@ -121,8 +135,7 @@ const ShowCardsSection = () => {
     },
   ];
 
-  const NextArrow = (props) => {
-    const { onClick } = props;
+  const NextArrow = ({ onClick }) => {
     return (
       <div className="absolute rightArrowOfGrid">
         <MDBBtn color="" className="shadow-md p-0 h-8 " onClick={onClick}>
@@ -132,8 +145,7 @@ const ShowCardsSection = () => {
     );
   };
 
-  const PrevArrow = (props) => {
-    const { onClick } = props;
+  const PrevArrow = ({ onClick }) => {
     return (
       <div className="absolute z-10 leftArrowOfGrid">
         <MDBBtn color="" className="shadow-md p-0 h-8" onClick={onClick}>
@@ -142,10 +154,13 @@ const ShowCardsSection = () => {
       </div>
     );
   };
+
+ 
   const settings = {
     dots: true,
+    dotsClass: 'slick-dots slick-thumb dotsMargin',
     infinite: true,
-    slidesToShow:isSmallScreen?2:4,
+    slidesToShow: isSmallScreen ? 2 : 4,
     speed: 500,
     rows: 1,
     slidesPerRow: 2,

@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { MDBCard, MDBCardBody } from 'mdbreact';
 function Cards({ book, key }) {
   const { id, authorName, bookName, newPrice, oldPrice, rate, cover } = book;
-  id % 2 == 0 ? console.log('key even') : console.log('odd');
   const isBottomCardInColumn = id % 2 === 0;
 
   return (
