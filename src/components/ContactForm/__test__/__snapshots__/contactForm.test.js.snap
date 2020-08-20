@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm snapshot 1`] = `
+<div
+  className="container"
+  data-test="container"
+>
+  <div
+    className="row"
+    data-test="row"
+  >
+    <div
+      className="col-md-5"
+      data-test="col"
+    >
+      <form>
+        <p
+          className="h5 mb-4 mt-5 text-gray-700"
+        >
+          <svg
+            className="inline-block ml-1 mr-2"
+            fill="none"
+            height="30"
+            viewBox="0 0 41 39"
+            width="30"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.83366 6.5H34.167C36.0462 6.5 37.5837 7.9625 37.5837 9.75V29.25C37.5837 31.0375 36.0462 32.5 34.167 32.5H6.83366C4.95449 32.5 3.41699 31.0375 3.41699 29.25V9.75C3.41699 7.9625 4.95449 6.5 6.83366 6.5Z"
+              stroke="#4F4F4F"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            />
+            <path
+              d="M37.5837 9.75L20.5003 21.125L3.41699 9.75"
+              stroke="#4F4F4F"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            />
+          </svg>
+          contactUsPage.writeToUs
+        </p>
+        <div
+          className="text-gray-500"
+        >
+          <div
+            className="row"
+            data-test="row"
+          >
+            <div
+              className="col-md-6"
+              data-test="col"
+            >
+              <div
+                className="md-form form-group"
+              >
+                
+                <input
+                  aria-disabled={false}
+                  className="form-control validate"
+                  data-test="input"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInput={[Function]}
+                  type="text"
+                  value=""
+                />
+                <label
+                  aria-labelledby=""
+                  className=""
+                  data-error="wrong"
+                  data-success="right"
+                  id=""
+                  onClick={[Function]}
+                >
+                  contactUsPage.firstName
+                </label>
+              </div>
+            </div>
+            <div
+              className="col-md-6"
+              data-test="col"
+            >
+              <div
+                className="md-form form-group"
+              >
+                
+                <input
+                  aria-disabled={false}
+                  className="form-control validate"
+                  data-test="input"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInput={[Function]}
+                  type="email"
+                  value=""
+                />
+                <label
+                  aria-labelledby=""
+                  className=""
+                  data-error="wrong"
+                  data-success="right"
+                  id=""
+                  onClick={[Function]}
+                >
+                  contactUsPage.lastName
+                </label>
+              </div>
+            </div>
+          </div>
+          <div
+            className="md-form form-group"
+          >
+            
+            <input
+              aria-disabled={false}
+              className="form-control validate"
+              data-test="input"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onInput={[Function]}
+              type="text"
+              value=""
+            />
+            <label
+              aria-labelledby=""
+              className=""
+              data-error="wrong"
+              data-success="right"
+              id=""
+              onClick={[Function]}
+            >
+              contactUsPage.email
+            </label>
+          </div>
+          <div
+            className="md-form"
+          >
+            
+            <textarea
+              aria-disabled={false}
+              className="md-textarea form-control"
+              data-test="input"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onInput={[Function]}
+              rows="3"
+              value=""
+            />
+            <label
+              aria-labelledby=""
+              className=""
+              data-error=""
+              data-success=""
+              id=""
+              onClick={[Function]}
+            >
+              contactUsPage.message
+            </label>
+          </div>
+        </div>
+        <div
+          className="text-center py-3 size"
+        >
+          <button
+            className="btn-primary btn Ripple-parent btn-sm rounded-pill mb-3"
+            data-test="button"
+            onMouseUp={[Function]}
+            onTouchStart={[Function]}
+            type="button"
+          >
+            contactUsPage.send
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col"
+      data-test="col"
+    >
+      <div
+        className="flex justify-end"
+      >
+        <div
+          className="card blue darken-3  w-75 h-100 flex justify-center"
+          data-test="card"
+        >
+          <h1
+            className=" my-4 pb-2 text-center white-text text-2xl"
+          >
+            contactUsPage.contactUs
+          </h1>
+          <div
+            className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 ml-10 m-4"
+          >
+            <i
+              className="fas fa-map-marker-alt text-4xl white-text ml-24"
+            />
+            <p
+              className="text-gray-400 ml-4"
+            >
+              A108 Adam Street
+              <br />
+               New York NY 535022
+            </p>
+          </div>
+          <div
+            className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  m-4"
+          >
+            <i
+              className="fas fa-envelope pr-2 text-4xl white-text ml-24"
+            />
+            <p
+              className="text-gray-400 ml-2"
+            >
+              contact@example.com
+              <br />
+              info@example.com
+            </p>
+          </div>
+          <div
+            className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  m-4"
+          >
+            <i
+              className="fas fa-phone pr-2 text-4xl white-text ml-24"
+            />
+            <p
+              className="text-gray-400 ml-2 mb-10"
+            >
+              + 01 234 567 89 
+              <br />
+              +1 5589 55488 51
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

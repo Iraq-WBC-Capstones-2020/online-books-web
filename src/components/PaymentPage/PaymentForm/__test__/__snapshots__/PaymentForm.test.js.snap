@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaymentForm snapshot 1`] = `
+<div
+  className="container"
+  data-test="container"
+>
+  <div
+    className="row"
+    data-test="row"
+  >
+    <div
+      className="col-md-12"
+      data-test="col"
+    >
+      <p
+        className="h5 mx-5 my-5 text-gray-800"
+      >
+        paymentPage.paymentMethod
+      </p>
+      <div
+        className="row"
+        data-test="row"
+      >
+        <div
+          className="col-md-6"
+          data-test="col"
+        >
+          <input
+            checked={true}
+            className="h6 text-center ml-5 mr-1 text-gray-800 mb-4"
+            id="credit-card"
+            onChange={[Function]}
+            type="radio"
+            value="credit-card"
+          />
+          <label
+            for="credit-card"
+          >
+            paymentPage.creditCard
+          </label>
+        </div>
+        <div
+          className="col-md-6"
+          data-test="col"
+        >
+          <input
+            checked={false}
+            className="h6 text-center ml-5 mr-1 text-gray-800 mb-4"
+            id="paypal"
+            onChange={[Function]}
+            type="radio"
+            value="paypal"
+          />
+          <label
+            for="paypal"
+          >
+            paymentPage.paypal
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+    data-test="row"
+  >
+    <div
+      className="container"
+      data-test="container"
+    >
+      <div
+        className="row"
+        data-test="row"
+      >
+        <div
+          className="col"
+          data-test="col"
+        >
+          <form>
+            <div
+              className="text-gray-600"
+            >
+              <div
+                className="md-form form-group d-flex flex-row-reverse"
+              >
+                <i
+                  className="fa fa-user prefix"
+                  data-test="fa"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                />
+                <input
+                  aria-disabled={false}
+                  className="form-control validate ml-0 mr-1"
+                  data-test="input"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInput={[Function]}
+                  type="text"
+                  value=""
+                />
+                <label
+                  aria-labelledby=""
+                  className="ml-4.5"
+                  data-error="wrong"
+                  data-success="right"
+                  id=""
+                  onClick={[Function]}
+                >
+                  paymentPage.name
+                </label>
+              </div>
+              <div
+                className="md-form form-group d-flex flex-row-reverse"
+              >
+                <i
+                  className="fa fa-credit-card prefix"
+                  data-test="fa"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                />
+                <input
+                  aria-disabled={false}
+                  className="form-control validate ml-0 mr-1"
+                  data-test="input"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInput={[Function]}
+                  type="email"
+                  value=""
+                />
+                <label
+                  aria-labelledby=""
+                  className="ml-4.5"
+                  data-error="wrong"
+                  data-success="right"
+                  id=""
+                  onClick={[Function]}
+                >
+                  paymentPage.cardNumber
+                </label>
+              </div>
+              <div
+                className="row"
+                data-test="row"
+              >
+                <div
+                  className="col-md-6"
+                  data-test="col"
+                >
+                  <div
+                    className="md-form form-group d-flex flex-row-reverse"
+                  >
+                    <i
+                      className="fa fa-calendar prefix"
+                      data-test="fa"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    />
+                    <input
+                      aria-disabled={false}
+                      className="form-control validate ml-0 mr-1"
+                      data-test="input"
+                      disabled={false}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      onInput={[Function]}
+                      type="text"
+                      value=""
+                    />
+                    <label
+                      aria-labelledby=""
+                      className="ml-4.5"
+                      data-error="wrong"
+                      data-success="right"
+                      id=""
+                      onClick={[Function]}
+                    >
+                      paymentPage.MMYYYY
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="col-md-6"
+                  data-test="col"
+                >
+                  <div
+                    className="md-form form-group d-flex flex-row-reverse"
+                  >
+                    <i
+                      className="fa fa-lock prefix"
+                      data-test="fa"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    />
+                    <input
+                      aria-disabled={false}
+                      className="form-control validate ml-0 mr-1"
+                      data-test="input"
+                      disabled={false}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      onInput={[Function]}
+                      type="password"
+                      value=""
+                    />
+                    <label
+                      aria-labelledby=""
+                      className="ml-4.5"
+                      data-error=""
+                      data-success=""
+                      id=""
+                      onClick={[Function]}
+                    >
+                      paymentPage.CVC
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="text-center mb-3"
+            >
+              <button
+                className="btn-blue btn Ripple-parent rounded-pill text-white z-depth-1a w-48"
+                data-test="button"
+                onMouseUp={[Function]}
+                onTouchStart={[Function]}
+                type="button"
+              >
+                paymentPage.purchase
+                <div
+                  className="Ripple "
+                  data-test="waves"
+                  style={
+                    Object {
+                      "height": "0px",
+                      "left": "0px",
+                      "top": "0px",
+                      "width": "0px",
+                    }
+                  }
+                />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
