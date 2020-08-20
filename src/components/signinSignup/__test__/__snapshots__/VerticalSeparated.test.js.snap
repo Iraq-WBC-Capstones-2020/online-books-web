@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VerticalSeparated snapshot 1`] = `
+<div
+  className="col-md-1"
+  data-test="col"
+>
+  <div
+    className="verline d-none d-sm-block"
+  />
+  <div
+    className="card  orr"
+    data-test="card"
+  >
+    <div
+      className="card-body"
+      data-test="card-body"
+    >
+      <div
+        className="text-center"
+      >
+        <div
+          className="rounded-pill px-2"
+        >
+           or 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="verline2 d-none d-sm-block"
+  />
+</div>
+`;
