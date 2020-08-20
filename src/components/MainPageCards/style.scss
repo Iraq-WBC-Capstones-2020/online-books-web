@@ -97,7 +97,7 @@ $light-blue2: #bbe1fa;
 .marginTop {
   margin-top: 3.3rem;
   @media (max-width: 425px) {
-    margin-top:0.3rem;
+    margin-top: 0.3rem;
   }
 }
 
@@ -113,17 +113,17 @@ $light-blue2: #bbe1fa;
   left: -50px;
   top: 260px;
   @media (max-width: 425px) {
-   display:none
+    display: none;
   }
 }
 
-.dotsMargin{
+.dotsMargin {
   bottom: 25px !important;
 }
 
-.paddingZero{
+.paddingZero {
   @media (max-width: 360px) {
     padding-right: 0px !important;
     padding-left: 0px !important;
-   }
+  }
 }

@@ -9,17 +9,16 @@ import CarsouelSlick from '../../components/CarsouelSlick/carsouelSlick';
 import SearchSection from '../../components/searchSection/searchSection';
 import ModalSearchSection from '../../components/searchSection/ModalSearchSection';
 import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
-import { MDBCol, MDBRow, MDBContainer} from 'mdbreact';
+import { MDBCol, MDBRow, MDBContainer } from 'mdbreact';
 import Author from '../../components/PopularAuthors/PopularAuthors';
-   
 
 function Main() {
   const [modal8, handelModel8] = useState(false);
-  
+
   return (
     <>
       <Paragraph />
-      <CarsouelSlick highlightText="bestSellers"/>
+      <CarsouelSlick highlightText="bestSellers" />
       {/* */}
       <MDBContainer className="mainContainer">
         {/*will put this buttom in the navbar
@@ -45,14 +44,18 @@ function Main() {
           <ModalSearchSection modal8={modal8} handelModel8={handelModel8} />
 
           {/*GRID BOOKS md="8"*/}
-          <MDBCol size="11"  lg="8" className="md:grid-cols-12 px-md-3 paddingZero" >
+          <MDBCol
+            size="11"
+            lg="8"
+            className="md:grid-cols-12 px-md-3 paddingZero"
+          >
             <MDBContainer>
               <ShowCardsSection />
             </MDBContainer>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <CarsouelSlick highlightText="newRelease"/>
+      <CarsouelSlick highlightText="newRelease" />
       {/*Popular authors */}
       <Author />
     </>

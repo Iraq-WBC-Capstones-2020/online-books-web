@@ -29,7 +29,7 @@ function Cards({ book, key }) {
             <p className="HeaderCardBook grayColor text-sm font-bold">
               {bookName}
             </p>
-          </div> 
+          </div>
           {/*black part*/}
           <div className="bg-black d-flex flex-row justify-content-around py-md-2 px-md-2 px-sm-0">
             <p className="lightBlue font-semibold font-sans md:text-lg p-1">

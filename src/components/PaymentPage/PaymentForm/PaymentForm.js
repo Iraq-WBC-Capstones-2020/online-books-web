@@ -57,7 +57,7 @@ function CreditForm() {
   return (
     <MDBContainer>
       <MDBRow>
-        <MDBCol >
+        <MDBCol>
           <form>
             <div className="text-gray-600">
               <MDBInput

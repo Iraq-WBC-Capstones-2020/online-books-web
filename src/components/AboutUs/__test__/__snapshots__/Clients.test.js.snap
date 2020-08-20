@@ -27,8 +27,7 @@ exports[`Clients snapshot 1`] = `
       >
         <img
           alt="myob company"
-          className="animate transition duration-500 ease-in-out  
- transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
+          className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
           src="client-1.png"
         />
       </div>
@@ -42,8 +41,7 @@ exports[`Clients snapshot 1`] = `
       >
         <img
           alt="Belimo company"
-          className="animate transition duration-500 ease-in-out  
- transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
+          className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
           src="client-2.png"
         />
       </div>
@@ -57,8 +55,7 @@ exports[`Clients snapshot 1`] = `
       >
         <img
           alt="life groups"
-          className="animate transition duration-500 ease-in-out  
- transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
+          className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
           src="client-3.png"
         />
       </div>
@@ -72,8 +69,7 @@ exports[`Clients snapshot 1`] = `
       >
         <img
           alt="lily company"
-          className="animate transition duration-500 ease-in-out  
- transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
+          className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
           src="client-4.png"
         />
       </div>
@@ -87,8 +83,7 @@ exports[`Clients snapshot 1`] = `
       >
         <img
           alt="citrus company"
-          className="animate transition duration-500 ease-in-out  
- transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
+          className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
           src="client-5.png"
         />
       </div>
@@ -102,8 +97,7 @@ exports[`Clients snapshot 1`] = `
       >
         <img
           alt="trusly"
-          className="animate transition duration-500 ease-in-out  
- transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
+          className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
           src="client-6.png"
         />
       </div>
@@ -117,8 +111,7 @@ exports[`Clients snapshot 1`] = `
       >
         <img
           alt="oldendorff company"
-          className="animate transition duration-500 ease-in-out  
- transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
+          className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
           src="client-7.png"
         />
       </div>
@@ -132,8 +125,7 @@ exports[`Clients snapshot 1`] = `
       >
         <img
           alt="grabuo company"
-          className="animate transition duration-500 ease-in-out  
- transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
+          className="animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 w-1/2 m-2"
           src="client-8.png"
         />
       </div>

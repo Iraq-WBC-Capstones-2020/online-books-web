@@ -86,11 +86,11 @@
     "bestSellers": "أفضل الكتب المباعة",
     "addtocart": "أضف الى العربة ",
     "newRelease": "أحدث اصدارات الكتب",
-    "ratings":"تقييم"
+    "ratings": "تقييم"
   },
   "mainPage": {
     "searchByPart": {
-      "FindYourBook":"أبحث عن كتابك",
+      "FindYourBook": "أبحث عن كتابك",
       "SEARCH BY": "أبحث بواسطة",
       "Authors": "المؤلفيين",
       "Books": "الكتب"
@@ -103,7 +103,7 @@
       "History": "التاريخ"
     },
     "text": "انت لست ضائع انت هنا ",
-    "PopularAuthors":"المؤلفون المشهورون "
+    "PopularAuthors": "المؤلفون المشهورون "
   },
 
   "authorPage": false,
