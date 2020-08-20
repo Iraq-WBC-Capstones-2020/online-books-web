@@ -28,7 +28,8 @@ exports[`Team snapshot 1`] = `
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
@@ -56,7 +57,8 @@ exports[`Team snapshot 1`] = `
             className="flex justify-center m-2"
           >
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -65,7 +67,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -74,7 +77,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -83,7 +87,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -100,7 +105,8 @@ exports[`Team snapshot 1`] = `
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
@@ -128,7 +134,8 @@ exports[`Team snapshot 1`] = `
             className="flex justify-center m-2"
           >
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -137,7 +144,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -146,7 +154,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -155,7 +164,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -172,7 +182,8 @@ exports[`Team snapshot 1`] = `
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
@@ -200,7 +211,8 @@ exports[`Team snapshot 1`] = `
             className="flex justify-center m-2"
           >
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -209,7 +221,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -218,7 +231,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -227,7 +241,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -244,7 +259,8 @@ exports[`Team snapshot 1`] = `
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
@@ -272,7 +288,8 @@ exports[`Team snapshot 1`] = `
             className="flex justify-center m-2"
           >
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -281,7 +298,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -290,7 +308,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -299,7 +318,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -316,7 +336,8 @@ exports[`Team snapshot 1`] = `
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
@@ -344,7 +365,8 @@ exports[`Team snapshot 1`] = `
             className="flex justify-center m-2"
           >
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -353,7 +375,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -362,7 +385,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -371,7 +395,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -388,7 +413,8 @@ exports[`Team snapshot 1`] = `
       data-test="col"
     >
       <div
-        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        className="card blue lighten-5 animate transition duration-500 ease-in-out  
+ transform hover:-translate-y-1 hover:scale-110  mt-10"
         data-test="card"
       >
         <img
@@ -416,7 +442,8 @@ exports[`Team snapshot 1`] = `
             className="flex justify-center m-2"
           >
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -425,7 +452,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -434,7 +462,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
@@ -443,7 +472,8 @@ exports[`Team snapshot 1`] = `
               />
             </a>
             <a
-              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out
+ transform hover:-translate-y-1 hover:scale-110"
               href="#"
             >
               <i
