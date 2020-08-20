@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaymentTable snapshot 1`] = `
+<div
+  className="container"
+  data-test="container"
+>
+  <div
+    className="row"
+    data-test="row"
+  >
+    <div
+      className="col-md-12"
+      data-test="col"
+    >
+      <div
+        className="text-center"
+      >
+        <p
+          className="h5 mt-5 text-gray-800"
+        >
+          paymentPage.booksOrder
+        </p>
+        <hr
+          className="border-4 my-3 mx-4 bg-primary"
+        />
+      </div>
+      <div
+        className=""
+        data-test="table"
+        style={
+          Object {
+            "maxHeight": undefined,
+          }
+        }
+      >
+        <table
+          className="table"
+        >
+          <thead
+            className=""
+            data-test="table-head"
+          >
+            <tr
+              className="text-center"
+            >
+              <th />
+              <th>
+                paymentPage.books
+              </th>
+              <th>
+                paymentPage.copies
+              </th>
+              <th>
+                paymentPage.price
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            data-test="table-body"
+          >
+            <tr
+              className="text-center"
+              style={
+                Object {
+                  "textDecoration": "line-through",
+                }
+              }
+            >
+              <td>
+                <input
+                  checked={false}
+                  line-through={true}
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </td>
+              <td>
+                book
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                15
+              </td>
+            </tr>
+            <tr
+              className="text-center"
+              style={
+                Object {
+                  "textDecoration": "line-through",
+                }
+              }
+            >
+              <td>
+                <input
+                  checked={false}
+                  line-through={true}
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </td>
+              <td>
+                book
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                15
+              </td>
+            </tr>
+            <tr
+              className="text-center"
+              style={
+                Object {
+                  "textDecoration": "line-through",
+                }
+              }
+            >
+              <td>
+                <input
+                  checked={false}
+                  line-through={true}
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </td>
+              <td>
+                book
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                15
+              </td>
+            </tr>
+            <tr
+              className="text-center"
+              style={
+                Object {
+                  "textDecoration": "line-through",
+                }
+              }
+            >
+              <td>
+                <input
+                  checked={false}
+                  line-through={true}
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </td>
+              <td>
+                book
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                15
+              </td>
+            </tr>
+            <tr>
+              <td />
+              <td>
+                <p
+                  className="h6"
+                >
+                  paymentPage.total
+                </p>
+              </td>
+              <td>
+                0
+              </td>
+              <td>
+                0
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;

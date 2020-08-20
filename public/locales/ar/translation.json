@@ -82,8 +82,6 @@
     "clients": "عملائنا"
   },
 
-  "authorPage": false,
-
   "carsouelSection": {
     "bestSellers": "أفضل الكتب المباعة",
     "addtocart": "أضف الى العربة ",
@@ -108,33 +106,30 @@
     "PopularAuthors":"المؤلفون المشهورون "
   },
 
-    "authorPage": false,
-    "footer": false,
-    "landingPage": false,
-    "navbar": false,
-    "profilePage": false,
-    "contactUSPage": false,
-    "signInPage": false,
-    "sigOutPage": false,
+  "authorPage": false,
+  "footer": false,
+  "landingPage": false,
+  "navbar": false,
+  "profilePage": false,
+  "contactUSPage": false,
+  "signInPage": false,
+  "sigOutPage": false,
 
-    "paymentPage": {
-      "booksOrder": "طلبية كتبك",
-      "books": "الكتب",
-      "copies": "النسخ",
-      "price": "السعر",
-      "total": "المجموع",
-      "paymentMethod": "طريقة الدفع",
-      "creditCard": "بطاقة الائتمان",
-      "paypal": "باي بال",
-      "name": "الاسم",
-      "cardNumber": "رقم البطاقة",
-      "MMYYYY": "شهر/سنة",
-      "CVC": "CVC",
-      "email": "الايميل",
-      "password": "كلمة السر",
-      "purchase": "شراء"
-    },
-
-    "bookPage": false
+  "paymentPage": {
+    "booksOrder": "طلبية كتبك",
+    "books": "الكتب",
+    "copies": "النسخ",
+    "price": "السعر",
+    "total": "المجموع",
+    "paymentMethod": "طريقة الدفع",
+    "creditCard": "بطاقة الائتمان",
+    "paypal": "باي بال",
+    "name": "الاسم",
+    "cardNumber": "رقم البطاقة",
+    "MMYYYY": "شهر/سنة",
+    "CVC": "CVC",
+    "email": "الايميل",
+    "password": "كلمة السر",
+    "purchase": "شراء"
   }
 }
