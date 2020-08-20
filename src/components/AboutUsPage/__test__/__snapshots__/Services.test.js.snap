@@ -2,215 +2,240 @@
 
 exports[`Services snapshot 1`] = `
 <div
-  className="col bg-gray-100"
+  className="bg-gray-100"
 >
   <div
     className="container"
     data-test="container"
   >
     <div
-      className="col"
-      data-test="col"
+      className="text-center py-3"
     >
-      <div
-        className="text-center mt-10"
+      <h1
+        className="text-3xl font-medium inline border-b border-gray-400 px-5"
       >
-        <h1
-          className="text-3xl font-medium inline border-b border-gray-400 px-5"
-        >
-          aboutPage.services.header
-        </h1>
-      </div>
+        aboutPage.services.header
+      </h1>
     </div>
     <div
-      className="card-body ml-12 grid grid-cols-3"
-      data-test="card-body"
+      className="row py-3"
+      data-test="row"
     >
       <div
-        className="m-5 w-64 "
+        className="col-12 col-sm-12 col-md-6 col-lg-4"
+        data-test="col"
       >
-        <svg
-          className="text-6xl ml-24"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<path d=\\"M28 2H16a2.002 2.002 0 0 0-2 2v10H4a2.002 2.002 0 0 0-2 2v14h28V4a2.002 2.002 0 0 0-2-2zM9 28v-7h4v7zm19 0H15v-8a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v8H4V16h12V4h12z\\" fill=\\"currentColor\\"/><path d=\\"M18 8h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M24 8h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M18 14h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M24 14h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M18 20h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M24 20h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M5.5 12a3.5 3.5 0 0 1 0-7h.627A4.006 4.006 0 0 1 10 2h2v2h-2a2.002 2.002 0 0 0-2 2v1H5.5a1.5 1.5 0 0 0 0 3H12v2z\\" fill=\\"currentColor\\"/>",
-            }
-          }
-          focusable={false}
-          height="1em"
-          preserveAspectRatio="xMidYMid meet"
-          style={
-            Object {
-              "transform": "rotate(360deg)",
-            }
-          }
-          viewBox="0 0 32 32"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        />
-        <h4
-          className="card-title text-center font-sans font-weight-bold text-blue-400"
+        <div
+          className="text-center mt-4"
         >
-          reservations
-        </h4>
-        <p
-          className="text-gray-700 font-sans text-center whitespace-normal"
-        />
+          <svg
+            className="inline text-6xl"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<path d=\\"M28 2H16a2.002 2.002 0 0 0-2 2v10H4a2.002 2.002 0 0 0-2 2v14h28V4a2.002 2.002 0 0 0-2-2zM9 28v-7h4v7zm19 0H15v-8a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v8H4V16h12V4h12z\\" fill=\\"currentColor\\"/><path d=\\"M18 8h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M24 8h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M18 14h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M24 14h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M18 20h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M24 20h2v2h-2z\\" fill=\\"currentColor\\"/><path d=\\"M5.5 12a3.5 3.5 0 0 1 0-7h.627A4.006 4.006 0 0 1 10 2h2v2h-2a2.002 2.002 0 0 0-2 2v1H5.5a1.5 1.5 0 0 0 0 3H12v2z\\" fill=\\"currentColor\\"/>",
+              }
+            }
+            focusable={false}
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "transform": "rotate(360deg)",
+              }
+            }
+            viewBox="0 0 32 32"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <h4
+            className="mt-3 card-title text-center font-sans font-weight-bold text-blue-400"
+          >
+            reservations
+          </h4>
+          <p
+            className="text-gray-700 font-sans text-center whitespace-normal"
+          />
+        </div>
       </div>
       <div
-        className="m-5 w-64 "
+        className="col-12 col-sm-12 col-md-6 col-lg-4"
+        data-test="col"
       >
-        <svg
-          className="text-6xl ml-24"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<path d=\\"M29.92 16.61l-3-7A1 1 0 0 0 26 9h-3V7a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v17a1 1 0 0 0 1 1h2.14a4 4 0 0 0 7.72 0h6.28a4 4 0 0 0 7.72 0H29a1 1 0 0 0 1-1v-7a1 1 0 0 0-.08-.39zM23 11h2.34l2.14 5H23zM9 26a2 2 0 1 1 2-2a2 2 0 0 1-2 2zm10.14-3h-6.28a4 4 0 0 0-7.72 0H4V8h17v12.56A4 4 0 0 0 19.14 23zM23 26a2 2 0 1 1 2-2a2 2 0 0 1-2 2zm5-3h-1.14A4 4 0 0 0 23 20v-2h5z\\" fill=\\"currentColor\\"/>",
-            }
-          }
-          focusable={false}
-          height="1em"
-          preserveAspectRatio="xMidYMid meet"
-          style={
-            Object {
-              "transform": "rotate(360deg)",
-            }
-          }
-          viewBox="0 0 32 32"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        />
-        <h4
-          className="card-title text-center font-sans font-weight-bold text-blue-400"
+        <div
+          className="text-center mt-4"
         >
-          PrepaidPickup
-        </h4>
-        <p
-          className="text-gray-700 font-sans text-center whitespace-normal"
-        />
+          <svg
+            className="inline text-6xl"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<path d=\\"M29.92 16.61l-3-7A1 1 0 0 0 26 9h-3V7a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v17a1 1 0 0 0 1 1h2.14a4 4 0 0 0 7.72 0h6.28a4 4 0 0 0 7.72 0H29a1 1 0 0 0 1-1v-7a1 1 0 0 0-.08-.39zM23 11h2.34l2.14 5H23zM9 26a2 2 0 1 1 2-2a2 2 0 0 1-2 2zm10.14-3h-6.28a4 4 0 0 0-7.72 0H4V8h17v12.56A4 4 0 0 0 19.14 23zM23 26a2 2 0 1 1 2-2a2 2 0 0 1-2 2zm5-3h-1.14A4 4 0 0 0 23 20v-2h5z\\" fill=\\"currentColor\\"/>",
+              }
+            }
+            focusable={false}
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "transform": "rotate(360deg)",
+              }
+            }
+            viewBox="0 0 32 32"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <h4
+            className="mt-3 card-title text-center font-sans font-weight-bold text-blue-400"
+          >
+            PrepaidPickup
+          </h4>
+          <p
+            className="text-gray-700 font-sans text-center whitespace-normal"
+          />
+        </div>
       </div>
       <div
-        className="m-5 w-64 "
+        className="col-12 col-sm-12 col-md-6 col-lg-4"
+        data-test="col"
       >
-        <svg
-          className="text-6xl ml-24"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<path d=\\"M45.59 2c-7.006 0-27.863 6.854-32.896 8.531C6.014 12.574 2 18.929 2 27.087v15.175l26.834 5.273v13.324L37.224 62l6.045-5.702V43.884L62 32.789V17.967C62 7.891 55.896 2 45.59 2M34.977 27.774l-1.947-1.421l1.249-2.608c.359 1.305.594 2.655.698 4.029m-24.775-9.558l20.324-1.831a19.993 19.993 0 0 1 3.107 5.407l-2.146 4.483l-.001.003l-.005.012l-2.104 4.667l-5.086-3.12l-14.623-9.455c.146-.083.322-.145.534-.166M8.233 41.574l4.68-2.058l.803 2.811c.035.124.091.234.136.352l-5.619-1.105m6.858.372l-6.09-21.308a2.559 2.559 0 0 1-.084-1.06l14.057 9.089l-2.384 4.629l-4.973 9.656a2.755 2.755 0 0 1-.526-1.006m1.753 1.736l4.58-8.894l2.76-5.358l5.136 3.148a.707.707 0 0 0 .251.09l.069.01c.02.001.038.007.058.007a.717.717 0 0 0 .652-.418l2.075-4.604l1.403 1.024l1.213.886v7.666L17.529 43.61a1.42 1.42 0 0 1-.685.072m3.73.318l12.563-4.57v7.038L20.574 44m14.744 15.849l-4.579-.623V47.908l4.302.846v.002l.277-.164v11.257m14.517-47.245l-10.733 4.005l.008 17.514l-2.601 1.262V8.019l13.333-4.51l-.007 9.095\\" fill=\\"currentColor\\"/>",
-            }
-          }
-          focusable={false}
-          height="1em"
-          preserveAspectRatio="xMidYMid meet"
-          style={
-            Object {
-              "transform": "rotate(360deg)",
-            }
-          }
-          viewBox="0 0 64 64"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        />
-        <h4
-          className="card-title text-center font-sans font-weight-bold text-blue-400"
+        <div
+          className="text-center mt-4"
         >
-          MailOrder
-        </h4>
-        <p
-          className="text-gray-700 font-sans text-center whitespace-normal"
-        />
+          <svg
+            className="inline text-6xl"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<path d=\\"M45.59 2c-7.006 0-27.863 6.854-32.896 8.531C6.014 12.574 2 18.929 2 27.087v15.175l26.834 5.273v13.324L37.224 62l6.045-5.702V43.884L62 32.789V17.967C62 7.891 55.896 2 45.59 2M34.977 27.774l-1.947-1.421l1.249-2.608c.359 1.305.594 2.655.698 4.029m-24.775-9.558l20.324-1.831a19.993 19.993 0 0 1 3.107 5.407l-2.146 4.483l-.001.003l-.005.012l-2.104 4.667l-5.086-3.12l-14.623-9.455c.146-.083.322-.145.534-.166M8.233 41.574l4.68-2.058l.803 2.811c.035.124.091.234.136.352l-5.619-1.105m6.858.372l-6.09-21.308a2.559 2.559 0 0 1-.084-1.06l14.057 9.089l-2.384 4.629l-4.973 9.656a2.755 2.755 0 0 1-.526-1.006m1.753 1.736l4.58-8.894l2.76-5.358l5.136 3.148a.707.707 0 0 0 .251.09l.069.01c.02.001.038.007.058.007a.717.717 0 0 0 .652-.418l2.075-4.604l1.403 1.024l1.213.886v7.666L17.529 43.61a1.42 1.42 0 0 1-.685.072m3.73.318l12.563-4.57v7.038L20.574 44m14.744 15.849l-4.579-.623V47.908l4.302.846v.002l.277-.164v11.257m14.517-47.245l-10.733 4.005l.008 17.514l-2.601 1.262V8.019l13.333-4.51l-.007 9.095\\" fill=\\"currentColor\\"/>",
+              }
+            }
+            focusable={false}
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "transform": "rotate(360deg)",
+              }
+            }
+            viewBox="0 0 64 64"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <h4
+            className="mt-3 card-title text-center font-sans font-weight-bold text-blue-400"
+          >
+            MailOrder
+          </h4>
+          <p
+            className="text-gray-700 font-sans text-center whitespace-normal"
+          />
+        </div>
       </div>
       <div
-        className="m-5 w-64 "
+        className="col-12 col-sm-12 col-md-6 col-lg-4"
+        data-test="col"
       >
-        <svg
-          className="text-6xl ml-24"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<path d=\\"M10 31H6a2.006 2.006 0 0 1-2-2v-7a2.006 2.006 0 0 1-2-2v-6a2.946 2.946 0 0 1 3-3h6a2.946 2.946 0 0 1 3 3v6a2.006 2.006 0 0 1-2 2v7a2.006 2.006 0 0 1-2 2zM5 13a.945.945 0 0 0-1 1v6h2v9h4v-9h2v-6a.945.945 0 0 0-1-1z\\" fill=\\"currentColor\\"/><path d=\\"M8 10a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4zm0-6a2 2 0 1 0 2 2a2.002 2.002 0 0 0-2-2z\\" fill=\\"currentColor\\"/><path d=\\"M28.766 4.256A4.212 4.212 0 0 0 23 4.032a4.212 4.212 0 0 0-5.766.224a4.319 4.319 0 0 0 0 6.044l5.764 5.84l.002-.002l.002.001l5.764-5.839a4.319 4.319 0 0 0 0-6.044zm-1.424 4.639l-4.34 4.397L23 13.29l-.002.002l-4.34-4.397a2.308 2.308 0 0 1 0-3.234a2.264 2.264 0 0 1 3.156 0l1.181 1.207l.005-.005l.005.005l1.18-1.207a2.264 2.264 0 0 1 3.157 0a2.308 2.308 0 0 1 0 3.234z\\" fill=\\"currentColor\\"/>",
-            }
-          }
-          focusable={false}
-          height="1em"
-          preserveAspectRatio="xMidYMid meet"
-          style={
-            Object {
-              "transform": "rotate(360deg)",
-            }
-          }
-          viewBox="0 0 32 32"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        />
-        <h4
-          className="card-title text-center font-sans font-weight-bold text-blue-400"
+        <div
+          className="text-center mt-4"
         >
-          StudentHelper
-        </h4>
-        <p
-          className="text-gray-700 font-sans text-center whitespace-normal"
-        />
+          <svg
+            className="inline text-6xl"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<path d=\\"M10 31H6a2.006 2.006 0 0 1-2-2v-7a2.006 2.006 0 0 1-2-2v-6a2.946 2.946 0 0 1 3-3h6a2.946 2.946 0 0 1 3 3v6a2.006 2.006 0 0 1-2 2v7a2.006 2.006 0 0 1-2 2zM5 13a.945.945 0 0 0-1 1v6h2v9h4v-9h2v-6a.945.945 0 0 0-1-1z\\" fill=\\"currentColor\\"/><path d=\\"M8 10a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4zm0-6a2 2 0 1 0 2 2a2.002 2.002 0 0 0-2-2z\\" fill=\\"currentColor\\"/><path d=\\"M28.766 4.256A4.212 4.212 0 0 0 23 4.032a4.212 4.212 0 0 0-5.766.224a4.319 4.319 0 0 0 0 6.044l5.764 5.84l.002-.002l.002.001l5.764-5.839a4.319 4.319 0 0 0 0-6.044zm-1.424 4.639l-4.34 4.397L23 13.29l-.002.002l-4.34-4.397a2.308 2.308 0 0 1 0-3.234a2.264 2.264 0 0 1 3.156 0l1.181 1.207l.005-.005l.005.005l1.18-1.207a2.264 2.264 0 0 1 3.157 0a2.308 2.308 0 0 1 0 3.234z\\" fill=\\"currentColor\\"/>",
+              }
+            }
+            focusable={false}
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "transform": "rotate(360deg)",
+              }
+            }
+            viewBox="0 0 32 32"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <h4
+            className="mt-3 card-title text-center font-sans font-weight-bold text-blue-400"
+          >
+            StudentHelper
+          </h4>
+          <p
+            className="text-gray-700 font-sans text-center whitespace-normal"
+          />
+        </div>
       </div>
       <div
-        className="m-5 w-64 "
+        className="col-12 col-sm-12 col-md-6 col-lg-4"
+        data-test="col"
       >
-        <svg
-          className="text-6xl ml-24"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<g fill=\\"currentColor\\"><path fill-rule=\\"evenodd\\" d=\\"M3 2.5a2.5 2.5 0 0 1 5 0a2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z\\"/></g>",
-            }
-          }
-          focusable={false}
-          height="1em"
-          preserveAspectRatio="xMidYMid meet"
-          style={
-            Object {
-              "transform": "rotate(360deg)",
-            }
-          }
-          viewBox="0 0 16 16"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        />
-        <h4
-          className="card-title text-center font-sans font-weight-bold text-blue-400"
+        <div
+          className="text-center mt-4"
         >
-          GiftCards
-        </h4>
-        <p
-          className="text-gray-700 font-sans text-center whitespace-normal"
-        />
+          <svg
+            className="inline text-6xl"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<g fill=\\"currentColor\\"><path fill-rule=\\"evenodd\\" d=\\"M3 2.5a2.5 2.5 0 0 1 5 0a2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z\\"/></g>",
+              }
+            }
+            focusable={false}
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "transform": "rotate(360deg)",
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <h4
+            className="mt-3 card-title text-center font-sans font-weight-bold text-blue-400"
+          >
+            GiftCards
+          </h4>
+          <p
+            className="text-gray-700 font-sans text-center whitespace-normal"
+          />
+        </div>
       </div>
       <div
-        className="m-5 w-64 "
+        className="col-12 col-sm-12 col-md-6 col-lg-4"
+        data-test="col"
       >
-        <svg
-          className="text-6xl ml-24"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<path d=\\"M10.595 5.196l.446 1.371a4.135 4.135 0 0 1 1.441-.795c.59-.192 1.111-.3 1.582-.362l-.43-1.323a9.465 9.465 0 0 0-1.58.368a5.25 5.25 0 0 0-1.459.741zm.927 2.855l.446 1.371a4.135 4.135 0 0 1 1.441-.795c.59-.192 1.111-.3 1.582-.362l-.43-1.323a9.465 9.465 0 0 0-1.58.368a5.21 5.21 0 0 0-1.459.741zm.928 2.854l.446 1.371a4.135 4.135 0 0 1 1.441-.795c.59-.192 1.111-.3 1.582-.362l-.43-1.323a9.465 9.465 0 0 0-1.58.368a5.21 5.21 0 0 0-1.459.741zm-7.062 2.172l.43 1.323a8.745 8.745 0 0 1 1.492-.636a4.141 4.141 0 0 1 1.633-.203l-.446-1.371a5.25 5.25 0 0 0-1.615.257a9.406 9.406 0 0 0-1.494.63zM3.533 7.368l.43 1.323a8.825 8.825 0 0 1 1.492-.636a4.141 4.141 0 0 1 1.633-.203L6.643 6.48a5.263 5.263 0 0 0-1.616.258a9.406 9.406 0 0 0-1.494.63zm.927 2.855l.43 1.323a8.745 8.745 0 0 1 1.492-.636a4.141 4.141 0 0 1 1.633-.203L7.57 9.335a5.25 5.25 0 0 0-1.615.257a9.417 9.417 0 0 0-1.495.631zm6.604-8.813a5.26 5.26 0 0 0-3.053 2.559a5.257 5.257 0 0 0-3.973-.275C1.515 4.514.069 6.321.069 6.321l4.095 12.587c.126.387.646.477.878.143c.499-.719 1.46-1.658 3.257-2.242c1.718-.558 2.969.054 3.655.578c.272.208.662.06.762-.268c.252-.827.907-2.04 2.61-2.593c1.799-.585 3.129-.389 3.956-.1c.385.134.75-.242.625-.629L15.819 1.203s-2.232-.612-4.755.207zm-.113 13.846a5.208 5.208 0 0 0-3.141.044c-1.251.406-2.127.949-2.699 1.404L1.866 6.722c.358-.358 1.187-1.042 2.662-1.521c1.389-.451 2.528-.065 3.279.378l3.144 9.677zm6.894-2.689c-.731-.032-1.759.044-3.01.451a5.205 5.205 0 0 0-2.567 1.81L9.124 5.151c.346-.8 1.04-1.782 2.43-2.233c1.474-.479 2.547-.413 3.047-.334l3.244 9.983z\\" fill=\\"currentColor\\"/>",
-            }
-          }
-          focusable={false}
-          height="1em"
-          preserveAspectRatio="xMidYMid meet"
-          style={
-            Object {
-              "transform": "rotate(360deg)",
-            }
-          }
-          viewBox="0 0 20 20"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        />
-        <h4
-          className="card-title text-center font-sans font-weight-bold text-blue-400"
+        <div
+          className="text-center mt-4"
         >
-          SignedBooks
-        </h4>
-        <p
-          className="text-gray-700 font-sans text-center whitespace-normal"
-        />
+          <svg
+            className="inline text-6xl"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<path d=\\"M10.595 5.196l.446 1.371a4.135 4.135 0 0 1 1.441-.795c.59-.192 1.111-.3 1.582-.362l-.43-1.323a9.465 9.465 0 0 0-1.58.368a5.25 5.25 0 0 0-1.459.741zm.927 2.855l.446 1.371a4.135 4.135 0 0 1 1.441-.795c.59-.192 1.111-.3 1.582-.362l-.43-1.323a9.465 9.465 0 0 0-1.58.368a5.21 5.21 0 0 0-1.459.741zm.928 2.854l.446 1.371a4.135 4.135 0 0 1 1.441-.795c.59-.192 1.111-.3 1.582-.362l-.43-1.323a9.465 9.465 0 0 0-1.58.368a5.21 5.21 0 0 0-1.459.741zm-7.062 2.172l.43 1.323a8.745 8.745 0 0 1 1.492-.636a4.141 4.141 0 0 1 1.633-.203l-.446-1.371a5.25 5.25 0 0 0-1.615.257a9.406 9.406 0 0 0-1.494.63zM3.533 7.368l.43 1.323a8.825 8.825 0 0 1 1.492-.636a4.141 4.141 0 0 1 1.633-.203L6.643 6.48a5.263 5.263 0 0 0-1.616.258a9.406 9.406 0 0 0-1.494.63zm.927 2.855l.43 1.323a8.745 8.745 0 0 1 1.492-.636a4.141 4.141 0 0 1 1.633-.203L7.57 9.335a5.25 5.25 0 0 0-1.615.257a9.417 9.417 0 0 0-1.495.631zm6.604-8.813a5.26 5.26 0 0 0-3.053 2.559a5.257 5.257 0 0 0-3.973-.275C1.515 4.514.069 6.321.069 6.321l4.095 12.587c.126.387.646.477.878.143c.499-.719 1.46-1.658 3.257-2.242c1.718-.558 2.969.054 3.655.578c.272.208.662.06.762-.268c.252-.827.907-2.04 2.61-2.593c1.799-.585 3.129-.389 3.956-.1c.385.134.75-.242.625-.629L15.819 1.203s-2.232-.612-4.755.207zm-.113 13.846a5.208 5.208 0 0 0-3.141.044c-1.251.406-2.127.949-2.699 1.404L1.866 6.722c.358-.358 1.187-1.042 2.662-1.521c1.389-.451 2.528-.065 3.279.378l3.144 9.677zm6.894-2.689c-.731-.032-1.759.044-3.01.451a5.205 5.205 0 0 0-2.567 1.81L9.124 5.151c.346-.8 1.04-1.782 2.43-2.233c1.474-.479 2.547-.413 3.047-.334l3.244 9.983z\\" fill=\\"currentColor\\"/>",
+              }
+            }
+            focusable={false}
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "transform": "rotate(360deg)",
+              }
+            }
+            viewBox="0 0 20 20"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <h4
+            className="mt-3 card-title text-center font-sans font-weight-bold text-blue-400"
+          >
+            SignedBooks
+          </h4>
+          <p
+            className="text-gray-700 font-sans text-center whitespace-normal"
+          />
+        </div>
       </div>
     </div>
   </div>

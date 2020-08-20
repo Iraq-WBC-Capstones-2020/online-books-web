@@ -85,15 +85,25 @@
   "carsouelSection": {
     "bestSellers": "أفضل الكتب المباعة",
     "addtocart": "أضف الى العربة ",
-    "newRelease": "أحدث اصدارات الكتب"
+    "newRelease": "أحدث اصدارات الكتب",
+    "ratings": "تقييم"
   },
   "mainPage": {
     "searchByPart": {
+      "FindYourBook": "أبحث عن كتابك",
       "SEARCH BY": "أبحث بواسطة",
       "Authors": "المؤلفيين",
       "Books": "الكتب"
     },
-    "text": "انت لست ضائع انت هنا "
+    "category": {
+      "Popular": "الشائع",
+      "Biographies&Memoirs": "السير الذاتية  و المذكرات",
+      "Literature&Fiction": "أدب و خيال",
+      "Business&Investing": "الأعمال و الاستثمار",
+      "History": "التاريخ"
+    },
+    "text": "انت لست ضائع انت هنا ",
+    "PopularAuthors": "المؤلفون المشهورون "
   },
 
   "authorPage": false,

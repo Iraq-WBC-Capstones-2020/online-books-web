@@ -10,7 +10,7 @@ exports[`ContactForm snapshot 1`] = `
     data-test="row"
   >
     <div
-      className="col-md-5"
+      className="col-sm-12 col-md-6 col-lg-8"
       data-test="col"
     >
       <form>
@@ -170,10 +170,10 @@ exports[`ContactForm snapshot 1`] = `
           </div>
         </div>
         <div
-          className="text-center py-3 size"
+          className="text-center mb-3"
         >
           <button
-            className="btn-primary btn Ripple-parent btn-sm rounded-pill mb-3"
+            className="btn-blue btn Ripple-parent rounded-pill text-white z-depth-1a w-48"
             data-test="button"
             onMouseUp={[Function]}
             onTouchStart={[Function]}
@@ -197,7 +197,7 @@ exports[`ContactForm snapshot 1`] = `
       </form>
     </div>
     <div
-      className="col"
+      className="col-sm-12 col-md-6 col-lg-4"
       data-test="col"
     >
       <div
@@ -216,7 +216,7 @@ exports[`ContactForm snapshot 1`] = `
             className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 ml-10 m-4"
           >
             <i
-              className="fas fa-map-marker-alt text-4xl white-text ml-24"
+              className="fas fa-map-marker-alt text-4xl white-text ml-18"
             />
             <p
               className="text-gray-400 ml-4"
@@ -230,10 +230,10 @@ exports[`ContactForm snapshot 1`] = `
             className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  m-4"
           >
             <i
-              className="fas fa-envelope pr-2 text-4xl white-text ml-24"
+              className="fas fa-envelope pr-2 text-4xl white-text ml-18"
             />
             <p
-              className="text-gray-400 ml-2"
+              className="text-gray-400 ml-1 mr-1"
             >
               contact@example.com
               <br />
@@ -244,7 +244,7 @@ exports[`ContactForm snapshot 1`] = `
             className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  m-4"
           >
             <i
-              className="fas fa-phone pr-2 text-4xl white-text ml-24"
+              className="fas fa-phone pr-2 text-4xl white-text ml-18"
             />
             <p
               className="text-gray-400 ml-2 mb-10"

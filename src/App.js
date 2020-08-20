@@ -9,10 +9,10 @@ import AuthorPage from './Pages/AuthorPage/AuthorPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import LoginPage from './Pages/loginPage/LoginPage';
 import MainPage from './Pages/MainPage/MainPage';
+import BookPage from './Pages/BookPage/BookPage';
+import PaymentPage from './Pages/PaymentPage/PaymentPage';
 import ContactUsPage from './Pages/ContactUsPage/ContactUsPage';
 import SignUpPage from './Pages/SignUpPage/SignUpPage';
-import PaymentPage from './Pages/PaymentPage/PaymentPage';
-import BookPage from './Pages/BookPage/BookPage';
 
 function App() {
   const user = useSelector((state) => state.user);
