@@ -88,8 +88,8 @@ function GrideCarousel({ activeCardItem }) {
               <MDBView>
                 {/*pattern={1} */}
                 <img
-                  className="imgGrideCarsouel mx-lg-0
-                "
+                  className="imgGrideCarsouel mx-lg-0"
+                  alt={book.bookName}
                   src={book.cover}
                 />
                 {activeCardItem === index ? (
