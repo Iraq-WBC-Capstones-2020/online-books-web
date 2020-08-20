@@ -31,7 +31,14 @@ function DetailsClient() {
       <SectionTitle>{client}</SectionTitle>
       <MDBRow className="m-5">
         {clientsLogo.map((client) => (
-          <MDBCol lg="3" md="4" sm="6" xs="6" size="12" className="m-0 p-0 border border-solid border-4 border-gray-200 ">
+          <MDBCol
+            lg="3"
+            md="4"
+            sm="6"
+            xs="6"
+            size="12"
+            className="m-0 p-0 border border-solid border-4 border-gray-200 "
+          >
             <ClientCard key={client.id} client={client} />
           </MDBCol>
         ))}

@@ -75,7 +75,7 @@ export default function ContactForm() {
               />
             </div>
             <div className="text-center mb-3">
-            <MDBBtn
+              <MDBBtn
                 type="button"
                 color="blue"
                 className="rounded-pill text-white z-depth-1a w-48"

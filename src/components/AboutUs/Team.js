@@ -28,18 +28,16 @@ function TeamMembersInformation() {
 
   const title = t('aboutPage.title');
   return (
-      <MDBContainer>
-        <SectionTitle>
-          {title}
-        </SectionTitle>
-        <MDBRow className="py-3">
-          {team.map((member) => (
-            <MDBCol lg="4" md="6" sm="12" size="12" className="p-5">
-              <TeamMemberCards key={member.id} member={member} />
-            </MDBCol>
-          ))}
-        </MDBRow>
-      </MDBContainer>
+    <MDBContainer>
+      <SectionTitle>{title}</SectionTitle>
+      <MDBRow className="py-3">
+        {team.map((member) => (
+          <MDBCol lg="4" md="6" sm="12" size="12" className="p-5">
+            <TeamMemberCards key={member.id} member={member} />
+          </MDBCol>
+        ))}
+      </MDBRow>
+    </MDBContainer>
   );
 }
 
