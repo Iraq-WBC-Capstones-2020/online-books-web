@@ -1,8 +1,8 @@
-import React from './node_modules/react';
+import React from 'react';
 import './login.scss';
 import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
-import { MDBContainer, MDBRow } from './node_modules/mdbreact';
+import { MDBContainer, MDBRow } from 'mdbreact';
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 import { auth } from './../../api/firebase';
 import { useTranslation } from 'react-i18next';

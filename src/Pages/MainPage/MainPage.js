@@ -1,8 +1,8 @@
-import React, { useState } from './node_modules/react';
+import React, { useState } from 'react';
 //style files  for mdbreact
-import './@fortawesome/fontawesome-free/css/all.min.css';
-import './bootstrap-css-only/css/bootstrap.min.css';
-import './mdbreact/dist/css/mdb.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 //main component
 import Paragraph from '../../components/CarsouelSlick/paragraph';
 import CarsouelSlick from '../../components/CarsouelSlick/carsouelSlick';
