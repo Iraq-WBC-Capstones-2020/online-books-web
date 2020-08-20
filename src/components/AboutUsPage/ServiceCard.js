@@ -4,10 +4,9 @@ import { Icon } from '@iconify/react';
 function ServiceCard({ service }) {
   const { icon, title, explanation } = service;
   return (
-    <div className="m-5 w-64 ">
-      <Icon icon={icon} className="text-6xl ml-24" />
-
-      <h4 className="card-title text-center font-sans font-weight-bold text-blue-400">
+    <div className="text-center mt-4">
+      <Icon icon={icon} className="inline text-6xl" />
+      <h4 className="mt-3 card-title text-center font-sans font-weight-bold text-blue-400">
         {title}
       </h4>
       <p className="text-gray-700 font-sans text-center whitespace-normal">
