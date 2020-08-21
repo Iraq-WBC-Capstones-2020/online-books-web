@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../pages/AudioPage/style.scss';
+import './style.scss';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
-import AudioPlayerPage from './audioPlayer';
+import AudioPlayerPage from './AduioPagePlayer';
 import Paragraph from '../Paragraph/Paragraph';
 const AudioPageSection = () => {
   const bookInfo = {
