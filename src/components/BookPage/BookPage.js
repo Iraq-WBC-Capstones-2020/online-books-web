@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import CreateStars from '../CarsouelSlick/CreateStars';
+import Paragraph from '../Paragraph/Paragraph';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 const BookPage = () => {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ const BookPage = () => {
   return (
     <MDBContainer className="mt-5">
       <MDBRow>
-        <MDBCol sm="6" size="12">
+        <MDBCol sm="6" size="12" className="order-1 order-sm-0">
           <div className="mt-5">
             <h1 className="blue-text"> {book.bookName}</h1>
             <span className="gray-text">{book.authortName}</span>
@@ -31,9 +32,8 @@ const BookPage = () => {
             <div className="mt-2 yellow-star">
               <CreateStars rate={book.rate} />
             </div>
-            <p className="mt-3 text-2xl leading-7 text-justify">
-              {book.description}
-            </p>
+
+            <Paragraph>{book.description}</Paragraph>
             <span className="gray-text">{t('bookPage.language')}:Arabic</span>
           </div>
           <br />
@@ -81,7 +81,7 @@ const BookPage = () => {
           )}
         </MDBCol>
 
-        <MDBCol sm="6" size="12">
+        <MDBCol sm="6" size="12" className="order-0 order-sm-1">
           <div className="mt-5 d-flex justify-content-center align-self-center">
             <img
               src={book.bookCover}
