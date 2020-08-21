@@ -8,7 +8,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 function ShowCardsSection() {
-
   const useWindowSize = () => {
     const [size, setSize] = useState(window.innerWidth);
     useEffect(() => {
@@ -21,7 +20,7 @@ function ShowCardsSection() {
   };
   const width = useWindowSize();
   const isSmallScreen = width <= 425 ? true : false;
-  
+
   const BookInfo = [
     {
       id: '1',
@@ -155,9 +154,8 @@ function ShowCardsSection() {
     );
   };
 
- 
   const settings = {
-    dots: true,
+    dots: isSmallScreen ? true : false,
     dotsClass: 'slick-dots slick-thumb dotsMargin',
     infinite: true,
     slidesToShow: isSmallScreen ? 2 : 4,
@@ -179,6 +177,6 @@ function ShowCardsSection() {
       </MDBRow>
     </>
   );
-};
+}
 
 export default ShowCardsSection;
