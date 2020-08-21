@@ -10,7 +10,6 @@ const AudioPlayerPage = () => {
     <AudioPlayer
       src={audio}
       className="height-200"
-      customVolumeControls={[]}
       customAdditionalControls={[]}
       showFilledProgress={false}
     />
