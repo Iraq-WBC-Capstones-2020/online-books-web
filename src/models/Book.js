@@ -1,7 +1,7 @@
 import { booksRef } from './../api/firebase';
 import Author from "./Author";
 export default class Book {
-    constructor({ id, name, type, price, dis_count, cover, have_audio, audio_ref, author_id, ref, tags } = {}) {
+    constructor({ id, name, type, price, dis_count, cover, have_audio, description, audio_ref, author_id, ref, tags } = {}) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -9,6 +9,7 @@ export default class Book {
         this.dis_count = dis_count;
         this.cover = cover;
         this.have_audio = have_audio;
+        this.description =description;
         this.audio_ref = audio_ref;
         this.author_id = author_id;
         this.ref = ref;
@@ -22,7 +23,7 @@ export default class Book {
         return new Book(doc.data());
     }
     updateBookInfo() {
+        if (!this.id) this.id= booksRef.doc().id;
         booksRef.doc(this.id).set(this);
     }
 }
-

@@ -24,6 +24,7 @@ export default class Author {
   }
 
   updateAuthorInfo() {
+    if (!this.id) this.id= authorsRef.doc().id;
     authorsRef.doc(this.id).set(this);
   }
 }
