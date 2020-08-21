@@ -13,7 +13,7 @@ import BookPage from './Pages/BookPage/BookPage';
 import PaymentPage from './Pages/PaymentPage/PaymentPage';
 import ContactUsPage from './Pages/ContactUsPage/ContactUsPage';
 import SignUpPage from './Pages/SignUpPage/SignUpPage';
-
+  
 function App() {
   const user = useSelector((state) => state.user);
   const [modal8, handelModel8] = useState(false);
