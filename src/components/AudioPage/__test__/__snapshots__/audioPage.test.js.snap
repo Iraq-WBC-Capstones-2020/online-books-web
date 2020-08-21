@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`audioPage snapshot 1`] = `
+exports[`AudioPage snapshot 1`] = `
    <div className="container mt-5" data-testid="container">
       <div className="row" data-testid="row">
         <div className="col-12 col-sm-5" data-testid="col">
