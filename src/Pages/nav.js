@@ -45,7 +45,7 @@ function NavbarPage() {
         dispatch(setUser({ isSigned: false }));
       }
     });
-  }, []);
+  });
   const onLogout = () => {
     auth.signOut();
   };
