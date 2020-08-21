@@ -22,7 +22,11 @@ export default class Author {
     this.books = books;
     return books;
   }
-
+  static async getAuthors() {
+    const documentData = await authorsRef.get();
+    const authors = documentData.docs.map((author) => new Author(author.data()));
+    return authors;
+}
   updateAuthorInfo() {
     if (!this.id) this.id= authorsRef.doc().id;
     authorsRef.doc(this.id).set(this);
