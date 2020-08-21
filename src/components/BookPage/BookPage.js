@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import CreateStars from '../CarsouelSlick/CreateStars';
+import Paragraph from '../Paragraph/Paragraph';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 const BookPage = () => {
   const { t } = useTranslation();
@@ -31,9 +32,8 @@ const BookPage = () => {
             <div className="mt-2 yellow-star">
               <CreateStars rate={book.rate} />
             </div>
-            <p className="mt-3 text-2xl leading-7 text-justify">
-              {book.description}
-            </p>
+
+            <Paragraph>{book.description}</Paragraph>
             <span className="gray-text">{t('bookPage.language')}:Arabic</span>
           </div>
           <br />
