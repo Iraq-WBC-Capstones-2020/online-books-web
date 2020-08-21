@@ -2,16 +2,18 @@ import React from 'react';
 import { MDBCol, MDBCard, MDBCardBody } from 'mdbreact';
 export default function VerticalSeparated() {
   return (
-    <MDBCol md="1">
-      <div className="verline d-none d-sm-block"></div>
-      <MDBCard className=" orr">
-        <MDBCardBody>
-          <div className="text-center">
-            <div className="rounded-pill px-2"> or </div>
-          </div>
-        </MDBCardBody>
-      </MDBCard>
-      <div className="verline2 d-none d-sm-block"></div>
-    </MDBCol>
+    <div class="mt-5 flex flex-col content-center h-auto">
+      <div class="text-center">
+        <div className="w-0 verline inline-block"></div>
+      </div>
+      <div className="h-20 text-center">
+        <span className="h-20 w-20 bg-gray-100 inline-block rounded-full orr">
+          or
+        </span>
+      </div>
+      <div class="text-center">
+        <div className="w-0 verline inline-block"></div>
+      </div>
+    </div>
   );
 }

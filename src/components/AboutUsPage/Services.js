@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCol, MDBCardBody, MDBContainer } from 'mdbreact';
+import { MDBCol, MDBContainer, MDBRow } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import buildingInsights2 from '@iconify/icons-carbon/building-insights-2';
 import deliveryTruck from '@iconify/icons-carbon/delivery-truck';
@@ -8,6 +8,7 @@ import openMailboxWithRaisedFlag from '@iconify/icons-emojione-monotone/open-mai
 import giftIcon from '@iconify/icons-bi/gift';
 import openBook from '@iconify/icons-entypo/open-book';
 import ServiceCard from './ServiceCard';
+import SectionTitle from './../../components/SectionTitle/SectionTitle';
 function Services() {
   const { t } = useTranslation();
   const Services = [
@@ -25,21 +26,16 @@ function Services() {
     return Object.assign({}, service, teamInfo[title]);
   });
   return (
-    <div className="col bg-gray-100">
+    <div className="bg-gray-100">
       <MDBContainer>
-        <MDBCol>
-          <div className="text-center mt-10">
-            <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
-              {header}
-            </h1>
-          </div>
-        </MDBCol>
-
-        <MDBCardBody className="ml-12 grid grid-cols-3">
+        <SectionTitle>{header}</SectionTitle>
+        <MDBRow className="py-3">
           {ourServices.map((service) => (
-            <ServiceCard key={service.id} service={service} />
+            <MDBCol lg="4" md="6" sm="12" size="12">
+              <ServiceCard key={service.id} service={service} />
+            </MDBCol>
           ))}
-        </MDBCardBody>
+        </MDBRow>
       </MDBContainer>
     </div>
   );

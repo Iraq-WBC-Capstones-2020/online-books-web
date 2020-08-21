@@ -1,7 +1,10 @@
 import React from 'react';
 import './style.scss';
 import { MDBContainer, MDBBtn, MDBRow, MDBCol } from 'mdbreact';
+import { useTranslation } from 'react-i18next';
+
 function Author() {
+  const { t } = useTranslation();
   const popularAuthor = [
     'Zen Cho',
     'John Doe',
@@ -20,7 +23,9 @@ function Author() {
     <div>
       <MDBContainer className="mt-5">
         <div>
-          <h1 className="text-center text-3xl">Popular authors</h1>
+          <h1 className="text-center text-3xl">
+            {t('mainPage.PopularAuthors')}
+          </h1>
         </div>
         <MDBRow className="mt-5">
           {popularAuthor.map((author) => {

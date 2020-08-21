@@ -6,7 +6,7 @@ function GrideCarousel({ activeCardItem }) {
   let booksArray = [
     {
       cover:
-        'http://1.bp.blogspot.com/-yQklGusIOBE/Ul-oQ0_9vOI/AAAAAAAAfI4/XQTmNLaJZLQ/s1600/book-cover-poster-27.jpg',
+        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
       authorName: 'Alice Mayer',
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',
@@ -17,7 +17,7 @@ function GrideCarousel({ activeCardItem }) {
     },
     {
       cover:
-        'http://www.snugglyoranges.com/wp-content/uploads/2014/09/Unspoken.jpg',
+        'https://s-media-cache-ak0.pinimg.com/736x/78/c5/f0/78c5f0de85565a0fd4a911f2681f56e3--book-cover-art-cover-books.jpg',
       authorName: 'Alice Mayer',
       bookName: 'The Shadows: A Novel',
       type: 'formate:Hardback',

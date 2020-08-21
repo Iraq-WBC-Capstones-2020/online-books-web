@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBRow } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import '../loginPage/login.scss';
 import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
@@ -59,10 +59,16 @@ function FormPage() {
   };
   return (
     <MDBContainer>
-      <MDBRow>
-        <Form formData={formData} onSubmit={handleSignup} />
-        <VerticalSeparated />
-        <SocialMediaButtons />
+      <MDBRow className="mt-5">
+        <MDBCol md="5" size="12">
+          <Form formData={formData} onSubmit={handleSignup} />
+        </MDBCol>
+        <MDBCol size="2" className="d-none d-md-block">
+          <VerticalSeparated />
+        </MDBCol>
+        <MDBCol md="5" size="12">
+          <SocialMediaButtons />
+        </MDBCol>
       </MDBRow>
     </MDBContainer>
   );
