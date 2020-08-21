@@ -9,7 +9,7 @@ export default class Book {
         this.dis_count = dis_count;
         this.cover = cover;
         this.have_audio = have_audio;
-        this.description =description;
+        this.description = description;
         this.audio_ref = audio_ref;
         this.author_id = author_id;
         this.ref = ref;
@@ -22,8 +22,13 @@ export default class Book {
         const doc = await booksRef.doc(id).get();
         return new Book(doc.data());
     }
+    static async getBooks() {
+        const documentData = await booksRef.get();
+        const books = documentData.docs.map((book) => new Book(book.data()));
+        return books;
+    }
     updateBookInfo() {
-        if (!this.id) this.id= booksRef.doc().id;
+        if (!this.id) this.id = booksRef.doc().id;
         booksRef.doc(this.id).set(this);
     }
 }
