@@ -24,7 +24,7 @@ const BookPage = () => {
   return (
     <MDBContainer className="mt-5">
       <MDBRow>
-        <MDBCol sm="6" size="12">
+        <MDBCol sm="6" size="12" className="order-1 order-sm-0">
           <div className="mt-5">
             <h1 className="blue-text"> {book.bookName}</h1>
             <span className="gray-text">{book.authortName}</span>
@@ -81,7 +81,7 @@ const BookPage = () => {
           )}
         </MDBCol>
 
-        <MDBCol sm="6" size="12">
+        <MDBCol sm="6" size="12" className="order-0 order-sm-1">
           <div className="mt-5 d-flex justify-content-center align-self-center">
             <img
               src={book.bookCover}
