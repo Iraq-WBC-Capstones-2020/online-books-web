@@ -2,6 +2,7 @@ import React from 'react';
 import '../../pages/AudioPage/style.scss';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import AudioPlayerPage from './audioPlayer';
+import Paragraph from '../Paragraph/Paragraph';
 const AudioPageSection = () => {
   const bookInfo = {
     bookName: 'Mind without body',
@@ -30,9 +31,7 @@ const AudioPageSection = () => {
         <MDBCol sm="7" size="12">
           <div className="mt-5">
             <h1 className="blue-text">{bookInfo.bookName}</h1>
-            <p className="mt-3 d-none d-sm-block text-2xl leading-7 text-justify">
-              {bookInfo.description}
-            </p>
+            <Paragraph>{bookInfo.description}</Paragraph>
           </div>
           <div className="mt-5">
             <AudioPlayerPage />
