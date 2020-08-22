@@ -21,7 +21,7 @@ import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 import i18n from '../i18n';
 
-function NavbarPage() {
+function NavbarPage({ handelModel8 }) {
   const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +65,7 @@ function NavbarPage() {
   return (
     <>
       <MDBContainer>
-        <MDBNavbar className="shadow-none" light expand="md">
+        <MDBNavbar className="shadow-none" light expand="lg">
           <MDBNavbarBrand>
             <MDBNavLink to="/">
               <strong className="black-text font-bold">BooksZone</strong>
@@ -74,6 +74,11 @@ function NavbarPage() {
           <MDBNavbarToggler onClick={toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
+              <MDBNavItem>
+                <div className="px-1 py-2" onClick={() => handelModel8(true)}>
+                  {t('mainPage.category.Categories')}
+                </div>
+              </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
@@ -123,7 +128,7 @@ function NavbarPage() {
                 <>
                   <MDBNavItem>
                     <button
-                      className="w-32 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 sm:mx-0 md:mx-2 lg:mx-4  border-2 border-transparent rounded-full"
+                      className="w-32 bg-blue-500  hover:bg-blue-700 text-white font-bold py-2 border-2 border-transparent rounded-full sm:mx-0 md:mx-2 lg:mx-4"
                       onClick={goToSignUpPage}
                     >
                       {t('navBar.signUp')}
@@ -131,7 +136,7 @@ function NavbarPage() {
                   </MDBNavItem>
                   <MDBNavItem>
                     <button
-                      className="sm:mt-4  md:mt-0 w-32 bg-gray-100 hover:bg-blue-500  text-blue-700 font-bold hover:text-white py-2  border-2 border-blue-500 rounded-full"
+                      className="w-32 bg-gray-100 sm:mt-4 lg:mt-0 hover:bg-blue-500  text-blue-700 font-bold hover:text-white py-2  border-2 border-blue-500 rounded-full"
                       onClick={goToLoginPage}
                     >
                       {t('navBar.login')}

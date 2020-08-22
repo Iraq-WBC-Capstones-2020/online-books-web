@@ -155,7 +155,7 @@ function ShowCardsSection() {
   };
 
   const settings = {
-    dots: true,
+    dots: isSmallScreen ? true : false,
     dotsClass: 'slick-dots slick-thumb dotsMargin',
     infinite: true,
     slidesToShow: isSmallScreen ? 2 : 4,
