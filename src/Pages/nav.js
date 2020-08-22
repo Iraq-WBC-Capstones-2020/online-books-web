@@ -17,6 +17,7 @@ import {
   MDBContainer,
   MDBIcon,
 } from 'mdbreact';
+import './style.css';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 import i18n from '../i18n';
@@ -136,7 +137,7 @@ function NavbarPage({ handelModel8 }) {
                   </MDBNavItem>
                   <MDBNavItem>
                     <button
-                      className="w-32 bg-gray-100 sm:mt-4 lg:mt-0 hover:bg-blue-500  text-blue-700 font-bold hover:text-white py-2  border-2 border-blue-500 rounded-full"
+                      className="margin w-32 bg-gray-100 sm:mt-4 lg:mt-0 hover:bg-blue-500  text-blue-700 font-bold hover:text-white py-2  border-2 border-blue-500 rounded-full"
                       onClick={goToLoginPage}
                     >
                       {t('navBar.login')}
