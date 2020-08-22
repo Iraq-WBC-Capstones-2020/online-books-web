@@ -38,9 +38,13 @@ function CarouselItems({ book, index }) {
                   </h1>
                 </div>
                 <MDBCardText>
-                  <p className="mb-1 fontHeader2 font-normal font-weight-normal">{book.bookName}</p>
+                  <p className="mb-1 fontHeader2 font-normal font-weight-normal">
+                    {book.bookName}
+                  </p>
                   <p className="mb-1 parg1 font-weight-normal">{book.type}</p>
-                  <p className="font-black fontPrice font-weight-normal">{book.price}</p>
+                  <p className="font-black fontPrice font-weight-normal">
+                    {book.price}
+                  </p>
 
                   <div className="mb-3">
                     <div className="inline-block mr-2">
@@ -55,7 +59,6 @@ function CarouselItems({ book, index }) {
                   {t('carsouelSection.addtocart')}
                 </button>
               </MDBCardBody>
-             
             </MDBCol>
           </MDBRow>
         </MDBContainer>

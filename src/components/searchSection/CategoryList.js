@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
 const MAXIMUM_TABS_TO_SHOW = 9;
- 
+
 function CategoryList({ items }) {
   const { t } = useTranslation();
   const [activeBubble, setActiveBubble] = useState(0);

@@ -17,7 +17,7 @@ exports[`SideBar snapshot 1`] = `
       className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 ml-10 m-4"
     >
       <i
-        className="fas fa-map-marker-alt text-4xl white-text ml-24"
+        className="fas fa-map-marker-alt text-4xl white-text ml-18"
       />
       <p
         className="text-gray-400 ml-4"
@@ -31,10 +31,10 @@ exports[`SideBar snapshot 1`] = `
       className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  m-4"
     >
       <i
-        className="fas fa-envelope pr-2 text-4xl white-text ml-24"
+        className="fas fa-envelope pr-2 text-4xl white-text ml-18"
       />
       <p
-        className="text-gray-400 ml-2"
+        className="text-gray-400 ml-1 mr-1"
       >
         contact@example.com
         <br />
@@ -45,7 +45,7 @@ exports[`SideBar snapshot 1`] = `
       className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  m-4"
     >
       <i
-        className="fas fa-phone pr-2 text-4xl white-text ml-24"
+        className="fas fa-phone pr-2 text-4xl white-text ml-18"
       />
       <p
         className="text-gray-400 ml-2 mb-10"

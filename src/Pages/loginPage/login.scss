@@ -8,22 +8,11 @@
 }
 .orr {
   background-color: #f3f3f3 !important;
-  position: absolute;
-  top: 50%;
   border-radius: 50%;
   border: 1px solid #f3f3f3;
+  line-height: 5rem;
 }
 .verline {
   border-right: 2px solid #dddddd;
-  height: 110px;
-  position: absolute;
-  top: 130px;
-  left: 50px;
-}
-.verline2 {
-  border-right: 2px solid #dddddd;
-  height: 110px;
-  position: absolute;
-  top: 65%;
-  left: 50px;
+  height: 160px;
 }

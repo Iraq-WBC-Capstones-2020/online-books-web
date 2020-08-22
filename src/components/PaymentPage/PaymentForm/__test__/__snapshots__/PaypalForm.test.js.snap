@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaypalForm snapshot 1`] = `
+<div
+  className="container"
+  data-test="container"
+>
+  <div
+    className="row"
+    data-test="row"
+  >
+    <div
+      className="col-md-12"
+      data-test="col"
+    >
+      <form>
+        <div
+          className="grey-text"
+        >
+          <div
+            className="md-form form-group d-flex flex-row-reverse"
+          >
+            <i
+              className="fa fa-envelope prefix"
+              data-test="fa"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            />
+            <input
+              aria-disabled={false}
+              className="form-control validate ml-0 mr-1"
+              data-test="input"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onInput={[Function]}
+              type="email"
+              value=""
+            />
+            <label
+              aria-labelledby=""
+              className="ml-4.5"
+              data-error="wrong"
+              data-success="right"
+              id=""
+              onClick={[Function]}
+            >
+              paymentPage.email
+            </label>
+          </div>
+          <div
+            className="md-form form-group d-flex flex-row-reverse"
+          >
+            <i
+              className="fa fa-lock prefix"
+              data-test="fa"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            />
+            <input
+              aria-disabled={false}
+              className="form-control validate ml-0 mr-1"
+              data-test="input"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onInput={[Function]}
+              type="password"
+              value=""
+            />
+            <label
+              aria-labelledby=""
+              className="ml-4.5"
+              data-error=""
+              data-success=""
+              id=""
+              onClick={[Function]}
+            >
+              paymentPage.password
+            </label>
+          </div>
+        </div>
+        <div
+          className="text-center mb-3"
+        >
+          <button
+            className="btn-blue btn Ripple-parent rounded-pill text-white z-depth-1a w-48"
+            data-test="button"
+            onMouseUp={[Function]}
+            onTouchStart={[Function]}
+            type="button"
+          >
+            paymentPage.purchase
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

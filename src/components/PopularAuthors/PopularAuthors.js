@@ -18,12 +18,14 @@ function Author() {
     'john Doe',
     'Ali Doe',
     'John Doe',
-  ]; 
+  ];
   return (
     <div>
       <MDBContainer className="mt-5">
         <div>
-          <h1 className="text-center text-3xl">{t('mainPage.PopularAuthors')}</h1>
+          <h1 className="text-center text-3xl">
+            {t('mainPage.PopularAuthors')}
+          </h1>
         </div>
         <MDBRow className="mt-5">
           {popularAuthor.map((author) => {
