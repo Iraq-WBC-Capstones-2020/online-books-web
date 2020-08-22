@@ -11,7 +11,7 @@ import './searchSectionStyle.scss';
 import CategoryList from './CategoryList';
 import BookImage from './bookImage';
 import { useTranslation } from 'react-i18next';
- 
+
 function SearchSection() {
   const { t } = useTranslation();
   const categoriesBooks = [
