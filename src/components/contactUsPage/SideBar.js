@@ -6,7 +6,7 @@ function ContactInformation() {
 
   return (
     <>
-      <div className="flex justify-end">
+      <div className="flex justify-center mt-5">
         <MDBCard className="max-h-full bg-blue-800 w-1/4 flex justify-center">
           <h1 className=" my-4 pb-2 text-center white-text text-2xl">
             {t('contactUsPage.contactUs')}
