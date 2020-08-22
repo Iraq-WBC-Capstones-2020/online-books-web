@@ -5,7 +5,7 @@ import Form from '../../components/signinSignup/Form';
 import SocialMediaButtons from '../../components/signinSignup/SocialMediaButtons';
 import VerticalSeparated from '../../components/signinSignup/VerticalSeparated';
 
-function SignUpPage() {
+function FormPage() {
   const formData = {
     title: 'Sign Up',
     button: { title: 'Sign Up', href: '#' },
@@ -40,4 +40,4 @@ function SignUpPage() {
   );
 }
 
-export default SignUpPage;
+export default FormPage;
