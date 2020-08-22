@@ -42,7 +42,7 @@ function Pills({ tabs }) {
           </MDBNav>
         </MDBContainer>
       </div>
-      <div className="bg-gray-200 py-4">
+      <div className="py-4">
         <MDBContainer>
           <MDBTabContent activeItem={items['default']}>
             {tabs.map((tab, index) => (

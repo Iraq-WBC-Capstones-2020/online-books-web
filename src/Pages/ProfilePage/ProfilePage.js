@@ -71,9 +71,7 @@ function ProfilePage() {
           </MDBRow>
         </MDBContainer>
       </div>
-      <div>
         <Pills tabs={tabs} />
-      </div>
     </>
   );
 }
