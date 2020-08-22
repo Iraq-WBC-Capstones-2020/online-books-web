@@ -2,7 +2,7 @@ import React from 'react';
 import audioBook from './audioBook.mp3';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import '../../pages/AudioPage/style.scss';
+import './style.scss';
 
 const AudioPlayerPage = () => {
   const audio = audioBook;
@@ -10,7 +10,6 @@ const AudioPlayerPage = () => {
     <AudioPlayer
       src={audio}
       className="height-200"
-      customVolumeControls={[]}
       customAdditionalControls={[]}
       showFilledProgress={false}
     />

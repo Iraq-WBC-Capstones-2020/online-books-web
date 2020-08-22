@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookPage snapshot 1`] = `
+<div
+  className="container mt-5"
+  data-test="container"
+>
+  <div
+    className="row"
+    data-test="row"
+  >
+    <div
+      className="col-12 col-sm-6 order-1 order-sm-0"
+      data-test="col"
+    >
+      <div
+        className="mt-5"
+      >
+        <h1
+          className="blue-text"
+        >
+           
+          Mind Without Body
+        </h1>
+        <span
+          className="gray-text"
+        >
+          Ahmed khaled tofeq
+        </span>
+        <br />
+        <div
+          className="mt-2 yellow-star"
+        >
+          <icon
+            className="fa fa-star fa-md mr-1 text-yellow-300"
+          />
+          <icon
+            className="fa fa-star fa-md mr-1 text-yellow-300"
+          />
+          <icon
+            className="fa fa-star fa-md mr-1 text-yellow-300"
+          />
+          <icon
+            className="fas fa-star-half-alt fa-md mr-1 text-yellow-300"
+          />
+          <icon
+            className=" fa fa-star font-light fa-md mr-1 text-yellow-300"
+          />
+        </div>
+        <p
+          className="text-3xl font-medium border-b-4 inline border-blue-500"
+        />
+        <p
+          className="text-base leading-loose text-justify"
+        >
+          is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since
+    the 1500s, when an unknown printer took a galley of type and
+    scrambled it to make a type specimen book.galley of type and
+    scrambled it to make a type specimen book
+        </p>
+        <span
+          className="gray-text"
+        >
+          bookPage.language
+          :Arabic
+        </span>
+      </div>
+      <br />
+      <span
+        className="gray-text"
+      >
+        Price: 
+        <strong>
+          15$
+        </strong>
+      </span>
+      <div
+        className="mt-3"
+      >
+        <button
+          className="btn-info btn Ripple-parent mr-3 px-3 py-0"
+          data-test="button"
+          onMouseUp={[Function]}
+          onTouchStart={[Function]}
+          type="button"
+        >
+          Fantasy
+          <div
+            className="Ripple "
+            data-test="waves"
+            style={
+              Object {
+                "height": "0px",
+                "left": "0px",
+                "top": "0px",
+                "width": "0px",
+              }
+            }
+          />
+        </button>
+        <button
+          className="btn-info btn Ripple-parent px-3 py-0"
+          data-test="button"
+          onMouseUp={[Function]}
+          onTouchStart={[Function]}
+          type="button"
+        >
+          2017
+          <div
+            className="Ripple "
+            data-test="waves"
+            style={
+              Object {
+                "height": "0px",
+                "left": "0px",
+                "top": "0px",
+                "width": "0px",
+              }
+            }
+          />
+        </button>
+      </div>
+      <div
+        className="mt-4"
+      >
+        <button
+          className="btn-primary btn Ripple-parent px-4 rounded-pill"
+          data-test="button"
+          onMouseUp={[Function]}
+          onTouchStart={[Function]}
+          type="button"
+        >
+          bookPage.addToCart
+          <div
+            className="Ripple "
+            data-test="waves"
+            style={
+              Object {
+                "height": "0px",
+                "left": "0px",
+                "top": "0px",
+                "width": "0px",
+              }
+            }
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="col-12 col-sm-6 order-0 order-sm-1"
+      data-test="col"
+    >
+      <div
+        className="mt-5 d-flex justify-content-center align-self-center"
+      >
+        <img
+          alt="Book cover"
+          height="498"
+          src="https://via.placeholder.com/353x498"
+          width="353"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
