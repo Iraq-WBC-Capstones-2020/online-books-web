@@ -20,6 +20,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 import i18n from '../i18n';
+import PropTypes from 'prop-types';
 
 function NavbarPage({ handelModel8 }) {
   const { t } = useTranslation();
@@ -157,5 +158,7 @@ function NavbarPage({ handelModel8 }) {
     </>
   );
 }
-
+NavbarPage.propTypes = {
+  handelModel8: PropTypes.func,
+};
 export default NavbarPage;

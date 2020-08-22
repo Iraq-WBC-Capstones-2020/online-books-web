@@ -11,7 +11,7 @@ import './searchSectionStyle.scss';
 import CategoryList from './CategoryList';
 import BookImage from './bookImage';
 import { useTranslation } from 'react-i18next';
- 
+
 function SearchSection() {
   const { t } = useTranslation();
   const categoriesBooks = [
@@ -20,6 +20,8 @@ function SearchSection() {
     { name: t('mainPage.category.Literature&Fiction') },
     { name: t('mainPage.category.Business&Investing') },
     { name: t('mainPage.category.History') },
+    { name: t('mainPage.category.ChildrenBooks') },
+    { name: t('mainPage.category.Romance') },
   ];
   const authorNames = [
     { name: 'zeena kareem' },

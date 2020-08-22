@@ -88,7 +88,7 @@
     "newRelease": "أحدث اصدارات الكتب",
     "ratings": "تقييم"
   },
-  "mainPage": { 
+  "mainPage": {
     "searchByPart": {
       "FindYourBook": "أبحث عن كتابك",
       "SEARCH BY": "أبحث بواسطة",
@@ -96,8 +96,10 @@
       "Books": "الكتب"
     },
     "category": {
-      "Categories":"الاصناف",
+      "Categories": "الاصناف",
       "Popular": "الشائع",
+      "Romance":"رومانسي",
+      "ChildrenBooks":"كتب أطفال",
       "Biographies&Memoirs": "السير الذاتية  و المذكرات",
       "Literature&Fiction": "أدب و خيال",
       "Business&Investing": "الأعمال و الاستثمار",

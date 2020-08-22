@@ -177,8 +177,10 @@
       "Books": "Books"
     },
     "category": {
-      "Categories":"Categories",
+      "Categories": "Categories",
       "Popular": "Popular",
+      "Romance":"Romance",
+      "ChildrenBooks":"Children Books",
       "Biographies&Memoirs": "Biographies & Memoirs",
       "Literature&Fiction": "Literature & Fiction",
       "Business&Investing": "Business & Investing",
