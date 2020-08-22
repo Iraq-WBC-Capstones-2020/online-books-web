@@ -10,7 +10,7 @@ export default function SocialMediaButtons() {
             <div className=" social text-white">
               <button
                 type="button"
-                className="btn btn-gplus
+                className="w-56 btn btn-gplus
 
              btn btn-danger rounded-pill"
               >
@@ -20,7 +20,7 @@ export default function SocialMediaButtons() {
               <br></br>
               <button
                 type="button"
-                className="btn btn-git
+                className="w-56 btn btn-git
                         btn btn-grey rounded-pill text-white"
               >
                 <i className="fab fa-github pr-1 text-white "></i> Login with
@@ -30,7 +30,7 @@ export default function SocialMediaButtons() {
 
               <button
                 type="button"
-                className="btn btn-fb
+                className="w-56 btn btn-fb
                  btn btn-primary rounded-pill"
               >
                 <i className="fab fa-facebook-f pr-1"></i>
