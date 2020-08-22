@@ -75,9 +75,6 @@ function NavbarPage() {
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
                 <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
@@ -86,9 +83,7 @@ function NavbarPage() {
               <MDBNavItem>
                 <MDBDropdown>
                   <MDBDropdownToggle nav caret>
-                    <div className="d-none d-md-inline">
-                      {t('navBar.language')}
-                    </div>
+                    <div className="d-md-inline">{t('navBar.language')}</div>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu className="dropdown-default">
                     <MDBDropdownItem onClick={() => hanndleClick('ar')}>
@@ -128,7 +123,7 @@ function NavbarPage() {
                 <>
                   <MDBNavItem>
                     <button
-                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 border-2 border-transparent rounded-full"
+                      className="w-32 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 sm:mx-0 md:mx-2 lg:mx-4  border-2 border-transparent rounded-full"
                       onClick={goToSignUpPage}
                     >
                       {t('navBar.signUp')}
@@ -136,7 +131,7 @@ function NavbarPage() {
                   </MDBNavItem>
                   <MDBNavItem>
                     <button
-                      className="bg-gray-100 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 rounded-full"
+                      className="sm:mt-4  md:mt-0 w-32 bg-gray-100 hover:bg-blue-500  text-blue-700 font-bold hover:text-white py-2  border-2 border-blue-500 rounded-full"
                       onClick={goToLoginPage}
                     >
                       {t('navBar.login')}
