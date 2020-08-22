@@ -10,7 +10,7 @@ import {
 } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import CreateStars from './CreateStars';
-
+import { Link } from 'react-router-dom';
 // create 4 items for the carsouel movement
 function CarouselItems({ book, index }) {
   const { t } = useTranslation();
@@ -21,11 +21,13 @@ function CarouselItems({ book, index }) {
         <MDBContainer className="w-full">
           <MDBRow className="p-0">
             <MDBCol size="12" md="4" lg="5" className="p-0">
-              <img
-                className="imageCardCarsouel"
-                src={book.cover}
-                alt="cover book"
-              />
+              <Link to="/book/:bookId">
+                <img
+                  className="imageCardCarsouel"
+                  src={book.cover}
+                  alt="cover book"
+                />
+              </Link>
             </MDBCol>
 
             <MDBCol md="1" lg="1"></MDBCol>
@@ -33,14 +35,19 @@ function CarouselItems({ book, index }) {
             <MDBCol md="7" lg="6" size="12" className="my-auto">
               <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto">
                 <div>
-                  <h1 className="fontHeader1 mb-0 font-weight-normal  text-2xl">
-                    {book.authorName}
-                  </h1>
+                  <Link to="/author/:authorId">
+                    <a className="fontHeader1 mb-0 font-weight-normal  text-2xl">
+                      {book.authorName}
+                    </a>
+                  </Link>
                 </div>
+
                 <MDBCardText>
-                  <p className="mb-1 fontHeader2 font-normal font-weight-normal">
-                    {book.bookName}
-                  </p>
+                  <Link to="/book/:bookId">
+                    <p className="mb-1 fontHeader2 font-normal font-weight-normal">
+                      {book.bookName}
+                    </p>
+                  </Link>
                   <p className="mb-1 parg1 font-weight-normal">{book.type}</p>
                   <p className="font-black fontPrice font-weight-normal">
                     {book.price}
