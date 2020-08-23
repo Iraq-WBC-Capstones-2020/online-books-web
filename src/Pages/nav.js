@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { usersRef, auth } from './../api/firebase';
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from './../actions';
+import './style.scss';
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -84,9 +85,6 @@ function NavbarPage({ handelModel8 }) {
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
                 <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
@@ -94,11 +92,11 @@ function NavbarPage({ handelModel8 }) {
               </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>
-                  <MDBDropdownToggle nav caret>
-                    <div className="d-none d-md-inline">
+                  <div className="d-md-inline">
+                    <MDBDropdownToggle nav caret>
                       {t('navBar.language')}
-                    </div>
-                  </MDBDropdownToggle>
+                    </MDBDropdownToggle>
+                  </div>
                   <MDBDropdownMenu className="dropdown-default">
                     <MDBDropdownItem onClick={() => hanndleClick('ar')}>
                       عربي
@@ -137,7 +135,7 @@ function NavbarPage({ handelModel8 }) {
                 <>
                   <MDBNavItem>
                     <button
-                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 border-2 border-transparent rounded-full"
+                      className="w-24 bg-blue-500 focus:outline-none hover:bg-blue-700 text-white font-bold py-2 sm:mx-0 md:mx-2 lg:mx-4  border-2 border-transparent rounded-full"
                       onClick={goToSignUpPage}
                     >
                       {t('navBar.signUp')}
@@ -145,7 +143,7 @@ function NavbarPage({ handelModel8 }) {
                   </MDBNavItem>
                   <MDBNavItem>
                     <button
-                      className="bg-gray-100 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 rounded-full"
+                      className="margin sm:mt-4 focus:outline-none md:mt-0 w-24 bg-gray-100 hover:bg-blue-500   text-blue-700 font-bold hover:text-white py-2  border-2 border-blue-500 rounded-full"
                       onClick={goToLoginPage}
                     >
                       {t('navBar.login')}
