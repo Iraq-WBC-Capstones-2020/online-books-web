@@ -34,7 +34,7 @@ export default class Book {
     this.author_name = author_name;
     this.released_date = released_date;
     this.views = views;
-    this.rating = rating; 
+    this.rating = rating;
     this.ref = ref;
     this.tags = tags;
   }
