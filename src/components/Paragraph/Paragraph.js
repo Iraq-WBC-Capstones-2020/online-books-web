@@ -11,7 +11,7 @@ function Paragraph({ title, className, children }) {
         {title}
       </p>
       <p
-        className={`text-base leading-loose text-justify ${
+        className={`text-base leading-loose text-justify break-words ${
           className || ''
         }`.trim()}
       >
