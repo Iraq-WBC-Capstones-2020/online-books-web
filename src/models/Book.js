@@ -22,6 +22,13 @@ export default class Book {
         const doc = await booksRef.doc(id).get();
         return new Book(doc.data());
     }
+  async addBookToCart(user_id) {
+    await usersRef
+      .doc(user_id)
+      .collection('cart')
+      .doc(this.id)
+      .set({ ...this });
+  }
     static async getBooks() {
         const documentData = await booksRef.get();
         const books = documentData.docs.map((book) => new Book(book.data()));
