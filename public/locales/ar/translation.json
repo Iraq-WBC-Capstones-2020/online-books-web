@@ -79,7 +79,7 @@
     "writeToUs": "اكتب لنا",
     "firstName": "الاسم الاول",
     "lastName": "الاسم الاخير",
-    "email":"البريد الالكتروني",
+    "email": "البريد الالكتروني",
     "message": "رسالتك",
     "send": "ارسال"
   },
@@ -104,8 +104,8 @@
     "category": {
       "Categories": "الاصناف",
       "Popular": "الشائع",
-      "Romance":"رومانسي",
-      "ChildrenBooks":"كتب أطفال",
+      "Romance": "رومانسي",
+      "ChildrenBooks": "كتب أطفال",
       "Biographies&Memoirs": "السير الذاتية  و المذكرات",
       "Literature&Fiction": "أدب و خيال",
       "Business&Investing": "الأعمال و الاستثمار",
@@ -127,7 +127,7 @@
     "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
   },
   "landingPage": false,
-  
+
   "navBar": {
     "home": "الصفحة الرئيسية",
     "aboutus": "معلومات عنا",
@@ -153,7 +153,7 @@
     "country": "البلد",
     "address": "العنوان",
     "phoneNumber": "رقم الهاتف",
-    "email":"البريد الالكتروني",
+    "email": "البريد الالكتروني",
     "orderId": "رمز الطلب",
     "books": "الكتب",
     "status": "الحالة",
@@ -177,7 +177,7 @@
     "signInGithub": " Github تسجيل الدخول باستخدام",
     "signInFacebook": "Facebook تسجيل الدخول باستخدام"
   },
-  
+
   "paymentPage": {
     "booksOrder": "طلبية الكتب",
     "books": "الكتب",
@@ -191,7 +191,7 @@
     "cardNumber": "رقم البطاقة",
     "MMYYYY": "شهر/سنة",
     "CVC": "CVC",
-    "email":"البريد الالكتروني",
+    "email": "البريد الالكتروني",
     "password": "كلمة السر",
     "purchase": "شراء"
   }
