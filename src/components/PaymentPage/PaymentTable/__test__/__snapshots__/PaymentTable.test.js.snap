@@ -173,12 +173,12 @@ exports[`PaymentTable snapshot 1`] = `
                 </p>
               </td>
               <td
-                  className="text-center"
+                className="text-center"
               >
                 0
               </td>
               <td
-                  className="text-center"
+                className="text-center"
               >
                 0
               </td>
