@@ -3,22 +3,8 @@ import './style.scss';
 import { MDBContainer, MDBBtn, MDBRow, MDBCol } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 
-function Author() {
+function AuthorSection({ authors }) {
   const { t } = useTranslation();
-  const popularAuthor = [
-    'Zen Cho',
-    'John Doe',
-    'Ahemd Doe',
-    'Ali Doe',
-    'Alif Doe',
-    'john Doe',
-    'rema bedr',
-    'Ali Doe',
-    'Alif Doe',
-    'john Doe',
-    'Ali Doe',
-    'John Doe',
-  ];
   return (
     <div>
       <MDBContainer className="mt-5">
@@ -28,17 +14,17 @@ function Author() {
           </h1>
         </div>
         <MDBRow className="mt-5">
-          {popularAuthor.map((author) => {
+          {authors.map((author) => {
             return (
               <MDBCol
-                key={author}
+                key={author.id}
                 size="12"
                 sm="2"
                 md="3"
                 className="mt-4 d-flex justify-content-center align-items-center"
               >
                 <MDBBtn color="light-blue" className="px-2 rounded-pill button">
-                  {author}
+                  {author.name}
                 </MDBBtn>
               </MDBCol>
             );
@@ -49,4 +35,4 @@ function Author() {
   );
 }
 
-export default Author;
+export default AuthorSection;

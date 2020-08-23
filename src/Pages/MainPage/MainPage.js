@@ -10,17 +10,22 @@ import SearchSection from '../../components/searchSection/searchSection';
 import ModalSearchSection from '../../components/searchSection/ModalSearchSection';
 import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
 import { MDBCol, MDBRow, MDBContainer } from 'mdbreact';
-import Author from '../../components/PopularAuthors/PopularAuthors';
+import AuthorSection from '../../components/PopularAuthors/PopularAuthors';
 import Book from '../../models/Book';
+import Author from '../../models/Author';
 import Spinner from '../../components/Spinner/Spinner';
 import PropTypes from 'prop-types';
 function Main({ modal8, handelModel8 }) {
   const [books, setBooks] = useState();
+  const [authors, setAuthors] = useState();
   useEffect(() => {
     (async () => {
       const books = await Book.getBooks();
-      console.log(books);
       setBooks(books);
+    })();
+    (async () => {
+      const authors = await Author.getAuthors();
+      setAuthors(authors);
     })();
   }, []);
   return (
@@ -69,7 +74,7 @@ function Main({ modal8, handelModel8 }) {
           </MDBContainer>
           <CarsouelSlick books={books} highlightText="newRelease" />
           {/*Popular authors */}
-          <Author />
+          {!authors ? <Spinner /> : <AuthorSection authors={authors} />}
         </>
       )}
     </>
