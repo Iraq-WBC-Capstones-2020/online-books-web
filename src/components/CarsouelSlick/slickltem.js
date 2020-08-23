@@ -45,7 +45,7 @@ function CarouselItems({ book }) {
                   </p> 
                   <p className="mb-1 parg1 font-weight-normal">{`formate: ${have_audio?'Audio, PDF':'Hardback'}`}</p>
                   <p className="font-black fontPrice font-weight-normal">
-                    {`$${price}` }
+                    {`$${price}.99` }
                   </p>
 
                   <div className="mb-3">
