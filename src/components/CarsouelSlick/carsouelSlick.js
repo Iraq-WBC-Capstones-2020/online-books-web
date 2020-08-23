@@ -31,7 +31,7 @@ function CarsouelSlick({ highlightText, books }) {
     );
   };
   const settings = {
-    dots: false,
+    dots:false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
