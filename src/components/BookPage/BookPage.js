@@ -17,8 +17,6 @@ function BookPage({ book }) {
     rating,
     tags,
   } = book;
-  console.log(JSON.stringify(book));
-
   const isLoggedIn = false;
   const yearReleased = released_date.toDate().getFullYear();
   return (
