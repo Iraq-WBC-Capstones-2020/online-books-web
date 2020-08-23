@@ -31,8 +31,15 @@ function TeamMembersInformation() {
     <MDBContainer>
       <SectionTitle>{title}</SectionTitle>
       <MDBRow className="py-3">
-        {team.map((member, index) => (
-          <MDBCol key={index} lg="4" md="6" sm="12" size="12" className="p-5">
+        {team.map((member) => (
+          <MDBCol
+            key={member.id}
+            lg="4"
+            md="6"
+            sm="12"
+            size="12"
+            className="p-5"
+          >
             <TeamMemberCards key={member.id} member={member} />
           </MDBCol>
         ))}
