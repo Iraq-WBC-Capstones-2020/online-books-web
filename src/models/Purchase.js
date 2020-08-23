@@ -1,8 +1,7 @@
 import { purchasesRef } from './../api/firebase';
-import Book from './Book';
 
 export default class Purchase {
-  constructor({ id,user_id, book_id, price, time } = {}) {
+  constructor({ id, user_id, book_id, price, time } = {}) {
     this.id = id;
     this.user_id = user_id;
     this.book_id = book_id;
@@ -11,10 +10,10 @@ export default class Purchase {
   }
 
   async getPurchasesForUser(id) {
-    const querySnapshot = await purchasesRef
-      .where('user_id', '==', id)
-      .get();
-    const purchases = querySnapshot.docs.map((purchase) => new Purchase(purchase.data()));
+    const querySnapshot = await purchasesRef.where('user_id', '==', id).get();
+    const purchases = querySnapshot.docs.map(
+      (purchase) => new Purchase(purchase.data())
+    );
     return purchases;
   }
   static async getPurchases() {
@@ -26,6 +25,6 @@ export default class Purchase {
   }
   updatePurchaseInfo() {
     if (!this.id) this.id = purchasesRef.doc().id;
-    purchasesRef.doc(this.id).set(this);
+    purchasesRef.doc(this.id).set({ ...this });
   }
 }
