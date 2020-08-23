@@ -13,11 +13,11 @@ function MainCard({ book, index }) {
       className={`relative h-100 Card shadow-xl animate transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-95 mx-sm-0 mx-md-1 mx-lg-3 
          ${isBottomCardInColumn ? 'marginTop' : ''}`}
     >
-      <Link to={`/book/${id}`}>
+      <Link to={`/book/${id}`} className="imgCardBook">
         <img
           src={cover}
           alt={author_name}
-          className="imgCardBook rounded-t-md"
+          className="imgCardBook w-full rounded-t-md"
         />
       </Link>
       <MDBCardBody className="absolute bottom-0 w-full px-0 py-0">
