@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBContainer, MDBCol, MDBRow, MDBIcon } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-const Footer = () => {
+function Footer() {
   const { t } = useTranslation();
   const tags = t('footer.tagsList', { returnObjects: true });
   const logoUrl = 'https://via.placeholder.com/150x100';
@@ -85,7 +85,7 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 Footer.propTypes = {
   tags: PropTypes.array,
