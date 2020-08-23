@@ -13,7 +13,6 @@ import CreateStars from './CreateStars';
 // create 4 items for the carsouel movement
 function CarouselItems({ book }) {
   const { t } = useTranslation();
-
   return (
     <div className="mt-md-4 mb-md-4 pl-lg-3">
       <MDBCard className="w-30 shadow-none Card" wide>
@@ -26,14 +25,12 @@ function CarouselItems({ book }) {
                 alt="cover book"
               />
             </MDBCol>
-
             <MDBCol md="1" lg="1"></MDBCol>
-
             <MDBCol md="7" lg="6" size="12" className="my-auto">
               <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto">
                 <div>
-                  <h1 className="fontHeader1 mb-0 font-weight-normal  text-2xl">
-                    {book.auhtor_name}
+                  <h1 className="fontHeader1 mb-0 font-weight-normal text-2xl">
+                    {book.author_name}
                   </h1>
                 </div>
                 <MDBCardText>
@@ -44,16 +41,13 @@ function CarouselItems({ book }) {
                   <p className="font-black fontPrice font-weight-normal">
                     {book.price}
                   </p>
-
                   <div className="mb-3">
                     <div className="inline-block mr-2">
                       <CreateStars rate={book.rating} />
-                      {'  '}
                       {book.views} {t('carsouelSection.ratings')}
                     </div>
                   </div>
                 </MDBCardText>
-
                 <button className="buttomText text-center mycolorPink w-5/6 shadow-xl hover:shadow-lg h-10 text-black font-bold leading-3 rounded-full">
                   {t('carsouelSection.addtocart')}
                 </button>
