@@ -15,11 +15,11 @@ export default function PaymentForm() {
     <MDBContainer>
       <MDBRow>
         <MDBCol md="12">
-          <p className="h5 mx-5 my-5 text-gray-800">
+          <p className="h5 text-center mx-5 my-5 text-gray-800">
             {t('paymentPage.paymentMethod')}
           </p>
           <MDBRow>
-            <MDBCol md="6">
+            <MDBCol md="7">
               <input
                 type="radio"
                 id="credit-card"
@@ -30,7 +30,7 @@ export default function PaymentForm() {
               />
               <label for="credit-card">{t('paymentPage.creditCard')}</label>
             </MDBCol>
-            <MDBCol md="6">
+            <MDBCol md="5">
               <input
                 type="radio"
                 id="paypal"

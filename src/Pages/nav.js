@@ -47,7 +47,7 @@ function NavbarPage({ handelModel8 }) {
         dispatch(setUser({ isSigned: false }));
       }
     });
-  }, []);
+  }, [dispatch]);
   const onLogout = () => {
     auth.signOut();
   };
@@ -73,14 +73,17 @@ function NavbarPage({ handelModel8 }) {
               <strong className="black-text font-bold">BooksZone</strong>
             </MDBNavLink>
           </MDBNavbarBrand>
+          <MDBNavbarNav right>
+            <MDBIcon
+              icon="search"
+              size="lg"
+              className="d-lg-none"
+              onClick={() => handelModel8(true)}
+            />
+          </MDBNavbarNav>
           <MDBNavbarToggler onClick={toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
-              <MDBNavItem>
-                <div className="px-1 py-2" onClick={() => handelModel8(true)}>
-                  {t('mainPage.category.Categories')}
-                </div>
-              </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>

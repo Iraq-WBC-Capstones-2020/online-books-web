@@ -52,7 +52,7 @@ exports[`Team snapshot 1`] = `
           >
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.facebook.com"
             >
               <i
                 className="fab fa-facebook-square"
@@ -61,7 +61,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.twitter.com"
             >
               <i
                 className="fab fa-twitter"
@@ -70,7 +70,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.github.com"
             >
               <i
                 className="fab fa-github-alt"
@@ -79,7 +79,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.linkedin.com"
             >
               <i
                 className="fab fa-linkedin"
@@ -124,7 +124,7 @@ exports[`Team snapshot 1`] = `
           >
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.facebook.com"
             >
               <i
                 className="fab fa-facebook-square"
@@ -133,7 +133,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.twitter.com"
             >
               <i
                 className="fab fa-twitter"
@@ -142,7 +142,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.github.com"
             >
               <i
                 className="fab fa-github-alt"
@@ -151,7 +151,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.linkedin.com"
             >
               <i
                 className="fab fa-linkedin"
@@ -196,7 +196,7 @@ exports[`Team snapshot 1`] = `
           >
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.facebook.com"
             >
               <i
                 className="fab fa-facebook-square"
@@ -205,7 +205,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.twitter.com"
             >
               <i
                 className="fab fa-twitter"
@@ -214,7 +214,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.github.com"
             >
               <i
                 className="fab fa-github-alt"
@@ -223,7 +223,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.linkedin.com"
             >
               <i
                 className="fab fa-linkedin"
@@ -268,7 +268,7 @@ exports[`Team snapshot 1`] = `
           >
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.facebook.com"
             >
               <i
                 className="fab fa-facebook-square"
@@ -277,7 +277,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.twitter.com"
             >
               <i
                 className="fab fa-twitter"
@@ -286,7 +286,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.github.com"
             >
               <i
                 className="fab fa-github-alt"
@@ -295,7 +295,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.linkedin.com"
             >
               <i
                 className="fab fa-linkedin"
@@ -340,7 +340,7 @@ exports[`Team snapshot 1`] = `
           >
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.facebook.com"
             >
               <i
                 className="fab fa-facebook-square"
@@ -349,7 +349,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.twitter.com"
             >
               <i
                 className="fab fa-twitter"
@@ -358,7 +358,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.github.com"
             >
               <i
                 className="fab fa-github-alt"
@@ -367,7 +367,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.linkedin.com"
             >
               <i
                 className="fab fa-linkedin"
@@ -412,7 +412,7 @@ exports[`Team snapshot 1`] = `
           >
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.facebook.com"
             >
               <i
                 className="fab fa-facebook-square"
@@ -421,7 +421,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.twitter.com"
             >
               <i
                 className="fab fa-twitter"
@@ -430,7 +430,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.github.com"
             >
               <i
                 className="fab fa-github-alt"
@@ -439,7 +439,7 @@ exports[`Team snapshot 1`] = `
             </a>
             <a
               className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              href="#"
+              href="https://www.linkedin.com"
             >
               <i
                 className="fab fa-linkedin"

@@ -1,5 +1,4 @@
 import React from 'react';
-import { MDBCol, MDBCard, MDBCardBody } from 'mdbreact';
 export default function VerticalSeparated() {
   return (
     <div class="mt-5 flex flex-col content-center h-auto">
