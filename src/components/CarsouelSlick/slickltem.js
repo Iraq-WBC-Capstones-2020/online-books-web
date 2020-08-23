@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   MDBCard,
   MDBCardBody,
@@ -12,11 +11,11 @@ import { useTranslation } from 'react-i18next';
 import CreateStars from './CreateStars';
 
 // create 4 items for the carsouel movement
-function CarouselItems({ book, index }) {
+function CarouselItems({ book }) {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-md-4 mb-md-4 pl-lg-3" key={index}>
+    <div className="mt-md-4 mb-md-4 pl-lg-3">
       <MDBCard className="w-30 shadow-none Card" wide>
         <MDBContainer className="w-full">
           <MDBRow className="p-0">
@@ -34,12 +33,12 @@ function CarouselItems({ book, index }) {
               <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto">
                 <div>
                   <h1 className="fontHeader1 mb-0 font-weight-normal  text-2xl">
-                    {book.authorName}
+                    {book.auhtor_name}
                   </h1>
                 </div>
                 <MDBCardText>
                   <p className="mb-1 fontHeader2 font-normal font-weight-normal">
-                    {book.bookName}
+                    {book.name}
                   </p>
                   <p className="mb-1 parg1 font-weight-normal">{book.type}</p>
                   <p className="font-black fontPrice font-weight-normal">
@@ -48,7 +47,7 @@ function CarouselItems({ book, index }) {
 
                   <div className="mb-3">
                     <div className="inline-block mr-2">
-                      <CreateStars rate={book.rate} />
+                      <CreateStars rate={book.rating} />
                       {'  '}
                       {book.views} {t('carsouelSection.ratings')}
                     </div>

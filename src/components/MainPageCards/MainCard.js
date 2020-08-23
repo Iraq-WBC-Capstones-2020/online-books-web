@@ -1,15 +1,13 @@
 import React from 'react';
 import CreateStars from '../CarsouelSlick/CreateStars';
 import CartIcon from './cartIcon';
-import PropTypes from 'prop-types';
 import { MDBCard, MDBCardBody } from 'mdbreact';
-function Cards({ book, key }) {
-  const { id, authorName, bookName, newPrice, oldPrice, rate, cover } = book;
-  const isBottomCardInColumn = id % 2 === 0;
+function MainCard({ book }) {
+  const { id, author_name, name, price, dis_count, rating, cover } = book;
+  const isBottomCardInColumn = 1 % 2 === 0;
 
   return (
     <MDBCard
-      key={key}
       tag="div"
       className={`relative h-100 Card shadow-xl animate transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mx-sm-0 mx-md-1 mx-lg-3
          ${isBottomCardInColumn ? 'marginTop' : ''}`}
@@ -21,21 +19,19 @@ function Cards({ book, key }) {
         <div className="">
           <div className="blackOpacity text-center py-1">
             <h5 className="HeaderCardBook mb-0 text-xl text-white">
-              {authorName}
+              {author_name}
             </h5>
             <div className="sizeStarsContainer">
-              <CreateStars rate={rate} starSize="small" />
+              <CreateStars rate={rating} starSize="small" />
             </div>
-            <p className="HeaderCardBook grayColor text-sm font-bold">
-              {bookName}
-            </p>
+            <p className="HeaderCardBook grayColor text-sm font-bold">{name}</p>
           </div>
           {/*black part*/}
           <div className="bg-black d-flex flex-row justify-content-around py-md-2 px-md-2 px-sm-0">
             <p className="lightBlue font-semibold font-sans md:text-lg p-1">
-              {newPrice}
+              {price}
             </p>
-            <p className="darkGray font-normal line-through p-1">{oldPrice}</p>
+            <p className="darkGray font-normal line-through p-1">{dis_count}</p>
 
             <div className="rounded-full w-8  h-8 border-2 border-orange-200 text-center">
               <CartIcon className="p-1" />
@@ -46,7 +42,5 @@ function Cards({ book, key }) {
     </MDBCard>
   );
 }
-Cards.propTypes = {
-  BookInf: PropTypes.object,
-};
-export default Cards;
+
+export default MainCard;
