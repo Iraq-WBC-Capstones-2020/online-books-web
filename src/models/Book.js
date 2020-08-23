@@ -15,6 +15,7 @@ export default class Book {
     audio_ref = null,
     author_id = null,
     author_name = null,
+    released_date = null,
     views = null,
     rating = null,
     ref = null,
@@ -31,6 +32,7 @@ export default class Book {
     this.audio_ref = audio_ref;
     this.author_id = author_id;
     this.author_name = author_name;
+    this.released_date = released_date;
     this.views = views;
     this.rating = rating;
     this.ref = ref;

@@ -2,7 +2,7 @@ export const books = [
   {
     name: 'The Water Cure',
     authorName: 'Sophie Mackintosh',
-    released: new Date(2017, 3, 12),
+    released_date: new Date(2017, 3, 12),
     description:
       'There is a house on an island, alone by the sea. Inside live three girls, Grace, Lia and Sky, with their parents Mother and King. Outside, beyond the sea and the horizon, there is a “toxin‑filled world”. To understand what toxins are, and indeed for their knowledge of everything else, the girls have always deferred to King. Their world is complete. And then, one day, he is gone.',
     type: 'Fiction',
@@ -17,7 +17,7 @@ export const books = [
   },
   {
     name: 'The Story of Alice',
-    released: new Date(2018, 12, 1),
+    released_date: new Date(2018, 12, 1),
     description:
       'Following his acclaimed life of Dickens, Robert Douglas-Fairhurst illuminates the tangled history of two lives and two books. Drawing on numerous unpublished sources, he examines in detail the peculiar friendship between the Oxford mathematician Charles Dodgson (Lewis Carroll) and Alice Liddell, the child for whom he invented the Alice stories, and analyzes how this relationship stirred Carroll s imagination and influenced the creation of Wonderland. It also explains why Alice in Wonderland (1865) and its sequel, Through the Looking-Glass (1871), took on an unstoppable cultural momentum in the Victorian era and why, a century and a half later, they continue to enthrall and delight readers of all ages The Story of Alice reveals Carroll as both an innovator and a stodgy traditionalist, entrenched in habits and routines. He had a keen double interest in keeping things moving and keeping them just as they are. (In Looking-Glass Land, Alice must run faster and faster just to stay in one place.) Tracing the development of the Alice books from their inception in 1862 to Liddell s death in 1934, Douglas-Fairhurst also provides a keyhole through which to observe a larger, shifting cultural landscape: the birth of photography, changing definitions of childhood, murky questions about sex and sexuality, and the relationship between Carroll s books and other works of Victorian literature. In the stormy transition from the Victorian to the modern era, Douglas-Fairhurst shows, Wonderland became a sheltered world apart, where the line between the actual and the possible was continually blurred.',
     authorName: 'Glen Greenwood',
@@ -35,7 +35,7 @@ export const books = [
   },
   {
     name: 'The Story of Alice',
-    released: new Date(2016, 8, 1),
+    released_date: new Date(2016, 8, 1),
     description:
       'A true classic of twentieth-century literature, this edition has been updated by Fitzgerald scholar James L.W. West III to include the author’s final revisions and features a note on the composition and text, a personal foreword by Fitzgerald’s granddaughter, Eleanor Lanahan—and a new introduction by two-time National Book Award winner Jesmyn Ward.The Great Gatsby, F. Scott Fitzgerald’s third book, stands as the supreme achievement of his career. First published in 1925, this quintessential novel of the Jazz Age has been acclaimed by generations of readers. The story of the mysteriously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted “gin was the national drink and sex the national obsession,” it is an exquisitely crafted tale of America in the 1920s.',
     authorName: 'F. Scott Fitzgerald',
@@ -54,7 +54,7 @@ export const books = [
   },
   {
     name: 'Girl, Serpent, Thorn',
-    released: new Date(2015, 9, 1),
+    released_date: new Date(2015, 9, 1),
     description:
       "Melissa Bashardoust's Girl, Serpent, Thorn is “an alluring feminist fairy tale” (Kirkus Reviews) about a girl cursed to be poisonous to the touch and who discovers what power might lie in such a curse.There was and there was not, as all stories begin, a princess cursed to be poisonous to the touch. But for Soraya, who has lived her life hidden away, apart from her family, safe only in her gardens, it’s not just a story.As the day of her twin brother’s wedding approaches, Soraya must decide if she’s willing to step outside of the shadows for the first time. Below in the dungeon is a demon who holds knowledge that she craves, the answer to her freedom. And above is a young man who isn’t afraid of her, whose eyes linger not with fear, but with an understanding of who she is beneath the poison.Soraya thought she knew her place in the world, but when her choices lead to consequences she never imagined, she begins to question who she is and who she is becoming...human or demon. Princess or monster.",
     authorName: 'Melissa Bashardoust',
@@ -71,7 +71,7 @@ export const books = [
   },
   {
     name: ' the Little Mermaid ',
-    released: new Date(2020, 12, 11),
+    released_date: new Date(2020, 12, 11),
     description:
       "30 years after Disney's The Little Mermaid movie was released, it's time for a feminist reimagining for a new generation.'A masterpiece' Marian Keyes 'A fierce torrent of a book, raging and forceful and gripping.I was swept away' Kiran Millwood Hargrave 'Her prose cuts and rages and her vision of the Sea Witch is truly transformative' The Observer. Think you know the story of the Little Mermaid? Think again... Deep beneath the sea, off the cold Irish coast, Gaia is a young mermaid who dreams of freedom from her controlling father. On her first swim to the surface, she is drawn towards a human boy. She longs to join his carefree world, but how much will she have to sacrifice? What will it take for the little mermaid to find her voice? ",
     authorName: "Louise O'Neill",
@@ -88,7 +88,7 @@ export const books = [
   },
   {
     name: 'A Crown of Talon',
-    released: new Date(2018, 12, 1),
+    released_date: new Date(2018, 12, 1),
     description:
       " Fight or flight . . . or both?Three months after Aderyn's coronation the court is celebrating the Solstice, but Aderyn is preoccupied by Lucien's continuing hostility. The celebrations are interrupted by the arrival of nobles who have escaped from the neighbouring country of Celonia - the flightless have risen up and overthrown their rulers. The world is changing.As people being to question whether Aderyn and Aron are strong enough to rule, there is an attempted assassination on Aderyn's life. Siegfried and Tallis have made their move - they have formed an army, declared war and will take the throne, by any means necessary.Aderyn must fly to unchartered territories and risk the lives of everyone she loves to defeat her enemies, secure her throne and unite her people.Epic, dangerous and impossible to put down, this finale takes you on a soaring journey through grief, strength and determination to fight for what is right, what you love and what is yours.",
     authorName: 'Elizabeth and Katharine Corr',
@@ -105,7 +105,7 @@ export const books = [
   },
   {
     name: 'Little Women',
-    released: new Date(2011, 11, 1),
+    released_date: new Date(2011, 11, 1),
     description:
       "Generations of readers young and old, male and female, have fallen in love with the March sisters of Louisa May Alcott’s most popular and enduring novel, Little Women. Here are talented tomboy and author-to-be Jo, tragically frail Beth, beautiful Meg, and romantic, spoiled Amy, united in their devotion to each other and their struggles to survive in New England during the Civil War.It is no secret that Alcott based Little Women on her own early life. While her father, the freethinking reformer and abolitionist Bronson Alcott, hobnobbed with such eminent male authors as Emerson, Thoreau, and Hawthorne, Louisa supported herself and her sisters with 'woman’s work,” including sewing, doing laundry, and acting as a domestic servant. But she soon discovered she could make more money writing. Little Women brought her lasting fame and fortune, and far from being the 'girl’s book” her publisher requested, it explores such timeless themes as love and death, war and peace, the conflict between personal ambition and family responsibilities, and the clash of cultures between Europe and America.",
     authorName: 'Louisa May Alcott',
@@ -122,7 +122,7 @@ export const books = [
   },
   {
     name: 'A kingdom falls',
-    released: new Date(2015, 12, 1),
+    released_date: new Date(2015, 12, 1),
     description:
       "London, 1944. War is raging across Europe and Hitler's terrifying secret weapons, V1 rockets, transform life into a nightmare. After her mother was killed in an air raid, Anna Cooper was sent to live with her uncle, the Ravenmaster at the Tower of London. Now he too is dead, and Anna must seek help from her estranged father to discover her only chance of fighting back. Commandeering a Spitfire, Anna leads a crew of fearless pilots to intercept the deadly rockets. But Hitler has one final secret weapon, against which there is no defense. At the eve of a devastasting war, Anna must confront the ghosts of her past and do what she can to survive in a world forever changed.",
     authorName: 'John Owen Theobald',
@@ -139,7 +139,7 @@ export const books = [
   },
   {
     name: 'All This Time',
-    released: new Date(2021, 8, 1),
+    released_date: new Date(2021, 8, 1),
     description:
       'From the team behind #1 New York Times bestseller Five Feet Apart comes a gripping new romance that asks: Can you find true love after losing everything?Kyle and Kimberly have been the perfect couple all through high school, but when Kimberly breaks up with him on the night of their graduation party, Kyle’s entire world upends—literally. Their car crashes and when he awakes, he has a brain injury. Kimberly is dead. And no one in his life could possibly understand.Until Marley. Marley is suffering from her own loss, a loss she thinks was her fault. And when their paths cross, Kyle sees in her all the unspoken things he’s feeling.As Kyle and Marley work to heal each other’s wounds, their feelings for each other grow stronger. But Kyle can’t shake the sense that he’s headed for another crashing moment that will blow up his life as soon as he’s started to put it back together.',
     authorName: 'Mikki Daughtry',
@@ -156,7 +156,7 @@ export const books = [
   },
   {
     name: 'Harry Potter and the Goblet of Fire',
-    released: new Date(2018, 10, 1),
+    released_date: new Date(2018, 10, 1),
     description:
       "Harry Potter is midway through his training as a wizard and his coming of age. Harry wants to get away from the pernicious Dursleys and go to the International Quidditch Cup. He wants to find out about the mysterious event that's supposed to take place at Hogwarts this year, an event involving two other rival schools of magic, and a competition that hasn't happened for a hundred years. He wants to be a normal, fourteen-year-old wizard. But unfortunately for Harry Potter, he's not normal - even by wizarding standards. And in his case, different can be deadly.",
     authorName: 'J.K. Rowling',
@@ -174,7 +174,7 @@ export const books = [
   },
   {
     name: 'Harry Potter and the Deathly Hallows',
-    released: new Date(2018, 5, 1),
+    released_date: new Date(2018, 5, 1),
     description:
       "Readers beware. The brilliant, breathtaking conclusion to J.K. Rowling's spellbinding series is not for the faint of heart--such revelations, battles, and betrayals await in Harry Potter and the Deathly Hallows that no fan will make it to the end unscathed. Luckily, Rowling has prepped loyal readers for the end of her series by doling out increasingly dark and dangerous tales of magic and mystery, shot through with lessons about honor and contempt, love and loss, and right and wrong. Fear not, you will find no spoilers in our review--to tell the plot would ruin the journey, and Harry Potter and the Deathly Hallows is an odyssey the likes of which Rowling's fans have not yet seen, and are not likely to forget. But we would be remiss if we did not offer one small suggestion before you embark on your final adventure with Harry--bring plenty of tissues.The heart of Book 7 is a hero's mission--not just in Harry's quest for the Horcruxes, but in his journey from boy to man--and Harry faces more danger than that found in all six books combined, from the direct threat of the Death Eaters and you-know-who, to the subtle perils of losing faith in himself. Attentive readers would do well to remember Dumbledore's warning about making the choice between 'what is right and what is easy,' and know that Rowling applies the same difficult principle to the conclusion of her series. While fans will find the answers to hotly speculated questions about Dumbledore, Snape, and you-know-who, it is a testament to Rowling's skill as a storyteller that even the most astute and careful reader will be taken by surprise.A spectacular finish to a phenomenal series, Harry Potter and the Deathly Hallows is a bittersweet read for fans. The journey is hard, filled with events both tragic and triumphant, the battlefield littered with the bodies of the dearest and despised, but the final chapter is as brilliant and blinding as a phoenix's flame, and fans and skeptics alike will emerge from the confines of the story with full but heavy hearts, giddy and grateful for the experience. --Daphne Durham",
     authorName: 'J.K. Rowling',
@@ -191,7 +191,7 @@ export const books = [
   },
   {
     name: "Harry Potter and the Philosopher's Stone",
-    released: new Date(2013, 12, 1),
+    released_date: new Date(2013, 12, 1),
     description:
       "Harry Potter is an ordinary boy who lives in a cupboard under the stairs at his Aunt Petunia and Uncle Vernon's house, which he thinks is normal for someone like him who's parents have been killed in a 'car crash'. He is bullied by them and his fat, spoilt cousin Dudley, and lives a very unremarkable life with only the odd hiccup (like his hair growing back overnight!) to cause him much to think about. That is until an owl turns up with a letter addressed to Harry and all hell breaks loose! He is literally rescued by a world where nothing is as it seems and magic lessons are the order of the day. Read and find out how Harry discovers his true heritage at Hogwarts School of Wizardry and Witchcraft, the reason behind his parents mysterious death, who is out to kill him, and how he uncovers the most amazing secret of all time, the fabled Philosopher's Stone! All this and muggles too. Now, what are they?",
     authorName: 'J.K. Rowling',
