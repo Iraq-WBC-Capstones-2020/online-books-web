@@ -167,15 +167,19 @@ exports[`PaymentTable snapshot 1`] = `
               <td />
               <td>
                 <p
-                  className="h6"
+                  className="h6 text-center"
                 >
                   paymentPage.total
                 </p>
               </td>
-              <td>
+              <td
+                  className="text-center"
+              >
                 0
               </td>
-              <td>
+              <td
+                  className="text-center"
+              >
                 0
               </td>
             </tr>

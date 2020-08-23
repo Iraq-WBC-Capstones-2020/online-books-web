@@ -14,7 +14,7 @@ exports[`PaymentForm snapshot 1`] = `
       data-test="col"
     >
       <p
-        className="h5 mx-5 my-5 text-gray-800"
+        className="h5 text-center mx-5 my-5 text-gray-800"
       >
         paymentPage.paymentMethod
       </p>
@@ -23,7 +23,7 @@ exports[`PaymentForm snapshot 1`] = `
         data-test="row"
       >
         <div
-          className="col-md-6"
+          className="col-md-7"
           data-test="col"
         >
           <input
@@ -41,7 +41,7 @@ exports[`PaymentForm snapshot 1`] = `
           </label>
         </div>
         <div
-          className="col-md-6"
+          className="col-md-5"
           data-test="col"
         >
           <input
