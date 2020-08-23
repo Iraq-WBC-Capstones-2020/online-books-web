@@ -1,6 +1,6 @@
 import { authorsRef, booksRef } from './../api/firebase';
 import Book from './Book';
-
+import { authors } from './data';
 export default class Author {
   constructor({ id, name, avatar, bio, socialMedia } = {}) {
     this.id = id;
@@ -24,11 +24,19 @@ export default class Author {
   }
   static async getAuthors() {
     const documentData = await authorsRef.get();
-    const authors = documentData.docs.map((author) => new Author(author.data()));
+    const authors = documentData.docs.map(
+      (author) => new Author(author.data())
+    );
     return authors;
-}
-  updateAuthorInfo() {
-    if (!this.id) this.id= authorsRef.doc().id;
-    authorsRef.doc(this.id).set(this);
+  }
+  async updateAuthorInfo() {
+    if (!this.id) this.id = authorsRef.doc().id;
+    await authorsRef.doc(this.id).set({ ...this });
+  }
+  static async sendAuthors() {
+    const authorss = authors.map((author) => new Author(author));
+    for (const author of authorss) {
+      await author.updateAuthorInfo();
+    }
   }
 }
