@@ -23,7 +23,11 @@ function MainCard({ book }) {
          ${isBottomCardInColumn ? 'marginTop' : ''}`}
     >
       <Link to={`/book/${id}`}>
-        <img src={cover} className="imgCardBook rounded-t-md" />
+        <img
+          src={cover}
+          alt={author_name}
+          className="imgCardBook rounded-t-md"
+        />
       </Link>
       <MDBCardBody className="absolute bottom-0 w-full px-0 py-0">
         {/*opacity part*/}

@@ -281,17 +281,6 @@ export const authors = [
 // const bestSellers = [];
 // const newReleased = [];
 
-// const addToDatabase = (e) => {
-//   e.preventDefault();
-//   books.forEach((book) => {
-//     const uuid = booksRef.doc().id;
-//     booksRef.doc(uuid).set({ uuid: uuid, ...book });
-//   });
-//   authors.forEach((author) => {
-//     const uuid = authorsRef.doc().id;
-//     authorsRef.doc(uuid).set({ uuid: uuid, ...author });
-//   });
-// }; //set the newReleases as mock data in purchases collection
 // const setPurchases = () => {
 //   newReleased.forEach((book) => {
 //     const bookInfo = {
@@ -305,28 +294,18 @@ export const authors = [
 // };
 
 // const getNewReleased = (e) => {
-//   e.preventDefault(); //get the 4 new released(fillter db and get the newest 4 books)
+//   e.preventDefault();
 //   booksRef
 //     .orderBy('released', 'desc')
 //     .limit(4)
 //     .get()
 //     .then(function (querySnapshot) {
 //       querySnapshot.forEach(function (doc) {
-//         //get the new released books
+//
 //         newReleased.push(doc.data());
-//       }); // console.log(newReleased)
+//       });
 //       setPurchases();
 //     });
-// };
-
-// const getAuthors = (e) => {
-//   let authorsName = [];
-//   e.preventDefault();
-//   authorsRef.get().then(function (querySnapshot) {
-//     querySnapshot.forEach(function (doc) {
-//       authorsName.push(doc.data());
-//     });
-//   }); // console.log(authorsName);
 // };
 
 // const deleteDataFromDatabase = (e) => {
