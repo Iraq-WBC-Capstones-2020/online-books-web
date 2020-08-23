@@ -32,7 +32,7 @@ export default class Book {
     this.author_id = author_id;
     this.author_name = author_name;
     this.views = views;
-    this.rating = rating;
+    this.rating = rating; 
     this.ref = ref;
     this.tags = tags;
   }

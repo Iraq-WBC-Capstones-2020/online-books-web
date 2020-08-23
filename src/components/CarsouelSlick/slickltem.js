@@ -12,6 +12,7 @@ import CreateStars from './CreateStars';
 
 // create 4 items for the carsouel movement
 function CarouselItems({ book }) {
+  const {author_name,name,price,views,rating,cover,type,have_audio} = book;
   const { t } = useTranslation();
 
   return (
@@ -22,7 +23,7 @@ function CarouselItems({ book }) {
             <MDBCol size="12" md="4" lg="5" className="p-0">
               <img
                 className="imageCardCarsouel"
-                src={book.cover}
+                src={cover}
                 alt="cover book"
               />
             </MDBCol>
@@ -31,25 +32,28 @@ function CarouselItems({ book }) {
 
             <MDBCol md="7" lg="6" size="12" className="my-auto">
               <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto">
-                <div>
-                  <h1 className="fontHeader1 mb-0 font-weight-normal  text-2xl">
-                    {book.auhtor_name}
+              
+              <div>
+                  <h1 className="fontHeader1 mb-0 pr-sm-0 pr-md-4 font-weight-normal text-2xl capitalize truncate">
+                    {author_name}
                   </h1>
                 </div>
+                
                 <MDBCardText>
-                  <p className="mb-1 fontHeader2 font-normal font-weight-normal">
-                    {book.name}
-                  </p>
-                  <p className="mb-1 parg1 font-weight-normal">{book.type}</p>
+                  <p className="mb-1 fontHeader2 font-normal font-weight-normal truncate pr-md-20 capitalize">
+                    {name}
+                  </p> 
+                  <p className="mb-1 parg1 font-weight-normal">{`formate: ${have_audio?'Audio, PDF':'Hardback'}`}</p>
                   <p className="font-black fontPrice font-weight-normal">
-                    {book.price}
+                    {`$${price}` }
                   </p>
 
                   <div className="mb-3">
                     <div className="inline-block mr-2">
-                      <CreateStars rate={book.rating} />
-                      {'  '}
-                      {book.views} {t('carsouelSection.ratings')}
+                      <CreateStars rate={rating}/>
+                      <p className="d-md-inline d-block"></p>
+                      {''}
+                      {`(${views})`}{t('carsouelSection.ratings')}
                     </div>
                   </div>
                 </MDBCardText>
