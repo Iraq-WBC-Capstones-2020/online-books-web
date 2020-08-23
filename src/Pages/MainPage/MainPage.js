@@ -13,9 +13,8 @@ import { MDBCol, MDBRow, MDBContainer } from 'mdbreact';
 import Author from '../../components/PopularAuthors/PopularAuthors';
 import Book from '../../models/Book';
 import Spinner from '../../components/Spinner/Spinner';
-
-function Main() {
-  const [modal8, handelModel8] = useState(false);
+import PropTypes from 'prop-types';
+function Main({ modal8, handelModel8 }) {
   const [books, setBooks] = useState();
   useEffect(() => {
     (async () => {
@@ -76,5 +75,8 @@ function Main() {
     </>
   );
 }
-
+Main.propTypes = {
+  modal8: PropTypes.bool,
+  handelModel8: PropTypes.func,
+};
 export default Main;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './i18n';
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -16,11 +16,12 @@ import SignUpPage from './Pages/SignUpPage/SignUpPage';
 
 function App() {
   const user = useSelector((state) => state.user);
+  const [modal8, handelModel8] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col justify-between">
       <HashRouter>
-        <Navbar />
+        <Navbar handelModel8={handelModel8} />
         <div className="flex-grow flex flex-col content-center">
           <Switch>
             <Route exact path="/book/:bookId" component={BookPage} />
@@ -39,7 +40,9 @@ function App() {
             <Route exact path="/signup">
               {!user.isSigned ? <SignUpPage /> : <Redirect to="/profile" />}
             </Route>
-            <Route path="/" component={MainPage} />
+            <Route path="/">
+              <MainPage modal8={modal8} handelModel8={handelModel8} />
+            </Route>{' '}
           </Switch>
         </div>
         <Footer />

@@ -10,7 +10,7 @@ function GrideCarousel({ booksArray, activeCardItem }) {
         <MDBRow around>
           {booksArray.slice(0, 4).map((book, index) => (
             <MDBCol
-              key={index}
+              key={book.id}
               lg="6"
               md="3"
               sm="3"
@@ -19,7 +19,11 @@ function GrideCarousel({ booksArray, activeCardItem }) {
             >
               <MDBView>
                 {/*pattern={1} */}
-                <img className="imgGrideCarsouel mx-lg-0" src={book.cover} />
+                <img
+                  className="imgGrideCarsouel mx-lg-0"
+                  alt={book.name}
+                  src={book.cover}
+                />
                 {activeCardItem === index ? (
                   <></>
                 ) : (
