@@ -1,0 +1,455 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Team snapshot 1`] = `
+<div
+  className="container"
+  data-test="container"
+>
+  <div
+    className="text-center py-3"
+  >
+    <h1
+      className="text-3xl font-medium inline border-b border-gray-400 px-5"
+    >
+      aboutPage.title
+    </h1>
+  </div>
+  <div
+    className="row py-3"
+    data-test="row"
+  >
+    <div
+      className="col-12 col-sm-12 col-md-6 col-lg-4 p-5"
+      data-test="col"
+    >
+      <div
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        data-test="card"
+      >
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
+          src="pic6.jpg"
+          wave={true}
+        />
+        <div
+          className="card-body m-1"
+          data-test="card-body"
+        >
+          <h4
+            className="card-title text-center font-sans"
+          >
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
+          >
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.facebook.com"
+            >
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.twitter.com"
+            >
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.github.com"
+            >
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.linkedin.com"
+            >
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-12 col-sm-12 col-md-6 col-lg-4 p-5"
+      data-test="col"
+    >
+      <div
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        data-test="card"
+      >
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
+          src="pic1.jpg"
+          wave={true}
+        />
+        <div
+          className="card-body m-1"
+          data-test="card-body"
+        >
+          <h4
+            className="card-title text-center font-sans"
+          >
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
+          >
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.facebook.com"
+            >
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.twitter.com"
+            >
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.github.com"
+            >
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.linkedin.com"
+            >
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-12 col-sm-12 col-md-6 col-lg-4 p-5"
+      data-test="col"
+    >
+      <div
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        data-test="card"
+      >
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
+          src="pic2.jpg"
+          wave={true}
+        />
+        <div
+          className="card-body m-1"
+          data-test="card-body"
+        >
+          <h4
+            className="card-title text-center font-sans"
+          >
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
+          >
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.facebook.com"
+            >
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.twitter.com"
+            >
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.github.com"
+            >
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.linkedin.com"
+            >
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-12 col-sm-12 col-md-6 col-lg-4 p-5"
+      data-test="col"
+    >
+      <div
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        data-test="card"
+      >
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
+          src="pic3.jpg"
+          wave={true}
+        />
+        <div
+          className="card-body m-1"
+          data-test="card-body"
+        >
+          <h4
+            className="card-title text-center font-sans"
+          >
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
+          >
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.facebook.com"
+            >
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.twitter.com"
+            >
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.github.com"
+            >
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.linkedin.com"
+            >
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-12 col-sm-12 col-md-6 col-lg-4 p-5"
+      data-test="col"
+    >
+      <div
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        data-test="card"
+      >
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
+          src="pic4.jpg"
+          wave={true}
+        />
+        <div
+          className="card-body m-1"
+          data-test="card-body"
+        >
+          <h4
+            className="card-title text-center font-sans"
+          >
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
+          >
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.facebook.com"
+            >
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.twitter.com"
+            >
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.github.com"
+            >
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.linkedin.com"
+            >
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-12 col-sm-12 col-md-6 col-lg-4 p-5"
+      data-test="col"
+    >
+      <div
+        className="card blue lighten-5 animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  mt-10"
+        data-test="card"
+      >
+        <img
+          className="rounded-circle mt img-fluid z-depth-1 mx-auto w-32 "
+          src="pic5.jpg"
+          wave={true}
+        />
+        <div
+          className="card-body m-1"
+          data-test="card-body"
+        >
+          <h4
+            className="card-title text-center font-sans"
+          >
+            <span
+              className="text-blue-700"
+            >
+                | 
+            </span>
+          </h4>
+          <p
+            className="text-gray-700 font-sans"
+          />
+          <div
+            className="flex justify-center m-2"
+          >
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.facebook.com"
+            >
+              <i
+                className="fab fa-facebook-square"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.twitter.com"
+            >
+              <i
+                className="fab fa-twitter"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x indigo-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.github.com"
+            >
+              <i
+                className="fab fa-github-alt"
+                data-test="fa"
+              />
+            </a>
+            <a
+              className="pr-2 fa-2x blue-text ml-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              href="https://www.linkedin.com"
+            >
+              <i
+                className="fab fa-linkedin"
+                data-test="fa"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details snapshot 1`] = `
+<div
+  className="bg-gray-100"
+>
+  <div
+    className="container"
+    data-test="container"
+  >
+    <div
+      className="row"
+      data-test="row"
+    >
+      <div
+        className="col-lg-5"
+        data-test="col"
+      >
+        <img
+          alt="artwork of a girl reading a book"
+          src="pic.png"
+        />
+      </div>
+      <div
+        className="col"
+        data-test="col"
+      >
+        <div
+          className="mt-24"
+        >
+          <p
+            className="text-3xl font-medium border-b-4 inline border-blue-500"
+          >
+            aboutPage.aboutSection.aboutUs
+          </p>
+          <p
+            className="text-base leading-loose text-justify"
+          >
+            aboutPage.aboutSection.aboutUsText
+          </p>
+          <button
+            className="btn-primary btn Ripple-parent btn-md rounded-pill "
+            data-test="button"
+            onMouseUp={[Function]}
+            onTouchStart={[Function]}
+            type="button"
+          >
+            aboutPage.aboutSection.readMoreButton
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
