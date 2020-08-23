@@ -204,7 +204,7 @@ exports[`ContactForm snapshot 1`] = `
         className="flex justify-center mt-5"
       >
         <div
-          className="card max-h-full bg-blue-800 w-1/4 flex justify-center"
+          className="card max-h-full bg-blue-800 flex justify-center w-full"
           data-test="card"
         >
           <h1
@@ -216,7 +216,7 @@ exports[`ContactForm snapshot 1`] = `
             className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 m-4"
           >
             <i
-              className="fas fa-map-marker-alt text-4xl white-text ml-16"
+              className="fas fa-map-marker-alt text-4xl white-text lg:ml-16"
             />
             <p
               className="text-gray-400 ml-4"
@@ -230,7 +230,7 @@ exports[`ContactForm snapshot 1`] = `
             className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 m-4"
           >
             <i
-              className="fas fa-envelope pr-2 text-4xl white-text ml-16"
+              className="fas fa-envelope pr-2 text-4xl white-text lg:ml-16"
             />
             <p
               className="text-gray-400 ml-2"
@@ -244,7 +244,7 @@ exports[`ContactForm snapshot 1`] = `
             className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 m-4"
           >
             <i
-              className="fas fa-phone pr-2 text-4xl white-text ml-16"
+              className="fas fa-phone pr-2 text-4xl white-text lg:ml-16"
             />
             <p
               className="text-gray-400 ml-2 mb-24"
