@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer, MDBCol } from 'mdbreact';
+import { MDBContainer, MDBCol, MDBRow } from 'mdbreact';
 import client1 from './media/client-1.png';
 import client2 from './media/client-2.png';
 import client3 from './media/client-3.png';
@@ -10,6 +10,7 @@ import client7 from './media/client-7.png';
 import client8 from './media/client-8.png';
 import { useTranslation } from 'react-i18next';
 import ClientCard from './ClientCard';
+import SectionTitle from '../SectionTitle/SectionTitle';
 function DetailsClient() {
   const { t } = useTranslation();
   let clientsLogo = [
@@ -26,23 +27,24 @@ function DetailsClient() {
   let client = t('clientPage.clients');
 
   return (
-    <>
-      <MDBContainer>
-        <MDBCol>
-          <div className="text-center mt-5">
-            <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
-              {client}
-            </h1>
-          </div>
-        </MDBCol>
-      </MDBContainer>
-
-      <MDBContainer className="w-9/12 mt-5 grid grid-cols-4 gab-5">
-        {clientsLogo.map((client) => (
-          <ClientCard key={client.id} client={client} />
+    <MDBContainer>
+      <SectionTitle>{client}</SectionTitle>
+      <MDBRow className="m-5">
+        {clientsLogo.map((client, index) => (
+          <MDBCol
+            key={index}
+            lg="3"
+            md="4"
+            sm="6"
+            xs="6"
+            size="12"
+            className="m-0 p-0 border border-solid border-4 border-gray-200 "
+          >
+            <ClientCard key={client.id} client={client} />
+          </MDBCol>
         ))}
-      </MDBContainer>
-    </>
+      </MDBRow>
+    </MDBContainer>
   );
 }
 export default DetailsClient;

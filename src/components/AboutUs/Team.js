@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCol, MDBRow, MDBIcon, MDBContainer } from 'mdbreact';
+import { MDBCol, MDBRow, MDBContainer } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import TeamMemberCards from './TeamMemberCards';
 import pic1 from './media/pic1.jpg';
@@ -8,6 +8,7 @@ import pic3 from './media/pic3.jpg';
 import pic4 from './media/pic4.jpg';
 import pic5 from './media/pic5.jpg';
 import pic6 from './media/pic6.jpg';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 function TeamMembersInformation() {
   const { t } = useTranslation();
@@ -27,25 +28,16 @@ function TeamMembersInformation() {
 
   const title = t('aboutPage.title');
   return (
-    <>
-      <MDBContainer>
-        <MDBCol>
-          <div className="text-center mt-5 mb-5">
-            <h1 className="text-3xl font-medium inline border-b border-gray-400 px-5">
-              {title}
-            </h1>
-          </div>
-        </MDBCol>
-
-        <MDBRow className="ml-12">
-          {team.map((member) => (
-            <MDBCol size="8" xs="4" sm="3" className="m-5">
-              <TeamMemberCards key={member.id} member={member} />
-            </MDBCol>
-          ))}
-        </MDBRow>
-      </MDBContainer>
-    </>
+    <MDBContainer>
+      <SectionTitle>{title}</SectionTitle>
+      <MDBRow className="py-3">
+        {team.map((member, index) => (
+          <MDBCol key={index} lg="4" md="6" sm="12" size="12" className="p-5">
+            <TeamMemberCards key={member.id} member={member} />
+          </MDBCol>
+        ))}
+      </MDBRow>
+    </MDBContainer>
   );
 }
 
