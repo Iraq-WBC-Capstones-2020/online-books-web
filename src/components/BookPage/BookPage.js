@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import CreateStars from '../CarsouelSlick/CreateStars';
 import Paragraph from '../Paragraph/Paragraph';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
-import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 function BookPage({ book }) {
   const { t } = useTranslation();
@@ -18,9 +17,9 @@ function BookPage({ book }) {
     rating,
     tags,
   } = book;
-  const user = useSelector((state) => state.user);
+  console.log(JSON.stringify(book));
 
-  const isLoggedIn = user.isSigned;
+  const isLoggedIn = false;
   const yearReleased = released_date.toDate().getFullYear();
   return (
     <MDBContainer className="mt-5">
