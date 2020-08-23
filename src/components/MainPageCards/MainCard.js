@@ -34,7 +34,7 @@ function MainCard({ book }) {
         <div>
           <div className="blackOpacity text-center py-1">
             <Link to={`/author/${author_id}`}>
-              <h5 className="HeaderCardBook mb-0 text-xl text-white">
+              <h5 className="HeaderCardBook mb-0 text-xl text-white truncate capitalize px-4">
                 {author_name}
               </h5>
             </Link>
@@ -42,7 +42,7 @@ function MainCard({ book }) {
               <CreateStars rate={rating} starSize="small" />
             </div>
             <Link to={`/book/${id}`}>
-              <p className="HeaderCardBook grayColor text-sm font-bold">
+              <p className="HeaderCardBook grayColor text-sm font-bold truncate px-4">
                 {name}
               </p>
             </Link>
@@ -50,9 +50,11 @@ function MainCard({ book }) {
           {/*black part*/}
           <div className="bg-black d-flex flex-row justify-content-around py-md-2 px-md-2 px-sm-0">
             <p className="lightBlue font-semibold font-sans md:text-lg py-1 ">
-            {'$'+`${price-2}`+'.99'}
+              {'$' + `${price - 2}` + '.99'}
             </p>
-            <p className="darkGray font-normal line-through pr-md-2 py-1">{'$'+price+'.99'}</p>
+            <p className="darkGray font-normal line-through pr-md-2 py-1">
+              {'$' + price + '.99'}
+            </p>
 
             <div className="rounded-full w-8  h-8 border-2 border-orange-200 text-center">
               <CartIcon className="p-1" />

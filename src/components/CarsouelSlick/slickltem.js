@@ -44,7 +44,7 @@ function CarouselItems({ book }) {
                 <div>
                   <Link
                     to={`/author/${author_id}`}
-                    className="fontHeader1 mb-0 font-weight-normal text-2xl"
+                    className="fontHeader1 mb-0 pr-sm-0 pr-md-4 font-weight-normal text-2xl capitalize truncate"
                   >
                     {author_name}
                   </Link>
@@ -52,7 +52,7 @@ function CarouselItems({ book }) {
 
                 <MDBCardText>
                   <Link to={`/book/${id}`}>
-                    <p className="mb-1 fontHeader2 font-normal font-weight-normal">
+                    <p className="mb-1 fontHeader2 font-normal font-weight-normal truncate pr-md-20 capitalize">
                       {name}
                     </p>
                   </Link>
@@ -60,13 +60,12 @@ function CarouselItems({ book }) {
                     have_audio ? 'Audio, PDF' : 'Hardback'
                   }`}</p>
                   <p className="font-black fontPrice font-weight-normal">
-                    {`$${price}.99` }
+                    {`$${price}.99`}
                   </p>
                   <div className="mb-3">
                     <div className="inline-block mr-2">
                       <CreateStars rate={rating} />
-                      <p className="d-md-inline d-block"></p>
-                      {''}
+                      <p className="mt-1 d-md-inline d-block"></p>
                       {`(${views})`}
                       {t('carsouelSection.ratings')}
                     </div>
