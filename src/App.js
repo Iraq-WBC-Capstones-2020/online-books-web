@@ -18,29 +18,33 @@ function App() {
   const user = useSelector((state) => state.user);
 
   return (
-    <HashRouter>
-      <Navbar />
-      <Switch>
-        <Route exact path="/book/:bookId" component={BookPage} />
-        <Route exact path="/aboutus" component={AboutUsPage} />
-        <Route exact path="/contact" render={ContactUsPage} />
-        <Route exact path="/purchase">
-          {user.isSigned ? <PaymentPage /> : <Redirect to="/login" />}
-        </Route>
-        <Route path="/author/:authorId" component={AuthorPage} />
-        <Route exact path="/profile">
-          {user.isSigned ? <ProfilePage /> : <Redirect to="/login" />}
-        </Route>
-        <Route exact path="/login">
-          {!user.isSigned ? <LoginPage /> : <Redirect to="/profile" />}
-        </Route>
-        <Route exact path="/signup">
-          {!user.isSigned ? <SignUpPage /> : <Redirect to="/profile" />}
-        </Route>
-        <Route path="/" component={MainPage} />
-      </Switch>
-      <Footer />
-    </HashRouter>
+    <div className="min-h-screen flex flex-col justify-between">
+      <HashRouter>
+        <Navbar />
+        <div className="flex-grow flex flex-col content-center">
+          <Switch>
+            <Route exact path="/book/:bookId" component={BookPage} />
+            <Route exact path="/aboutus" component={AboutUsPage} />
+            <Route exact path="/contact" render={ContactUsPage} />
+            <Route exact path="/purchase">
+              {user.isSigned ? <PaymentPage /> : <Redirect to="/login" />}
+            </Route>
+            <Route path="/author/:authorId" component={AuthorPage} />
+            <Route exact path="/profile">
+              {user.isSigned ? <ProfilePage /> : <Redirect to="/login" />}
+            </Route>
+            <Route exact path="/login">
+              {!user.isSigned ? <LoginPage /> : <Redirect to="/profile" />}
+            </Route>
+            <Route exact path="/signup">
+              {!user.isSigned ? <SignUpPage /> : <Redirect to="/profile" />}
+            </Route>
+            <Route path="/" component={MainPage} />
+          </Switch>
+        </div>
+        <Footer />
+      </HashRouter>
+    </div>
   );
 }
 

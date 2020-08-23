@@ -15,7 +15,13 @@ const store = createStore(allReducers);
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Suspense fallback={<Spinner />}>
+      <Suspense
+        fallback={
+          <div className="h-screen flex">
+            <Spinner />
+          </div>
+        }
+      >
         <App />
       </Suspense>
     </Provider>

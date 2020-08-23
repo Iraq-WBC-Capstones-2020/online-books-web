@@ -1,13 +1,11 @@
 import React from 'react';
 
-const Spinner = () => {
+function Spinner() {
   return (
-    <>
-      <div className="spinner-border" role="status" data-testid="spinner">
-        <span className="sr-only">Loading...</span>
-      </div>
-    </>
+    <div className="m-auto spinner-border" role="status" data-testid="spinner">
+      <span className="sr-only">Loading...</span>
+    </div>
   );
-};
+}
 
 export default Spinner;
