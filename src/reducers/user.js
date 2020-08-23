@@ -1,4 +1,4 @@
-import User from "../models/User";
+import User from '../models/User';
 
 const userReducer = (user = new User({ isSigned: false }), action) => {
   switch (action.type) {

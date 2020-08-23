@@ -1,5 +1,6 @@
 import { booksRef, authorsRef, usersRef } from './../api/firebase';
 import Author from './Author';
+import { books } from './data';
 
 export default class Book {
   constructor({
@@ -19,29 +20,29 @@ export default class Book {
     ref = null,
     tags = null,
   } = {}) {
-        this.id = id;
-        this.name = name;
-        this.type = type;
-        this.price = price;
-        this.dis_count = dis_count;
-        this.cover = cover;
-        this.have_audio = have_audio;
-        this.description = description;
-        this.audio_ref = audio_ref;
-        this.author_id = author_id;
+    this.id = id;
+    this.name = name;
+    this.type = type;
+    this.price = price;
+    this.dis_count = dis_count;
+    this.cover = cover;
+    this.have_audio = have_audio;
+    this.description = description;
+    this.audio_ref = audio_ref;
+    this.author_id = author_id;
     this.author_name = author_name;
     this.views = views;
     this.rating = rating;
-        this.ref = ref;
-        this.tags = tags;
-    }
-    async getAuthor() {
+    this.ref = ref;
+    this.tags = tags;
+  }
+  async getAuthor() {
     return await Author.getAuthorFromDB(this.author_id);
-    }
-    static async getBookFromDB(id) {
-        const doc = await booksRef.doc(id).get();
-        return new Book(doc.data());
-    }
+  }
+  static async getBookFromDB(id) {
+    const doc = await booksRef.doc(id).get();
+    return new Book(doc.data());
+  }
   async addBookToCart(user_id) {
     await usersRef
       .doc(user_id)
@@ -49,13 +50,13 @@ export default class Book {
       .doc(this.id)
       .set({ ...this });
   }
-    static async getBooks() {
-        const documentData = await booksRef.get();
-        const books = documentData.docs.map((book) => new Book(book.data()));
-        return books;
-    }
-    updateBookInfo() {
-        if (!this.id) this.id = booksRef.doc().id;
+  static async getBooks() {
+    const documentData = await booksRef.get();
+    const books = documentData.docs.map((book) => new Book(book.data()));
+    return books;
+  }
+  updateBookInfo() {
+    if (!this.id) this.id = booksRef.doc().id;
     booksRef.doc(this.id).set({ ...this });
   }
   static async sendBooks() {
@@ -71,5 +72,5 @@ export default class Book {
       console.log(oneBook);
       await oneBook.updateBookInfo();
     }
-    }
+  }
 }
