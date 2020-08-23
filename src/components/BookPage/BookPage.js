@@ -72,9 +72,11 @@ function BookPage({ book }) {
               </span>
 
               <div className="mt-3">
-                <MDBBtn color="info" className="mr-3 px-3 py-0">
-                  {tags}
-                </MDBBtn>
+                {tags.map((tag) => (
+                  <MDBBtn color="info" className="mr-3 px-3 py-0">
+                    {tag}
+                  </MDBBtn>
+                ))}
                 <MDBBtn color="info" className="px-3 py-0">
                   {yearReleased}
                 </MDBBtn>
