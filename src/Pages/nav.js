@@ -69,7 +69,7 @@ function NavbarPage({ handelModel8 }) {
         <MDBNavbar className="shadow-none" light expand="lg">
           <MDBNavbarBrand>
             <MDBNavLink to="/">
-              <strong className="black-text font-bold">BooksZone</strong>
+              <strong className="black-text font-bold">Book Zone</strong>
             </MDBNavLink>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={toggleCollapse} />
