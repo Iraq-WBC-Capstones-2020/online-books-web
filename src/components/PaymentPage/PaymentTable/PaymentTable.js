@@ -91,10 +91,10 @@ export default function PaymentTable() {
               <tr>
                 <td></td>
                 <td>
-                  <p className="h6">{t('paymentPage.total')}</p>
+                  <p className="h6 text-center">{t('paymentPage.total')}</p>
                 </td>
-                <td>{total.copies}</td>
-                <td>{total.price}</td>
+                <td className="text-center">{total.copies}</td>
+                <td className="text-center">{total.price}</td>
               </tr>
             </MDBTableBody>
           </MDBTable>

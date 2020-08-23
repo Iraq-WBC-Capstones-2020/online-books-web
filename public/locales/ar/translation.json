@@ -75,7 +75,13 @@
   },
 
   "contactUsPage": {
-    "contactUs": "معلومات الاتصال بنا "
+    "contactUs": "معلومات الاتصال بنا ",
+    "writeToUs": "اكتب لنا",
+    "firstName": "الاسم الاول",
+    "lastName": "الاسم الاخير",
+    "email": "البريد الالكتروني",
+    "message": "رسالتك",
+    "send": "ارسال"
   },
 
   "clientPage": {
@@ -98,8 +104,8 @@
     "category": {
       "Categories": "الاصناف",
       "Popular": "الشائع",
-      "Romance":"رومانسي",
-      "ChildrenBooks":"كتب أطفال",
+      "Romance": "رومانسي",
+      "ChildrenBooks": "كتب أطفال",
       "Biographies&Memoirs": "السير الذاتية  و المذكرات",
       "Literature&Fiction": "أدب و خيال",
       "Business&Investing": "الأعمال و الاستثمار",
@@ -109,17 +115,71 @@
     "PopularAuthors": "المؤلفون المشهورون "
   },
 
-  "authorPage": false,
-  "footer": false,
+  "authorPage": {
+    "follow": "متابعة",
+    "books": "كتب"
+  },
+  "footer": {
+    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag",
+    "copyright": " © BookZone",
+    "followUs": "تابعنا",
+    "tags": "Tags",
+    "tagsList": ["Shop", "Books", "Online", "Read", "Knowledge"]
+  },
   "landingPage": false,
-  "navbar": false,
-  "profilePage": false,
-  "contactUSPage": false,
-  "signInPage": false,
-  "sigOutPage": false,
+
+  "navBar": {
+    "home": "الصفحة الرئيسية",
+    "aboutus": "معلومات عنا",
+    "contact": "الاتصال بنا",
+    "language": "اللغة",
+    "login": "تسجيل الدخول",
+    "signUp": "انشاء حساب",
+    "logout": "تسجيل الخروج"
+  },
+  "profilePage": {
+    "edit": "تعديل",
+    "livesIn": "تسكن في",
+    "addressSpread": ", ",
+    "memberSince": "عضو منذ",
+    "about": "حول",
+    "purchaseHistory": "سجل الشراء",
+    "basicInfo": "المعلومات الاساسية",
+    "contactInfo": "معلومات الانصال",
+    "name": "الاسم",
+    "gender": "الجنس",
+    "birthday": "تاريخ الميلاد",
+    "city": "المدينة",
+    "country": "البلد",
+    "address": "العنوان",
+    "phoneNumber": "رقم الهاتف",
+    "email": "البريد الالكتروني",
+    "orderId": "رمز الطلب",
+    "books": "الكتب",
+    "status": "الحالة",
+    "originalPrice": "السعر الاصلي",
+    "totalPrice": "السعر الكلي"
+  },
+  "signInPage": {
+    "signIn": "تسجيل الدخول",
+    "yourEmail": "البريد الالكتروني",
+    "yourPassword": "كلمة السر",
+    "forgotPassword": "نسيت كلمة السر؟"
+  },
+  "signUpPage": {
+    "signUp": "انشاء حساب",
+    "fullName": "الاسم الكامل",
+    "yourEmail": "البريد الالكتروني",
+    "yourPassword": "كلمة السر"
+  },
+  "socialMediaPage": {
+    "signInGoogle": "Google تسجيل الدخول باستخدام",
+    "signInGithub": " Github تسجيل الدخول باستخدام",
+    "signInFacebook": "Facebook تسجيل الدخول باستخدام"
+  },
 
   "paymentPage": {
-    "booksOrder": "طلبية كتبك",
+    "booksOrder": "طلبية الكتب",
     "books": "الكتب",
     "copies": "النسخ",
     "price": "السعر",
@@ -131,7 +191,7 @@
     "cardNumber": "رقم البطاقة",
     "MMYYYY": "شهر/سنة",
     "CVC": "CVC",
-    "email": "الايميل",
+    "email": "البريد الالكتروني",
     "password": "كلمة السر",
     "purchase": "شراء"
   }
