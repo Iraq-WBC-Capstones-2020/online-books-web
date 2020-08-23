@@ -3,18 +3,9 @@ import CreateStars from '../CarsouelSlick/CreateStars';
 import CartIcon from './cartIcon';
 import { MDBCard, MDBCardBody } from 'mdbreact';
 import { Link } from 'react-router-dom';
-function MainCard({ book }) {
-  const {
-    id,
-    author_name,
-    name,
-    price,
-    dis_count,
-    rating,
-    cover,
-    author_id,
-  } = book;
-  const isBottomCardInColumn = 1 % 2 === 0;
+function MainCard({ book, index }) {
+  const { id, author_name, name, price, rating, cover, author_id } = book;
+  const isBottomCardInColumn = index % 2 !== 0;
   return (
     <MDBCard
       tag="div"
