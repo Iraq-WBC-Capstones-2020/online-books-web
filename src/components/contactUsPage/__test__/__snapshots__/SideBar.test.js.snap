@@ -2,10 +2,10 @@
 
 exports[`SideBar snapshot 1`] = `
 <div
-  className="flex justify-end"
+  className="flex justify-center mt-5"
 >
   <div
-    className="card blue darken-3  w-75 h-100 flex justify-center"
+    className="card max-h-full bg-blue-800 w-1/4 flex justify-center"
     data-test="card"
   >
     <h1
@@ -14,10 +14,10 @@ exports[`SideBar snapshot 1`] = `
       contactUsPage.contactUs
     </h1>
     <div
-      className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 ml-10 m-4"
+      className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 m-4"
     >
       <i
-        className="fas fa-map-marker-alt text-4xl white-text ml-18"
+        className="fas fa-map-marker-alt text-4xl white-text ml-16"
       />
       <p
         className="text-gray-400 ml-4"
@@ -28,13 +28,13 @@ exports[`SideBar snapshot 1`] = `
       </p>
     </div>
     <div
-      className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  m-4"
+      className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 m-4"
     >
       <i
-        className="fas fa-envelope pr-2 text-4xl white-text ml-18"
+        className="fas fa-envelope pr-2 text-4xl white-text ml-16"
       />
       <p
-        className="text-gray-400 ml-1 mr-1"
+        className="text-gray-400 ml-2"
       >
         contact@example.com
         <br />
@@ -42,13 +42,13 @@ exports[`SideBar snapshot 1`] = `
       </p>
     </div>
     <div
-      className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  m-4"
+      className="flex justify-start animate transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 m-4"
     >
       <i
-        className="fas fa-phone pr-2 text-4xl white-text ml-18"
+        className="fas fa-phone pr-2 text-4xl white-text ml-16"
       />
       <p
-        className="text-gray-400 ml-2 mb-10"
+        className="text-gray-400 ml-2 mb-24"
       >
         + 01 234 567 89 
         <br />

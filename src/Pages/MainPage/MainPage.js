@@ -9,7 +9,7 @@ import CarsouelSlick from '../../components/CarsouelSlick/carsouelSlick';
 import SearchSection from '../../components/searchSection/searchSection';
 import ModalSearchSection from '../../components/searchSection/ModalSearchSection';
 import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
-import { MDBCol, MDBRow, MDBContainer} from 'mdbreact';
+import { MDBCol, MDBRow, MDBContainer } from 'mdbreact';
 import Author from '../../components/PopularAuthors/PopularAuthors';
 import PropTypes from 'prop-types';
 
@@ -51,7 +51,7 @@ function Main({ modal8, handelModel8 }) {
   );
 }
 Main.propTypes = {
-  modal8:PropTypes.bool,
+  modal8: PropTypes.bool,
   handelModel8: PropTypes.func,
 };
 export default Main;
