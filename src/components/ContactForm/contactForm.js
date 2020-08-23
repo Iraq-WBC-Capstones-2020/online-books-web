@@ -9,7 +9,7 @@ export default function ContactForm() {
   return (
     <MDBContainer>
       <MDBRow>
-        <MDBCol md="5">
+        <MDBCol lg="8" md="6" sm="12">
           <form>
             <p className="h5 mb-4 mt-5 text-gray-700">
               <svg
@@ -74,14 +74,18 @@ export default function ContactForm() {
                 label={t('contactUsPage.message')}
               />
             </div>
-            <div className="text-center py-3 size">
-              <MDBBtn color="primary" className="rounded-pill mb-3" size="sm">
+            <div className="text-center mb-3">
+              <MDBBtn
+                type="button"
+                color="blue"
+                className="rounded-pill text-white z-depth-1a w-48"
+              >
                 {t('contactUsPage.send')}
               </MDBBtn>
             </div>
           </form>
         </MDBCol>
-        <MDBCol>
+        <MDBCol lg="4" md="6" sm="12">
           <ContactInformation />
         </MDBCol>
       </MDBRow>
