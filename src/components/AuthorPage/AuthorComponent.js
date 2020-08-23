@@ -20,7 +20,7 @@ function AuthorComponent({ author }) {
           <MDBRow className="h-auto">
             <MDBCol lg="7" md="8" sm="9" size="12" className="py-4">
               <Paragraph title={name + ':'}>{paragraph}</Paragraph>
-              {socialMediaAccounts && socialMediaAccounts.length != 0 && (
+              {socialMediaAccounts && socialMediaAccounts.length !== 0 && (
                 <div className="pb-4 text-xl">
                   <p className="mt-8 font-medium">{followText}</p>
                   <p className="text-2xl">
