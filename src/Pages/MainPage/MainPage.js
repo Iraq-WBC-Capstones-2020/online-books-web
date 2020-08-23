@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 //style files  for mdbreact
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
@@ -9,27 +9,16 @@ import CarsouelSlick from '../../components/CarsouelSlick/carsouelSlick';
 import SearchSection from '../../components/searchSection/searchSection';
 import ModalSearchSection from '../../components/searchSection/ModalSearchSection';
 import ShowCardsSection from '../../components/MainPageCards/ShowCardsSection';
-import { MDBCol, MDBRow, MDBContainer } from 'mdbreact';
+import { MDBCol, MDBRow, MDBContainer} from 'mdbreact';
 import Author from '../../components/PopularAuthors/PopularAuthors';
+import PropTypes from 'prop-types';
 
-function Main() {
-  const [modal8, handelModel8] = useState(false);
-
+function Main({ modal8, handelModel8 }) {
   return (
     <>
       <Paragraph />
       <CarsouelSlick highlightText="bestSellers" />
-      {/* */}
       <MDBContainer className="mainContainer">
-        {/*will put this buttom in the navbar
-        <MDBIcon
-          icon="bars"
-          size="1x"
-          onClick={() => handelModel8(true)}
-          border
-          className="sandwitchItem"
-        />
- */}
         <MDBRow around>
           <MDBCol
             size="0"
@@ -61,5 +50,8 @@ function Main() {
     </>
   );
 }
-
+Main.propTypes = {
+  modal8:PropTypes.bool,
+  handelModel8: PropTypes.func,
+};
 export default Main;

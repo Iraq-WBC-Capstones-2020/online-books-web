@@ -20,8 +20,9 @@ import {
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 import i18n from '../i18n';
+import PropTypes from 'prop-types';
 
-function NavbarPage() {
+function NavbarPage({ handelModel8 }) {
   const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +66,7 @@ function NavbarPage() {
   return (
     <>
       <MDBContainer>
-        <MDBNavbar className="shadow-none" light expand="md">
+        <MDBNavbar className="shadow-none" light expand="lg">
           <MDBNavbarBrand>
             <MDBNavLink to="/">
               <strong className="black-text font-bold">BooksZone</strong>
@@ -74,6 +75,11 @@ function NavbarPage() {
           <MDBNavbarToggler onClick={toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
             <MDBNavbarNav right>
+              <MDBNavItem>
+                <div className="px-1 py-2" onClick={() => handelModel8(true)}>
+                  {t('mainPage.category.Categories')}
+                </div>
+              </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
               </MDBNavItem>
@@ -152,5 +158,7 @@ function NavbarPage() {
     </>
   );
 }
-
+NavbarPage.propTypes = {
+  handelModel8: PropTypes.func,
+};
 export default NavbarPage;
