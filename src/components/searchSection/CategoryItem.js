@@ -1,7 +1,6 @@
 import React from 'react';
 import { MDBIcon } from 'mdbreact';
 import './searchSectionStyle.scss';
-import PropTypes from 'prop-types';
 
 function CategoryItem({ item, isActive, setActiveBubble }) {
   return (
@@ -30,8 +29,5 @@ function CategoryItem({ item, isActive, setActiveBubble }) {
     </div>
   );
 }
-CategoryItem.propTypes = {
-  item: PropTypes.node,
-};
 
 export default CategoryItem;

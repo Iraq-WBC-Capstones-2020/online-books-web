@@ -2,7 +2,7 @@
 
 exports[`searchSection snapshot 1`] = `
 <div
-  className="container bg-black p-0 "
+  className="container bg-black h-full p-0"
   data-test="container"
 >
   <div
@@ -117,13 +117,133 @@ exports[`searchSection snapshot 1`] = `
     </div>
   </div>
   <div
-    className="row mt-2 mb-0"
+    className="row mt-2 mb-0 fliterRow overflow-auto"
     data-test="row"
   >
     <div
       className="col-md-12"
       data-test="col"
-    />
+    >
+      <div
+        className="text-left lightBlack h-10 mb-1"
+        data-value="mainPage.category.Popular"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble lightBlackText"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+          data-value="mainPage.category.Popular"
+          onClick={[Function]}
+        >
+          mainPage.category.Popular
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1"
+        data-value="mainPage.category.Biographies&Memoirs"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble lightBlackText"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+          data-value="mainPage.category.Biographies&Memoirs"
+          onClick={[Function]}
+        >
+          mainPage.category.Biographies&Memoirs
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1"
+        data-value="mainPage.category.Literature&Fiction"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble lightBlackText"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+          data-value="mainPage.category.Literature&Fiction"
+          onClick={[Function]}
+        >
+          mainPage.category.Literature&Fiction
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1"
+        data-value="mainPage.category.Business&Investing"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble lightBlackText"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+          data-value="mainPage.category.Business&Investing"
+          onClick={[Function]}
+        >
+          mainPage.category.Business&Investing
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1"
+        data-value="mainPage.category.History"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble lightBlackText"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+          data-value="mainPage.category.History"
+          onClick={[Function]}
+        >
+          mainPage.category.History
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1"
+        data-value="mainPage.category.ChildrenBooks"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble lightBlackText"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+          data-value="mainPage.category.ChildrenBooks"
+          onClick={[Function]}
+        >
+          mainPage.category.ChildrenBooks
+        </p>
+      </div>
+      <div
+        className="text-left lightBlack h-10 mb-1"
+        data-value="mainPage.category.Romance"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-circle p-3 sizeBubble lightBlackText"
+          data-test="fa"
+        />
+        <p
+          className="parg1 d-inline hoverCursor"
+          data-value="mainPage.category.Romance"
+          onClick={[Function]}
+        >
+          mainPage.category.Romance
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 `;

@@ -13,7 +13,6 @@ import BookImage from './bookImage';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { filterByAuthors } from './../../actions/index';
-import { auth } from '../../api/firebase';
 
 function SearchSection({ authors }) {
   const dispatch = useDispatch();
