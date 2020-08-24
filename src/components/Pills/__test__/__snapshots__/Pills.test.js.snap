@@ -95,7 +95,7 @@ Array [
     </div>
   </div>,
   <div
-    className="bg-gray-200 py-4"
+    className="py-4"
   >
     <div
       className="container"

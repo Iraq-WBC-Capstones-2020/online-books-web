@@ -3,37 +3,37 @@ import { useTranslation } from 'react-i18next';
 import CreateStars from '../CarsouelSlick/CreateStars';
 import Paragraph from '../Paragraph/Paragraph';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
-const BookPage = () => {
+import { Link } from 'react-router-dom';
+function BookPage({ book }) {
   const { t } = useTranslation();
-  const book = {
-    bookName: 'Mind Without Body',
-    bookCover: 'https://via.placeholder.com/353x498',
-    description: `is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since
-    the 1500s, when an unknown printer took a galley of type and
-    scrambled it to make a type specimen book.galley of type and
-    scrambled it to make a type specimen book`,
-    authortName: 'Ahmed khaled tofeq',
-    bookType: 'Fantasy',
-    publishDate: '2017',
-    price: '15$',
-    rate: 3.5,
-  };
-
+  const {
+    name,
+    price,
+    cover,
+    description,
+    author_id,
+    author_name,
+    released_date,
+    rating,
+    tags,
+  } = book;
   const isLoggedIn = false;
+  const yearReleased = released_date.toDate().getFullYear();
   return (
     <MDBContainer className="mt-5">
       <MDBRow>
         <MDBCol sm="6" size="12" className="order-1 order-sm-0">
           <div className="mt-5">
-            <h1 className="blue-text"> {book.bookName}</h1>
-            <span className="gray-text">{book.authortName}</span>
+            <h1 className="blue-text"> {name}</h1>
+            <Link to={`/author/${author_id}`}>
+              <span className="gray-text">{author_name}</span>
+            </Link>
             <br />
             <div className="mt-2 yellow-star">
-              <CreateStars rate={book.rate} />
+              <CreateStars rate={rating} />
             </div>
 
-            <Paragraph>{book.description}</Paragraph>
+            <Paragraph>{description}</Paragraph>
             <span className="gray-text">{t('bookPage.language')}:Arabic</span>
           </div>
           <br />
@@ -41,10 +41,10 @@ const BookPage = () => {
             <>
               <div className="mt-3">
                 <MDBBtn color="info" className="mr-3 px-3 py-0">
-                  {book.bookType}
+                  {tags}
                 </MDBBtn>
                 <MDBBtn color="info" className="px-3 py-0">
-                  {book.publishDate}
+                  {yearReleased}
                 </MDBBtn>
               </div>
               <div className="mt-4">
@@ -61,15 +61,15 @@ const BookPage = () => {
           ) : (
             <>
               <span className="gray-text">
-                Price: <strong>{book.price}</strong>
+                Price: <strong>{price}IQD</strong>
               </span>
 
               <div className="mt-3">
                 <MDBBtn color="info" className="mr-3 px-3 py-0">
-                  {book.bookType}
+                  {tags}
                 </MDBBtn>
                 <MDBBtn color="info" className="px-3 py-0">
-                  {book.publishDate}
+                  {yearReleased}
                 </MDBBtn>
               </div>
               <div className="mt-4">
@@ -83,17 +83,12 @@ const BookPage = () => {
 
         <MDBCol sm="6" size="12" className="order-0 order-sm-1">
           <div className="mt-5 d-flex justify-content-center align-self-center">
-            <img
-              src={book.bookCover}
-              alt="Book cover"
-              width="353"
-              height="498"
-            />
+            <img src={cover} alt="Book cover" width="353" height="498" />
           </div>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
   );
-};
+}
 
 export default BookPage;

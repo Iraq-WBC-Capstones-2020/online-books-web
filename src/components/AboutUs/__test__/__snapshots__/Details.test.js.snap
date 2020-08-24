@@ -34,7 +34,7 @@ exports[`Details snapshot 1`] = `
             aboutPage.aboutSection.aboutUs
           </p>
           <p
-            className="text-base leading-loose text-justify"
+            className="text-base leading-loose text-justify break-words"
           >
             aboutPage.aboutSection.aboutUsText
           </p>

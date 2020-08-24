@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBContainer, MDBCol, MDBRow, MDBIcon } from 'mdbreact';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-const Footer = () => {
+function Footer() {
   const { t } = useTranslation();
   const tags = t('footer.tagsList', { returnObjects: true });
   const logoUrl = 'https://via.placeholder.com/150x100';
@@ -28,11 +28,9 @@ const Footer = () => {
         <MDBContainer>
           <MDBRow>
             <MDBCol lg="4" md="4" sm="6" xs="12">
-              <img
-                className="h-20 d-block d-sm-inline mx-auto"
-                alt="logo"
-                src={logoUrl}
-              ></img>
+              <strong className="text-4xl black-text font-bold">
+                Book Zone
+              </strong>
               <p className="mt-2 text-base leading-6 text-center text-sm-left">
                 {t('footer.description')}
               </p>
@@ -85,7 +83,7 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 Footer.propTypes = {
   tags: PropTypes.array,

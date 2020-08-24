@@ -2,7 +2,7 @@
 
 exports[`Spinner snapshot 1`] = `
 <div
-  className="spinner-border"
+  className="m-auto spinner-border"
   data-testid="spinner"
   role="status"
 >

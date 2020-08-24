@@ -23,7 +23,7 @@ Array [
             Ann Druyan:
           </p>
           <p
-            className="text-base leading-loose text-justify"
+            className="text-base leading-loose text-justify break-words"
           >
             Ann Druyan is an Emmy and Peabody Award-winning writer and producer who has dedicated her life to science. In 1980, Ann, alongside late husband Carl Sagan, wrote the 1980 original COSMOS: A Personal Voyage — which was a 13-part television event on PBS. COSMOS is still one of the most-watched programs in the history of PBS and its airing was a major moment for science-themed television.
           </p>

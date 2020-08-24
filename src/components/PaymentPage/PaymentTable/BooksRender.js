@@ -1,11 +1,11 @@
 import React from 'react';
 export default function BooksRender({ books, changeCheck }) {
-  return books.map((book, index) => {
+  return books.map((book) => {
     const { title, copies, price, id, checked } = book;
 
     return (
       <tr
-        key={index}
+        key={id}
         className="text-center"
         style={{ textDecoration: !checked ? 'line-through' : 'none' }}
       >

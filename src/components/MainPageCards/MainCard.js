@@ -1,41 +1,51 @@
 import React from 'react';
 import CreateStars from '../CarsouelSlick/CreateStars';
 import CartIcon from './cartIcon';
-import PropTypes from 'prop-types';
 import { MDBCard, MDBCardBody } from 'mdbreact';
-function Cards({ book, key }) {
-  const { id, authorName, bookName, newPrice, oldPrice, rate, cover } = book;
-  const isBottomCardInColumn = id % 2 === 0;
-
+import { Link } from 'react-router-dom';
+function MainCard({ book, index }) {
+  const { id, author_name, name, price, rating, cover, author_id } = book;
+  const isBottomCardInColumn = index % 2 !== 0;
   return (
     <MDBCard
-      key={key}
       tag="div"
-      className={`relative h-100 Card shadow-xl animate transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mx-sm-0 mx-md-1 mx-lg-3
+      key={id}
+      className={`relative h-100 Card shadow-xl animate transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-95 mx-sm-0 mx-md-1 mx-lg-3 
          ${isBottomCardInColumn ? 'marginTop' : ''}`}
     >
-      <img src={cover} alt="cover" className="imgCardBook rounded-t-md" />
-
+      <Link to={`/book/${id}`} className="imgCardBook">
+        <img
+          src={cover}
+          alt={author_name}
+          className="imgCardBook w-full rounded-t-md"
+        />
+      </Link>
       <MDBCardBody className="absolute bottom-0 w-full px-0 py-0">
         {/*opacity part*/}
-        <div className="">
+        <div>
           <div className="blackOpacity text-center py-1">
-            <h5 className="HeaderCardBook mb-0 text-xl text-white">
-              {authorName}
-            </h5>
+            <Link to={`/author/${author_id}`}>
+              <h5 className="HeaderCardBook mb-0 text-xl text-white truncate capitalize px-4">
+                {author_name}
+              </h5>
+            </Link>
             <div className="sizeStarsContainer">
-              <CreateStars rate={rate} starSize="small" />
+              <CreateStars rate={rating} starSize="small" />
             </div>
-            <p className="HeaderCardBook grayColor text-sm font-bold">
-              {bookName}
-            </p>
+            <Link to={`/book/${id}`}>
+              <p className="HeaderCardBook grayColor text-sm font-bold truncate px-4">
+                {name}
+              </p>
+            </Link>
           </div>
           {/*black part*/}
           <div className="bg-black d-flex flex-row justify-content-around py-md-2 px-md-2 px-sm-0">
-            <p className="lightBlue font-semibold font-sans md:text-lg p-1">
-              {newPrice}
+            <p className="lightBlue font-semibold font-sans md:text-lg py-1 ">
+              {`$${price - 2}.99`}
             </p>
-            <p className="darkGray font-normal line-through p-1">{oldPrice}</p>
+            <p className="darkGray font-normal line-through pr-md-2 py-1">
+              {`$${price}.99`}
+            </p>
 
             <div className="rounded-full w-8  h-8 border-2 border-orange-200 text-center">
               <CartIcon className="p-1" />
@@ -46,7 +56,5 @@ function Cards({ book, key }) {
     </MDBCard>
   );
 }
-Cards.propTypes = {
-  BookInf: PropTypes.object,
-};
-export default Cards;
+
+export default MainCard;
