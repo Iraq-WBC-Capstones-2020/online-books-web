@@ -17,4 +17,4 @@ export const filterByAuthors = (author) => {
     type: 'FILTER_BY_AUTHORS',
     payload: author,
   };
-}; 
+};
