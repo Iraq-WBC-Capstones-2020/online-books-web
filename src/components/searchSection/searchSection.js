@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   MDBCol,
   MDBRow,
@@ -8,11 +8,15 @@ import {
   MDBFormInline,
 } from 'mdbreact';
 import './searchSectionStyle.scss';
-import CategoryList from './CategoryList';
+import CategoryItem from './CategoryItem';
 import BookImage from './bookImage';
 import { useTranslation } from 'react-i18next';
+import { useDispatch } from 'react-redux';
+import { filterByAuthors } from './../../actions/index';
+import { auth } from '../../api/firebase';
 
-function SearchSection() {
+function SearchSection({ authors }) {
+  const dispatch = useDispatch();
   const { t } = useTranslation();
   const categoriesBooks = [
     { name: t('mainPage.category.Popular') },
@@ -23,23 +27,21 @@ function SearchSection() {
     { name: t('mainPage.category.ChildrenBooks') },
     { name: t('mainPage.category.Romance') },
   ];
-  const authorNames = [
-    { name: 'zeena kareem' },
-    { name: 'zainab azzam' },
-    { name: 'sara ahmed' },
-    { name: 'qays ayad' },
-    { name: 'dunia tarq' },
-  ];
   const [searchInputValue, setSearchInputValue] = useState('');
   //we use number 2 as default value to make the BOOKS choosen in first time when we open the website
   const [activeItem, setActiveItem] = useState(2);
+  const [activeBubble, setActiveBubble] = useState();
   const [data, setData] = useState(categoriesBooks);
   const isAuthorsSelected = activeItem === 1;
   const isBooksSelected = activeItem === 2;
+  useEffect(() => {
+    if (isAuthorsSelected && activeBubble)
+      dispatch(filterByAuthors(authors[activeBubble]));
+  }, [activeBubble, activeItem]);
 
   return (
     <>
-      <MDBContainer className="bg-black p-0 ">
+      <MDBContainer className="bg-black h-full p-0">
         <MDBRow around>
           {/*SEARCH BOX PART */}
 
@@ -80,7 +82,7 @@ function SearchSection() {
               } `}
               onClick={() => {
                 setActiveItem(1);
-                setData(authorNames);
+                setData(authors);
               }}
             >
               <MDBIcon
@@ -98,7 +100,6 @@ function SearchSection() {
               </p>
             </div>
           </MDBCol>
-
           <MDBCol size="6" md="6" className="text-center px-3">
             <div
               className={`lightBlack text-gray-300 h-16 pt-2 ${
@@ -123,9 +124,16 @@ function SearchSection() {
         </MDBRow>
 
         {/*itemList for book catogray and authors names*/}
-        <MDBRow className="mt-2 mb-0">
+        <MDBRow className="mt-2 mb-0 fliterRow overflow-auto">
           <MDBCol md="12">
-            <CategoryList items={data} />
+            {data.map((item, index) => (
+              <CategoryItem
+                key={index}
+                isActive={index == activeBubble}
+                setActiveBubble={() => setActiveBubble(index)}
+                item={item}
+              />
+            ))}
           </MDBCol>
         </MDBRow>
       </MDBContainer>
