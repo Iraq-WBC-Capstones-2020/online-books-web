@@ -41,10 +41,10 @@ function MainCard({ book, index }) {
           {/*black part*/}
           <div className="bg-black d-flex flex-row justify-content-around py-md-2 px-md-2 px-sm-0">
             <p className="lightBlue font-semibold font-sans md:text-lg py-1 ">
-              {'$' + `${price - 2}` + '.99'}
+              {`$${price - 2}.99`}
             </p>
             <p className="darkGray font-normal line-through pr-md-2 py-1">
-              {'$' + price + '.99'}
+              {`$${price}.99`}
             </p>
 
             <div className="rounded-full w-8  h-8 border-2 border-orange-200 text-center">
