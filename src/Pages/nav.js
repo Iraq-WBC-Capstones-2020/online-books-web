@@ -80,9 +80,7 @@ function NavbarPage({ handelModel8 }) {
                   {t('mainPage.category.Categories')}
                 </div>
               </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="/">{t('navBar.home')}</MDBNavLink>
-              </MDBNavItem>
+
               <MDBNavItem>
                 <MDBNavLink to="/aboutus">{t('navBar.aboutus')}</MDBNavLink>
               </MDBNavItem>
