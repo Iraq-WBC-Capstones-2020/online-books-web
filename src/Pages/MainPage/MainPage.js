@@ -38,15 +38,6 @@ function Main({ modal8, handelModel8 }) {
           <CarsouelSlick books={books} highlightText="bestSellers" />
           {/* */}
           <MDBContainer className="mainContainer">
-            {/*will put this buttom in the navbar
-        <MDBIcon
-          icon="bars"
-          size="1x"
-          onClick={() => handelModel8(true)}
-          border
-          className="sandwitchItem"
-        />
- */}
             <MDBRow around>
               <MDBCol
                 size="0"

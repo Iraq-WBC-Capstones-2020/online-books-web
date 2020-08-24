@@ -62,16 +62,13 @@ export default class Book {
     booksRef.doc(this.id).set({ ...this });
   }
   static async sendBooks() {
-    console.log(books);
     for (const book of books) {
-      console.log(book);
       const author = (
         await authorsRef.where('name', '==', book.authorName).limit(1).get()
       ).docs[0].data();
       book.author_id = author.id;
       book.author_name = author.name;
       const oneBook = new Book(book);
-      console.log(oneBook);
       await oneBook.updateBookInfo();
     }
   }

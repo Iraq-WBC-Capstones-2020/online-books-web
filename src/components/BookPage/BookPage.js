@@ -3,30 +3,21 @@ import { useTranslation } from 'react-i18next';
 import CreateStars from '../CarsouelSlick/CreateStars';
 import Paragraph from '../Paragraph/Paragraph';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
-import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 function BookPage({ book }) {
   const { t } = useTranslation();
   const {
-    id,
     name,
-    type,
     price,
-    dis_count,
     cover,
-    have_audio,
     description,
-    audio_ref,
     author_id,
     author_name,
     released_date,
-    views,
     rating,
-    ref,
     tags,
   } = book;
-  const user = useSelector((state) => state.user);
-
-  const isLoggedIn = user.isSigned;
+  const isLoggedIn = false;
   const yearReleased = released_date.toDate().getFullYear();
   return (
     <MDBContainer className="mt-5">
@@ -34,7 +25,9 @@ function BookPage({ book }) {
         <MDBCol sm="6" size="12" className="order-1 order-sm-0">
           <div className="mt-5">
             <h1 className="blue-text"> {name}</h1>
-            <span className="gray-text">{author_name}</span>
+            <Link to={`/author/${author_id}`}>
+              <span className="gray-text">{author_name}</span>
+            </Link>
             <br />
             <div className="mt-2 yellow-star">
               <CreateStars rate={rating} />

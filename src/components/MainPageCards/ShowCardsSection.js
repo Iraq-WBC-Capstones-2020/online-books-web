@@ -57,8 +57,8 @@ function ShowCardsSection({ books }) {
       {/*flex-col justify-between className="relative"*/}
       <MDBRow className="containerGridCards">
         <Slider {...settings} className="w-full relative">
-          {books.map((book) => (
-            <MainCard book={book} key={book.id} />
+          {books.map((book, index) => (
+            <MainCard book={book} index={index} key={book.id} />
           ))}
         </Slider>
       </MDBRow>

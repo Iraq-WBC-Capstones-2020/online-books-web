@@ -20,20 +20,22 @@ exports[`BookPage snapshot 1`] = `
           className="blue-text"
         >
            
-          Mind Without Body
+          The Water Cure
         </h1>
-        <span
-          className="gray-text"
+        <a
+          href="#/author/ZKhfB8jcxaGKaeOUaUyR"
+          onClick={[Function]}
         >
-          Ahmed khaled tofeq
-        </span>
+          <span
+            className="gray-text"
+          >
+            Sophie Mackintosh
+          </span>
+        </a>
         <br />
         <div
           className="mt-2 yellow-star"
         >
-          <icon
-            className="fa fa-star fa-md mr-1 text-yellow-300"
-          />
           <icon
             className="fa fa-star fa-md mr-1 text-yellow-300"
           />
@@ -46,18 +48,17 @@ exports[`BookPage snapshot 1`] = `
           <icon
             className=" fa fa-star font-light fa-md mr-1 text-yellow-300"
           />
+          <icon
+            className=" fa fa-star font-light fa-md mr-1 text-yellow-300"
+          />
         </div>
         <p
           className="text-3xl font-medium border-b-4 inline border-blue-500"
         />
         <p
-          className="text-base leading-loose text-justify"
+          className="text-base leading-loose text-justify break-words"
         >
-          is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since
-    the 1500s, when an unknown printer took a galley of type and
-    scrambled it to make a type specimen book.galley of type and
-    scrambled it to make a type specimen book
+          There is a house on an island, alone by the sea. Inside live three girls, Grace, Lia and Sky, with their parents Mother and King. Outside, beyond the sea and the horizon, there is a “toxin‑filled world”. To understand what toxins are, and indeed for their knowledge of everything else, the girls have always deferred to King. Their world is complete. And then, one day, he is gone.
         </p>
         <span
           className="gray-text"
@@ -72,7 +73,8 @@ exports[`BookPage snapshot 1`] = `
       >
         Price: 
         <strong>
-          15$
+          15000
+          IQD
         </strong>
       </span>
       <div
@@ -85,7 +87,7 @@ exports[`BookPage snapshot 1`] = `
           onTouchStart={[Function]}
           type="button"
         >
-          Fantasy
+          Magic
           <div
             className="Ripple "
             data-test="waves"
@@ -106,7 +108,7 @@ exports[`BookPage snapshot 1`] = `
           onTouchStart={[Function]}
           type="button"
         >
-          2017
+          1970
           <div
             className="Ripple "
             data-test="waves"
@@ -157,7 +159,7 @@ exports[`BookPage snapshot 1`] = `
         <img
           alt="Book cover"
           height="498"
-          src="https://via.placeholder.com/353x498"
+          src="https://lithub.com/wp-content/uploads/2019/01/81SBy9jbbHL.jpg"
           width="353"
         />
       </div>

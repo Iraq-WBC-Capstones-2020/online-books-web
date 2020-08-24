@@ -12,6 +12,17 @@ import CreateStars from './CreateStars';
 import { Link } from 'react-router-dom';
 // create 4 items for the carsouel movement
 function CarouselItems({ book }) {
+  const {
+    id,
+    author_name,
+    author_id,
+    name,
+    price,
+    views,
+    rating,
+    cover,
+    have_audio,
+  } = book;
   const { t } = useTranslation();
   return (
     <div className="mt-md-4 mb-md-4 pl-lg-3">
@@ -22,7 +33,7 @@ function CarouselItems({ book }) {
               <Link to="/book/:bookId">
                 <img
                   className="imageCardCarsouel"
-                  src={book.cover}
+                  src={cover}
                   alt="cover book"
                 />
               </Link>
@@ -32,27 +43,31 @@ function CarouselItems({ book }) {
               <MDBCardBody className="p-lg-0 text-center text-md-left text-lg-left mx-auto">
                 <div>
                   <Link
-                    to={`/author/${book.author_id}`}
-                    className="fontHeader1 mb-0 font-weight-normal text-2xl"
+                    to={`/author/${author_id}`}
+                    className="fontHeader1 mb-0 pr-sm-0 pr-md-4 font-weight-normal text-2xl capitalize truncate"
                   >
-                    {book.author_name}
+                    {author_name}
                   </Link>
                 </div>
 
                 <MDBCardText>
-                  <Link to={`/book/${book.id}`}>
-                    <p className="mb-1 fontHeader2 font-normal font-weight-normal">
-                      {book.name}
+                  <Link to={`/book/${id}`}>
+                    <p className="mb-1 fontHeader2 font-normal font-weight-normal truncate pr-md-20 capitalize">
+                      {name}
                     </p>
                   </Link>
-                  <p className="mb-1 parg1 font-weight-normal">{book.type}</p>
+                  <p className="mb-1 parg1 font-weight-normal">{`formate: ${
+                    have_audio ? 'Audio, PDF' : 'Hardback'
+                  }`}</p>
                   <p className="font-black fontPrice font-weight-normal">
-                    {book.price}
+                    {`$${price}.99`}
                   </p>
                   <div className="mb-3">
                     <div className="inline-block mr-2">
-                      <CreateStars rate={book.rating} />
-                      {book.views} {t('carsouelSection.ratings')}
+                      <CreateStars rate={rating} />
+                      <p className="mt-1 d-md-inline d-block"></p>
+                      {`(${views})`}
+                      {t('carsouelSection.ratings')}
                     </div>
                   </div>
                 </MDBCardText>

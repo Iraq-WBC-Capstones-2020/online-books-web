@@ -8,7 +8,7 @@ export const books = [
     type: 'Fiction',
     cover: 'https://lithub.com/wp-content/uploads/2019/01/81SBy9jbbHL.jpg',
     tags: 'Magic',
-    price: 15000,
+    price: 15,
     have_audio: true,
     views: '22k',
     rating: 2.5,
@@ -25,7 +25,7 @@ export const books = [
     cover:
       'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/kindle-book-cover-template-815bc0110c83ab604379f7ae87faf17e.jpg?ts=1561547093',
     tags: 'fantasy ,kindle ,mystery ,thriller book',
-    price: 13000,
+    price: 13,
     views: '22k',
     have_audio: true,
     rating: 3.5,
@@ -44,7 +44,7 @@ export const books = [
       'https://graphics8.nytimes.com/images/2013/04/14/t-magazine/14document/14document-custom2.jpg',
     tags:
       'great gatsby    highschool   scott fitzgerald  jay gatsby     nick carraway    american dream newyork ',
-    price: 7000,
+    price: 7,
     views: '22k',
     have_audio: true,
     rating: 4.5,
@@ -63,7 +63,7 @@ export const books = [
       'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1573073026l/36292242._SY475_.jpg',
     tags:
       ' hidden away, flatiron books ,sleeping beauty ,world building ,poisonous, fairy tales, exchange for an honest ',
-    price: 17000,
+    price: 17,
     views: '22k',
     rating: 2.7,
     have_audio: false,
@@ -79,7 +79,7 @@ export const books = [
     cover:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSU6FJ5XJq113utCGe9U8hKn1masiMkaCnWs2vEYP4E6MWVnU&s',
     tags: 'childern, Mermaid, fairy tales',
-    price: 8000,
+    price: 8,
     views: '22k',
     rating: 1.5,
 
@@ -96,7 +96,7 @@ export const books = [
     cover:
       'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596371522l/50396269._SY475_.jpg',
     tags: ' Young, Adult, Fantasy',
-    price: 20000,
+    price: 2,
     views: '22k',
     rating: 2,
 
@@ -113,7 +113,7 @@ export const books = [
     cover:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY0VkfLkv0l_NcbpnDh8Sy24BF_Z608_-iyFmi5XsG7VODB6s&s',
     tags: 'Classics ,Romance  , women ,beauty ',
-    price: 16000,
+    price: 16,
     views: '22k',
     rating: 4.3,
 
@@ -130,7 +130,7 @@ export const books = [
     cover:
       'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595299909l/54620022._SY475_.jpg',
     tags: ' fiction , drama ',
-    price: 25000,
+    price: 25,
     views: '22k',
     rating: 4,
 
@@ -147,8 +147,8 @@ export const books = [
     cover:
       'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593356110l/50892133.jpg',
     tags: 'Drama , Romance , Slice of life ',
-    price: 30000,
-    views: '22k',
+    price: 30,
+    views: '20k',
     rating: 4.7,
 
     have_audio: false,
@@ -165,8 +165,8 @@ export const books = [
       'https://kbimages1-a.akamaihd.net/70ee63f2-8c0a-48e6-8058-60d8cc633641/1200/1200/False/harry-potter-and-the-goblet-of-fire-6.jpg',
     tags:
       ' friends , harry potter , magic ,prisoner of azkaban , potter series',
-    price: 20000,
-    views: '22k',
+    price: 20,
+    views: '30k',
     rating: 3.8,
 
     have_audio: false,
@@ -182,8 +182,8 @@ export const books = [
     cover: 'https://images-na.ssl-images-amazon.com/images/I/914CT7iyyvL.jpg',
     tags:
       'potter and the deathly , potter series  , ron and hermione , book wizarding world  ,best book  ',
-    price: 24000,
-    views: '22k',
+    price: 24,
+    views: '42k',
     rating: 4.2,
 
     have_audio: false,
@@ -198,8 +198,8 @@ export const books = [
     type: "Children's Books",
     cover: 'https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg',
     tags: ' sorcerers stone ,  potter series , magic , friends ',
-    price: 10000,
-    views: '22k',
+    price: 10,
+    views: '29k',
     rating: 3.9,
     have_audio: false,
     audio_ref: '',
@@ -281,17 +281,6 @@ export const authors = [
 // const bestSellers = [];
 // const newReleased = [];
 
-// const addToDatabase = (e) => {
-//   e.preventDefault();
-//   books.forEach((book) => {
-//     const uuid = booksRef.doc().id;
-//     booksRef.doc(uuid).set({ uuid: uuid, ...book });
-//   });
-//   authors.forEach((author) => {
-//     const uuid = authorsRef.doc().id;
-//     authorsRef.doc(uuid).set({ uuid: uuid, ...author });
-//   });
-// }; //set the newReleases as mock data in purchases collection
 // const setPurchases = () => {
 //   newReleased.forEach((book) => {
 //     const bookInfo = {
@@ -305,28 +294,18 @@ export const authors = [
 // };
 
 // const getNewReleased = (e) => {
-//   e.preventDefault(); //get the 4 new released(fillter db and get the newest 4 books)
+//   e.preventDefault();
 //   booksRef
 //     .orderBy('released', 'desc')
 //     .limit(4)
 //     .get()
 //     .then(function (querySnapshot) {
 //       querySnapshot.forEach(function (doc) {
-//         //get the new released books
+//
 //         newReleased.push(doc.data());
-//       }); // console.log(newReleased)
+//       });
 //       setPurchases();
 //     });
-// };
-
-// const getAuthors = (e) => {
-//   let authorsName = [];
-//   e.preventDefault();
-//   authorsRef.get().then(function (querySnapshot) {
-//     querySnapshot.forEach(function (doc) {
-//       authorsName.push(doc.data());
-//     });
-//   }); // console.log(authorsName);
 // };
 
 // const deleteDataFromDatabase = (e) => {

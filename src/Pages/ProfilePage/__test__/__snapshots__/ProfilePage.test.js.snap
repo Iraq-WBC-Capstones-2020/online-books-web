@@ -36,7 +36,7 @@ Array [
             className="text-3xl font-medium border-b-4 inline border-blue-500 text-center text-md-left"
           />
           <p
-            className="text-base leading-loose text-justify text-center text-md-left"
+            className="text-base leading-loose text-justify break-words text-center text-md-left"
           >
             profilePage.memberSince Mon Feb 01 2010
           </p>
@@ -44,7 +44,7 @@ Array [
             className="text-3xl font-medium border-b-4 inline border-blue-500 text-center text-md-left"
           />
           <p
-            className="text-base leading-loose text-justify text-center text-md-left"
+            className="text-base leading-loose text-justify break-words text-center text-md-left"
           >
             
           </p>
@@ -52,7 +52,7 @@ Array [
             className="text-3xl font-medium border-b-4 inline border-blue-500 text-center text-md-left"
           />
           <p
-            className="text-base leading-loose text-justify text-center text-md-left"
+            className="text-base leading-loose text-justify break-words text-center text-md-left"
           >
               profilePage.livesIn ErbilprofilePage.addressSpreadIraq
           </p>
@@ -60,7 +60,7 @@ Array [
             className="text-3xl font-medium border-b-4 inline border-blue-500 text-center text-md-left"
           />
           <p
-            className="text-base leading-loose text-justify text-center text-md-left"
+            className="text-base leading-loose text-justify break-words text-center text-md-left"
           >
             
           </p>
@@ -68,7 +68,7 @@ Array [
             className="text-3xl font-medium border-b-4 inline border-blue-500 text-center text-md-left"
           />
           <p
-            className="text-base leading-loose text-justify text-center text-md-left"
+            className="text-base leading-loose text-justify break-words text-center text-md-left"
           >
               sara@eample.com
           </p>
@@ -76,668 +76,666 @@ Array [
       </div>
     </div>
   </div>,
-  <div>
+  <div
+    className="py-2 border-t-2 border-b-2"
+  >
     <div
-      className="py-2 border-t-2 border-b-2"
+      className="container"
+      data-test="container"
     >
-      <div
-        className="container"
-        data-test="container"
+      <ul
+        className="nav nav-pills"
+        data-test="nav"
       >
-        <ul
-          className="nav nav-pills"
-          data-test="nav"
+        <li
+          className="nav-item"
+          data-test="nav-item"
         >
-          <li
-            className="nav-item"
-            data-test="nav-item"
+          <a
+            className="nav-link Ripple-parent nav-link Ripple-parent active"
+            data-test="nav-link"
+            href="/"
+            onClick={[Function]}
+            onMouseUp={[Function]}
+            onTouchStart={[Function]}
           >
-            <a
-              className="nav-link Ripple-parent nav-link Ripple-parent active"
-              data-test="nav-link"
-              href="/"
-              onClick={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-            >
-              profilePage.about
-              <div
-                className="Ripple "
-                data-test="waves"
-                style={
-                  Object {
-                    "height": "0px",
-                    "left": "0px",
-                    "top": "0px",
-                    "width": "0px",
-                  }
-                }
-              />
-              <div
-                className="Ripple "
-                data-test="waves"
-                style={
-                  Object {
-                    "height": "0px",
-                    "left": "0px",
-                    "top": "0px",
-                    "width": "0px",
-                  }
-                }
-              />
-            </a>
-          </li>
-          <li
-            className="nav-item"
-            data-test="nav-item"
-          >
-            <a
-              className="nav-link Ripple-parent nav-link Ripple-parent"
-              data-test="nav-link"
-              href="/"
-              onClick={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-            >
-              profilePage.purchaseHistory
-              <div
-                className="Ripple "
-                data-test="waves"
-                style={
-                  Object {
-                    "height": "0px",
-                    "left": "0px",
-                    "top": "0px",
-                    "width": "0px",
-                  }
-                }
-              />
-              <div
-                className="Ripple "
-                data-test="waves"
-                style={
-                  Object {
-                    "height": "0px",
-                    "left": "0px",
-                    "top": "0px",
-                    "width": "0px",
-                  }
-                }
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div
-      className="bg-gray-200 py-4"
-    >
-      <div
-        className="container"
-        data-test="container"
-      >
-        <div
-          className="tab-content"
-          data-test="tabContent"
-        >
-          <div
-            className="tab-pane active"
-            data-test="tab-pane"
-            role="tabpanel"
-          >
-            <button
-              className="btn-transparent btn Ripple-parent shadow-none text-blue-500 p-0 m-0 float-right mr-2 capitalize"
-              data-test="button"
-              onClick={[Function]}
-              onMouseUp={[Function]}
-              onTouchStart={[Function]}
-              type="button"
-            >
-              profilePage.edit
-              <div
-                className="Ripple "
-                data-test="waves"
-                style={
-                  Object {
-                    "height": "0px",
-                    "left": "0px",
-                    "top": "0px",
-                    "width": "0px",
-                  }
-                }
-              />
-            </button>
+            profilePage.about
             <div
-              className="clearfix"
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
             />
             <div
-              className="row"
-              data-test="row"
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+          </a>
+        </li>
+        <li
+          className="nav-item"
+          data-test="nav-item"
+        >
+          <a
+            className="nav-link Ripple-parent nav-link Ripple-parent"
+            data-test="nav-link"
+            href="/"
+            onClick={[Function]}
+            onMouseUp={[Function]}
+            onTouchStart={[Function]}
+          >
+            profilePage.purchaseHistory
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="py-4"
+  >
+    <div
+      className="container"
+      data-test="container"
+    >
+      <div
+        className="tab-content"
+        data-test="tabContent"
+      >
+        <div
+          className="tab-pane active"
+          data-test="tab-pane"
+          role="tabpanel"
+        >
+          <button
+            className="btn-transparent btn Ripple-parent shadow-none text-blue-500 p-0 m-0 float-right mr-2 capitalize"
+            data-test="button"
+            onClick={[Function]}
+            onMouseUp={[Function]}
+            onTouchStart={[Function]}
+            type="button"
+          >
+            profilePage.edit
+            <div
+              className="Ripple "
+              data-test="waves"
+              style={
+                Object {
+                  "height": "0px",
+                  "left": "0px",
+                  "top": "0px",
+                  "width": "0px",
+                }
+              }
+            />
+          </button>
+          <div
+            className="clearfix"
+          />
+          <div
+            className="row"
+            data-test="row"
+          >
+            <div
+              className="col-12 col-sm-12 col-md-6"
+              data-test="col"
             >
-              <div
-                className="col-12 col-sm-12 col-md-6"
-                data-test="col"
+              <h3
+                className="text-2xl leading-loose font-semibold"
               >
-                <h3
-                  className="text-2xl leading-loose font-semibold"
-                >
-                  profilePage.basicInfo
-                </h3>
+                profilePage.basicInfo
+              </h3>
+              <div
+                className="row"
+                data-test="row"
+              >
                 <div
-                  className="row"
-                  data-test="row"
+                  className="col-6 col-sm-6 col-md-4"
+                  data-test="col"
                 >
-                  <div
-                    className="col-6 col-sm-6 col-md-4"
-                    data-test="col"
+                  <h3
+                    className="text-base leading-loose"
                   >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      profilePage.name
-                      :
-                    </h3>
-                  </div>
-                  <div
-                    className="col-6 col-sm-6 col-md-8"
-                    data-test="col"
-                  >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      Sara Ahmed
-                    </h3>
-                  </div>
+                    profilePage.name
+                    :
+                  </h3>
                 </div>
                 <div
-                  className="row"
-                  data-test="row"
+                  className="col-6 col-sm-6 col-md-8"
+                  data-test="col"
                 >
-                  <div
-                    className="col-6 col-sm-6 col-md-4"
-                    data-test="col"
+                  <h3
+                    className="text-base leading-loose"
                   >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      profilePage.gender
-                      :
-                    </h3>
-                  </div>
-                  <div
-                    className="col-6 col-sm-6 col-md-8"
-                    data-test="col"
-                  >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      Female
-                    </h3>
-                  </div>
-                </div>
-                <div
-                  className="row"
-                  data-test="row"
-                >
-                  <div
-                    className="col-6 col-sm-6 col-md-4"
-                    data-test="col"
-                  >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      profilePage.birthday
-                      :
-                    </h3>
-                  </div>
-                  <div
-                    className="col-6 col-sm-6 col-md-8"
-                    data-test="col"
-                  >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      Sun Feb 01 1998
-                    </h3>
-                  </div>
-                </div>
-                <div
-                  className="row"
-                  data-test="row"
-                >
-                  <div
-                    className="col-6 col-sm-6 col-md-4"
-                    data-test="col"
-                  >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      profilePage.city
-                      :
-                    </h3>
-                  </div>
-                  <div
-                    className="col-6 col-sm-6 col-md-8"
-                    data-test="col"
-                  >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      Erbil
-                    </h3>
-                  </div>
-                </div>
-                <div
-                  className="row"
-                  data-test="row"
-                >
-                  <div
-                    className="col-6 col-sm-6 col-md-4"
-                    data-test="col"
-                  >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      profilePage.country
-                      :
-                    </h3>
-                  </div>
-                  <div
-                    className="col-6 col-sm-6 col-md-8"
-                    data-test="col"
-                  >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      Iraq
-                    </h3>
-                  </div>
+                    Sara Ahmed
+                  </h3>
                 </div>
               </div>
               <div
-                className="col-12 col-sm-12 col-md-6"
-                data-test="col"
+                className="row"
+                data-test="row"
               >
-                <h3
-                  className="text-2xl leading-loose font-semibold"
-                >
-                  profilePage.contactInfo
-                </h3>
                 <div
-                  className="row"
-                  data-test="row"
+                  className="col-6 col-sm-6 col-md-4"
+                  data-test="col"
                 >
-                  <div
-                    className="col-6 col-sm-6 col-md-4"
-                    data-test="col"
+                  <h3
+                    className="text-base leading-loose"
                   >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      profilePage.address
-                      :
-                    </h3>
-                  </div>
-                  <div
-                    className="col-6 col-sm-6 col-md-8"
-                    data-test="col"
-                  >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      Middle Erbil
-                    </h3>
-                  </div>
+                    profilePage.gender
+                    :
+                  </h3>
                 </div>
                 <div
-                  className="row"
-                  data-test="row"
+                  className="col-6 col-sm-6 col-md-8"
+                  data-test="col"
                 >
-                  <div
-                    className="col-6 col-sm-6 col-md-4"
-                    data-test="col"
+                  <h3
+                    className="text-base leading-loose"
                   >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      profilePage.phoneNumber
-                      :
-                    </h3>
-                  </div>
-                  <div
-                    className="col-6 col-sm-6 col-md-8"
-                    data-test="col"
+                    Female
+                  </h3>
+                </div>
+              </div>
+              <div
+                className="row"
+                data-test="row"
+              >
+                <div
+                  className="col-6 col-sm-6 col-md-4"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
                   >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      07154245455
-                    </h3>
-                  </div>
+                    profilePage.birthday
+                    :
+                  </h3>
                 </div>
                 <div
-                  className="row"
-                  data-test="row"
+                  className="col-6 col-sm-6 col-md-8"
+                  data-test="col"
                 >
-                  <div
-                    className="col-6 col-sm-6 col-md-4"
-                    data-test="col"
+                  <h3
+                    className="text-base leading-loose"
                   >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      profilePage.email
-                      :
-                    </h3>
-                  </div>
-                  <div
-                    className="col-6 col-sm-6 col-md-8"
-                    data-test="col"
+                    Sun Feb 01 1998
+                  </h3>
+                </div>
+              </div>
+              <div
+                className="row"
+                data-test="row"
+              >
+                <div
+                  className="col-6 col-sm-6 col-md-4"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
                   >
-                    <h3
-                      className="text-base leading-loose"
-                    >
-                      sara@eample.com
-                    </h3>
-                  </div>
+                    profilePage.city
+                    :
+                  </h3>
+                </div>
+                <div
+                  className="col-6 col-sm-6 col-md-8"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
+                  >
+                    Erbil
+                  </h3>
+                </div>
+              </div>
+              <div
+                className="row"
+                data-test="row"
+              >
+                <div
+                  className="col-6 col-sm-6 col-md-4"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
+                  >
+                    profilePage.country
+                    :
+                  </h3>
+                </div>
+                <div
+                  className="col-6 col-sm-6 col-md-8"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
+                  >
+                    Iraq
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-12 col-sm-12 col-md-6"
+              data-test="col"
+            >
+              <h3
+                className="text-2xl leading-loose font-semibold"
+              >
+                profilePage.contactInfo
+              </h3>
+              <div
+                className="row"
+                data-test="row"
+              >
+                <div
+                  className="col-6 col-sm-6 col-md-4"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
+                  >
+                    profilePage.address
+                    :
+                  </h3>
+                </div>
+                <div
+                  className="col-6 col-sm-6 col-md-8"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
+                  >
+                    Middle Erbil
+                  </h3>
+                </div>
+              </div>
+              <div
+                className="row"
+                data-test="row"
+              >
+                <div
+                  className="col-6 col-sm-6 col-md-4"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
+                  >
+                    profilePage.phoneNumber
+                    :
+                  </h3>
+                </div>
+                <div
+                  className="col-6 col-sm-6 col-md-8"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
+                  >
+                    07154245455
+                  </h3>
+                </div>
+              </div>
+              <div
+                className="row"
+                data-test="row"
+              >
+                <div
+                  className="col-6 col-sm-6 col-md-4"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
+                  >
+                    profilePage.email
+                    :
+                  </h3>
+                </div>
+                <div
+                  className="col-6 col-sm-6 col-md-8"
+                  data-test="col"
+                >
+                  <h3
+                    className="text-base leading-loose"
+                  >
+                    sara@eample.com
+                  </h3>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div
+          className="tab-pane"
+          data-test="tab-pane"
+          role="tabpanel"
+        >
           <div
-            className="tab-pane"
-            data-test="tab-pane"
-            role="tabpanel"
+            className="mdb-datatable dt-bootstrap4"
+            data-test="datatable"
           >
             <div
-              className="mdb-datatable dt-bootstrap4"
-              data-test="datatable"
+              className="row"
             >
               <div
-                className="row"
+                className="col-sm-12"
+                data-test="mdb-datatable-table"
               >
                 <div
-                  className="col-sm-12"
-                  data-test="mdb-datatable-table"
+                  className=""
+                  data-test="table"
+                  style={
+                    Object {
+                      "maxHeight": undefined,
+                    }
+                  }
+                >
+                  <table
+                    className="table table-borderless table-hover mdb-dataTable"
+                    entries={5}
+                  >
+                    <thead
+                      className="mdb-dataTable-head"
+                      data-test="datatable-head"
+                    >
+                      <tr>
+                        <th
+                          aria-controls="DataTable"
+                          aria-label="orderId"
+                          className="sorting"
+                          onClick={[Function]}
+                        >
+                          profilePage.orderId
+                        </th>
+                        <th
+                          className="sorting"
+                          onClick={[Function]}
+                        >
+                          profilePage.books
+                        </th>
+                        <th
+                          className="sorting"
+                          onClick={[Function]}
+                        >
+                          profilePage.status
+                        </th>
+                        <th
+                          className="sorting"
+                          onClick={[Function]}
+                        >
+                          profilePage.originalPrice
+                        </th>
+                        <th
+                          className="sorting"
+                          onClick={[Function]}
+                        >
+                          profilePage.totalPrice
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody
+                      data-test="table-body"
+                    >
+                      <tr>
+                        <td>
+                          25565845
+                        </td>
+                        <td>
+                          System Architect
+                        </td>
+                        <td>
+                          Edinburgh
+                        </td>
+                        <td>
+                          61
+                        </td>
+                        <td>
+                          2011/04/25
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          25565845
+                        </td>
+                        <td>
+                          System Architect
+                        </td>
+                        <td>
+                          Edinburgh
+                        </td>
+                        <td>
+                          61
+                        </td>
+                        <td>
+                          2011/04/25
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          25565845
+                        </td>
+                        <td>
+                          System Architect
+                        </td>
+                        <td>
+                          Edinburgh
+                        </td>
+                        <td>
+                          61
+                        </td>
+                        <td>
+                          2011/04/25
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          25565845
+                        </td>
+                        <td>
+                          System Architect
+                        </td>
+                        <td>
+                          Edinburgh
+                        </td>
+                        <td>
+                          61
+                        </td>
+                        <td>
+                          2011/04/25
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          25565845
+                        </td>
+                        <td>
+                          System Architect
+                        </td>
+                        <td>
+                          Edinburgh
+                        </td>
+                        <td>
+                          61
+                        </td>
+                        <td>
+                          2011/04/25
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="d-flex w-100 justify-content-between"
+              >
+                <div
+                  className="row ml-3 justify-content-between"
                 >
                   <div
-                    className=""
-                    data-test="table"
+                    className="false"
+                    data-test="datatable-search"
                     style={
                       Object {
-                        "maxHeight": undefined,
+                        "alignItems": "center",
+                        "display": "flex",
                       }
                     }
                   >
-                    <table
-                      className="table table-borderless table-hover mdb-dataTable"
-                      entries={5}
+                    <div
+                      className="mdb-datatable-filter flex-row"
+                      data-test="datatable-input"
                     >
-                      <thead
-                        className="mdb-dataTable-head"
-                        data-test="datatable-head"
-                      >
-                        <tr>
-                          <th
-                            aria-controls="DataTable"
-                            aria-label="orderId"
-                            className="sorting"
-                            onClick={[Function]}
-                          >
-                            profilePage.orderId
-                          </th>
-                          <th
-                            className="sorting"
-                            onClick={[Function]}
-                          >
-                            profilePage.books
-                          </th>
-                          <th
-                            className="sorting"
-                            onClick={[Function]}
-                          >
-                            profilePage.status
-                          </th>
-                          <th
-                            className="sorting"
-                            onClick={[Function]}
-                          >
-                            profilePage.originalPrice
-                          </th>
-                          <th
-                            className="sorting"
-                            onClick={[Function]}
-                          >
-                            profilePage.totalPrice
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody
-                        data-test="table-body"
-                      >
-                        <tr>
-                          <td>
-                            25565845
-                          </td>
-                          <td>
-                            System Architect
-                          </td>
-                          <td>
-                            Edinburgh
-                          </td>
-                          <td>
-                            61
-                          </td>
-                          <td>
-                            2011/04/25
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            25565845
-                          </td>
-                          <td>
-                            System Architect
-                          </td>
-                          <td>
-                            Edinburgh
-                          </td>
-                          <td>
-                            61
-                          </td>
-                          <td>
-                            2011/04/25
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            25565845
-                          </td>
-                          <td>
-                            System Architect
-                          </td>
-                          <td>
-                            Edinburgh
-                          </td>
-                          <td>
-                            61
-                          </td>
-                          <td>
-                            2011/04/25
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            25565845
-                          </td>
-                          <td>
-                            System Architect
-                          </td>
-                          <td>
-                            Edinburgh
-                          </td>
-                          <td>
-                            61
-                          </td>
-                          <td>
-                            2011/04/25
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            25565845
-                          </td>
-                          <td>
-                            System Architect
-                          </td>
-                          <td>
-                            Edinburgh
-                          </td>
-                          <td>
-                            61
-                          </td>
-                          <td>
-                            2011/04/25
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                      <input
+                        aria-label="Search"
+                        className="form-control form-control-sm ml-0 my-1"
+                        onChange={[Function]}
+                        placeholder="Search"
+                        type="text"
+                        value=""
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                className="row"
-              >
                 <div
-                  className="d-flex w-100 justify-content-between"
+                  className="d-flex align-items-center justify-content-end"
                 >
                   <div
-                    className="row ml-3 justify-content-between"
+                    className="mdb-datatable-entries"
+                    data-test="mdb-datatable-entries"
                   >
                     <div
-                      className="false"
-                      data-test="datatable-search"
-                      style={
-                        Object {
-                          "alignItems": "center",
-                          "display": "flex",
-                        }
-                      }
+                      className="mdb-datatable-length bs-select"
+                      data-test="datatable-select"
                     >
-                      <div
-                        className="mdb-datatable-filter flex-row"
-                        data-test="datatable-input"
-                      >
-                        <input
-                          aria-label="Search"
-                          className="form-control form-control-sm ml-0 my-1"
+                      <label>
+                        Rows per page:
+                        <select
+                          className="custom-select custom-select-sm form-control form-control-sm"
                           onChange={[Function]}
-                          placeholder="Search"
-                          type="text"
-                          value=""
-                        />
-                      </div>
+                          style={
+                            Object {
+                              "marginLeft": ".5rem",
+                            }
+                          }
+                          value={5}
+                        >
+                          <option
+                            value={5}
+                          >
+                            5
+                          </option>
+                          <option
+                            value={10}
+                          >
+                            10
+                          </option>
+                          <option
+                            value={20}
+                          >
+                            20
+                          </option>
+                        </select>
+                      </label>
                     </div>
                   </div>
                   <div
-                    className="d-flex align-items-center justify-content-end"
+                    className="mdb-datatable-info d-flex align-items-center"
+                    data-test="datatable-info"
                   >
                     <div
-                      className="mdb-datatable-entries"
-                      data-test="mdb-datatable-entries"
+                      aria-live="polite"
+                      role="status"
                     >
-                      <div
-                        className="mdb-datatable-length bs-select"
-                        data-test="datatable-select"
-                      >
-                        <label>
-                          Rows per page:
-                          <select
-                            className="custom-select custom-select-sm form-control form-control-sm"
-                            onChange={[Function]}
-                            style={
-                              Object {
-                                "marginLeft": ".5rem",
-                              }
-                            }
-                            value={5}
-                          >
-                            <option
-                              value={5}
-                            >
-                              5
-                            </option>
-                            <option
-                              value={10}
-                            >
-                              10
-                            </option>
-                            <option
-                              value={20}
-                            >
-                              20
-                            </option>
-                          </select>
-                        </label>
-                      </div>
+                       1 - 5 of 23 
                     </div>
+                  </div>
+                  <div
+                    data-test="datatable-pagination"
+                  >
                     <div
-                      className="mdb-datatable-info d-flex align-items-center"
-                      data-test="datatable-info"
+                      className="mdb-dataTables_paginate"
                     >
-                      <div
-                        aria-live="polite"
-                        role="status"
+                      <ul
+                        className="pagination m-0"
+                        data-test="pagination"
                       >
-                         1 - 5 of 23 
-                      </div>
-                    </div>
-                    <div
-                      data-test="datatable-pagination"
-                    >
-                      <div
-                        className="mdb-dataTables_paginate"
-                      >
-                        <ul
-                          className="pagination m-0"
-                          data-test="pagination"
+                        <li
+                          className="disabled page-item"
+                          data-test="page-item"
                         >
-                          <li
-                            className="disabled page-item"
-                            data-test="page-item"
+                          <a
+                            aria-label="Prev"
+                            className="page-link page-link"
+                            data-test="page-link"
+                            onClick={[Function]}
                           >
-                            <a
-                              aria-label="Prev"
-                              className="page-link page-link"
-                              data-test="page-link"
-                              onClick={[Function]}
-                            >
-                              <span>
-                                <i
-                                  className="fas fa-chevron-left"
-                                />
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            className="page-item"
-                            data-test="page-item"
+                            <span>
+                              <i
+                                className="fas fa-chevron-left"
+                              />
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          className="page-item"
+                          data-test="page-item"
+                        >
+                          <a
+                            aria-label="Next"
+                            className="page-link page-link"
+                            data-test="page-link"
+                            onClick={[Function]}
                           >
-                            <a
-                              aria-label="Next"
-                              className="page-link page-link"
-                              data-test="page-link"
-                              onClick={[Function]}
-                            >
-                              <span>
-                                <i
-                                  className="fas fa-chevron-right"
-                                />
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                            <span>
+                              <i
+                                className="fas fa-chevron-right"
+                              />
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>

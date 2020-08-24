@@ -30,9 +30,9 @@ function DetailsClient() {
     <MDBContainer>
       <SectionTitle>{client}</SectionTitle>
       <MDBRow className="m-5">
-        {clientsLogo.map((client, index) => (
+        {clientsLogo.map((client) => (
           <MDBCol
-            key={index}
+            key={client.id}
             lg="3"
             md="4"
             sm="6"

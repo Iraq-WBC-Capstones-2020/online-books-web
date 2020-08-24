@@ -30,8 +30,8 @@ function Services() {
       <MDBContainer>
         <SectionTitle>{header}</SectionTitle>
         <MDBRow className="py-3">
-          {ourServices.map((service, index) => (
-            <MDBCol key={index} lg="4" md="6" sm="12" size="12">
+          {ourServices.map((service) => (
+            <MDBCol key={service.id} lg="4" md="6" sm="12" size="12">
               <ServiceCard key={service.id} service={service} />
             </MDBCol>
           ))}

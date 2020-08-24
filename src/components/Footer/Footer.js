@@ -28,11 +28,9 @@ function Footer() {
         <MDBContainer>
           <MDBRow>
             <MDBCol lg="4" md="4" sm="6" xs="12">
-              <img
-                className="h-20 d-block d-sm-inline mx-auto"
-                alt="logo"
-                src={logoUrl}
-              ></img>
+              <strong className="text-4xl black-text font-bold">
+                Book Zone
+              </strong>
               <p className="mt-2 text-base leading-6 text-center text-sm-left">
                 {t('footer.description')}
               </p>
