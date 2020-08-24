@@ -5,13 +5,15 @@ import Paragraph from '../../components/Paragraph/Paragraph';
 import Pills from '../../components/Pills/Pills';
 import ProfileInfo from '../../components/ProfilePage/ProfileInfo/ProfileInfo';
 import PurchaseHistory from '../../components/ProfilePage/PurchaseHistory/PurchaseHistory';
+import { useSelector } from 'react-redux';
 
 function ProfilePage() {
   const { t } = useTranslation();
+  const user = useSelector((state) => state.user);
   const profileInfo = {
-    id: '120147514545',
-    name: 'Sara Ahmed',
-    email: 'sara@eample.com',
+    id: user.id,
+    name: user.name,
+    email: user.email,
     img: 'https://via.placeholder.com/300x300',
     gender: 'Female',
     joined: new Date('02/01/2010').getTime(),
