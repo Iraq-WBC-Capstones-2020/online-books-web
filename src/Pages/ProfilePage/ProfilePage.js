@@ -12,7 +12,7 @@ function ProfilePage() {
   const user = useSelector((state) => state.user);
   const profileInfo = {
     id: user.id,
-    name: user.name,
+    name: user.fullName,
     email: user.email,
     img: 'https://via.placeholder.com/300x300',
     gender: 'Female',
