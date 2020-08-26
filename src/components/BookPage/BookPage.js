@@ -40,9 +40,11 @@ function BookPage({ book }) {
           {isLoggedIn ? (
             <>
               <div className="mt-3">
-                <MDBBtn color="info" className="mr-3 px-3 py-0">
-                  {tags}
-                </MDBBtn>
+                {tags.map((tag) => (
+                  <MDBBtn color="info" className="mr-3 px-3 py-0">
+                    {tag}
+                  </MDBBtn>
+                ))}
                 <MDBBtn color="info" className="px-3 py-0">
                   {yearReleased}
                 </MDBBtn>
@@ -57,6 +59,11 @@ function BookPage({ book }) {
                 />
                 <MDBIcon className="ml-5" icon="arrow-down" size="4x" />
               </div>
+              <div className="mt-4">
+                <MDBBtn color="primary" className="px-4 rounded-pill">
+                  {t('bookPage.addToCart')}
+                </MDBBtn>
+              </div>
             </>
           ) : (
             <>
@@ -65,9 +72,11 @@ function BookPage({ book }) {
               </span>
 
               <div className="mt-3">
-                <MDBBtn color="info" className="mr-3 px-3 py-0">
-                  {tags}
-                </MDBBtn>
+                {tags.map((tag) => (
+                  <MDBBtn color="info" className="mr-3 px-3 py-0">
+                    {tag}
+                  </MDBBtn>
+                ))}
                 <MDBBtn color="info" className="px-3 py-0">
                   {yearReleased}
                 </MDBBtn>
