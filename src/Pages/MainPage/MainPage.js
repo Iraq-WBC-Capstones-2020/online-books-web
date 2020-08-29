@@ -15,27 +15,31 @@ import Book from '../../models/Book';
 import Author from '../../models/Author';
 import Spinner from '../../components/Spinner/Spinner';
 import PropTypes from 'prop-types';
+import { fetchBooks } from './../../actions/index';
+import { useDispatch, useSelector } from 'react-redux';
 function Main({ modal8, handelModel8 }) {
-  const [books, setBooks] = useState();
   const [authors, setAuthors] = useState();
+  const fetchedBooks = useSelector((state) => state.books.fetchedBooks);
+
+  const fliteredBooks = useSelector((state) => state.books.fliteredBooks);
+  const dispatch = useDispatch();
+
   useEffect(() => {
     (async () => {
       const books = await Book.getBooks();
-      setBooks(books);
-    })();
-    (async () => {
       const authors = await Author.getAuthors();
       setAuthors(authors);
+      dispatch(fetchBooks(books));
     })();
   }, []);
   return (
     <>
-      {!books ? (
+      {!fetchedBooks ? (
         <Spinner />
       ) : (
         <>
           <Paragraph />
-          <CarsouelSlick books={books} highlightText="bestSellers" />
+          <CarsouelSlick books={fetchedBooks} highlightText="bestSellers" />
           {/* */}
           <MDBContainer className="mainContainer">
             <MDBRow around>
@@ -45,7 +49,7 @@ function Main({ modal8, handelModel8 }) {
                 lg="3"
                 className="containerSearchSection bg-black"
               >
-                <SearchSection />
+                <SearchSection authors={authors} />
               </MDBCol>
 
               {/*Modal for search section will appeare in the small devices */}
@@ -58,12 +62,12 @@ function Main({ modal8, handelModel8 }) {
                 className="md:grid-cols-12 px-md-3 paddingZero"
               >
                 <MDBContainer>
-                  <ShowCardsSection books={books} />
+                  <ShowCardsSection books={fliteredBooks} />
                 </MDBContainer>
               </MDBCol>
             </MDBRow>
           </MDBContainer>
-          <CarsouelSlick books={books} highlightText="newRelease" />
+          <CarsouelSlick books={fetchedBooks} highlightText="newRelease" />
           {/*Popular authors */}
           {!authors ? <Spinner /> : <AuthorSection authors={authors} />}
         </>
