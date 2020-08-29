@@ -2,10 +2,18 @@ import { usersRef } from './../api/firebase';
 import Book from './Book';
 
 export default class User {
-  constructor({ id, name, age, email, birthday, image, isSigned = true } = {}) {
+  constructor({
+    id,
+    fullName,
+    age,
+    email,
+    birthday,
+    image,
+    isSigned = true,
+  } = {}) {
     this.isSigned = isSigned;
     this.id = id;
-    this.name = name;
+    this.fullName = fullName;
     this.age = age;
     this.email = email;
     this.birthday = birthday;
